@@ -28,7 +28,7 @@
 <meta property="og:site_name" content="又见苍岚">
 <meta property="og:description" content="本文属于二次型优化问题系列文章，主要介绍二次型参数的定义由来。">
 <meta property="article:published_time" content="2020-12-12T06:40:52.000Z">
-<meta property="article:modified_time" content="2020-12-12T09:59:56.504Z">
+<meta property="article:modified_time" content="2020-12-12T10:01:12.802Z">
 <meta property="article:author" content="Yiwei Zhang">
 <meta property="article:tag" content="机器学习">
 <meta property="article:tag" content="优化方法">
@@ -93,7 +93,7 @@
     <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
-    <div class="toggle" aria-label="Toggle navigation bar">
+    <div class="toggle" aria-label="Cambiar a barra de navegación">
       <span class="toggle-line toggle-line-first"></span>
       <span class="toggle-line toggle-line-middle"></span>
       <span class="toggle-line toggle-line-last"></span>
@@ -173,7 +173,7 @@
   </span>
   <div class="search-input-container">
     <input autocomplete="off" autocorrect="off" autocapitalize="off"
-           placeholder="Searching..." spellcheck="false"
+           placeholder="Buscando..." spellcheck="false"
            type="search" class="search-input">
   </div>
   <span class="popup-btn-close">
@@ -230,7 +230,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="Created: 2020-12-12 14:40:52 / Modified: 17:59:56" itemprop="dateCreated datePublished" datetime="2020-12-12T14:40:52+08:00">2020-12-12</time>
+              <time title="Creado por: 2020-12-12 14:40:52 / Modificado por: 18:01:12" itemprop="dateCreated datePublished" datetime="2020-12-12T14:40:52+08:00">2020-12-12</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -287,7 +287,7 @@
                 <i class="fa fa-clock-o"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 mins.</span>
+              <span>1 minutos.</span>
             </span>
 
         </div>
@@ -375,18 +375,18 @@
   <span><strong>本文标题&nbsp:&nbsp&nbsp</strong>二次型优化问题 - 2 - 二次型参数确定<br></span>
   <span><strong>文章作者&nbsp:&nbsp&nbsp</strong>Yiwei Zhang<br></span>
   <span><strong>发布时间&nbsp:&nbsp&nbsp</strong>2020年12月12日 - 14:40:52<br></span>
-  <span><strong>最后更新&nbsp:&nbsp&nbsp</strong>2020年12月12日 - 17:59:56<br></span>
+  <span><strong>最后更新&nbsp:&nbsp&nbsp</strong>2020年12月12日 - 18:01:12<br></span>
   <span><strong>原始链接&nbsp:&nbsp&nbsp</strong><a href="/2020/12/12/machine_learning/Quadratic-cofficient/Quadratic-cofficient/" title="二次型优化问题 - 2 - 二次型参数确定">https://www.zywvvd.com/2020/12/12/machine_learning/Quadratic-cofficient/Quadratic-cofficient/</a><br></span>
   <span><strong>许可协议&nbsp:&nbsp&nbsp</strong><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者<br></span>  
 	
-   <!-- <strong>Post author:  </strong>Yiwei Zhang
+   <!-- <strong>Autor de la entrada:  </strong>Yiwei Zhang
   </li>
   <li class="post-copyright-link">
-    <strong>Post link: </strong>
+    <strong>Enlace a la entrada: </strong>
     <a href="https://www.zywvvd.com/2020/12/12/machine_learning/Quadratic-cofficient/Quadratic-cofficient/" title="二次型优化问题 - 2 - 二次型参数确定">https://www.zywvvd.com/2020/12/12/machine_learning/Quadratic-cofficient/Quadratic-cofficient/</a>
   </li>
   <li class="post-copyright-license">
-    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
+    <strong>Copyright:  </strong>Todos los artículos de este blog están licenciados bajo <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> a no ser que se especifique una licencia adicional.
   </li>-->
 </ul>
 </div>
@@ -661,6 +661,53 @@ if (document.querySelectorAll('pre.mermaid').length) {
   
 
   
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
 
   
 
