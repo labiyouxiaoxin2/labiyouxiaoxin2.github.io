@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.zywvvd.com/"/>
-  <updated>2020-11-21T10:16:59.264Z</updated>
+  <updated>2020-12-12T03:38:14.332Z</updated>
   <id>https://www.zywvvd.com/</id>
   
   <author>
@@ -17,16 +17,116 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>解决mount 命令挂载CIFS时出现 “Operation now in progress” 的问题</title>
-    <link href="https://www.zywvvd.com/2020/11/19/linux/mount/operation_now_in_progress/operation_now_in_progress/"/>
-    <id>https://www.zywvvd.com/2020/11/19/linux/mount/operation_now_in_progress/operation_now_in_progress/</id>
-    <published>2020-11-18T17:35:53.000Z</published>
-    <updated>2020-11-21T10:16:59.264Z</updated>
+    <title>Windows 添加开机启动应用</title>
+    <link href="https://www.zywvvd.com/2020/12/12/windows/win-add-startup/win-add-startup/"/>
+    <id>https://www.zywvvd.com/2020/12/12/windows/win-add-startup/win-add-startup/</id>
+    <published>2020-12-12T03:21:04.000Z</published>
+    <updated>2020-12-12T03:38:14.332Z</updated>
     
     <summary type="html">
     
       &lt;blockquote&gt;
-&lt;p&gt;在Linux系统使用 mount 命令挂载Windows CIFS 磁盘时报错  “Operation now in progress”，本文记录问题解决方法方法。&lt;/p&gt;
+&lt;p&gt;本文记录Windows添加开启启动项的方法。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="Windows" scheme="https://www.zywvvd.com/categories/Windows/"/>
+    
+    
+      <category term="Windows" scheme="https://www.zywvvd.com/tags/Windows/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>科学上网初级教程</title>
+    <link href="https://www.zywvvd.com/2020/12/04/internet/scientific-online/"/>
+    <id>https://www.zywvvd.com/2020/12/04/internet/scientific-online/</id>
+    <published>2020-12-04T11:54:27.000Z</published>
+    <updated>2020-12-12T03:19:39.086Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;本文记录初次科学上网的服务器搭建过程。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="internet" scheme="https://www.zywvvd.com/categories/internet/"/>
+    
+    
+      <category term="internet" scheme="https://www.zywvvd.com/tags/internet/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python ImportError libGL.so.1 cannot open shared object file No such file or directory 解决方案</title>
+    <link href="https://www.zywvvd.com/2020/12/04/python/import-error/import-error-0/"/>
+    <id>https://www.zywvvd.com/2020/12/04/python/import-error/import-error-0/</id>
+    <published>2020-12-04T01:51:27.000Z</published>
+    <updated>2020-12-12T03:19:39.089Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;刚装的 linux 环境中使用 python 导入包时可能会报 &lt;code&gt;libGL.so.1: cannot open shared object file&lt;/code&gt; 的错误，本文记录解决方案。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="python" scheme="https://www.zywvvd.com/categories/python/"/>
+    
+      <category term="故障排除" scheme="https://www.zywvvd.com/categories/python/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/"/>
+    
+    
+      <category term="故障排除" scheme="https://www.zywvvd.com/tags/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/"/>
+    
+      <category term="python" scheme="https://www.zywvvd.com/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Nvidia docker 安装与使用</title>
+    <link href="https://www.zywvvd.com/2020/12/03/docker/nvidia-docker-install/"/>
+    <id>https://www.zywvvd.com/2020/12/03/docker/nvidia-docker-install/</id>
+    <published>2020-12-03T12:23:56.000Z</published>
+    <updated>2020-12-12T03:19:39.084Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;Nvidia docker 是nvidia显卡在docker基础上进行封装得到的docker工具，需要电脑中安装Nvidia显卡驱动与docker，配置好Nvidia docker后docker可以使用GPU。本文记录Nvidia docker的安装与使用方法。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="Linux" scheme="https://www.zywvvd.com/categories/Linux/"/>
+    
+      <category term="docker" scheme="https://www.zywvvd.com/categories/Linux/docker/"/>
+    
+    
+      <category term="Linux" scheme="https://www.zywvvd.com/tags/Linux/"/>
+    
+      <category term="docker" scheme="https://www.zywvvd.com/tags/docker/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>在Linux服务器上更换Nvidia驱动</title>
+    <link href="https://www.zywvvd.com/2020/12/03/linux/driver/nvidia-driver-install-linux/"/>
+    <id>https://www.zywvvd.com/2020/12/03/linux/driver/nvidia-driver-install-linux/</id>
+    <published>2020-12-03T09:35:59.000Z</published>
+    <updated>2020-12-12T03:19:39.086Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;本文记录在Linux服务器更换Nvidia驱动的流程。&lt;/p&gt;
 &lt;/blockquote&gt;
     
     </summary>
@@ -36,6 +136,130 @@
     
     
       <category term="Linux" scheme="https://www.zywvvd.com/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Pytorch dataloader 错误 “DataLoader worker (pid xxx) is killed by signal” 解决方法</title>
+    <link href="https://www.zywvvd.com/2020/12/03/deep_learning/pytorch/dataloader_segmentation_fault/dataloader_segmentation_fault/"/>
+    <id>https://www.zywvvd.com/2020/12/03/deep_learning/pytorch/dataloader_segmentation_fault/dataloader_segmentation_fault/</id>
+    <published>2020-12-03T06:11:07.000Z</published>
+    <updated>2020-12-12T03:19:39.083Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;在使用 pytorch dataloader 时，出现了当把num_workers 设置不为0即报错的问题，本文记录两种此类错误的解决方案。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="python" scheme="https://www.zywvvd.com/categories/python/"/>
+    
+      <category term="pytorch" scheme="https://www.zywvvd.com/categories/python/pytorch/"/>
+    
+      <category term="故障排除" scheme="https://www.zywvvd.com/categories/python/pytorch/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/"/>
+    
+    
+      <category term="故障排除" scheme="https://www.zywvvd.com/tags/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/"/>
+    
+      <category term="pytorch" scheme="https://www.zywvvd.com/tags/pytorch/"/>
+    
+      <category term="python" scheme="https://www.zywvvd.com/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>解决 umount 命令卸载 CIFS 时卡死的问题</title>
+    <link href="https://www.zywvvd.com/2020/12/02/linux/mount/busy_umount_cifs/busy_umount_cifs/"/>
+    <id>https://www.zywvvd.com/2020/12/02/linux/mount/busy_umount_cifs/busy_umount_cifs/</id>
+    <published>2020-12-02T10:35:53.000Z</published>
+    <updated>2020-12-12T03:19:39.087Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;在Linux系统使用 mount 命令挂载Windows CIFS 磁盘后，如果Windows系统重启，则可能会导致Linux挂载该磁盘出错，无法访问，也无法直接用umount命令卸载，重启虽然可以解决问题，但是代价太大。&lt;/p&gt;
+&lt;p&gt;本文记录问题无痛解决方法。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="Linux" scheme="https://www.zywvvd.com/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="https://www.zywvvd.com/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>解决mount 命令挂载CIFS时出现 “Operation now in progress” 的问题</title>
+    <link href="https://www.zywvvd.com/2020/12/02/linux/mount/operation_now_in_progress/operation_now_in_progress/"/>
+    <id>https://www.zywvvd.com/2020/12/02/linux/mount/operation_now_in_progress/operation_now_in_progress/</id>
+    <published>2020-12-01T17:35:53.000Z</published>
+    <updated>2020-12-12T03:19:39.088Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;在Linux系统使用 mount 命令挂载Windows CIFS 磁盘时报错  “Operation now in progress”，本文记录问题解决方法。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="Linux" scheme="https://www.zywvvd.com/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="https://www.zywvvd.com/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo -14- 利用 Markdown 语法画 mermaid 流程图</title>
+    <link href="https://www.zywvvd.com/2020/11/24/hexo/14_mermaid/mermaid/"/>
+    <id>https://www.zywvvd.com/2020/11/24/hexo/14_mermaid/mermaid/</id>
+    <published>2020-11-23T16:15:24.000Z</published>
+    <updated>2020-12-12T03:19:39.085Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;hexo默认不支持流程图，&lt;a href=&quot;https://www.zywvvd.com/2020/11/23/hexo/13_flowchart/flowchart/&quot;&gt;flowchart&lt;/a&gt;是一种简便好用的解决方案，但由于其语法过于简单，导致其在应付稍复杂一些的流程图时捉襟见肘，本文记录在hexo中添加Mermaid流程图的方法。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="Hexo" scheme="https://www.zywvvd.com/categories/Hexo/"/>
+    
+    
+      <category term="Hexo" scheme="https://www.zywvvd.com/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo -13- 利用 Markdown 语法画 flowchart 流程图</title>
+    <link href="https://www.zywvvd.com/2020/11/23/hexo/13_flowchart/flowchart/"/>
+    <id>https://www.zywvvd.com/2020/11/23/hexo/13_flowchart/flowchart/</id>
+    <published>2020-11-23T15:05:14.000Z</published>
+    <updated>2020-12-12T03:19:39.084Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;hexo默认不支持流程图，flowchart 简便易食，可以瞬间使 hexo 流程图无中生有。本文记录在hexo中添加Markdown flowchart流程图的方法。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="Hexo" scheme="https://www.zywvvd.com/categories/Hexo/"/>
+    
+    
+      <category term="Hexo" scheme="https://www.zywvvd.com/tags/Hexo/"/>
     
   </entry>
   
@@ -125,16 +349,17 @@
   </entry>
   
   <entry>
-    <title>二次型优化问题求解</title>
+    <title>二次型优化问题 - 1 - 问题描述</title>
     <link href="https://www.zywvvd.com/2020/11/16/machine_learning/conjugate-gradient/conjugate-gradient/"/>
     <id>https://www.zywvvd.com/2020/11/16/machine_learning/conjugate-gradient/conjugate-gradient/</id>
     <published>2020-11-16T13:42:59.000Z</published>
-    <updated>2020-11-21T10:16:59.265Z</updated>
+    <updated>2020-12-12T03:19:39.088Z</updated>
     
     <summary type="html">
     
       &lt;blockquote&gt;
-&lt;p&gt;在各种场景可能都会遇到需要求解多元二次函数极值的问题，本文介绍相关的计算方法。&lt;/p&gt;
+&lt;p&gt;在各种场景可能都会遇到需要求解多元二次函数极值的问题，本系列文章介绍相关的计算方法，核心内容为共轭梯度法。&lt;/p&gt;
+&lt;p&gt;本文介绍问题定义。&lt;/p&gt;
 &lt;/blockquote&gt;
     
     </summary>
@@ -320,7 +545,7 @@
     <link href="https://www.zywvvd.com/2020/11/02/windows/win_ssh_linux_docker/win_ssh_linux_docker/"/>
     <id>https://www.zywvvd.com/2020/11/02/windows/win_ssh_linux_docker/win_ssh_linux_docker/</id>
     <published>2020-11-02T13:30:37.000Z</published>
-    <updated>2020-11-14T08:17:13.825Z</updated>
+    <updated>2020-12-12T03:19:39.090Z</updated>
     
     <summary type="html">
     
@@ -1307,7 +1532,7 @@
     <link href="https://www.zywvvd.com/2020/05/06/docker/docker_usage/"/>
     <id>https://www.zywvvd.com/2020/05/06/docker/docker_usage/</id>
     <published>2020-05-06T14:11:15.000Z</published>
-    <updated>2020-11-14T08:17:13.534Z</updated>
+    <updated>2020-12-12T03:19:39.083Z</updated>
     
     <summary type="html">
     

@@ -1,16 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://www.zywvvd.com/2020/12/12/windows/win-add-startup/win-add-startup/</loc>
+    <lastmod>2020-12-12</lastmod>
+  </url>  <url>
+    <loc>https://www.zywvvd.com/2020/11/02/windows/win_ssh_linux_docker/win_ssh_linux_docker/</loc>
+    <lastmod>2020-12-12</lastmod>
+  </url>  <url>
+    <loc>https://www.zywvvd.com/2020/12/04/python/import-error/import-error-0/</loc>
+    <lastmod>2020-12-12</lastmod>
+  </url>  <url>
+    <loc>https://www.zywvvd.com/2020/11/16/machine_learning/conjugate-gradient/conjugate-gradient/</loc>
+    <lastmod>2020-12-12</lastmod>
+  </url>  <url>
+    <loc>https://www.zywvvd.com/2020/12/02/linux/mount/operation_now_in_progress/operation_now_in_progress/</loc>
+    <lastmod>2020-12-12</lastmod>
+  </url>  <url>
+    <loc>https://www.zywvvd.com/2020/12/02/linux/mount/busy_umount_cifs/busy_umount_cifs/</loc>
+    <lastmod>2020-12-12</lastmod>
+  </url>  <url>
+    <loc>https://www.zywvvd.com/2020/12/04/internet/scientific-online/</loc>
+    <lastmod>2020-12-12</lastmod>
+  </url>  <url>
+    <loc>https://www.zywvvd.com/2020/12/03/linux/driver/nvidia-driver-install-linux/</loc>
+    <lastmod>2020-12-12</lastmod>
+  </url>  <url>
+    <loc>https://www.zywvvd.com/2020/11/24/hexo/14_mermaid/mermaid/</loc>
+    <lastmod>2020-12-12</lastmod>
+  </url>  <url>
+    <loc>https://www.zywvvd.com/2020/12/03/docker/nvidia-docker-install/</loc>
+    <lastmod>2020-12-12</lastmod>
+  </url>  <url>
+    <loc>https://www.zywvvd.com/2020/11/23/hexo/13_flowchart/flowchart/</loc>
+    <lastmod>2020-12-12</lastmod>
+  </url>  <url>
+    <loc>https://www.zywvvd.com/2020/05/06/docker/docker_usage/</loc>
+    <lastmod>2020-12-12</lastmod>
+  </url>  <url>
+    <loc>https://www.zywvvd.com/2020/12/03/deep_learning/pytorch/dataloader_segmentation_fault/dataloader_segmentation_fault/</loc>
+    <lastmod>2020-12-12</lastmod>
+  </url>  <url>
     <loc>https://www.zywvvd.com/2020/10/16/software/typora-usage/typora-usage/</loc>
     <lastmod>2020-11-21</lastmod>
   </url>  <url>
     <loc>https://www.zywvvd.com/2020/11/19/python/matplotlib_agg/matplotlib_agg/</loc>
-    <lastmod>2020-11-21</lastmod>
-  </url>  <url>
-    <loc>https://www.zywvvd.com/2020/11/16/machine_learning/conjugate-gradient/conjugate-gradient/</loc>
-    <lastmod>2020-11-21</lastmod>
-  </url>  <url>
-    <loc>https://www.zywvvd.com/2020/11/19/linux/mount/operation_now_in_progress/operation_now_in_progress/</loc>
     <lastmod>2020-11-21</lastmod>
   </url>  <url>
     <loc>https://www.zywvvd.com/2020/11/19/deep_learning/pytorch/netron_visualize_model/netron_visualize_model/</loc>
@@ -32,9 +65,6 @@
     <lastmod>2020-11-14</lastmod>
   </url>  <url>
     <loc>https://www.zywvvd.com/2020/06/02/windows/windows-family-nfs/windows-family-nfs/</loc>
-    <lastmod>2020-11-14</lastmod>
-  </url>  <url>
-    <loc>https://www.zywvvd.com/2020/11/02/windows/win_ssh_linux_docker/win_ssh_linux_docker/</loc>
     <lastmod>2020-11-14</lastmod>
   </url>  <url>
     <loc>https://www.zywvvd.com/2020/07/08/troubleshooting/github_cannot_log_in/github_cannot_log_in/</loc>
@@ -248,9 +278,6 @@
     <lastmod>2020-11-14</lastmod>
   </url>  <url>
     <loc>https://www.zywvvd.com/2020/10/17/git/git_get_back/git-get-back/</loc>
-    <lastmod>2020-11-14</lastmod>
-  </url>  <url>
-    <loc>https://www.zywvvd.com/2020/05/06/docker/docker_usage/</loc>
     <lastmod>2020-11-14</lastmod>
   </url>  <url>
     <loc>https://www.zywvvd.com/2020/11/06/deep_learning/pynvml_model_not_found/pynvml_model_not_found/</loc>
