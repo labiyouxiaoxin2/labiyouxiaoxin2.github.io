@@ -41,9 +41,22 @@
 <li>我觉得很关键的问题是如此定义$\bf{A}$会给求导带来很大方便</li>
 <li>我们略去一次项与常数项，得到纯粹的二次型：</li>
 </ul>
-<p>$$<br>f({\bf{x} }) = \frac{1}{2}{\bf{xAx} } \tag{8} \label{eq8}<br>$$</p>
+<p>$$<br>f({\bf{x} }) = \frac{1}{2}{\bf{xAx} } \tag{8} \label{eqq8}<br>$$</p>
 <ul>
-<li>仍用$\eqref{eq3}$表示$\bf{A}$，对$\eqref{eq8}$中的向量$\bf{x}$求导：</li>
+<li>即：</li>
+</ul>
+<p>$$<br>f({\bf{x} }) = \frac{1}{2}\sum\limits_{i,j = 1}^n {a_{i,j}^ \bullet } {x_i}{x_j} \tag{9}<br>$$</p>
+<ul>
+<li>仍用$\eqref{eq3}$表示$\bf{A}$，对$\eqref{eqq8}$中的向量$\bf{x}$求导：</li>
+</ul>
+<p>$$<br>f’({x_i}) = \frac{1}{2}[\sum\limits_{j = 1,j \ne i}^n {(a_{i,j}^ \bullet  + a_{j,i}^ \bullet )} {x_j} + 2a_{i,i}^ \bullet {x_i}] \tag{10}<br>$$</p>
+<ul>
+<li>如果$\bf{A}$是对称阵，那么$a_{i,j}^ \bullet  = a_{j,i}^ \bullet $，有：</li>
+</ul>
+<p>$$<br>f’({x_i}) = \frac{1}{2}\sum\limits_{j = 1}^n {a_{i,j}^ \bullet } {x_j} \tag{11}<br>$$</p>
+<p>$$<br>f’(\bf{x}) = \bf{Ax} \tag{12}<br>$$</p>
+<ul>
+<li>也就是说定义$\bf{A}$为对称阵可以唯一确定二次型矩阵，也可以方便地对二次型进行求导。</li>
 </ul>
 ]]></content>
       <categories>
