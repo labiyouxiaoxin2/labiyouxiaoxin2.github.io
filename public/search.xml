@@ -666,7 +666,7 @@ window.onload = function() {applet.inject('ggbApplet')};
   </entry>
   <entry>
     <title>二次型优化问题 - 5 - 最速下降法</title>
-    <url>/2020/12/16/machine_learning/conjugate-gradient-alg/steepest-descent-method/steepest-descent-method/</url>
+    <url>/2020/12/16/machine_learning/conjugate-gradient-algorithm/steepest-descent-method/steepest-descent-method/</url>
     <content><![CDATA[<blockquote>
 <p>本文介绍优化二次型的常用迭代方法——最速下降法。</p>
 </blockquote>
@@ -763,7 +763,7 @@ window.onload = function() {applet.inject('ggbApplet')};
   </entry>
   <entry>
     <title>二次型优化问题 - 4 - 二次型优化方法</title>
-    <url>/2020/12/15/machine_learning/conjugate-gradient-alg/ways-to-optimize/ways-to-optimize/</url>
+    <url>/2020/12/15/machine_learning/conjugate-gradient-algorithm/ways-to-optimize/ways-to-optimize/</url>
     <content><![CDATA[<blockquote>
 <p>在确定了可优化二次型的类型后，本文讨论二次型的优化方法。</p>
 </blockquote>
@@ -819,7 +819,7 @@ window.onload = function() {applet.inject('ggbApplet')};
   </entry>
   <entry>
     <title>二次型优化问题 - 3 - 导数与极值点</title>
-    <url>/2020/12/13/machine_learning/conjugate-gradient-alg/gradient-related/gradient-related/</url>
+    <url>/2020/12/13/machine_learning/conjugate-gradient-algorithm/gradient-related/gradient-related/</url>
     <content><![CDATA[<blockquote>
 <p>本文介绍在已经<a href="https://www.zywvvd.com/2020/11/16/machine_learning/conjugate-gradient-problem-define/conjugate-gradient/">定义好的问题</a>下，二次型导数与极值点相关内容。</p>
 </blockquote>
@@ -889,7 +889,7 @@ window.onload = function() {applet.inject('ggbApplet')};
   </entry>
   <entry>
     <title>二次型优化问题 - 2 - 二次型参数确定</title>
-    <url>/2020/12/12/machine_learning/conjugate-gradient-alg/quadratic_cofficient/quadratic_cofficient/</url>
+    <url>/2020/12/12/machine_learning/conjugate-gradient-algorithm/quadratic_cofficient/quadratic_cofficient/</url>
     <content><![CDATA[<blockquote>
 <p>本文属于二次型优化问题系列文章，主要介绍二次型参数的定义由来。</p>
 </blockquote>
@@ -2217,7 +2217,7 @@ cond(no)->sub</textarea><textarea id="flowchart-0-options" style="display: none"
   </entry>
   <entry>
     <title>二次型优化问题 - 1 - 问题描述</title>
-    <url>/2020/11/16/machine_learning/conjugate-gradient-alg/conjugate-gradient/conjugate-gradient/</url>
+    <url>/2020/11/16/machine_learning/conjugate-gradient-algorithm/conjugate-gradient/conjugate-gradient/</url>
     <content><![CDATA[<blockquote>
 <p>在各种场景可能都会遇到需要求解多元二次函数极值的问题，本系列文章介绍相关的计算方法，核心内容为共轭梯度法。</p>
 <p>本文介绍问题定义。</p>

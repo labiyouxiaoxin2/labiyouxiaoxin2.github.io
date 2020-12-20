@@ -91,8 +91,8 @@
   
   <entry>
     <title>二次型优化问题 - 5 - 最速下降法</title>
-    <link href="https://www.zywvvd.com/2020/12/16/machine_learning/conjugate-gradient-alg/steepest-descent-method/steepest-descent-method/"/>
-    <id>https://www.zywvvd.com/2020/12/16/machine_learning/conjugate-gradient-alg/steepest-descent-method/steepest-descent-method/</id>
+    <link href="https://www.zywvvd.com/2020/12/16/machine_learning/conjugate-gradient-algorithm/steepest-descent-method/steepest-descent-method/"/>
+    <id>https://www.zywvvd.com/2020/12/16/machine_learning/conjugate-gradient-algorithm/steepest-descent-method/steepest-descent-method/</id>
     <published>2020-12-16T08:47:46.000Z</published>
     <updated>2020-12-20T13:32:25.564Z</updated>
     
@@ -145,8 +145,8 @@
   
   <entry>
     <title>二次型优化问题 - 4 - 二次型优化方法</title>
-    <link href="https://www.zywvvd.com/2020/12/15/machine_learning/conjugate-gradient-alg/ways-to-optimize/ways-to-optimize/"/>
-    <id>https://www.zywvvd.com/2020/12/15/machine_learning/conjugate-gradient-alg/ways-to-optimize/ways-to-optimize/</id>
+    <link href="https://www.zywvvd.com/2020/12/15/machine_learning/conjugate-gradient-algorithm/ways-to-optimize/ways-to-optimize/"/>
+    <id>https://www.zywvvd.com/2020/12/15/machine_learning/conjugate-gradient-algorithm/ways-to-optimize/ways-to-optimize/</id>
     <published>2020-12-15T15:51:25.000Z</published>
     <updated>2020-12-20T12:41:22.597Z</updated>
     
@@ -172,8 +172,8 @@
   
   <entry>
     <title>二次型优化问题 - 3 - 导数与极值点</title>
-    <link href="https://www.zywvvd.com/2020/12/13/machine_learning/conjugate-gradient-alg/gradient-related/gradient-related/"/>
-    <id>https://www.zywvvd.com/2020/12/13/machine_learning/conjugate-gradient-alg/gradient-related/gradient-related/</id>
+    <link href="https://www.zywvvd.com/2020/12/13/machine_learning/conjugate-gradient-algorithm/gradient-related/gradient-related/"/>
+    <id>https://www.zywvvd.com/2020/12/13/machine_learning/conjugate-gradient-algorithm/gradient-related/gradient-related/</id>
     <published>2020-12-13T14:31:39.000Z</published>
     <updated>2020-12-20T12:41:22.594Z</updated>
     
@@ -199,8 +199,8 @@
   
   <entry>
     <title>二次型优化问题 - 2 - 二次型参数确定</title>
-    <link href="https://www.zywvvd.com/2020/12/12/machine_learning/conjugate-gradient-alg/quadratic_cofficient/quadratic_cofficient/"/>
-    <id>https://www.zywvvd.com/2020/12/12/machine_learning/conjugate-gradient-alg/quadratic_cofficient/quadratic_cofficient/</id>
+    <link href="https://www.zywvvd.com/2020/12/12/machine_learning/conjugate-gradient-algorithm/quadratic_cofficient/quadratic_cofficient/"/>
+    <id>https://www.zywvvd.com/2020/12/12/machine_learning/conjugate-gradient-algorithm/quadratic_cofficient/quadratic_cofficient/</id>
     <published>2020-12-12T06:40:52.000Z</published>
     <updated>2020-12-20T13:24:22.556Z</updated>
     
@@ -558,8 +558,8 @@
   
   <entry>
     <title>二次型优化问题 - 1 - 问题描述</title>
-    <link href="https://www.zywvvd.com/2020/11/16/machine_learning/conjugate-gradient-alg/conjugate-gradient/conjugate-gradient/"/>
-    <id>https://www.zywvvd.com/2020/11/16/machine_learning/conjugate-gradient-alg/conjugate-gradient/conjugate-gradient/</id>
+    <link href="https://www.zywvvd.com/2020/11/16/machine_learning/conjugate-gradient-algorithm/conjugate-gradient/conjugate-gradient/"/>
+    <id>https://www.zywvvd.com/2020/11/16/machine_learning/conjugate-gradient-algorithm/conjugate-gradient/conjugate-gradient/</id>
     <published>2020-11-16T13:42:59.000Z</published>
     <updated>2020-12-20T12:41:22.593Z</updated>
     
