@@ -91,10 +91,10 @@
   
   <entry>
     <title>二次型优化问题 - 5 - 最速下降法</title>
-    <link href="https://www.zywvvd.com/2020/12/16/machine_learning/conjugate-gradient-problem-define/steepest-descent-method/steepest-descent-method/"/>
-    <id>https://www.zywvvd.com/2020/12/16/machine_learning/conjugate-gradient-problem-define/steepest-descent-method/steepest-descent-method/</id>
+    <link href="https://www.zywvvd.com/2020/12/16/machine_learning/conjugate-gradient-alg/steepest-descent-method/steepest-descent-method/"/>
+    <id>https://www.zywvvd.com/2020/12/16/machine_learning/conjugate-gradient-alg/steepest-descent-method/steepest-descent-method/</id>
     <published>2020-12-16T08:47:46.000Z</published>
-    <updated>2020-12-20T13:15:35.301Z</updated>
+    <updated>2020-12-20T13:32:25.564Z</updated>
     
     <summary type="html">
     
@@ -145,8 +145,8 @@
   
   <entry>
     <title>二次型优化问题 - 4 - 二次型优化方法</title>
-    <link href="https://www.zywvvd.com/2020/12/15/machine_learning/conjugate-gradient-problem-define/ways-to-optimize/ways-to-optimize/"/>
-    <id>https://www.zywvvd.com/2020/12/15/machine_learning/conjugate-gradient-problem-define/ways-to-optimize/ways-to-optimize/</id>
+    <link href="https://www.zywvvd.com/2020/12/15/machine_learning/conjugate-gradient-alg/ways-to-optimize/ways-to-optimize/"/>
+    <id>https://www.zywvvd.com/2020/12/15/machine_learning/conjugate-gradient-alg/ways-to-optimize/ways-to-optimize/</id>
     <published>2020-12-15T15:51:25.000Z</published>
     <updated>2020-12-20T12:41:22.597Z</updated>
     
@@ -172,8 +172,8 @@
   
   <entry>
     <title>二次型优化问题 - 3 - 导数与极值点</title>
-    <link href="https://www.zywvvd.com/2020/12/13/machine_learning/conjugate-gradient-problem-define/gradient-related/gradient-related/"/>
-    <id>https://www.zywvvd.com/2020/12/13/machine_learning/conjugate-gradient-problem-define/gradient-related/gradient-related/</id>
+    <link href="https://www.zywvvd.com/2020/12/13/machine_learning/conjugate-gradient-alg/gradient-related/gradient-related/"/>
+    <id>https://www.zywvvd.com/2020/12/13/machine_learning/conjugate-gradient-alg/gradient-related/gradient-related/</id>
     <published>2020-12-13T14:31:39.000Z</published>
     <updated>2020-12-20T12:41:22.594Z</updated>
     
@@ -199,35 +199,8 @@
   
   <entry>
     <title>二次型优化问题 - 2 - 二次型参数确定</title>
-    <link href="https://www.zywvvd.com/2020/12/12/machine_learning/conjugate-gradient-problem-define/quadratic-cofficient/quadratic-cofficient/"/>
-    <id>https://www.zywvvd.com/2020/12/12/machine_learning/conjugate-gradient-problem-define/quadratic-cofficient/quadratic-cofficient/</id>
-    <published>2020-12-12T06:40:52.000Z</published>
-    <updated>2020-12-20T13:24:22.556Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;本文属于二次型优化问题系列文章，主要介绍二次型参数的定义由来。&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-    
-      <category term="机器学习" scheme="https://www.zywvvd.com/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
-      <category term="优化方法" scheme="https://www.zywvvd.com/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E4%BC%98%E5%8C%96%E6%96%B9%E6%B3%95/"/>
-    
-    
-      <category term="机器学习" scheme="https://www.zywvvd.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
-      <category term="优化方法" scheme="https://www.zywvvd.com/tags/%E4%BC%98%E5%8C%96%E6%96%B9%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>二次型优化问题 - 2 - 二次型参数确定</title>
-    <link href="https://www.zywvvd.com/2020/12/12/quadratic-cofficient/"/>
-    <id>https://www.zywvvd.com/2020/12/12/quadratic-cofficient/</id>
+    <link href="https://www.zywvvd.com/2020/12/12/machine_learning/conjugate-gradient-alg/quadratic_cofficient/quadratic_cofficient/"/>
+    <id>https://www.zywvvd.com/2020/12/12/machine_learning/conjugate-gradient-alg/quadratic_cofficient/quadratic_cofficient/</id>
     <published>2020-12-12T06:40:52.000Z</published>
     <updated>2020-12-20T13:24:22.556Z</updated>
     
@@ -585,8 +558,8 @@
   
   <entry>
     <title>二次型优化问题 - 1 - 问题描述</title>
-    <link href="https://www.zywvvd.com/2020/11/16/machine_learning/conjugate-gradient-problem-define/conjugate-gradient/conjugate-gradient/"/>
-    <id>https://www.zywvvd.com/2020/11/16/machine_learning/conjugate-gradient-problem-define/conjugate-gradient/conjugate-gradient/</id>
+    <link href="https://www.zywvvd.com/2020/11/16/machine_learning/conjugate-gradient-alg/conjugate-gradient/conjugate-gradient/"/>
+    <id>https://www.zywvvd.com/2020/11/16/machine_learning/conjugate-gradient-alg/conjugate-gradient/conjugate-gradient/</id>
     <published>2020-11-16T13:42:59.000Z</published>
     <updated>2020-12-20T12:41:22.593Z</updated>
     
