@@ -675,7 +675,7 @@ window.onload = function() {applet.inject('ggbApplet')};
 <h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><blockquote>
 <p>重述我们需要优化的问题：</p>
 </blockquote>
-<p>$$<br>f({\bf{x} }) = \frac{1}{2}{\bf{xAx} } - { {\bf{b} }^{\bf{T} } }{\bf{x} } + {\bf{c} }<br>$$</p>
+<p>$$<br>f({\bf{x} }) = \frac{1}{2}{\bf{x^TAx} } - { {\bf{b} }^{\bf{T} } }{\bf{x} } + {\bf{c} } \tag{1} \label{1}<br>$$</p>
 <ul>
 <li>矩阵$\bf{A}$正定对称</li>
 <li>目标为优化$\bf{x}$，使得$f(\bf{x})$取得最小值</li>
@@ -694,11 +694,118 @@ window.onload = function() {applet.inject('ggbApplet')};
     D -- 否 --> B
     D -- 是 --> E[输出当前位置]</pre>
 
-<h4 id="计算流程"><a href="#计算流程" class="headerlink" title="计算流程"></a>计算流程</h4><ul>
-<li><p>初始位置： $\bf{x}_0$</p>
+<h4 id="计算流程"><a href="#计算流程" class="headerlink" title="计算流程"></a>计算流程</h4><h5 id="初始位置：-bf-x-0"><a href="#初始位置：-bf-x-0" class="headerlink" title="初始位置： $\bf{x}_0$"></a>初始位置： $\bf{x}_0$</h5><h5 id="计算梯度-bf-g"><a href="#计算梯度-bf-g" class="headerlink" title="计算梯度$\bf{g}$"></a>计算梯度$\bf{g}$</h5><ul>
+<li>沿用之前的<a href="https://www.zywvvd.com/2020/12/12/machine_learning/conjugate-gradient-algorithm/quadratic_cofficient/quadratic_cofficient/#%E4%B8%BA%E4%BD%95%E5%A6%82%E6%AD%A4">计算结论</a>：</li>
+</ul>
+<p>$$<br>\bf{g} = f’(\bf{x}) = A\bf{x}-\bf{b} \tag{2}<br>$$</p>
+<ul>
+<li>那么关于 $\bf{x}_0$为了寻找最小值，需要向梯度的反方向前进，但为了保证推导过程顺遂，前进距离系数不管符号，设第$i$步需要前进的距离为${\alpha}_i$,那么对于第$i$个$\bf{x}_i$，有：</li>
+</ul>
+<p>$$<br>{\bf{x}_{i + 1} } = {\bf{x}_i} + \alpha_i {\bf{g}_i} \tag{3} \label{3}<br>$$</p>
+<h5 id="系数-alpha-i-求解"><a href="#系数-alpha-i-求解" class="headerlink" title="系数${\alpha}_i$求解"></a>系数${\alpha}_i$求解</h5><h6 id="方法1："><a href="#方法1：" class="headerlink" title="方法1："></a>方法1：</h6><blockquote>
+<p>行动前后两个位置的梯度方向需要正交，不然当前行动的位置还可以取到更低的值：</p>
+<p>即：</p>
+</blockquote>
+
+$$
+{\bf{g}}_i^T {{\bf{g}}_{i + 1}}=0 \tag{4}
+$$
+
+
+
+其中：
+$$
+{ {\bf{g} }_i}{\bf{ = A} }{ {\bf{x} }_i}{\bf{ - b} } \tag{5}
+$$
+
+$$
+{ {\bf{x} }_{i + 1} } = { {\bf{x} }_i} + {\alpha _i}{ {\bf{g} }_i} = {\bf{x}_i} + {\alpha _i}({\bf{A} }{ {\bf{x} }_i} - {\bf{b} }) \tag{6}
+$$
+
+$$
+\begin{array}{l}
+{ {\bf{g} }_{i + 1} } &= {\bf{A} }{ {\bf{x} }_{i + 1} } - {\bf{b} }\\
+ &= {\bf{A} }({ {\bf{x} }_i} + {\alpha _i}{ {\bf{g} }_i}) - {\bf{b} } \tag{7}
+\end{array}
+$$
+
+那么有：
+$$
+{\bf{g} }_i^T{ {\bf{g} }_{i + 1} } = {\bf{g} }_i^T{\bf{A} }({ {\bf{x} }_i} + {\alpha _i}{ {\bf{g} }_i}) - {\bf{g} }_i^T{\bf{b} } = 0
+$$
+
+$$
+{\bf{g} }_i^T{\bf{A} }{ {\bf{x} }_i} + {\alpha _i}{\bf{g} }_i^T{\bf{A} }{ {\bf{g} }_i} - {\bf{g} }_i^T{\bf{b} } = 0
+$$
+
+$$
+{\alpha _i}{\bf{g} }_i^T{\bf{A} }{ {\bf{g} }_i} + {\bf{g} }_i^T{ {\bf{g} }_i} = 0
+$$
+
+$$
+{\alpha _i} =  - \frac{ { {\bf{g} }_i^T{ {\bf{g} }_i} } }{ { {\bf{g} }_i^T{\bf{A} }{ {\bf{g} }_i} } } \tag{8}
+$$
+
+
+
+<h6 id="方法2"><a href="#方法2" class="headerlink" title="方法2"></a>方法2</h6><blockquote>
+<p>确定梯度方向$\bf{g}$后求解$\alpha$，由于最速下降法确定的是每一步方向上的局部最优解，也就是沿着这个方向运动得到最小值的位置，那么可以对$\alpha$求导，使得导数为0：</p>
+</blockquote>
+<ul>
+<li>由$\eqref{1}$和$\eqref{3}$，有：</li>
+</ul>
+<p>$$<br>f({\bf{x} }) = \frac{1}{2}{({\bf{x} } + \alpha {\bf{g} })^T}{\bf{A} }({\bf{x} } + \alpha {\bf{g} }) - { {\bf{b} }^{\bf{T} } }({\bf{x} } + \alpha {\bf{g} }) + {\bf{c} } \tag{9}<br>$$</p>
+<ul>
+<li>对于已经确定的当前位置$\bf{x}_i$，当前可以看成是关于$\bf{x}_i$，$\alpha_i$的函数：</li>
+</ul>
+<p>$$<br>f(\bf{x}_{i+1}) =f(\bf{x}_i,{\alpha _i}) = \frac{1}{2}{({ {\bf{x} }_i} + {\alpha _i}{ {\bf{g} }_i})^T}{\bf{A} }({ {\bf{x} }_i} + {\alpha _i}{ {\bf{g} }_i}) - { {\bf{b} }^{\bf{T} } }({ {\bf{x} }_i} + {\alpha _i}{ {\bf{g} }_i}) + {\bf{c} } \tag{10}<br>$$</p>
+<ul>
+<li>对$\alpha_i$求偏导：</li>
+</ul>
+
+$$
+\begin{array}{l}
+\frac{ {\partial f({ {\bf{x} }_{i + 1} })} }{ {\partial {\alpha _i} } } &= \frac{ {\partial f({ {\bf{x} }_{i + 1} })} }{ {\partial { {\bf{x} }_{i + 1} } } }\frac{ {\partial { {\bf{x} }_{i + 1} } } }{ {\partial {\alpha _i} } }\\
+ &= {({\bf{A} }{ {\bf{x} }_{i + 1} } - {\bf{b} })^T}{ {\bf{g} }_i}\\
+ &= {({\bf{A} }({ {\bf{x} }_i} + {\alpha _i}{ {\bf{g} }_i}) - {\bf{b} })^T}{ {\bf{g} }_i}\\
+ &= {({\bf{A} }{ {\bf{x} }_i} - {\bf{b} } + {\alpha _i}{\bf{A} }{ {\bf{g} }_i})^T}{ {\bf{g} }_i}\\
+ &= ({\bf{g} }_i^T + {\alpha _i}{\bf{g} }_i^T{\bf{A} }){ {\bf{g} }_i}\\
+ &= {\bf{g} }_i^T{ {\bf{g} }_i} + {\alpha _i}{\bf{g} }_i^T{\bf{A} }{ {\bf{g} }_i} =0
+\end{array} \tag{11}
+$$
+
+
+
+<ul>
+<li>得到：</li>
+</ul>
+<p>$$<br>{\alpha _i} =  - \frac{ { {\bf{g} }_i^T{ {\bf{g} }_i} } }{ { {\bf{g} }_i^T{\bf{A} }{ {\bf{g} }_i} } } \tag{12}<br>$$</p>
+<h5 id="下一个位置"><a href="#下一个位置" class="headerlink" title="下一个位置"></a>下一个位置</h5><ul>
+<li>按照公式$\eqref{3}$，获取下一个获取的位置$\bf{x}_{i+1}$</li>
+<li>检测当前梯度大小，如果梯度小于一定阈值$\varepsilon$即认为已经达到了极小值：</li>
+</ul>
+<p>$$<br>\varepsilon  \ge \left| { { {\bf{g} }_{i+1} } } \right| \tag{13}<br>$$</p>
+<ul>
+<li>否则再向前走下一步</li>
+</ul>
+<h3 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h3><ul>
+<li><p>最速下降法是一种简单拟合当前问题的贪心优化方法，通过一步步计算局部最优解来逼近全局最优解，其本质为：</p>
+<ul>
+<li>将当前的二次型拟合成高维球形</li>
+<li>运动到拟合球形的中心</li>
+<li>计算误差，测量精度</li>
+<li>若精度不够则，根据误差拟合下一个高维球</li>
+</ul>
 </li>
-<li><p>计算梯度，沿用之前的<a href="">计算结论</a>：</p>
+<li><p>首先，要声明的是，该方法是收敛的，也就是在我们定义的问题下，是可以逐步收敛到最优解的，证明比较复杂，参考<a href="https://zhuanlan.zhihu.com/p/23799012" target="_blank" rel="noopener">番外篇(2)——无聊的最速下降法推导</a></p>
 </li>
+<li><p>该方法也存在一定问题，由于建模过于简单，导致其计算出的最优值结果与真实最小值不断遗漏下偏差，带来的结果就是需要往复迭代才能接近最优值</p>
+</li>
+</ul>
+<h3 id="共轭梯度法的由来"><a href="#共轭梯度法的由来" class="headerlink" title="共轭梯度法的由来"></a>共轭梯度法的由来</h3><ul>
+<li>最速下降法拟合的方案过于简单，导致了该方法注定无法轻易得到全局最优解</li>
+<li>如果可以有正确拟合真实二次型的迭代优化方法，那么如果找到了这个模型下的最优值，岂不就迭代得到了全局最优解</li>
+<li>带着这个初衷，大神们提出了共轭梯度法</li>
 </ul>
 ]]></content>
       <categories>
@@ -821,14 +928,14 @@ window.onload = function() {applet.inject('ggbApplet')};
     <title>二次型优化问题 - 3 - 导数与极值点</title>
     <url>/2020/12/13/machine_learning/conjugate-gradient-algorithm/gradient-related/gradient-related/</url>
     <content><![CDATA[<blockquote>
-<p>本文介绍在已经<a href="https://www.zywvvd.com/2020/11/16/machine_learning/conjugate-gradient-problem-define/conjugate-gradient/">定义好的问题</a>下，二次型导数与极值点相关内容。</p>
+<p>本文介绍在已经<a href="https://www.zywvvd.com/2020/11/16/machine_learning/conjugate-gradient-algorithm/conjugate-gradient/conjugate-gradient/">定义好的问题</a>下，二次型导数与极值点相关内容。</p>
 </blockquote>
 <a id="more"></a>
 
 <h3 id="导数为0的点是否存在"><a href="#导数为0的点是否存在" class="headerlink" title="导数为0的点是否存在"></a>导数为0的点是否存在</h3><ul>
 <li>对于一般的二次型：</li>
 </ul>
-<p>$$<br>f({\bf{x} }) = \frac{1}{2}{\bf{xAx} } - { {\bf{b} }^{\bf{T} } }{\bf{x} } + {\bf{c} } \tag{1} \label{1}<br>$$</p>
+<p>$$<br>f({\bf{x} }) = \frac{1}{2}{\bf{x^TAx} } - { {\bf{b} }^{\bf{T} } }{\bf{x} } + {\bf{c} } \tag{1} \label{1}<br>$$</p>
 <ul>
 <li>导数为：</li>
 </ul>
@@ -898,7 +1005,7 @@ window.onload = function() {applet.inject('ggbApplet')};
 <h3 id="提出问题"><a href="#提出问题" class="headerlink" title="提出问题"></a>提出问题</h3><ul>
 <li>需要优化的函数二次型的形式：</li>
 </ul>
-<p>$$<br>f({\bf{x} }) = \frac{1}{2}{\bf{xAx} } - { {\bf{b} }^{\bf{T} } }{\bf{x} } + {\bf{c} } \tag{1} \label{eq1}<br>$$</p>
+<p>$$<br>f({\bf{x} }) = \frac{1}{2}{\bf{x^TAx} } - { {\bf{b} }^{\bf{T} } }{\bf{x} } + {\bf{c} } \tag{1} \label{eq1}<br>$$</p>
 <ul>
 <li>而原始n元多项式为：</li>
 </ul>
@@ -2236,7 +2343,7 @@ cond(no)->sub</textarea><textarea id="flowchart-0-options" style="display: none"
 <ul>
 <li>记 $f({\bf{x}}) = {[{x_1},{x_2}, \cdots ,{x_n}]^T}$ ，则上述函数可以写作二次型的形式：</li>
 </ul>
-<p>$$<br>f({x_1},{x_2},{x_3},…,{ x_n}) = f({\bf{x}}) = {\bf{x} }\bf{A}{\bf{x} } + { {\bf{b} }^T}{\bf{x} } + c<br>$$</p>
+<p>$$<br>f({x_1},{x_2},{x_3},…,{ x_n}) = f({\bf{x}}) = {\bf{x^T} }\bf{A}{\bf{x} } + { {\bf{b} }^T}{\bf{x} } + c<br>$$</p>
 <blockquote>
 <p>转化过程中$\bf{A},\bf{b}$满足：</p>
 <p>${\bf{A} }$ 为$n$阶对称方阵，${ {\bf{A} }<em>{i,j} } = {a</em>{i,j} }$</p>
@@ -2246,7 +2353,7 @@ cond(no)->sub</textarea><textarea id="flowchart-0-options" style="display: none"
 <ul>
 <li>为了后续计算简便，我们将二次型稍作改动：</li>
 </ul>
-<p>$$<br>f({\bf{x} }) = \frac{1}{2}{\bf{xAx} } - { {\bf{b} }^{\bf{T} } }{\bf{x} } + {\bf{c} }<br>$$</p>
+<p>$$<br>f({\bf{x} }) = \frac{1}{2}{\bf{x^TAx} } - { {\bf{b} }^{\bf{T} } }{\bf{x} } + {\bf{c} }<br>$$</p>
 <ul>
 <li>我们的目标就是寻找该函数的极值点的坐标，我们把该目标称为$\bf{x^*}$。</li>
 </ul>
