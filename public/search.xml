@@ -889,7 +889,7 @@ window.onload = function() {applet.inject('ggbApplet')};
   </entry>
   <entry>
     <title>二次型优化问题 - 2 - 二次型参数确定</title>
-    <url>/2020/12/12/machine_learning/conjugate-gradient-problem-define/Quadratic-cofficient/Quadratic-cofficient/</url>
+    <url>/2020/12/12/machine_learning/conjugate-gradient-problem-define/quadratic-cofficient/quadratic-cofficient/</url>
     <content><![CDATA[<blockquote>
 <p>本文属于二次型优化问题系列文章，主要介绍二次型参数的定义由来。</p>
 </blockquote>
