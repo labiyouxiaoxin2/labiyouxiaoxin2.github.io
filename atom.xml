@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.zywvvd.com/"/>
-  <updated>2020-12-13T15:13:13.862Z</updated>
+  <updated>2020-12-20T12:41:22.600Z</updated>
   <id>https://www.zywvvd.com/</id>
   
   <author>
@@ -17,11 +17,165 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>geogebra 图形嵌入网页，Hexo文章</title>
+    <link href="https://www.zywvvd.com/2020/12/19/tools/geogebra/geogebra-html-embed/geogebra-html-embed/"/>
+    <id>https://www.zywvvd.com/2020/12/19/tools/geogebra/geogebra-html-embed/geogebra-html-embed/</id>
+    <published>2020-12-19T06:13:48.000Z</published>
+    <updated>2020-12-20T12:41:22.600Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;geogebra是优秀的数学绘图工具，可以描述数学图像并演示，支持互动，功能强大。本文介绍将geogebra嵌入网页的方法。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="tools" scheme="https://www.zywvvd.com/categories/tools/"/>
+    
+      <category term="geogebra" scheme="https://www.zywvvd.com/categories/tools/geogebra/"/>
+    
+    
+      <category term="tools" scheme="https://www.zywvvd.com/tags/tools/"/>
+    
+      <category term="geogebra" scheme="https://www.zywvvd.com/tags/geogebra/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux 获取cpu信息</title>
+    <link href="https://www.zywvvd.com/2020/12/18/linux/get-cpu-info/get-cpu-info/"/>
+    <id>https://www.zywvvd.com/2020/12/18/linux/get-cpu-info/get-cpu-info/</id>
+    <published>2020-12-18T08:13:50.000Z</published>
+    <updated>2020-12-20T12:41:22.591Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;本文记录Linux系统获取CPU信息方法。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="Linux" scheme="https://www.zywvvd.com/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="https://www.zywvvd.com/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>DVC 使用手册</title>
+    <link href="https://www.zywvvd.com/2020/12/17/dvc/dvc/"/>
+    <id>https://www.zywvvd.com/2020/12/17/dvc/dvc/</id>
+    <published>2020-12-17T09:01:15.000Z</published>
+    <updated>2020-12-20T12:41:22.588Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;dvc是将大文件以类似git的形式进行管理的工具，结合git可以做到无痛管理项目文件，虽然眼下开发还不够成熟，不过已经为开发带来了很大方便。本文介绍dvc常用命令的使用方法。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="dvc" scheme="https://www.zywvvd.com/categories/dvc/"/>
+    
+    
+      <category term="dvc" scheme="https://www.zywvvd.com/tags/dvc/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>二次型优化问题 - 5 - 最速下降法</title>
+    <link href="https://www.zywvvd.com/2020/12/16/machine_learning/conjugate-gradient-problem-define/steepest-descent-method/steepest-descent-method/"/>
+    <id>https://www.zywvvd.com/2020/12/16/machine_learning/conjugate-gradient-problem-define/steepest-descent-method/steepest-descent-method/</id>
+    <published>2020-12-16T08:47:46.000Z</published>
+    <updated>2020-12-20T13:15:35.301Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;本文介绍优化二次型的常用迭代方法——最速下降法。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="机器学习" scheme="https://www.zywvvd.com/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="优化方法" scheme="https://www.zywvvd.com/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E4%BC%98%E5%8C%96%E6%96%B9%E6%B3%95/"/>
+    
+    
+      <category term="机器学习" scheme="https://www.zywvvd.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="优化方法" scheme="https://www.zywvvd.com/tags/%E4%BC%98%E5%8C%96%E6%96%B9%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python opencv 显示多窗口图像并获取点击处像素点坐标</title>
+    <link href="https://www.zywvvd.com/2020/12/16/image_processing/cv-image-event/cv-image-event/"/>
+    <id>https://www.zywvvd.com/2020/12/16/image_processing/cv-image-event/cv-image-event/</id>
+    <published>2020-12-16T06:24:19.000Z</published>
+    <updated>2020-12-20T12:41:22.590Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;本文介绍使用python 的 opencv 库显示多个图片窗口，并获取点击点像素位置的方法。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="python" scheme="https://www.zywvvd.com/categories/python/"/>
+    
+      <category term="opencv" scheme="https://www.zywvvd.com/categories/python/opencv/"/>
+    
+    
+      <category term="python" scheme="https://www.zywvvd.com/tags/python/"/>
+    
+      <category term="opencv" scheme="https://www.zywvvd.com/tags/opencv/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>二次型优化问题 - 4 - 二次型优化方法</title>
+    <link href="https://www.zywvvd.com/2020/12/15/machine_learning/conjugate-gradient-problem-define/ways-to-optimize/ways-to-optimize/"/>
+    <id>https://www.zywvvd.com/2020/12/15/machine_learning/conjugate-gradient-problem-define/ways-to-optimize/ways-to-optimize/</id>
+    <published>2020-12-15T15:51:25.000Z</published>
+    <updated>2020-12-20T12:41:22.597Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;在确定了可优化二次型的类型后，本文讨论二次型的优化方法。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="机器学习" scheme="https://www.zywvvd.com/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="优化方法" scheme="https://www.zywvvd.com/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E4%BC%98%E5%8C%96%E6%96%B9%E6%B3%95/"/>
+    
+    
+      <category term="机器学习" scheme="https://www.zywvvd.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="优化方法" scheme="https://www.zywvvd.com/tags/%E4%BC%98%E5%8C%96%E6%96%B9%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
     <title>二次型优化问题 - 3 - 导数与极值点</title>
     <link href="https://www.zywvvd.com/2020/12/13/machine_learning/conjugate-gradient-problem-define/gradient-related/gradient-related/"/>
     <id>https://www.zywvvd.com/2020/12/13/machine_learning/conjugate-gradient-problem-define/gradient-related/gradient-related/</id>
     <published>2020-12-13T14:31:39.000Z</published>
-    <updated>2020-12-13T15:13:13.862Z</updated>
+    <updated>2020-12-20T12:41:22.594Z</updated>
     
     <summary type="html">
     
@@ -126,7 +280,7 @@
     <summary type="html">
     
       &lt;blockquote&gt;
-&lt;p&gt;刚装的 linux 环境中使用 python 导入包时可能会报 &lt;code&gt;libGL.so.1: cannot open shared object file&lt;/code&gt; 的错误，本文记录解决方案。&lt;/p&gt;
+&lt;p&gt;刚装的 linux 环境中使用 python 导入包时可能会报 &lt;code&gt; libGL.so.1: cannot open shared object file&lt;/code&gt; 的错误，本文记录解决方案。&lt;/p&gt;
 &lt;/blockquote&gt;
     
     </summary>
@@ -218,9 +372,9 @@
     
       <category term="故障排除" scheme="https://www.zywvvd.com/tags/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/"/>
     
-      <category term="pytorch" scheme="https://www.zywvvd.com/tags/pytorch/"/>
-    
       <category term="python" scheme="https://www.zywvvd.com/tags/python/"/>
+    
+      <category term="pytorch" scheme="https://www.zywvvd.com/tags/pytorch/"/>
     
   </entry>
   
@@ -404,10 +558,10 @@
   
   <entry>
     <title>二次型优化问题 - 1 - 问题描述</title>
-    <link href="https://www.zywvvd.com/2020/11/16/machine_learning/conjugate-gradient-problem-define/conjugate-gradient/"/>
-    <id>https://www.zywvvd.com/2020/11/16/machine_learning/conjugate-gradient-problem-define/conjugate-gradient/</id>
+    <link href="https://www.zywvvd.com/2020/11/16/machine_learning/conjugate-gradient-problem-define/conjugate-gradient/conjugate-gradient/"/>
+    <id>https://www.zywvvd.com/2020/11/16/machine_learning/conjugate-gradient-problem-define/conjugate-gradient/conjugate-gradient/</id>
     <published>2020-11-16T13:42:59.000Z</published>
-    <updated>2020-12-12T08:52:39.217Z</updated>
+    <updated>2020-12-20T12:41:22.593Z</updated>
     
     <summary type="html">
     
@@ -476,11 +630,11 @@
       <category term="故障排除" scheme="https://www.zywvvd.com/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/GPU/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/"/>
     
     
+      <category term="故障排除" scheme="https://www.zywvvd.com/tags/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/"/>
+    
       <category term="深度学习" scheme="https://www.zywvvd.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
       <category term="GPU" scheme="https://www.zywvvd.com/tags/GPU/"/>
-    
-      <category term="故障排除" scheme="https://www.zywvvd.com/tags/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/"/>
     
   </entry>
   
@@ -1075,9 +1229,9 @@
       <category term="故障排除" scheme="https://www.zywvvd.com/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/Tensorflow/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/"/>
     
     
-      <category term="深度学习" scheme="https://www.zywvvd.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
-    
       <category term="故障排除" scheme="https://www.zywvvd.com/tags/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/"/>
+    
+      <category term="深度学习" scheme="https://www.zywvvd.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
       <category term="Tensorflow" scheme="https://www.zywvvd.com/tags/Tensorflow/"/>
     
@@ -1327,33 +1481,6 @@
   </entry>
   
   <entry>
-    <title>算法学习笔记 —— XX</title>
-    <link href="https://www.zywvvd.com/2020/05/21/algorithm/example/about_exam/"/>
-    <id>https://www.zywvvd.com/2020/05/21/algorithm/example/about_exam/</id>
-    <published>2020-05-21T05:15:39.000Z</published>
-    <updated>2020-11-14T08:17:13.507Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;学而时习，本文记录XX操作相关算法练习笔记。&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-    
-      <category term="算法" scheme="https://www.zywvvd.com/categories/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="XX" scheme="https://www.zywvvd.com/categories/%E7%AE%97%E6%B3%95/XX/"/>
-    
-    
-      <category term="算法" scheme="https://www.zywvvd.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="XX" scheme="https://www.zywvvd.com/tags/XX/"/>
-    
-  </entry>
-  
-  <entry>
     <title>算法学习笔记 —— 排序</title>
     <link href="https://www.zywvvd.com/2020/05/21/algorithm/sort/about_sort/"/>
     <id>https://www.zywvvd.com/2020/05/21/algorithm/sort/about_sort/</id>
@@ -1377,6 +1504,33 @@
       <category term="算法" scheme="https://www.zywvvd.com/tags/%E7%AE%97%E6%B3%95/"/>
     
       <category term="排序" scheme="https://www.zywvvd.com/tags/%E6%8E%92%E5%BA%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>算法学习笔记 —— XX</title>
+    <link href="https://www.zywvvd.com/2020/05/21/algorithm/example/about_exam/"/>
+    <id>https://www.zywvvd.com/2020/05/21/algorithm/example/about_exam/</id>
+    <published>2020-05-21T05:15:39.000Z</published>
+    <updated>2020-11-14T08:17:13.507Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;学而时习，本文记录XX操作相关算法练习笔记。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="算法" scheme="https://www.zywvvd.com/categories/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="XX" scheme="https://www.zywvvd.com/categories/%E7%AE%97%E6%B3%95/XX/"/>
+    
+    
+      <category term="算法" scheme="https://www.zywvvd.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="XX" scheme="https://www.zywvvd.com/tags/XX/"/>
     
   </entry>
   
@@ -1430,9 +1584,9 @@
       <category term="故障排除" scheme="https://www.zywvvd.com/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/Keras/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/"/>
     
     
-      <category term="深度学习" scheme="https://www.zywvvd.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
-    
       <category term="故障排除" scheme="https://www.zywvvd.com/tags/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/"/>
+    
+      <category term="深度学习" scheme="https://www.zywvvd.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
       <category term="Keras" scheme="https://www.zywvvd.com/tags/Keras/"/>
     
@@ -1560,7 +1714,7 @@
     <summary type="html">
     
       &lt;blockquote&gt;
-&lt;p&gt;在神经网络模型推断过程中，报错&lt;code&gt;Internal: cuDNN launch failure : input shape ([1,3,2048,2048]) node bn_data/FusedBatchNorm&lt;/code&gt;，本文记录解决方案。&lt;/p&gt;
+&lt;p&gt;在神经网络模型推断过程中，报错&lt;code&gt;Internal: cuDNN launch failure : input shape ([1,3,2048,2048]) node bn_data/FusedBatchNorm &lt;/code&gt;，本文记录解决方案。&lt;/p&gt;
 &lt;/blockquote&gt;
     
     </summary>
@@ -1573,9 +1727,9 @@
       <category term="故障排除" scheme="https://www.zywvvd.com/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/Keras/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/"/>
     
     
-      <category term="深度学习" scheme="https://www.zywvvd.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
-    
       <category term="故障排除" scheme="https://www.zywvvd.com/tags/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/"/>
+    
+      <category term="深度学习" scheme="https://www.zywvvd.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
       <category term="Keras" scheme="https://www.zywvvd.com/tags/Keras/"/>
     
@@ -1697,16 +1851,16 @@
   </entry>
   
   <entry>
-    <title>Python - 使用logging模块管理日志文件</title>
-    <link href="https://www.zywvvd.com/2020/04/11/python/logging/python-logging/"/>
-    <id>https://www.zywvvd.com/2020/04/11/python/logging/python-logging/</id>
+    <title>Kite Python代码补全工具安装</title>
+    <link href="https://www.zywvvd.com/2020/04/11/python/kite_install/kite_install/"/>
+    <id>https://www.zywvvd.com/2020/04/11/python/kite_install/kite_install/</id>
     <published>2020-04-11T06:53:59.000Z</published>
-    <updated>2020-11-14T08:17:13.782Z</updated>
+    <updated>2020-11-14T08:17:13.781Z</updated>
     
     <summary type="html">
     
       &lt;blockquote&gt;
-&lt;p&gt;logging是很友好的python日志管理包，轻便好用，本文介绍logging使用方法。&lt;/p&gt;
+&lt;p&gt;Kite是一款将AI机器学习应用到代码补全的工具，本文介绍其在Windows与Linux系统的安装方法。&lt;/p&gt;
 &lt;/blockquote&gt;
     
     </summary>
@@ -1720,16 +1874,16 @@
   </entry>
   
   <entry>
-    <title>Kite Python代码补全工具安装</title>
-    <link href="https://www.zywvvd.com/2020/04/11/python/kite_install/kite_install/"/>
-    <id>https://www.zywvvd.com/2020/04/11/python/kite_install/kite_install/</id>
+    <title>Python - 使用logging模块管理日志文件</title>
+    <link href="https://www.zywvvd.com/2020/04/11/python/logging/python-logging/"/>
+    <id>https://www.zywvvd.com/2020/04/11/python/logging/python-logging/</id>
     <published>2020-04-11T06:53:59.000Z</published>
-    <updated>2020-11-14T08:17:13.781Z</updated>
+    <updated>2020-11-14T08:17:13.782Z</updated>
     
     <summary type="html">
     
       &lt;blockquote&gt;
-&lt;p&gt;Kite是一款将AI机器学习应用到代码补全的工具，本文介绍其在Windows与Linux系统的安装方法。&lt;/p&gt;
+&lt;p&gt;logging是很友好的python日志管理包，轻便好用，本文介绍logging使用方法。&lt;/p&gt;
 &lt;/blockquote&gt;
     
     </summary>

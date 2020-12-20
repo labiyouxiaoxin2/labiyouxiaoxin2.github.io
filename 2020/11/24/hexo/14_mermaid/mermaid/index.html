@@ -94,7 +94,7 @@
     <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
-    <div class="toggle" aria-label="Toggle navigation bar">
+    <div class="toggle" aria-label="Navigationsleiste an/ausschalten">
       <span class="toggle-line toggle-line-first"></span>
       <span class="toggle-line toggle-line-middle"></span>
       <span class="toggle-line toggle-line-last"></span>
@@ -174,7 +174,7 @@
   </span>
   <div class="search-input-container">
     <input autocomplete="off" autocorrect="off" autocapitalize="off"
-           placeholder="Searching..." spellcheck="false"
+           placeholder="Suche..." spellcheck="false"
            type="search" class="search-input">
   </div>
   <span class="popup-btn-close">
@@ -230,14 +230,14 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="Created: 2020-11-24 00:15:24" itemprop="dateCreated datePublished" datetime="2020-11-24T00:15:24+08:00">2020-11-24</time>
+              <time title="Erstellt: 2020-11-24 00:15:24" itemprop="dateCreated datePublished" datetime="2020-11-24T00:15:24+08:00">2020-11-24</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">编辑于</span>
-                <time title="Modified: 2020-12-12 11:19:39" itemprop="dateModified" datetime="2020-12-12T11:19:39+08:00">2020-12-12</time>
+                <time title="Geändert am: 2020-12-12 11:19:39" itemprop="dateModified" datetime="2020-12-12T11:19:39+08:00">2020-12-12</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -283,14 +283,14 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数: </span>
-              <span>3.1k</span>
+              <span>2.9k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>3 mins.</span>
+              <span>3 minuten.</span>
             </span>
 
         </div>
@@ -312,12 +312,21 @@
 <h4 id="主题配置"><a href="#主题配置" class="headerlink" title="主题配置"></a>主题配置</h4><ul>
 <li>在主题配置文件中找到<code>mermaid</code>选项，将<code>enable</code>设置为<code>true</code>。</li>
 </ul>
-<p><img src="https://photos.zywvvd.com/image_canglan/20201123235944.png" alt=""></p>
+<p><img src="https://photos.zywvvd.com/image_canglan/20201123235944.png"></p>
 <h3 id="加入mermaid代码块"><a href="#加入mermaid代码块" class="headerlink" title="加入mermaid代码块"></a>加入mermaid代码块</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">graph TD</span><br><span class="line">    B((开始)) --&gt;C&#123;判断&#125;</span><br><span class="line">    C --  a&#x3D;1 --&gt;D[执行语句1]</span><br><span class="line">    C --  a&#x3D;2  --&gt;E[执行语句2]</span><br><span class="line">    C --  a&#x3D;3 --&gt;F[执行语句3]</span><br><span class="line">    C -- a&#x3D;4  --&gt;G[执行语句4]</span><br><span class="line">    D--&gt; AA((结束))</span><br><span class="line">    E--&gt; AA</span><br><span class="line">    F--&gt; AA</span><br><span class="line">   G--&gt; AA</span><br></pre></td></tr></table></figure>
 
 
 
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">graph TD</span><br><span class="line">    B((开始)) --&gt;C&#123;判断&#125;</span><br><span class="line">    C --  a&#x3D;1 --&gt;D[执行语句1]</span><br><span class="line">    C --  a&#x3D;2  --&gt;E[执行语句2]</span><br><span class="line">    C --  a&#x3D;3 --&gt;F[执行语句3]</span><br><span class="line">    C -- a&#x3D;4  --&gt;G[执行语句4]</span><br><span class="line">    D--&gt; AA((结束))</span><br><span class="line">    E--&gt; AA</span><br><span class="line">    F--&gt; AA</span><br><span class="line">   G--&gt; AA</span><br></pre></td></tr></table></figure>
+<pre class="mermaid">graph TD
+    B((开始)) -->C{判断}
+    C --  a=1 -->D[执行语句1]
+    C --  a=2  -->E[执行语句2]
+    C --  a=3 -->F[执行语句3]
+    C -- a=4  -->G[执行语句4]
+    D--> AA((结束))
+    E--> AA
+    F--> AA
+   G--> AA</pre>
 
 <h3 id="流程图语法"><a href="#流程图语法" class="headerlink" title="流程图语法"></a>流程图语法</h3><h4 id="方向"><a href="#方向" class="headerlink" title="方向"></a>方向</h4><table>
 <thead>
@@ -347,7 +356,7 @@
 <td>与TB相同</td>
 </tr>
 </tbody></table>
-<h4 id="节点"><a href="#节点" class="headerlink" title="节点"></a>节点</h4><p>语法结构如下：<code>A[名称] --&gt; B(名称)</code><br>其中，A、B均代表形状名称，<code>--&gt;</code>表示箭头指向，形状样式用后面的括号来表示，括号里面的内容是形状中要显示的文本内容。其中有以下几种形状：</p>
+<h4 id="节点"><a href="#节点" class="headerlink" title="节点"></a>节点</h4><p>语法结构如下：<code>A[名称] --&gt; B(名称)</code><br>其中，A、B均代表形状名称，<code> --&gt;</code>表示箭头指向，形状样式用后面的括号来表示，括号里面的内容是形状中要显示的文本内容。其中有以下几种形状：</p>
 <table>
 <thead>
 <tr>
@@ -419,15 +428,35 @@
 
 
 
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">graph TB</span><br><span class="line">    c1--&gt;a2</span><br><span class="line">    subgraph one</span><br><span class="line">    a1--&gt;a2</span><br><span class="line">    end</span><br><span class="line">    subgraph two</span><br><span class="line">    b1--&gt;b2</span><br><span class="line">    end</span><br><span class="line">    subgraph three</span><br><span class="line">    c1--&gt;c2</span><br><span class="line">    end</span><br></pre></td></tr></table></figure>
+<pre class="mermaid">graph TB
+    c1-->a2
+    subgraph one
+    a1-->a2
+    end
+    subgraph two
+    b1-->b2
+    end
+    subgraph three
+    c1-->c2
+    end</pre>
 
 <h4 id="样式链接"><a href="#样式链接" class="headerlink" title="样式链接"></a>样式链接</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">graph LR</span><br><span class="line">    id1(Start)--&gt;id2(Stop)</span><br><span class="line">    style id1 fill:#f9f,stroke:#333,stroke-width:4px</span><br><span class="line">    style id2 fill:#ccf,stroke:#f66,stroke-width:2px,stroke-dasharray: 5, 5</span><br></pre></td></tr></table></figure>
 
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">graph LR</span><br><span class="line">    id1(Start)--&gt;id2(Stop)</span><br><span class="line">    style id1 fill:#f9f,stroke:#333,stroke-width:4px</span><br><span class="line">    style id2 fill:#ccf,stroke:#f66,stroke-width:2px,stroke-dasharray: 5, 5</span><br></pre></td></tr></table></figure>
+<pre class="mermaid">graph LR
+    id1(Start)-->id2(Stop)
+    style id1 fill:#f9f,stroke:#333,stroke-width:4px
+    style id2 fill:#ccf,stroke:#f66,stroke-width:2px,stroke-dasharray: 5, 5</pre>
 
 <h4 id="综合应用"><a href="#综合应用" class="headerlink" title="综合应用"></a>综合应用</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">graph TB</span><br><span class="line">    id1(圆角矩形)--普通线--&gt;id2[矩形]</span><br><span class="line">    subgraph 子图表</span><br><span class="line">        id2&#x3D;&#x3D;粗线&#x3D;&#x3D;&gt;id3&#123;菱形&#125;</span><br><span class="line">        id3-.虚线.-&gt;id4&gt;右向旗帜]</span><br><span class="line">        id3--无箭头---id5((圆形))</span><br><span class="line">    end</span><br><span class="line">    style id1 fill:#f9f,stroke:#333,stroke-width:4px</span><br></pre></td></tr></table></figure>
 
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">graph TB</span><br><span class="line">    id1(圆角矩形)--普通线--&gt;id2[矩形]</span><br><span class="line">    subgraph 子图表</span><br><span class="line">        id2&#x3D;&#x3D;粗线&#x3D;&#x3D;&gt;id3&#123;菱形&#125;</span><br><span class="line">        id3-.虚线.-&gt;id4&gt;右向旗帜]</span><br><span class="line">        id3--无箭头---id5((圆形))</span><br><span class="line">    end</span><br><span class="line">    style id1 fill:#f9f,stroke:#333,stroke-width:4px</span><br></pre></td></tr></table></figure>
+<pre class="mermaid">graph TB
+    id1(圆角矩形)--普通线-->id2[矩形]
+    subgraph 子图表
+        id2==粗线==>id3{菱形}
+        id3-.虚线.->id4>右向旗帜]
+        id3--无箭头---id5((圆形))
+    end
+    style id1 fill:#f9f,stroke:#333,stroke-width:4px</pre>
 
 <h3 id="序列图语法"><a href="#序列图语法" class="headerlink" title="序列图语法"></a>序列图语法</h3><p>使用以下语法开始序列图</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sequenceDiagram</span><br><span class="line">    [参与者1][消息线][参与者2]:消息体</span><br><span class="line">    ...</span><br></pre></td></tr></table></figure>
@@ -474,7 +503,23 @@
 
 <h4 id="综合应用-1"><a href="#综合应用-1" class="headerlink" title="综合应用"></a>综合应用</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">sequenceDiagram</span><br><span class="line">    participant z as 张三</span><br><span class="line">    participant l as 李四</span><br><span class="line">    loop 日复一日</span><br><span class="line">        z-&gt;&gt;l: 吃了吗您呐？</span><br><span class="line">        l--&gt;&gt;z: 吃了，您呢？</span><br><span class="line">        activate z</span><br><span class="line">        Note left of z: 想了一下</span><br><span class="line">        alt 还没吃</span><br><span class="line">            z-xl: 还没呢，正准备回去吃</span><br><span class="line">        else 已经吃了</span><br><span class="line">            z-xl: 我也吃过了，哈哈</span><br><span class="line">        end</span><br><span class="line">        opt 大过年的</span><br><span class="line">            l--&gt;z: 祝您新年好啊</span><br><span class="line">        end</span><br><span class="line">    end</span><br></pre></td></tr></table></figure>
 
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">sequenceDiagram</span><br><span class="line">    participant z as 张三</span><br><span class="line">    participant l as 李四</span><br><span class="line">    loop 日复一日</span><br><span class="line">        z-&gt;&gt;l: 吃了吗您呐？</span><br><span class="line">        l--&gt;&gt;z: 吃了，您呢？</span><br><span class="line">        activate z</span><br><span class="line">        Note left of z: 想了一下</span><br><span class="line">        alt 还没吃</span><br><span class="line">            z-xl: 还没呢，正准备回去吃</span><br><span class="line">        else 已经吃了</span><br><span class="line">            z-xl: 我也吃过了，哈哈</span><br><span class="line">        end</span><br><span class="line">        opt 大过年的</span><br><span class="line">            l--&gt;z: 祝您新年好啊</span><br><span class="line">        end</span><br><span class="line">    end</span><br></pre></td></tr></table></figure>
+<pre class="mermaid">sequenceDiagram
+    participant z as 张三
+    participant l as 李四
+    loop 日复一日
+        z->>l: 吃了吗您呐？
+        l-->>z: 吃了，您呢？
+        activate z
+        Note left of z: 想了一下
+        alt 还没吃
+            z-xl: 还没呢，正准备回去吃
+        else 已经吃了
+            z-xl: 我也吃过了，哈哈
+        end
+        opt 大过年的
+            l-->z: 祝您新年好啊
+        end
+    end</pre>
 
 
 
@@ -522,14 +567,14 @@
   <span><strong>原始链接&nbsp:&nbsp&nbsp</strong><a href="/2020/11/24/hexo/14_mermaid/mermaid/" title="Hexo -14- 利用 Markdown 语法画 mermaid 流程图">https://www.zywvvd.com/2020/11/24/hexo/14_mermaid/mermaid/</a><br></span>
   <span><strong>许可协议&nbsp:&nbsp&nbsp</strong><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者<br></span>  
 	
-   <!-- <strong>Post author:  </strong>Yiwei Zhang
+   <!-- <strong>Beitragsautor:  </strong>Yiwei Zhang
   </li>
   <li class="post-copyright-link">
-    <strong>Post link: </strong>
+    <strong>Beitragslink: </strong>
     <a href="https://www.zywvvd.com/2020/11/24/hexo/14_mermaid/mermaid/" title="Hexo -14- 利用 Markdown 语法画 mermaid 流程图">https://www.zywvvd.com/2020/11/24/hexo/14_mermaid/mermaid/</a>
   </li>
   <li class="post-copyright-license">
-    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
+    <strong>Urheberrechtshinweis:  </strong>Alle Artikel in diesem Blog sind unter <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> lizenziert, außer es wird anders angegeben.
   </li>-->
 </ul>
 </div>
@@ -641,20 +686,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">116</span>
+          <span class="site-state-item-count">122</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">56</span>
+        <span class="site-state-item-count">60</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">48</span>
+        <span class="site-state-item-count">52</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -701,13 +746,13 @@
       <i class="fa fa-area-chart"></i>
     </span>
       <span class="post-meta-item-text">站点总字数: </span>
-    <span title="站点总字数">221k</span>
+    <span title="站点总字数">261k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">3:21</span>
+    <span title="站点阅读时长">3:58</span>
 </div>
   <div class="powered-by">技术支持 v4.2.1
   </div>
@@ -839,9 +884,6 @@ NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
 </script>
 
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
-    onload="renderMathInElement(document.body);"></script>
+
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/z16.model.json"},"display":{"position":"right","width":220,"height":440},"mobile":{"show":false},"react":{"opacity":0.7}});</script></body>
 </html>
