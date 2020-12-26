@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.zywvvd.com/"/>
-  <updated>2020-12-20T12:41:22.600Z</updated>
+  <updated>2020-12-26T04:07:07.141Z</updated>
   <id>https://www.zywvvd.com/</id>
   
   <author>
@@ -15,6 +15,52 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo -15- 折叠博客内容</title>
+    <link href="https://www.zywvvd.com/2020/12/26/hexo/16_fold-content/fold-content/"/>
+    <id>https://www.zywvvd.com/2020/12/26/hexo/16_fold-content/fold-content/</id>
+    <published>2020-12-26T03:02:51.000Z</published>
+    <updated>2020-12-26T04:07:07.141Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;在写博客时，可能会遇到需要读者选读的内容，此时出现了折叠博客内容的需求。本文介绍在Hexo中自定义折叠部分内容的方法。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="Hexo" scheme="https://www.zywvvd.com/categories/Hexo/"/>
+    
+    
+      <category term="Hexo" scheme="https://www.zywvvd.com/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo -15- 解决 Hexo Mathjax 无法显示多行公式的问题</title>
+    <link href="https://www.zywvvd.com/2020/12/22/hexo/15_formula/formula-error/"/>
+    <id>https://www.zywvvd.com/2020/12/22/hexo/15_formula/formula-error/</id>
+    <published>2020-12-21T16:19:20.000Z</published>
+    <updated>2020-12-26T01:49:44.696Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;Hexo比较好用的公式插件是Mathjax，但由于swig的文件解析机制，使得多行公式无法在Hexo中正常显示，本文介绍该问题的解决方法。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="Hexo" scheme="https://www.zywvvd.com/categories/Hexo/"/>
+    
+    
+      <category term="Hexo" scheme="https://www.zywvvd.com/tags/Hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>geogebra 图形嵌入网页，Hexo文章</title>
@@ -1509,10 +1555,10 @@
   
   <entry>
     <title>算法学习笔记 —— 排序</title>
-    <link href="https://www.zywvvd.com/2020/05/21/algorithm/tree/about_tree/"/>
-    <id>https://www.zywvvd.com/2020/05/21/algorithm/tree/about_tree/</id>
+    <link href="https://www.zywvvd.com/2020/05/21/algorithm/sort/about_sort/"/>
+    <id>https://www.zywvvd.com/2020/05/21/algorithm/sort/about_sort/</id>
     <published>2020-05-21T05:15:39.000Z</published>
-    <updated>2020-11-14T08:17:13.510Z</updated>
+    <updated>2020-11-14T08:17:13.509Z</updated>
     
     <summary type="html">
     
@@ -1536,10 +1582,10 @@
   
   <entry>
     <title>算法学习笔记 —— 排序</title>
-    <link href="https://www.zywvvd.com/2020/05/21/algorithm/sort/about_sort/"/>
-    <id>https://www.zywvvd.com/2020/05/21/algorithm/sort/about_sort/</id>
+    <link href="https://www.zywvvd.com/2020/05/21/algorithm/tree/about_tree/"/>
+    <id>https://www.zywvvd.com/2020/05/21/algorithm/tree/about_tree/</id>
     <published>2020-05-21T05:15:39.000Z</published>
-    <updated>2020-11-14T08:17:13.509Z</updated>
+    <updated>2020-11-14T08:17:13.510Z</updated>
     
     <summary type="html">
     
