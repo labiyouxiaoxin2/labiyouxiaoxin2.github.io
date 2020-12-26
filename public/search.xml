@@ -76,7 +76,8 @@
 <p>可以自定义修改默认的 <code>show hide</code> 关键字</p>
 </blockquote>
 <ul>
-<li>打开文件 <code>hexo\node_modules\hexo-sliding-spoiler\assetsspoiler.css</code>，找到25-31行，修改其中的 <code>content</code>。</li>
+<li>打开文件 <code>hexo\node_modules\hexo-sliding-spoiler\assets\spoiler.css</code>，找到25-31行，修改其中的 <code>content</code>。</li>
+<li>例如： 将<code>Show</code> 改为 <code>▶</code> ，<code>Hide</code>改为<code>▼</code></li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.spoiler.collapsed .spoiler-title:before &#123;</span><br><span class="line">    content: &quot;Show: &quot;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.spoiler.expanded .spoiler-title:before &#123;</span><br><span class="line">    content: &quot;Hide: &quot;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -166,6 +167,11 @@
 <td>外观</td>
 <td>简洁清爽，保留原始格式</td>
 <td>灰色底边，内容带框</td>
+</tr>
+<tr>
+<td>动画</td>
+<td>无</td>
+<td>有过渡动画</td>
 </tr>
 <tr>
 <td>配置</td>
