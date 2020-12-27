@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.zywvvd.com/"/>
-  <updated>2020-12-26T05:57:02.920Z</updated>
+  <updated>2020-12-27T02:26:01.598Z</updated>
   <id>https://www.zywvvd.com/</id>
   
   <author>
@@ -17,21 +17,29 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>conjugate-alg</title>
+    <title>二次型优化问题 - 6 - 共轭梯度法</title>
     <link href="https://www.zywvvd.com/2020/12/26/machine_learning/conjugate-gradient-algorithm/conjugate-alg/conjugate-alg/"/>
     <id>https://www.zywvvd.com/2020/12/26/machine_learning/conjugate-gradient-algorithm/conjugate-alg/conjugate-alg/</id>
     <published>2020-12-26T05:57:02.000Z</published>
-    <updated>2020-12-26T05:57:02.920Z</updated>
+    <updated>2020-12-27T02:26:01.598Z</updated>
     
     <summary type="html">
     
       &lt;blockquote&gt;
-&lt;p&gt;本文。&lt;/p&gt;
+&lt;p&gt;本文介绍二次型优化方法中比较优秀的迭代方法——共轭梯度法。&lt;/p&gt;
 &lt;/blockquote&gt;
     
     </summary>
     
     
+      <category term="机器学习" scheme="https://www.zywvvd.com/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="优化方法" scheme="https://www.zywvvd.com/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E4%BC%98%E5%8C%96%E6%96%B9%E6%B3%95/"/>
+    
+    
+      <category term="机器学习" scheme="https://www.zywvvd.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="优化方法" scheme="https://www.zywvvd.com/tags/%E4%BC%98%E5%8C%96%E6%96%B9%E6%B3%95/"/>
     
   </entry>
   
@@ -159,7 +167,7 @@
     <link href="https://www.zywvvd.com/2020/12/16/machine_learning/conjugate-gradient-algorithm/steepest-descent-method/steepest-descent-method/"/>
     <id>https://www.zywvvd.com/2020/12/16/machine_learning/conjugate-gradient-algorithm/steepest-descent-method/steepest-descent-method/</id>
     <published>2020-12-16T08:47:46.000Z</published>
-    <updated>2020-12-20T16:23:34.522Z</updated>
+    <updated>2020-12-26T08:37:08.697Z</updated>
     
     <summary type="html">
     
@@ -495,7 +503,7 @@
     <link href="https://www.zywvvd.com/2020/11/24/hexo/14_mermaid/mermaid/"/>
     <id>https://www.zywvvd.com/2020/11/24/hexo/14_mermaid/mermaid/</id>
     <published>2020-11-23T16:15:24.000Z</published>
-    <updated>2020-12-12T03:19:39.085Z</updated>
+    <updated>2020-12-26T08:47:37.343Z</updated>
     
     <summary type="html">
     
@@ -1546,16 +1554,16 @@
   </entry>
   
   <entry>
-    <title>算法学习笔记 —— XX</title>
-    <link href="https://www.zywvvd.com/2020/05/21/algorithm/example/about_exam/"/>
-    <id>https://www.zywvvd.com/2020/05/21/algorithm/example/about_exam/</id>
+    <title>算法学习笔记 —— 排序</title>
+    <link href="https://www.zywvvd.com/2020/05/21/algorithm/sort/about_sort/"/>
+    <id>https://www.zywvvd.com/2020/05/21/algorithm/sort/about_sort/</id>
     <published>2020-05-21T05:15:39.000Z</published>
-    <updated>2020-11-14T08:17:13.507Z</updated>
+    <updated>2020-11-14T08:17:13.509Z</updated>
     
     <summary type="html">
     
       &lt;blockquote&gt;
-&lt;p&gt;学而时习，本文记录XX操作相关算法练习笔记。&lt;/p&gt;
+&lt;p&gt;学而时习，本文记录排序操作相关算法练习笔记。&lt;/p&gt;
 &lt;/blockquote&gt;
     
     </summary>
@@ -1563,12 +1571,12 @@
     
       <category term="算法" scheme="https://www.zywvvd.com/categories/%E7%AE%97%E6%B3%95/"/>
     
-      <category term="XX" scheme="https://www.zywvvd.com/categories/%E7%AE%97%E6%B3%95/XX/"/>
+      <category term="排序" scheme="https://www.zywvvd.com/categories/%E7%AE%97%E6%B3%95/%E6%8E%92%E5%BA%8F/"/>
     
     
       <category term="算法" scheme="https://www.zywvvd.com/tags/%E7%AE%97%E6%B3%95/"/>
     
-      <category term="XX" scheme="https://www.zywvvd.com/tags/XX/"/>
+      <category term="排序" scheme="https://www.zywvvd.com/tags/%E6%8E%92%E5%BA%8F/"/>
     
   </entry>
   
@@ -1600,16 +1608,16 @@
   </entry>
   
   <entry>
-    <title>算法学习笔记 —— 排序</title>
-    <link href="https://www.zywvvd.com/2020/05/21/algorithm/sort/about_sort/"/>
-    <id>https://www.zywvvd.com/2020/05/21/algorithm/sort/about_sort/</id>
+    <title>算法学习笔记 —— XX</title>
+    <link href="https://www.zywvvd.com/2020/05/21/algorithm/example/about_exam/"/>
+    <id>https://www.zywvvd.com/2020/05/21/algorithm/example/about_exam/</id>
     <published>2020-05-21T05:15:39.000Z</published>
-    <updated>2020-11-14T08:17:13.509Z</updated>
+    <updated>2020-11-14T08:17:13.507Z</updated>
     
     <summary type="html">
     
       &lt;blockquote&gt;
-&lt;p&gt;学而时习，本文记录排序操作相关算法练习笔记。&lt;/p&gt;
+&lt;p&gt;学而时习，本文记录XX操作相关算法练习笔记。&lt;/p&gt;
 &lt;/blockquote&gt;
     
     </summary>
@@ -1617,12 +1625,12 @@
     
       <category term="算法" scheme="https://www.zywvvd.com/categories/%E7%AE%97%E6%B3%95/"/>
     
-      <category term="排序" scheme="https://www.zywvvd.com/categories/%E7%AE%97%E6%B3%95/%E6%8E%92%E5%BA%8F/"/>
+      <category term="XX" scheme="https://www.zywvvd.com/categories/%E7%AE%97%E6%B3%95/XX/"/>
     
     
       <category term="算法" scheme="https://www.zywvvd.com/tags/%E7%AE%97%E6%B3%95/"/>
     
-      <category term="排序" scheme="https://www.zywvvd.com/tags/%E6%8E%92%E5%BA%8F/"/>
+      <category term="XX" scheme="https://www.zywvvd.com/tags/XX/"/>
     
   </entry>
   
@@ -1916,16 +1924,16 @@
   </entry>
   
   <entry>
-    <title>Python - 使用logging模块管理日志文件</title>
-    <link href="https://www.zywvvd.com/2020/04/11/python/logging/python-logging/"/>
-    <id>https://www.zywvvd.com/2020/04/11/python/logging/python-logging/</id>
+    <title>Kite Python代码补全工具安装</title>
+    <link href="https://www.zywvvd.com/2020/04/11/python/kite_install/kite_install/"/>
+    <id>https://www.zywvvd.com/2020/04/11/python/kite_install/kite_install/</id>
     <published>2020-04-11T06:53:59.000Z</published>
-    <updated>2020-11-14T08:17:13.782Z</updated>
+    <updated>2020-11-14T08:17:13.781Z</updated>
     
     <summary type="html">
     
       &lt;blockquote&gt;
-&lt;p&gt;logging是很友好的python日志管理包，轻便好用，本文介绍logging使用方法。&lt;/p&gt;
+&lt;p&gt;Kite是一款将AI机器学习应用到代码补全的工具，本文介绍其在Windows与Linux系统的安装方法。&lt;/p&gt;
 &lt;/blockquote&gt;
     
     </summary>
@@ -1939,16 +1947,16 @@
   </entry>
   
   <entry>
-    <title>Kite Python代码补全工具安装</title>
-    <link href="https://www.zywvvd.com/2020/04/11/python/kite_install/kite_install/"/>
-    <id>https://www.zywvvd.com/2020/04/11/python/kite_install/kite_install/</id>
+    <title>Python - 使用logging模块管理日志文件</title>
+    <link href="https://www.zywvvd.com/2020/04/11/python/logging/python-logging/"/>
+    <id>https://www.zywvvd.com/2020/04/11/python/logging/python-logging/</id>
     <published>2020-04-11T06:53:59.000Z</published>
-    <updated>2020-11-14T08:17:13.781Z</updated>
+    <updated>2020-11-14T08:17:13.782Z</updated>
     
     <summary type="html">
     
       &lt;blockquote&gt;
-&lt;p&gt;Kite是一款将AI机器学习应用到代码补全的工具，本文介绍其在Windows与Linux系统的安装方法。&lt;/p&gt;
+&lt;p&gt;logging是很友好的python日志管理包，轻便好用，本文介绍logging使用方法。&lt;/p&gt;
 &lt;/blockquote&gt;
     
     </summary>

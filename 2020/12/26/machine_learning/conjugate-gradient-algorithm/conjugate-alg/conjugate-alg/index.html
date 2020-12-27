@@ -21,20 +21,20 @@
     var CONFIG = {"hostname":"www.zywvvd.com","root":"/","scheme":"Gemini","version":"7.7.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":"default","style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"./public/search.xml"};
   </script>
 
-  <meta name="description" content="本文。">
+  <meta name="description" content="本文介绍二次型优化方法中比较优秀的迭代方法——共轭梯度法。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="conjugate-alg">
+<meta property="og:title" content="二次型优化问题 - 6 - 共轭梯度法">
 <meta property="og:url" content="https://www.zywvvd.com/2020/12/26/machine_learning/conjugate-gradient-algorithm/conjugate-alg/conjugate-alg/index.html">
 <meta property="og:site_name" content="又见苍岚">
-<meta property="og:description" content="本文。">
+<meta property="og:description" content="本文介绍二次型优化方法中比较优秀的迭代方法——共轭梯度法。">
+<meta property="og:image" content="https://photos.zywvvd.com/icey-mate-book/20201226144811.jpg">
 <meta property="article:published_time" content="2020-12-26T05:57:02.000Z">
-<meta property="article:modified_time" content="2020-12-26T05:57:02.920Z">
+<meta property="article:modified_time" content="2020-12-27T02:26:01.598Z">
 <meta property="article:author" content="Yiwei Zhang">
-<meta property="article:tag" content="人工智能">
-<meta property="article:tag" content=" 深度学习">
-<meta property="article:tag" content=" 个人博客">
-<meta property="article:tag" content=" 机器学习">
+<meta property="article:tag" content="机器学习">
+<meta property="article:tag" content="优化方法">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://photos.zywvvd.com/icey-mate-book/20201226144811.jpg">
 
 <link rel="canonical" href="https://www.zywvvd.com/2020/12/26/machine_learning/conjugate-gradient-algorithm/conjugate-alg/conjugate-alg/">
 
@@ -48,7 +48,7 @@
   };
 </script>
 
-  <title>conjugate-alg | 又见苍岚</title>
+  <title>二次型优化问题 - 6 - 共轭梯度法 | 又见苍岚</title>
   
 
 
@@ -221,7 +221,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          conjugate-alg
+          二次型优化问题 - 6 - 共轭梯度法
         </h1>
 
         <div class="post-meta">
@@ -233,9 +233,29 @@
 
               <time title="Erstellt: 2020-12-26 13:57:02" itemprop="dateCreated datePublished" datetime="2020-12-26T13:57:02+08:00">2020-12-26</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">编辑于</span>
+                <time title="Geändert am: 2020-12-27 10:26:01" itemprop="dateModified" datetime="2020-12-27T10:26:01+08:00">2020-12-27</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">类别</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">机器学习</span></a>
+                </span>
+                  . 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E4%BC%98%E5%8C%96%E6%96%B9%E6%B3%95/" itemprop="url" rel="index"><span itemprop="name">优化方法</span></a>
+                </span>
+            </span>
 
           
-            <span id="/2020/12/26/machine_learning/conjugate-gradient-algorithm/conjugate-alg/conjugate-alg/" class="post-meta-item leancloud_visitors" data-flag-title="conjugate-alg" title="阅读次数">
+            <span id="/2020/12/26/machine_learning/conjugate-gradient-algorithm/conjugate-alg/conjugate-alg/" class="post-meta-item leancloud_visitors" data-flag-title="二次型优化问题 - 6 - 共轭梯度法" title="阅读次数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -268,14 +288,14 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数: </span>
-              <span>5</span>
+              <span>2.8k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 minuten.</span>
+              <span>3 minuten.</span>
             </span>
 
         </div>
@@ -288,12 +308,147 @@
 
       
         <blockquote>
-<p>本文。</p>
+<p>本文介绍二次型优化方法中比较优秀的迭代方法——共轭梯度法。</p>
 </blockquote>
 <a id="more"></a>
 
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><blockquote>
+<h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><blockquote>
+<p>重述我们需要优化的问题：</p>
 </blockquote>
+<p>$$<br>f({\bf{x} }) = \frac{1}{2}{\bf{x^TAx} } - { {\bf{b} }^{\bf{T} } }{\bf{x} } + {\bf{c} } \tag{1} \label{1}<br>$$</p>
+<ul>
+<li>矩阵$\bf{A}$正定对称</li>
+<li>目标为优化$\bf{x}$，使得$f(\bf{x})$取得最小值</li>
+</ul>
+<h3 id="最速下降法的问题"><a href="#最速下降法的问题" class="headerlink" title="最速下降法的问题"></a>最速下降法的问题</h3><ul>
+<li>贪心计算局部最小值</li>
+<li>没有全局视野，没有使用真正的模型建模</li>
+<li>导致优化过程需要反复迭代才能逐步逼近最优值</li>
+</ul>
+<h3 id="轭"><a href="#轭" class="headerlink" title="轭"></a>轭</h3><blockquote>
+<p>轭是一个汉字，读作è，本意是指驾车时套在牲口脖子上的曲木，引申义是束缚，控制。该文字在《仪礼·既夕礼》和《荀子·正论》等文献均有记载。        ——百度百科</p>
+</blockquote>
+<p><img src="https://photos.zywvvd.com/icey-mate-book/20201226144811.jpg"></p>
+<ul>
+<li>数学中很多轭相关的内容，此处的共轭表示相互约束，在某个条件下可以相互作用的意思。</li>
+</ul>
+<h3 id="共轭梯度法思想来源"><a href="#共轭梯度法思想来源" class="headerlink" title="共轭梯度法思想来源"></a>共轭梯度法思想来源</h3><ul>
+<li>为解决最速下降法来回往复的问题，人们开始思考是否有可以直接在需要优化的二次函数定义下直接对其进行优化，是否可以通过有限步计算得到真正的最优解</li>
+<li>那么假设我们使用关于该问题精确的模型而不是近似的局部最优模型，我们如果可以在某个N维空间中，分别计算出最优解的各个维度的坐标，就可以达到上述目的</li>
+<li>那么如何设计这个空间，如何可以分步计算并且可以整合成真正的结果，是共轭梯度法来解决的问题</li>
+<li>该方法的核心思想是建立一组N维空间线性无关的一组基，理论上这组基的线性组合可以表示空间中任意一点，共轭梯度法通过多次计算，精确求解目标在空间中位置在这组基空间中的各个系数分量，达到求解最优值的目的</li>
+<li>该方法和最速下降法却别在精确建模，有了上帝视角，每次迭代计算将该方向需要调整的分量值调整到极致，也就是说之后的计算再也不用考虑该方向上的运动分量了，这是一个精确求解问题的过程，不是逐步简单建模向最优值挪动的逼近过程</li>
+</ul>
+<h3 id="共轭基的定义"><a href="#共轭基的定义" class="headerlink" title="共轭基的定义"></a>共轭基的定义</h3><p>设$\bf{A}$为$n$阶实对称正定矩阵，如果有两个$n$维列<a href="https://baike.baidu.com/item/%E5%90%91%E9%87%8F" target="_blank" rel="noopener">向量</a>$\bf{s}_1$和$\bf{s}_2$满足</p>
+
+$$
+{\bf{s}}_1^T{\bf{A}}{{\bf{s}}_2} = 0 \tag{2} \label{2}
+$$
+
+
+<p>则称向量$\bf{s}_1$和$\bf{s}_2$对于矩阵$\bf{A}$共轭。如果$\bf{A}$为单位矩阵，则式$\eqref{2}$即成为$\bf{s}_1$$\bf{s}_2$，这样两个向量的点积为零，此二向量在几何上是正交的，它是共轭的一种特例。</p>
+<p>设A为对称正定矩阵，若一组非零向量$\bf{s}_1$,$\bf{s}_2$,…,$\bf{s}_n$满足</p>
+
+$$
+{\bf{s}}_i^T{\bf{A}}{{\bf{s}}_j} = 0   (i≠j) \tag{3}
+$$
+
+则称向量系${{\bf{s}}_i}(1 \le i \le n)$为关于矩阵$\bf{A}$共轭。
+
+若${{\bf{s}}_i}(1 \le i \le n)$之间线性无关，那么我们称该向量集合为$n$维空间中关于矩阵$\bf{A}$的一组共轭基。
+
+
+<h3 id="共轭基的作用"><a href="#共轭基的作用" class="headerlink" title="共轭基的作用"></a>共轭基的作用</h3><ul>
+<li>假设有一组关于矩阵$\bf{A}$的共轭基$\bf{D}$：</li>
+</ul>
+<p>$$<br>\bf{D}={ {\bf{d}_1},{\bf{d}_2},…,{\bf{d}_n}}  \tag{4}<br>$$</p>
+<ul>
+<li>设二次型函数$\eqref{1}$的极值为$\bf{x}^*$，用$\bf{D}$表似为：</li>
+</ul>
+
+$$
+{ {\bf{x} }^*} = {\lambda _1}{ {\bf{d} }_1} + {\lambda _2}{ {\bf{d} }_2} +  \cdots  + {\lambda _n}{ {\bf{d} }_n} \tag{5}
+$$
+
+
+
+<ul>
+<li>因为函数极值处在各个方向的导数为0有：</li>
+</ul>
+
+$$
+\begin{array}{l}
+f'({{\bf{x}}^*}) = {\bf{A}}{{\bf{x}}^*} - {\bf{b}} = 0\\
+ \Rightarrow {\bf{A}}{{\bf{x}}^*} = {\bf{b}}
+\end{array} \tag{6}
+$$
+
+
+
+<ul>
+<li>我们计算${\bf{d}}_i^T{\bf{A}}{{\bf{x}}^*}$，根据不同共轭基之间相互共轭：
+
+</li>
+</ul>
+
+$$
+\begin{array}{l}
+{\bf{d}}_i^T{\bf{A}}{{\bf{x}}^*} &= {\bf{d}}_i^T{\bf{A}}\left( {{\lambda _0}{{\bf{d}}_0} +  \ldots  + {\lambda _{n - 1}}{{\bf{d}}_{n - 1}}} \right)\\
+ &= {\lambda _i}{\bf{d}}_i^T{\bf{A}}{{\bf{d}}_i} + 0\\ \tag{7}
+\end{array} 
+$$
+
+
+
+<ul>
+<li>得到：</li>
+</ul>
+
+$$
+{\lambda _i} = \frac{{{\bf{d}}_i^T{\bf{A}}{{\bf{x}}^*}}}{{{\bf{d}}_i^T{\bf{A}}{{\bf{d}}_i}}} = \frac{{{\bf{d}}_i^T{\bf{b}}}}{{{\bf{d}}_i^T{\bf{A}}{{\bf{d}}_i}}} \tag{8} \label{8}
+$$
+
+
+
+<ul>
+<li>对于${\lambda _i}$的求解，我们已知的变量为$\bf{b}$和$\bf{A}$，如果我们已经得到了空间中关于$\bf{A}$的共轭基（任意一组），我们都可以直接解得${\lambda _i}$</li>
+<li>这是一个令人振奋的结论，所以我们当前的工作重点转为了如何快速地求得一组关于$\bf{A}$的共轭基</li>
+</ul>
+<h3 id="根据定义获取共轭基"><a href="#根据定义获取共轭基" class="headerlink" title="根据定义获取共轭基"></a>根据定义获取共轭基</h3><ul>
+<li>有了定义，我们不难想到暴力获取共轭基的方法：</li>
+</ul>
+<pre class="mermaid">    graph TB
+        A(随机生成n个n维向量)
+        B{i=1-n循环}
+        C[剔除向量j=1-i的分量]
+        E[收集向量1-n]
+        D[得到向量i]
+
+        A-->B
+        C --> D
+        D --> B
+        B-- 循环结束 --> E --> F(输出共轭基)
+        B-- 循环未结束 -->C</pre>
+
+<ul>
+<li>这套方法下来，我们就可以得到根据定义计算出来的共轭基，带入$\eqref{8}$计算得到极值，没有任何问题</li>
+<li>但事实上这个运算量与代数法解${\bf{A}}{{\bf{x}}} = {\bf{b}}$的过程具有相当的运算复杂度，没有给该优化问题带来性能收益</li>
+</ul>
+<h3 id="共轭梯度法"><a href="#共轭梯度法" class="headerlink" title="共轭梯度法"></a>共轭梯度法</h3><blockquote>
+<p>此算法核心步骤与最速下降法相同，分别为寻找共轭方向与计算运动步长。</p>
+</blockquote>
+<h4 id="寻找共轭方向"><a href="#寻找共轭方向" class="headerlink" title="寻找共轭方向"></a>寻找共轭方向</h4><blockquote>
+<p>由于计算梯度简单，寻找共轭梯度的过程依附于梯度方向的计算。</p>
+</blockquote>
+<ul>
+<li>优化目标为$\bf{x}^*$，初始位置为$\bf{x}_1$，需要求得的共轭基为 $\bf{D}={ {\bf{d}_1},{\bf{d}_2},…,{\bf{d}_n}}$</li>
+<li>计算初始$\bf{x}_1$位置的梯度，第一个共轭基为梯度的反方向：</li>
+</ul>
+
+$$
+{{\bf{d}}_1} =  - {{\bf{g}}_1} =  - ({\bf{A}}{{\bf{x}}_1} - {\bf{b}}) = {\bf{b}} - {\bf{A}}{{\bf{x}}_1} \tag{9}
+$$
+
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
     </div>
 
@@ -325,18 +480,18 @@
 <div>
 <ul class="post-copyright">
   <li class="post-copyright-author">
-  <span><strong>本文标题&nbsp:&nbsp&nbsp</strong>conjugate-alg<br></span>
+  <span><strong>本文标题&nbsp:&nbsp&nbsp</strong>二次型优化问题 - 6 - 共轭梯度法<br></span>
   <span><strong>文章作者&nbsp:&nbsp&nbsp</strong>Yiwei Zhang<br></span>
   <span><strong>发布时间&nbsp:&nbsp&nbsp</strong>2020年12月26日 - 13:57:02<br></span>
-  <span><strong>最后更新&nbsp:&nbsp&nbsp</strong>2020年12月26日 - 13:57:02<br></span>
-  <span><strong>原始链接&nbsp:&nbsp&nbsp</strong><a href="/2020/12/26/machine_learning/conjugate-gradient-algorithm/conjugate-alg/conjugate-alg/" title="conjugate-alg">https://www.zywvvd.com/2020/12/26/machine_learning/conjugate-gradient-algorithm/conjugate-alg/conjugate-alg/</a><br></span>
+  <span><strong>最后更新&nbsp:&nbsp&nbsp</strong>2020年12月27日 - 10:26:01<br></span>
+  <span><strong>原始链接&nbsp:&nbsp&nbsp</strong><a href="/2020/12/26/machine_learning/conjugate-gradient-algorithm/conjugate-alg/conjugate-alg/" title="二次型优化问题 - 6 - 共轭梯度法">https://www.zywvvd.com/2020/12/26/machine_learning/conjugate-gradient-algorithm/conjugate-alg/conjugate-alg/</a><br></span>
   <span><strong>许可协议&nbsp:&nbsp&nbsp</strong><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者<br></span>  
 	
    <!-- <strong>Beitragsautor:  </strong>Yiwei Zhang
   </li>
   <li class="post-copyright-link">
     <strong>Beitragslink: </strong>
-    <a href="https://www.zywvvd.com/2020/12/26/machine_learning/conjugate-gradient-algorithm/conjugate-alg/conjugate-alg/" title="conjugate-alg">https://www.zywvvd.com/2020/12/26/machine_learning/conjugate-gradient-algorithm/conjugate-alg/conjugate-alg/</a>
+    <a href="https://www.zywvvd.com/2020/12/26/machine_learning/conjugate-gradient-algorithm/conjugate-alg/conjugate-alg/" title="二次型优化问题 - 6 - 共轭梯度法">https://www.zywvvd.com/2020/12/26/machine_learning/conjugate-gradient-algorithm/conjugate-alg/conjugate-alg/</a>
   </li>
   <li class="post-copyright-license">
     <strong>Urheberrechtshinweis:  </strong>Alle Artikel in diesem Blog sind unter <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> lizenziert, außer es wird anders angegeben.
@@ -346,6 +501,10 @@
 
 
       <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" rel="tag"># 机器学习</a>
+              <a href="/tags/%E4%BC%98%E5%8C%96%E6%96%B9%E6%B3%95/" rel="tag"># 优化方法</a>
+          </div>
 
         
 
@@ -417,7 +576,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#正文"><span class="nav-number">1.</span> <span class="nav-text">正文</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#问题描述"><span class="nav-number">1.</span> <span class="nav-text">问题描述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#最速下降法的问题"><span class="nav-number">2.</span> <span class="nav-text">最速下降法的问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#轭"><span class="nav-number">3.</span> <span class="nav-text">轭</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#共轭梯度法思想来源"><span class="nav-number">4.</span> <span class="nav-text">共轭梯度法思想来源</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#共轭基的定义"><span class="nav-number">5.</span> <span class="nav-text">共轭基的定义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#共轭基的作用"><span class="nav-number">6.</span> <span class="nav-text">共轭基的作用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#根据定义获取共轭基"><span class="nav-number">7.</span> <span class="nav-text">根据定义获取共轭基</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#共轭梯度法"><span class="nav-number">8.</span> <span class="nav-text">共轭梯度法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#寻找共轭方向"><span class="nav-number">8.1.</span> <span class="nav-text">寻找共轭方向</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -505,13 +664,13 @@
       <i class="fa fa-area-chart"></i>
     </span>
       <span class="post-meta-item-text">站点总字数: </span>
-    <span title="站点总字数">269k</span>
+    <span title="站点总字数">272k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">4:05</span>
+    <span title="站点阅读时长">4:07</span>
 </div>
   <div class="powered-by">技术支持 v4.2.1
   </div>
@@ -610,6 +769,53 @@ if (document.querySelectorAll('pre.mermaid').length) {
   
 
   
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
 
   
 
