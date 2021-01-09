@@ -17,7 +17,7 @@
 <li>盗了<a href="https://pypi.org/project/tqdm/" target="_blank" rel="noopener">官网</a>的图直观展示一下效果</li>
 </ul>
 <p><img src="https://photos.zywvvd.com/icey-mate-book/20210109164234.gif"></p>
-<h3 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h3><h4 id="引入包"><a href="#引入包" class="headerlink" title="引入包"></a>引入包</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> tqdm <span class="keyword">import</span> tqdm</span><br></pre></td></tr></table></figure>
+<h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><h4 id="引入包"><a href="#引入包" class="headerlink" title="引入包"></a>引入包</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> tqdm <span class="keyword">import</span> tqdm</span><br></pre></td></tr></table></figure>
 
 <h4 id="生成tqdm对象"><a href="#生成tqdm对象" class="headerlink" title="生成tqdm对象"></a>生成tqdm对象</h4><blockquote>
 <p>tqdm类的构造函数：</p>
@@ -25,7 +25,7 @@
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">__init__(iterable=<span class="literal">None</span>, desc=<span class="literal">None</span>, total=<span class="literal">None</span>, leave=<span class="literal">True</span>, file=<span class="literal">None</span>, ncols=<span class="literal">None</span>, mininterval=<span class="number">0.1</span>, maxinterval=<span class="number">10.0</span>, miniters=<span class="literal">None</span>, ascii=<span class="literal">None</span>, disable=<span class="literal">False</span>, unit=<span class="string">'it'</span>, unit_scale=<span class="literal">False</span>, dynamic_ncols=<span class="literal">False</span>, smoothing=<span class="number">0.3</span>, bar_format=<span class="literal">None</span>, initial=<span class="number">0</span>, position=<span class="literal">None</span>, postfix=<span class="literal">None</span>, unit_divisor=<span class="number">1000</span>, write_bytes=<span class="literal">None</span>, lock_args=<span class="literal">None</span>, nrows=<span class="literal">None</span>, colour=<span class="literal">None</span>, gui=<span class="literal">False</span>, **kwargs)</span><br></pre></td></tr></table></figure>
 
 <blockquote>
-<p>参数很复杂，这里介绍几个常用参数和方法，详细情况参考官网文档：<a href="https://tqdm.github.io/docs/tqdm/#__init" target="_blank" rel="noopener">https://tqdm.github.io/docs/tqdm/#__init</a>__</p>
+<p>参数很复杂，这里介绍几个常用参数和方法，详细情况参考<a href="https://tqdm.github.io/docs/tqdm/#__init__" target="_blank" rel="noopener">官网文档</a></p>
 </blockquote>
 <ul>
 <li>iterable: 最常用的参数，表示使用这个迭代对象来初始化<code>tqdm</code>对象，如果手动更新进度条的话该参数可以为<code>None</code></li>
@@ -35,8 +35,52 @@
 <li>unit : str, optional。定义每个迭代的单元。默认为<code>&quot;it&quot;</code>，即每个迭代，在下载或解压时，设为<code>&quot;B&quot;</code>，代表每个“字节”。</li>
 <li>unit_scale: bool or int or float, optional。默认为<code>False</code>，如果设置为<code>1</code>或者<code>True</code>，会自动根据国际单位制进行转换 (kilo, mega, etc.) 。比如，在下载进度条的例子中，如果为<code>False</code>，数据大小是按照字节显示，设为<code>True</code>之后转换为Kb、Mb。</li>
 </ul>
+<h3 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h3><h4 id="自动控制进度"><a href="#自动控制进度" class="headerlink" title="自动控制进度"></a>自动控制进度</h4><ul>
+<li>将<code>tqdm()</code> 直接包装在任意迭代器上：</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> tqdm <span class="keyword">import</span> tqdm</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> tqdm(range(<span class="number">10000</span>)):</span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line">&gt;&gt; <span class="number">100</span>%|██████████████████| <span class="number">10000</span>/<span class="number">10000</span> [<span class="number">00</span>:<span class="number">00</span>&lt;<span class="number">00</span>:<span class="number">00</span>, <span class="number">1248304.76</span>it/s]</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>加入描述：</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> tqdm <span class="keyword">import</span> tqdm</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> tqdm(range(<span class="number">10000</span>), desc=<span class="string">'test str:'</span>):</span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line">&gt;&gt; test str:: <span class="number">100</span>%|█████████████████| <span class="number">10000</span>/<span class="number">10000</span> [<span class="number">00</span>:<span class="number">00</span>&lt;<span class="number">00</span>:<span class="number">00</span>, <span class="number">1666257.75</span>it/s]</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>trange(i)</code> 是对<code>tqdm(range(i))</code> 特殊优化过的实例：</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> tqdm <span class="keyword">import</span> trange</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> trange(<span class="number">10000</span>):</span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line">&gt;&gt; <span class="number">100</span>%|██████████████████| <span class="number">10000</span>/<span class="number">10000</span> [<span class="number">00</span>:<span class="number">00</span>&lt;<span class="number">00</span>:<span class="number">00</span>, <span class="number">1191844.79</span>it/s]</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>如果要精细控制<code>tqdm</code>对象，需要提前生成对象，并在循环中加以控制：</li>
+</ul>
+<blockquote>
+<p>使用外部对象可以直接建立对象，此时在循环之外需要关闭该对象：</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> tqdm <span class="keyword">import</span> tqdm</span><br><span class="line">pbar = tqdm(range(<span class="number">10000</span>))</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> pbar:</span><br><span class="line">    pbar.set_description(str(i))</span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line">pbar.close()</span><br><span class="line"></span><br><span class="line">&gt;&gt; <span class="number">9999</span>: <span class="number">100</span>%|█████████████████████████| <span class="number">10000</span>/<span class="number">10000</span> [<span class="number">00</span>:<span class="number">02</span>&lt;<span class="number">00</span>:<span class="number">00</span>, <span class="number">4677.99</span>it/s]</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>也可以使用<code>with</code>功能，在循环体之外由编译器自动结束其生命周期：</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> tqdm <span class="keyword">import</span> tqdm</span><br><span class="line"><span class="keyword">with</span> tqdm(range(<span class="number">10000</span>)) <span class="keyword">as</span> pbar:</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> pbar:</span><br><span class="line">        pbar.set_description(str(i))</span><br><span class="line">        <span class="keyword">pass</span></span><br><span class="line">    </span><br><span class="line">&gt;&gt; <span class="number">9999</span>: <span class="number">100</span>%|█████████████████████████| <span class="number">10000</span>/<span class="number">10000</span> [<span class="number">00</span>:<span class="number">02</span>&lt;<span class="number">00</span>:<span class="number">00</span>, <span class="number">4659.45</span>it/s]</span><br></pre></td></tr></table></figure>
+
+<h4 id="手动控制进度"><a href="#手动控制进度" class="headerlink" title="手动控制进度"></a>手动控制进度</h4><ul>
+<li>手动运行时<code>tqdm</code>对象不需要迭代器作为初始化参数，但需要指定最大长度<code>total</code>的值：</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> tqdm <span class="keyword">import</span> tqdm</span><br><span class="line"><span class="keyword">with</span> tqdm(total=<span class="number">10000</span>) <span class="keyword">as</span> pbar:</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">10000</span>):</span><br><span class="line">        pbar.update(<span class="number">1</span>)</span><br><span class="line">        </span><br><span class="line">&gt;&gt; <span class="number">100</span>%|████████████████████████████| <span class="number">10000</span>/<span class="number">10000</span> [<span class="number">00</span>:<span class="number">00</span>&lt;<span class="number">00</span>:<span class="number">00</span>, <span class="number">99888.16</span>it/s]</span><br></pre></td></tr></table></figure>
+
+
+
 <h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><ul>
-<li><a href="https://pypi.org/project/tqdm/" target="_blank" rel="noopener">https://pypi.org/project/tqdm/</a></li>
+<li><p><a href="https://pypi.org/project/tqdm/" target="_blank" rel="noopener">https://pypi.org/project/tqdm/</a></p>
+</li>
+<li><p><a href="https://tqdm.github.io/docs/tqdm" target="_blank" rel="noopener">https://tqdm.github.io/docs/tqdm</a></p>
+</li>
+<li><p><a href="https://blog.csdn.net/qq_33472765/article/details/82940843" target="_blank" rel="noopener">https://blog.csdn.net/qq_33472765/article/details/82940843</a></p>
+</li>
+<li><p><a href="https://blog.csdn.net/qq_40666028/article/details/79335961" target="_blank" rel="noopener">https://blog.csdn.net/qq_40666028/article/details/79335961</a></p>
+</li>
+<li><p><a href="https://www.cnblogs.com/harp-yestar/articles/tqdm.html" target="_blank" rel="noopener">https://www.cnblogs.com/harp-yestar/articles/tqdm.html</a></p>
+</li>
 </ul>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <categories>
@@ -3202,8 +3246,8 @@ cond(no)->sub</textarea><textarea id="flowchart-0-options" style="display: none"
         <category>故障排除</category>
       </categories>
       <tags>
-        <tag>故障排除</tag>
         <tag>Python</tag>
+        <tag>故障排除</tag>
       </tags>
   </entry>
   <entry>
@@ -3492,9 +3536,9 @@ cond(no)->sub</textarea><textarea id="flowchart-0-options" style="display: none"
         <category>故障排除</category>
       </categories>
       <tags>
+        <tag>故障排除</tag>
         <tag>深度学习</tag>
         <tag>GPU</tag>
-        <tag>故障排除</tag>
       </tags>
   </entry>
   <entry>
@@ -4386,8 +4430,8 @@ cond(no)->sub</textarea><textarea id="flowchart-0-options" style="display: none"
         <category>故障排除</category>
       </categories>
       <tags>
-        <tag>故障排除</tag>
         <tag>Python</tag>
+        <tag>故障排除</tag>
       </tags>
   </entry>
   <entry>
@@ -5075,8 +5119,8 @@ cond(no)->sub</textarea><textarea id="flowchart-0-options" style="display: none"
         <category>故障排除</category>
       </categories>
       <tags>
-        <tag>深度学习</tag>
         <tag>故障排除</tag>
+        <tag>深度学习</tag>
         <tag>Tensorflow</tag>
       </tags>
   </entry>
@@ -5417,8 +5461,8 @@ cond(no)->sub</textarea><textarea id="flowchart-0-options" style="display: none"
         <category>故障排除</category>
       </categories>
       <tags>
-        <tag>故障排除</tag>
         <tag>程序人生</tag>
+        <tag>故障排除</tag>
       </tags>
   </entry>
   <entry>
@@ -5767,8 +5811,8 @@ cond(no)->sub</textarea><textarea id="flowchart-0-options" style="display: none"
         <category>故障排除</category>
       </categories>
       <tags>
-        <tag>深度学习</tag>
         <tag>故障排除</tag>
+        <tag>深度学习</tag>
         <tag>Keras</tag>
       </tags>
   </entry>
@@ -5979,9 +6023,9 @@ cond(no)->sub</textarea><textarea id="flowchart-0-options" style="display: none"
         <category>故障排除</category>
       </categories>
       <tags>
-        <tag>故障排除</tag>
         <tag>程序人生</tag>
         <tag>Python</tag>
+        <tag>故障排除</tag>
       </tags>
   </entry>
   <entry>
@@ -6242,8 +6286,8 @@ cond(no)->sub</textarea><textarea id="flowchart-0-options" style="display: none"
         <category>故障排除</category>
       </categories>
       <tags>
-        <tag>深度学习</tag>
         <tag>故障排除</tag>
+        <tag>深度学习</tag>
         <tag>Keras</tag>
       </tags>
   </entry>
