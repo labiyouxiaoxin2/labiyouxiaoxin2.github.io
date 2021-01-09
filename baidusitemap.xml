@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://www.zywvvd.com/2021/01/09/python/tqdm/tqdm/</loc>
+    <lastmod>2021-01-09</lastmod>
+  </url>  <url>
     <loc>https://www.zywvvd.com/2021/01/06/math/matrix/condition-num/condition-num/</loc>
     <lastmod>2021-01-09</lastmod>
   </url>  <url>
@@ -97,10 +100,10 @@
     <loc>https://www.zywvvd.com/2020/02/24/words/xml/course/xml/</loc>
     <lastmod>2020-11-14</lastmod>
   </url>  <url>
-    <loc>https://www.zywvvd.com/2020/07/21/words/vim/vim-nootbook-1/</loc>
+    <loc>https://www.zywvvd.com/2020/07/22/words/vim/vim-nootbook-2/</loc>
     <lastmod>2020-11-14</lastmod>
   </url>  <url>
-    <loc>https://www.zywvvd.com/2020/07/22/words/vim/vim-nootbook-2/</loc>
+    <loc>https://www.zywvvd.com/2020/07/21/words/vim/vim-nootbook-1/</loc>
     <lastmod>2020-11-14</lastmod>
   </url>  <url>
     <loc>https://www.zywvvd.com/2020/06/02/windows/windows-family-nfs/windows-family-nfs/</loc>
@@ -160,10 +163,10 @@
     <loc>https://www.zywvvd.com/2020/02/25/python/file_list/python-file-list/</loc>
     <lastmod>2020-11-14</lastmod>
   </url>  <url>
-    <loc>https://www.zywvvd.com/2020/06/20/python/conda-env-operation/conda-env-operation/</loc>
+    <loc>https://www.zywvvd.com/2020/11/06/python/convert_matplotlib_figure_to_array/convert_matplotlib_figure_to_array/</loc>
     <lastmod>2020-11-14</lastmod>
   </url>  <url>
-    <loc>https://www.zywvvd.com/2020/11/06/python/convert_matplotlib_figure_to_array/convert_matplotlib_figure_to_array/</loc>
+    <loc>https://www.zywvvd.com/2020/06/20/python/conda-env-operation/conda-env-operation/</loc>
     <lastmod>2020-11-14</lastmod>
   </url>  <url>
     <loc>https://www.zywvvd.com/2020/07/27/python/conda-activate-error/conda_activate_error/</loc>
@@ -364,10 +367,10 @@
     <loc>https://www.zywvvd.com/2020/05/14/coding/environment/wing-ssh-remote/wing-ssh-remote/</loc>
     <lastmod>2020-11-14</lastmod>
   </url>  <url>
-    <loc>https://www.zywvvd.com/2020/03/30/coding/environment/pip-chinese-source/pip-chinese-source/</loc>
+    <loc>https://www.zywvvd.com/2020/05/30/coding/environment/pip-upgrade-error/pip-upgrade-error/</loc>
     <lastmod>2020-11-14</lastmod>
   </url>  <url>
-    <loc>https://www.zywvvd.com/2020/05/30/coding/environment/pip-upgrade-error/pip-upgrade-error/</loc>
+    <loc>https://www.zywvvd.com/2020/03/30/coding/environment/pip-chinese-source/pip-chinese-source/</loc>
     <lastmod>2020-11-14</lastmod>
   </url>  <url>
     <loc>https://www.zywvvd.com/2020/05/21/algorithm/tree/about_tree/</loc>
