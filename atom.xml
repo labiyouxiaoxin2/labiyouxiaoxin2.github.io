@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.zywvvd.com/"/>
-  <updated>2020-12-27T15:25:02.892Z</updated>
+  <updated>2021-01-09T06:31:56.328Z</updated>
   <id>https://www.zywvvd.com/</id>
   
   <author>
@@ -17,11 +17,61 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>矩阵对变化的敏感程度评价指标 Condition Number</title>
+    <link href="https://www.zywvvd.com/2021/01/06/math/matrix/condition-num/condition-num/"/>
+    <id>https://www.zywvvd.com/2021/01/06/math/matrix/condition-num/condition-num/</id>
+    <published>2021-01-05T17:30:29.000Z</published>
+    <updated>2021-01-09T06:31:56.328Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;矩阵对变化的敏感程度可以用Condition Number来评估，本文对其进行简略介绍。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="math" scheme="https://www.zywvvd.com/categories/math/"/>
+    
+      <category term="matrix" scheme="https://www.zywvvd.com/categories/math/matrix/"/>
+    
+    
+      <category term="math" scheme="https://www.zywvvd.com/tags/math/"/>
+    
+      <category term="matrix" scheme="https://www.zywvvd.com/tags/matrix/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python - 读取大图片</title>
+    <link href="https://www.zywvvd.com/2021/01/05/python/load-large-image/load-large-image/"/>
+    <id>https://www.zywvvd.com/2021/01/05/python/load-large-image/load-large-image/</id>
+    <published>2021-01-05T15:58:15.000Z</published>
+    <updated>2021-01-09T03:38:29.622Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;python 在读取大图像时会报错，本文记录解决方案。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="Python" scheme="https://www.zywvvd.com/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="https://www.zywvvd.com/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
     <title>二次型优化问题 - 6 - 共轭梯度法</title>
     <link href="https://www.zywvvd.com/2020/12/26/machine_learning/conjugate-gradient-algorithm/conjugate-alg/conjugate-alg/"/>
     <id>https://www.zywvvd.com/2020/12/26/machine_learning/conjugate-gradient-algorithm/conjugate-alg/conjugate-alg/</id>
     <published>2020-12-26T05:57:02.000Z</published>
-    <updated>2020-12-27T15:25:02.892Z</updated>
+    <updated>2021-01-09T03:38:29.619Z</updated>
     
     <summary type="html">
     
@@ -248,7 +298,7 @@
     <link href="https://www.zywvvd.com/2020/12/13/machine_learning/conjugate-gradient-algorithm/gradient-related/gradient-related/"/>
     <id>https://www.zywvvd.com/2020/12/13/machine_learning/conjugate-gradient-algorithm/gradient-related/gradient-related/</id>
     <published>2020-12-13T14:31:39.000Z</published>
-    <updated>2020-12-20T14:53:05.068Z</updated>
+    <updated>2021-01-09T06:32:44.625Z</updated>
     
     <summary type="html">
     
@@ -1554,6 +1604,33 @@
   </entry>
   
   <entry>
+    <title>算法学习笔记 —— XX</title>
+    <link href="https://www.zywvvd.com/2020/05/21/algorithm/example/about_exam/"/>
+    <id>https://www.zywvvd.com/2020/05/21/algorithm/example/about_exam/</id>
+    <published>2020-05-21T05:15:39.000Z</published>
+    <updated>2020-11-14T08:17:13.507Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;学而时习，本文记录XX操作相关算法练习笔记。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="算法" scheme="https://www.zywvvd.com/categories/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="XX" scheme="https://www.zywvvd.com/categories/%E7%AE%97%E6%B3%95/XX/"/>
+    
+    
+      <category term="算法" scheme="https://www.zywvvd.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="XX" scheme="https://www.zywvvd.com/tags/XX/"/>
+    
+  </entry>
+  
+  <entry>
     <title>算法学习笔记 —— 排序</title>
     <link href="https://www.zywvvd.com/2020/05/21/algorithm/sort/about_sort/"/>
     <id>https://www.zywvvd.com/2020/05/21/algorithm/sort/about_sort/</id>
@@ -1604,33 +1681,6 @@
       <category term="算法" scheme="https://www.zywvvd.com/tags/%E7%AE%97%E6%B3%95/"/>
     
       <category term="排序" scheme="https://www.zywvvd.com/tags/%E6%8E%92%E5%BA%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>算法学习笔记 —— XX</title>
-    <link href="https://www.zywvvd.com/2020/05/21/algorithm/example/about_exam/"/>
-    <id>https://www.zywvvd.com/2020/05/21/algorithm/example/about_exam/</id>
-    <published>2020-05-21T05:15:39.000Z</published>
-    <updated>2020-11-14T08:17:13.507Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;学而时习，本文记录XX操作相关算法练习笔记。&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-    
-      <category term="算法" scheme="https://www.zywvvd.com/categories/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="XX" scheme="https://www.zywvvd.com/categories/%E7%AE%97%E6%B3%95/XX/"/>
-    
-    
-      <category term="算法" scheme="https://www.zywvvd.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="XX" scheme="https://www.zywvvd.com/tags/XX/"/>
     
   </entry>
   
