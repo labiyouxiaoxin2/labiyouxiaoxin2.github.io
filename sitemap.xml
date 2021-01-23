@@ -2,6 +2,48 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.zywvvd.com/2021/01/23/web/back_end/django/django-first-porject/django-first-porject/</loc>
+    
+    <lastmod>2021-01-23T07:55:19.327Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.zywvvd.com/2021/01/18/windows/linux_nfs_root/win-add-startup/</loc>
+    
+    <lastmod>2021-01-23T05:32:08.361Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.zywvvd.com/2020/11/06/deep_learning/pynvml_model_not_found/pynvml_model_not_found/</loc>
+    
+    <lastmod>2021-01-23T05:32:08.360Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.zywvvd.com/2021/01/15/linux/ssh/ssh-usage/ssh-usage/</loc>
+    
+    <lastmod>2021-01-23T05:32:08.360Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.zywvvd.com/2021/01/14/tools/httpie/httpie/</loc>
+    
+    <lastmod>2021-01-17T07:23:46.355Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.zywvvd.com/2021/01/14/python/opencv-error/opencv-error/</loc>
+    
+    <lastmod>2021-01-17T07:23:46.353Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.zywvvd.com/2021/01/09/python/tqdm/tqdm/</loc>
     
     <lastmod>2021-01-09T09:26:41.437Z</lastmod>
@@ -247,21 +289,7 @@
   </url>
   
   <url>
-    <loc>https://www.zywvvd.com/photos/album.json</loc>
-    
-    <lastmod>2020-11-14T08:17:13.852Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://www.zywvvd.com/photos/2018_08_12_luoyang_huangheyuan/index.html</loc>
-    
-    <lastmod>2020-11-14T08:17:13.852Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.zywvvd.com/photos/2018_08_12_luoyang_huangheyuan/readme.json</loc>
     
     <lastmod>2020-11-14T08:17:13.852Z</lastmod>
     
@@ -275,30 +303,9 @@
   </url>
   
   <url>
-    <loc>https://www.zywvvd.com/photos/2018_01_04_hefei_ustc_xiaobing_xuejing/readme.json</loc>
-    
-    <lastmod>2020-11-14T08:17:13.851Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.zywvvd.com/photos/2016_2_20_hefei_ustc_meihua/readme.json</loc>
-    
-    <lastmod>2020-11-14T08:17:13.850Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://www.zywvvd.com/photos/2016_2_20_hefei_ustc_meihua/index.html</loc>
     
     <lastmod>2020-11-14T08:17:13.850Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.zywvvd.com/photos/2016_07_21_hefei_1912_xiaobing/readme.json</loc>
-    
-    <lastmod>2020-11-14T08:17:13.849Z</lastmod>
     
   </url>
   
@@ -317,21 +324,7 @@
   </url>
   
   <url>
-    <loc>https://www.zywvvd.com/photos/2016_04_02_hefei_ustc_yinghuazhixia/readme.json</loc>
-    
-    <lastmod>2020-11-14T08:17:13.847Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://www.zywvvd.com/photos/2016_03_07_hefei_zhongyinyushi_xiaobing/index.html</loc>
-    
-    <lastmod>2020-11-14T08:17:13.846Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.zywvvd.com/photos/2016_03_07_hefei_zhongyinyushi_xiaobing/readme.json</loc>
     
     <lastmod>2020-11-14T08:17:13.846Z</lastmod>
     
@@ -345,21 +338,7 @@
   </url>
   
   <url>
-    <loc>https://www.zywvvd.com/photos/2016_03_06_hefei_1912_jiepai/readme.json</loc>
-    
-    <lastmod>2020-11-14T08:17:13.845Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://www.zywvvd.com/photos/2016_01_31_jilin_wula_xuejing/index.html</loc>
-    
-    <lastmod>2020-11-14T08:17:13.844Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.zywvvd.com/photos/2016_01_31_jilin_wula_xuejing/readme.json</loc>
     
     <lastmod>2020-11-14T08:17:13.844Z</lastmod>
     
@@ -373,21 +352,7 @@
   </url>
   
   <url>
-    <loc>https://www.zywvvd.com/photos/2015_11_28_hefei_ustc_fengjing/test.json</loc>
-    
-    <lastmod>2020-11-14T08:17:13.842Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://www.zywvvd.com/photos/2015_11_28_hefei_ustc_fengjing/index.html</loc>
-    
-    <lastmod>2020-11-14T08:17:13.842Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.zywvvd.com/photos/2015_11_28_hefei_ustc_fengjing/readme.json</loc>
     
     <lastmod>2020-11-14T08:17:13.842Z</lastmod>
     
@@ -492,14 +457,14 @@
   </url>
   
   <url>
-    <loc>https://www.zywvvd.com/2020/06/19/software/debug/libnvinfer-so-6-error/libnvinfer-so-6-error/</loc>
+    <loc>https://www.zywvvd.com/2020/06/19/software/debug/missing-running-files/missing-running-files/</loc>
     
     <lastmod>2020-11-14T08:17:13.796Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://www.zywvvd.com/2020/06/19/software/debug/missing-running-files/missing-running-files/</loc>
+    <loc>https://www.zywvvd.com/2020/06/19/software/debug/libnvinfer-so-6-error/libnvinfer-so-6-error/</loc>
     
     <lastmod>2020-11-14T08:17:13.796Z</lastmod>
     
@@ -933,13 +898,6 @@
   </url>
   
   <url>
-    <loc>https://www.zywvvd.com/2020/11/06/deep_learning/pynvml_model_not_found/pynvml_model_not_found/</loc>
-    
-    <lastmod>2020-11-14T08:17:13.533Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://www.zywvvd.com/2020/11/06/deep_learning/pynvml_gpu_info_get/pynvml_gpu_info_get/</loc>
     
     <lastmod>2020-11-14T08:17:13.532Z</lastmod>
@@ -1038,14 +996,14 @@
   </url>
   
   <url>
-    <loc>https://www.zywvvd.com/2020/05/30/coding/environment/pip-upgrade-error/pip-upgrade-error/</loc>
+    <loc>https://www.zywvvd.com/2020/03/30/coding/environment/pip-chinese-source/pip-chinese-source/</loc>
     
     <lastmod>2020-11-14T08:17:13.512Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://www.zywvvd.com/2020/03/30/coding/environment/pip-chinese-source/pip-chinese-source/</loc>
+    <loc>https://www.zywvvd.com/2020/05/30/coding/environment/pip-upgrade-error/pip-upgrade-error/</loc>
     
     <lastmod>2020-11-14T08:17:13.512Z</lastmod>
     
