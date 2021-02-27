@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.zywvvd.com/"/>
-  <updated>2021-01-23T09:07:50.565Z</updated>
+  <updated>2021-02-27T03:45:05.022Z</updated>
   <id>https://www.zywvvd.com/</id>
   
   <author>
@@ -15,6 +15,229 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>VS code 显示远程 Linux 图形界面</title>
+    <link href="https://www.zywvvd.com/2021/02/20/software/ide/vs_code-remote-gui/vs-code-remote-gui/"/>
+    <id>https://www.zywvvd.com/2021/02/20/software/ide/vs_code-remote-gui/vs-code-remote-gui/</id>
+    <published>2021-02-20T01:54:10.000Z</published>
+    <updated>2021-02-27T03:45:05.022Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;VS code 在远程登录服务器后无法直接像 pycharm 一样显示远程图像，对分析数据十分不便。本文记录vscode实现远程gui的方法。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="IDE" scheme="https://www.zywvvd.com/categories/IDE/"/>
+    
+      <category term="VS code" scheme="https://www.zywvvd.com/categories/IDE/VS-code/"/>
+    
+    
+      <category term="IDE" scheme="https://www.zywvvd.com/tags/IDE/"/>
+    
+      <category term="VS code" scheme="https://www.zywvvd.com/tags/VS-code/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Windows Xming +Xshell 实现远程 linux gui 界面本地展示</title>
+    <link href="https://www.zywvvd.com/2021/02/20/linux/remote-linux-gui/remote-linux-gui/"/>
+    <id>https://www.zywvvd.com/2021/02/20/linux/remote-linux-gui/remote-linux-gui/</id>
+    <published>2021-02-20T01:19:02.000Z</published>
+    <updated>2021-02-27T03:45:05.020Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;Windows 远程登录服务器后，由于是使用终端远程登录，并且远程服务器没有图形界面，显示图像很不方便。本文记录使用 Xming +Xshell 6 实现远程打开Linux界面的方法。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="Linux" scheme="https://www.zywvvd.com/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="https://www.zywvvd.com/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Jupyter notebook 启动错误  “sys/un.h” No such file or directory</title>
+    <link href="https://www.zywvvd.com/2021/02/20/python/jupyter-error/jupyter-error/"/>
+    <id>https://www.zywvvd.com/2021/02/20/python/jupyter-error/jupyter-error/</id>
+    <published>2021-02-19T16:36:31.000Z</published>
+    <updated>2021-02-27T03:45:05.021Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;本文记录Jupyter notebook 启动错误  “sys/un.h” No such file or directory 的解决方案。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="Python" scheme="https://www.zywvvd.com/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="https://www.zywvvd.com/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>安装 Cuda 10.2 报错</title>
+    <link href="https://www.zywvvd.com/2021/02/18/deep_learning/environment/cuda10.2-install-error/cuda10.2-install-error/"/>
+    <id>https://www.zywvvd.com/2021/02/18/deep_learning/environment/cuda10.2-install-error/cuda10.2-install-error/</id>
+    <published>2021-02-18T06:27:11.000Z</published>
+    <updated>2021-02-27T03:45:05.017Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;本文记录 [ERROR]: boost::filesystem::remove: Directory not empty 解决方案。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="Deep Learning" scheme="https://www.zywvvd.com/categories/Deep-Learning/"/>
+    
+    
+      <category term="Deep Learning" scheme="https://www.zywvvd.com/tags/Deep-Learning/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Error unsupported compiler 9.3.0</title>
+    <link href="https://www.zywvvd.com/2021/02/18/deep_learning/pytorch/unsupported-compiler/unsupported-compiler/"/>
+    <id>https://www.zywvvd.com/2021/02/18/deep_learning/pytorch/unsupported-compiler/unsupported-compiler/</id>
+    <published>2021-02-18T03:01:44.000Z</published>
+    <updated>2021-02-27T03:45:05.018Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;本文记录 Error: unsupported compiler: 9.3.0 解决方案。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="Deep Learning" scheme="https://www.zywvvd.com/categories/Deep-Learning/"/>
+    
+    
+      <category term="Deep Learning" scheme="https://www.zywvvd.com/tags/Deep-Learning/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Nosql 基础概念</title>
+    <link href="https://www.zywvvd.com/2021/02/10/dataset/nosql/nosql/"/>
+    <id>https://www.zywvvd.com/2021/02/10/dataset/nosql/nosql/</id>
+    <published>2021-02-10T08:12:35.000Z</published>
+    <updated>2021-02-27T03:45:05.015Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;本文介绍非关系型数据库的基本概念，及其与关系型数据库直接的关联。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="dataset" scheme="https://www.zywvvd.com/categories/dataset/"/>
+    
+    
+      <category term="dataset" scheme="https://www.zywvvd.com/tags/dataset/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MongoDB 简易教程</title>
+    <link href="https://www.zywvvd.com/2021/02/10/dataset/mangodb/MongoDB/"/>
+    <id>https://www.zywvvd.com/2021/02/10/dataset/mangodb/MongoDB/</id>
+    <published>2021-02-10T06:22:15.000Z</published>
+    <updated>2021-02-27T03:45:05.014Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;MongoDB 是一个基于分布式文件存储的数据库。由 C++ 语言编写。旨在为WEB应用提供可扩展的高性能数据存储解决方案，本文记录相关基础知识。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="dataset" scheme="https://www.zywvvd.com/categories/dataset/"/>
+    
+      <category term="MongoDB" scheme="https://www.zywvvd.com/categories/dataset/MongoDB/"/>
+    
+    
+      <category term="dataset" scheme="https://www.zywvvd.com/tags/dataset/"/>
+    
+      <category term="MongoDB" scheme="https://www.zywvvd.com/tags/MongoDB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>VS code 停用 justMyCode 调试库代码</title>
+    <link href="https://www.zywvvd.com/2021/02/08/software/ide/vs_code_justmycode/justmycode/"/>
+    <id>https://www.zywvvd.com/2021/02/08/software/ide/vs_code_justmycode/justmycode/</id>
+    <published>2021-02-08T02:37:45.000Z</published>
+    <updated>2021-02-27T03:45:05.023Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;VS code 调试时默认启用 &lt;code&gt;justMyCode&lt;/code&gt; 配置，使得库代码无法调试，本文记录停用该选项调试一切代码的方法。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="IDE" scheme="https://www.zywvvd.com/categories/IDE/"/>
+    
+      <category term="VS code" scheme="https://www.zywvvd.com/categories/IDE/VS-code/"/>
+    
+    
+      <category term="IDE" scheme="https://www.zywvvd.com/tags/IDE/"/>
+    
+      <category term="VS code" scheme="https://www.zywvvd.com/tags/VS-code/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用 Python Socket 包搭建简易服务器</title>
+    <link href="https://www.zywvvd.com/2021/01/30/web/socket_server/socket-server/"/>
+    <id>https://www.zywvvd.com/2021/01/30/web/socket_server/socket-server/</id>
+    <published>2021-01-29T16:22:56.000Z</published>
+    <updated>2021-02-27T03:45:05.024Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;本文记录使用Python Socket包搭建简易服务器的代码。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="Python" scheme="https://www.zywvvd.com/categories/Python/"/>
+    
+      <category term="web" scheme="https://www.zywvvd.com/categories/Python/web/"/>
+    
+    
+      <category term="Python" scheme="https://www.zywvvd.com/tags/Python/"/>
+    
+      <category term="web" scheme="https://www.zywvvd.com/tags/web/"/>
+    
+  </entry>
   
   <entry>
     <title>第一个 Django 工程搭建</title>
@@ -159,6 +382,33 @@
     
     
       <category term="Python" scheme="https://www.zywvvd.com/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>线性代数 - 1 - 基础知识</title>
+    <link href="https://www.zywvvd.com/2021/01/06/math/linear_algebra/basic_knowledge/"/>
+    <id>https://www.zywvvd.com/2021/01/06/math/linear_algebra/basic_knowledge/</id>
+    <published>2021-01-05T17:30:29.000Z</published>
+    <updated>2021-02-27T11:24:32.835Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;线性代数，基础知识，温故知新。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="math" scheme="https://www.zywvvd.com/categories/math/"/>
+    
+      <category term="linear_algebra" scheme="https://www.zywvvd.com/categories/math/linear-algebra/"/>
+    
+    
+      <category term="math" scheme="https://www.zywvvd.com/tags/math/"/>
+    
+      <category term="linear_algebra" scheme="https://www.zywvvd.com/tags/linear-algebra/"/>
     
   </entry>
   
@@ -2009,7 +2259,7 @@
     <link href="https://www.zywvvd.com/2020/05/06/docker/docker_usage/"/>
     <id>https://www.zywvvd.com/2020/05/06/docker/docker_usage/</id>
     <published>2020-05-06T14:11:15.000Z</published>
-    <updated>2020-12-12T03:19:39.083Z</updated>
+    <updated>2021-02-27T03:45:05.019Z</updated>
     
     <summary type="html">
     
@@ -2297,11 +2547,11 @@
   </entry>
   
   <entry>
-    <title>pip 命令添加国内源</title>
+    <title>pip 常用命令与国内源配置</title>
     <link href="https://www.zywvvd.com/2020/03/30/coding/environment/pip-chinese-source/pip-chinese-source/"/>
     <id>https://www.zywvvd.com/2020/03/30/coding/environment/pip-chinese-source/pip-chinese-source/</id>
     <published>2020-03-30T15:04:57.000Z</published>
-    <updated>2020-11-14T08:17:13.512Z</updated>
+    <updated>2021-02-27T03:45:05.013Z</updated>
     
     <summary type="html">
     

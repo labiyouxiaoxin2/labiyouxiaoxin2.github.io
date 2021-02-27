@@ -1,6 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://www.zywvvd.com/2021/01/06/math/linear_algebra/basic_knowledge/</loc>
+    <lastmod>2021-02-27</lastmod>
+  </url>  <url>
+    <loc>https://www.zywvvd.com/2021/01/30/web/socket_server/socket-server/</loc>
+    <lastmod>2021-02-27</lastmod>
+  </url>  <url>
+    <loc>https://www.zywvvd.com/2021/02/08/software/ide/vs_code_justmycode/justmycode/</loc>
+    <lastmod>2021-02-27</lastmod>
+  </url>  <url>
+    <loc>https://www.zywvvd.com/2021/02/20/software/ide/vs_code-remote-gui/vs-code-remote-gui/</loc>
+    <lastmod>2021-02-27</lastmod>
+  </url>  <url>
+    <loc>https://www.zywvvd.com/2021/02/20/python/jupyter-error/jupyter-error/</loc>
+    <lastmod>2021-02-27</lastmod>
+  </url>  <url>
+    <loc>https://www.zywvvd.com/2021/02/20/linux/remote-linux-gui/remote-linux-gui/</loc>
+    <lastmod>2021-02-27</lastmod>
+  </url>  <url>
+    <loc>https://www.zywvvd.com/2020/05/06/docker/docker_usage/</loc>
+    <lastmod>2021-02-27</lastmod>
+  </url>  <url>
+    <loc>https://www.zywvvd.com/2021/02/18/deep_learning/pytorch/unsupported-compiler/unsupported-compiler/</loc>
+    <lastmod>2021-02-27</lastmod>
+  </url>  <url>
+    <loc>https://www.zywvvd.com/2021/02/18/deep_learning/environment/cuda10.2-install-error/cuda10.2-install-error/</loc>
+    <lastmod>2021-02-27</lastmod>
+  </url>  <url>
+    <loc>https://www.zywvvd.com/2021/02/10/dataset/nosql/nosql/</loc>
+    <lastmod>2021-02-27</lastmod>
+  </url>  <url>
+    <loc>https://www.zywvvd.com/2021/02/10/dataset/mangodb/MongoDB/</loc>
+    <lastmod>2021-02-27</lastmod>
+  </url>  <url>
+    <loc>https://www.zywvvd.com/2020/03/30/coding/environment/pip-chinese-source/pip-chinese-source/</loc>
+    <lastmod>2021-02-27</lastmod>
+  </url>  <url>
     <loc>https://www.zywvvd.com/2021/01/23/web/back_end/django/django-first-porject/django-first-porject/</loc>
     <lastmod>2021-01-23</lastmod>
   </url>  <url>
@@ -97,9 +133,6 @@
     <loc>https://www.zywvvd.com/2020/11/23/hexo/13_flowchart/flowchart/</loc>
     <lastmod>2020-12-12</lastmod>
   </url>  <url>
-    <loc>https://www.zywvvd.com/2020/05/06/docker/docker_usage/</loc>
-    <lastmod>2020-12-12</lastmod>
-  </url>  <url>
     <loc>https://www.zywvvd.com/2020/12/03/deep_learning/pytorch/dataloader_segmentation_fault/dataloader_segmentation_fault/</loc>
     <lastmod>2020-12-12</lastmod>
   </url>  <url>
@@ -142,10 +175,10 @@
     <loc>https://www.zywvvd.com/2020/11/02/software/ide/vs_code_remote_debugging/vs_code_remote_debugging/</loc>
     <lastmod>2020-11-14</lastmod>
   </url>  <url>
-    <loc>https://www.zywvvd.com/2020/11/02/software/ide/vs_code_kite_install/kite_install/</loc>
+    <loc>https://www.zywvvd.com/2020/11/02/software/ide/vs_code_no_print_content/vs_code_no_print_content/</loc>
     <lastmod>2020-11-14</lastmod>
   </url>  <url>
-    <loc>https://www.zywvvd.com/2020/11/02/software/ide/vs_code_no_print_content/vs_code_no_print_content/</loc>
+    <loc>https://www.zywvvd.com/2020/11/02/software/ide/vs_code_kite_install/kite_install/</loc>
     <lastmod>2020-11-14</lastmod>
   </url>  <url>
     <loc>https://www.zywvvd.com/2020/08/11/software/ide/flake8-max-size/flake8-max-size/</loc>
@@ -181,10 +214,10 @@
     <loc>https://www.zywvvd.com/2020/02/25/python/file_list/python-file-list/</loc>
     <lastmod>2020-11-14</lastmod>
   </url>  <url>
-    <loc>https://www.zywvvd.com/2020/11/06/python/convert_matplotlib_figure_to_array/convert_matplotlib_figure_to_array/</loc>
+    <loc>https://www.zywvvd.com/2020/06/20/python/conda-env-operation/conda-env-operation/</loc>
     <lastmod>2020-11-14</lastmod>
   </url>  <url>
-    <loc>https://www.zywvvd.com/2020/06/20/python/conda-env-operation/conda-env-operation/</loc>
+    <loc>https://www.zywvvd.com/2020/11/06/python/convert_matplotlib_figure_to_array/convert_matplotlib_figure_to_array/</loc>
     <lastmod>2020-11-14</lastmod>
   </url>  <url>
     <loc>https://www.zywvvd.com/2020/07/27/python/conda-activate-error/conda_activate_error/</loc>
@@ -223,16 +256,16 @@
     <loc>https://www.zywvvd.com/2020/03/31/next/22_qiniuyun_qshell/qiniuyun-qshell/</loc>
     <lastmod>2020-11-14</lastmod>
   </url>  <url>
-    <loc>https://www.zywvvd.com/2020/03/28/next/20_custom_style/custom-style/</loc>
-    <lastmod>2020-11-14</lastmod>
-  </url>  <url>
     <loc>https://www.zywvvd.com/2020/03/29/next/21_add_photos/add-photos/</loc>
     <lastmod>2020-11-14</lastmod>
   </url>  <url>
-    <loc>https://www.zywvvd.com/2020/03/28/next/19_next_fancybox/next-fancybox/</loc>
+    <loc>https://www.zywvvd.com/2020/03/28/next/20_custom_style/custom-style/</loc>
     <lastmod>2020-11-14</lastmod>
   </url>  <url>
     <loc>https://www.zywvvd.com/2020/02/24/next/1_theme_install/Next-install/</loc>
+    <lastmod>2020-11-14</lastmod>
+  </url>  <url>
+    <loc>https://www.zywvvd.com/2020/03/28/next/19_next_fancybox/next-fancybox/</loc>
     <lastmod>2020-11-14</lastmod>
   </url>  <url>
     <loc>https://www.zywvvd.com/2020/03/23/next/18_next_add_codecopy/next_add_codecopy/</loc>
@@ -380,9 +413,6 @@
     <lastmod>2020-11-14</lastmod>
   </url>  <url>
     <loc>https://www.zywvvd.com/2020/05/14/coding/environment/wing-ssh-remote/wing-ssh-remote/</loc>
-    <lastmod>2020-11-14</lastmod>
-  </url>  <url>
-    <loc>https://www.zywvvd.com/2020/03/30/coding/environment/pip-chinese-source/pip-chinese-source/</loc>
     <lastmod>2020-11-14</lastmod>
   </url>  <url>
     <loc>https://www.zywvvd.com/2020/05/30/coding/environment/pip-upgrade-error/pip-upgrade-error/</loc>
