@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.zywvvd.com/"/>
-  <updated>2021-02-28T13:42:24.861Z</updated>
+  <updated>2021-02-28T13:58:47.548Z</updated>
   <id>https://www.zywvvd.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://www.zywvvd.com/2021/02/27/math/linear_algebra/basic_knowledge/"/>
     <id>https://www.zywvvd.com/2021/02/27/math/linear_algebra/basic_knowledge/</id>
     <published>2021-02-27T13:30:29.000Z</published>
-    <updated>2021-02-28T13:42:24.861Z</updated>
+    <updated>2021-02-28T13:58:47.548Z</updated>
     
     <summary type="html">
     
@@ -1149,11 +1149,11 @@
       <category term="故障排除" scheme="https://www.zywvvd.com/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/GPU/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/"/>
     
     
-      <category term="故障排除" scheme="https://www.zywvvd.com/tags/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/"/>
-    
       <category term="深度学习" scheme="https://www.zywvvd.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
       <category term="GPU" scheme="https://www.zywvvd.com/tags/GPU/"/>
+    
+      <category term="故障排除" scheme="https://www.zywvvd.com/tags/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/"/>
     
   </entry>
   
@@ -1205,9 +1205,9 @@
       <category term="VS code" scheme="https://www.zywvvd.com/categories/IDE/VS-code/"/>
     
     
-      <category term="故障排除" scheme="https://www.zywvvd.com/tags/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/"/>
-    
       <category term="IDE" scheme="https://www.zywvvd.com/tags/IDE/"/>
+    
+      <category term="故障排除" scheme="https://www.zywvvd.com/tags/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/"/>
     
       <category term="VS code" scheme="https://www.zywvvd.com/tags/VS-code/"/>
     
@@ -1748,9 +1748,9 @@
       <category term="故障排除" scheme="https://www.zywvvd.com/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/Tensorflow/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/"/>
     
     
-      <category term="故障排除" scheme="https://www.zywvvd.com/tags/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/"/>
-    
       <category term="深度学习" scheme="https://www.zywvvd.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="故障排除" scheme="https://www.zywvvd.com/tags/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/"/>
     
       <category term="Tensorflow" scheme="https://www.zywvvd.com/tags/Tensorflow/"/>
     
@@ -2103,9 +2103,9 @@
       <category term="故障排除" scheme="https://www.zywvvd.com/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/Keras/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/"/>
     
     
-      <category term="故障排除" scheme="https://www.zywvvd.com/tags/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/"/>
-    
       <category term="深度学习" scheme="https://www.zywvvd.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="故障排除" scheme="https://www.zywvvd.com/tags/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/"/>
     
       <category term="Keras" scheme="https://www.zywvvd.com/tags/Keras/"/>
     
@@ -2246,9 +2246,9 @@
       <category term="故障排除" scheme="https://www.zywvvd.com/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/Keras/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/"/>
     
     
-      <category term="故障排除" scheme="https://www.zywvvd.com/tags/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/"/>
-    
       <category term="深度学习" scheme="https://www.zywvvd.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="故障排除" scheme="https://www.zywvvd.com/tags/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/"/>
     
       <category term="Keras" scheme="https://www.zywvvd.com/tags/Keras/"/>
     
@@ -2370,16 +2370,16 @@
   </entry>
   
   <entry>
-    <title>Python - 使用logging模块管理日志文件</title>
-    <link href="https://www.zywvvd.com/2020/04/11/python/logging/python-logging/"/>
-    <id>https://www.zywvvd.com/2020/04/11/python/logging/python-logging/</id>
+    <title>Kite Python代码补全工具安装</title>
+    <link href="https://www.zywvvd.com/2020/04/11/python/kite_install/kite_install/"/>
+    <id>https://www.zywvvd.com/2020/04/11/python/kite_install/kite_install/</id>
     <published>2020-04-11T06:53:59.000Z</published>
-    <updated>2020-11-14T08:17:13.782Z</updated>
+    <updated>2020-11-14T08:17:13.781Z</updated>
     
     <summary type="html">
     
       &lt;blockquote&gt;
-&lt;p&gt;logging是很友好的python日志管理包，轻便好用，本文介绍logging使用方法。&lt;/p&gt;
+&lt;p&gt;Kite是一款将AI机器学习应用到代码补全的工具，本文介绍其在Windows与Linux系统的安装方法。&lt;/p&gt;
 &lt;/blockquote&gt;
     
     </summary>
@@ -2393,16 +2393,16 @@
   </entry>
   
   <entry>
-    <title>Kite Python代码补全工具安装</title>
-    <link href="https://www.zywvvd.com/2020/04/11/python/kite_install/kite_install/"/>
-    <id>https://www.zywvvd.com/2020/04/11/python/kite_install/kite_install/</id>
+    <title>Python - 使用logging模块管理日志文件</title>
+    <link href="https://www.zywvvd.com/2020/04/11/python/logging/python-logging/"/>
+    <id>https://www.zywvvd.com/2020/04/11/python/logging/python-logging/</id>
     <published>2020-04-11T06:53:59.000Z</published>
-    <updated>2020-11-14T08:17:13.781Z</updated>
+    <updated>2020-11-14T08:17:13.782Z</updated>
     
     <summary type="html">
     
       &lt;blockquote&gt;
-&lt;p&gt;Kite是一款将AI机器学习应用到代码补全的工具，本文介绍其在Windows与Linux系统的安装方法。&lt;/p&gt;
+&lt;p&gt;logging是很友好的python日志管理包，轻便好用，本文介绍logging使用方法。&lt;/p&gt;
 &lt;/blockquote&gt;
     
     </summary>
