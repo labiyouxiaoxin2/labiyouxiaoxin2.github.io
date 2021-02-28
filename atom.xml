@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.zywvvd.com/"/>
-  <updated>2021-02-27T03:45:05.022Z</updated>
+  <updated>2021-02-28T13:42:24.861Z</updated>
   <id>https://www.zywvvd.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>线性代数 - 1 - 基础知识</title>
+    <link href="https://www.zywvvd.com/2021/02/27/math/linear_algebra/basic_knowledge/"/>
+    <id>https://www.zywvvd.com/2021/02/27/math/linear_algebra/basic_knowledge/</id>
+    <published>2021-02-27T13:30:29.000Z</published>
+    <updated>2021-02-28T13:42:24.861Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;线性代数，基础知识，温故知新。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="math" scheme="https://www.zywvvd.com/categories/math/"/>
+    
+      <category term="linear_algebra" scheme="https://www.zywvvd.com/categories/math/linear-algebra/"/>
+    
+    
+      <category term="math" scheme="https://www.zywvvd.com/tags/math/"/>
+    
+      <category term="linear_algebra" scheme="https://www.zywvvd.com/tags/linear-algebra/"/>
+    
+  </entry>
   
   <entry>
     <title>VS code 显示远程 Linux 图形界面</title>
@@ -382,33 +409,6 @@
     
     
       <category term="Python" scheme="https://www.zywvvd.com/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>线性代数 - 1 - 基础知识</title>
-    <link href="https://www.zywvvd.com/2021/01/06/math/linear_algebra/basic_knowledge/"/>
-    <id>https://www.zywvvd.com/2021/01/06/math/linear_algebra/basic_knowledge/</id>
-    <published>2021-01-05T17:30:29.000Z</published>
-    <updated>2021-02-27T11:24:32.835Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;线性代数，基础知识，温故知新。&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-    
-      <category term="math" scheme="https://www.zywvvd.com/categories/math/"/>
-    
-      <category term="linear_algebra" scheme="https://www.zywvvd.com/categories/math/linear-algebra/"/>
-    
-    
-      <category term="math" scheme="https://www.zywvvd.com/tags/math/"/>
-    
-      <category term="linear_algebra" scheme="https://www.zywvvd.com/tags/linear-algebra/"/>
     
   </entry>
   
@@ -2370,16 +2370,16 @@
   </entry>
   
   <entry>
-    <title>Kite Python代码补全工具安装</title>
-    <link href="https://www.zywvvd.com/2020/04/11/python/kite_install/kite_install/"/>
-    <id>https://www.zywvvd.com/2020/04/11/python/kite_install/kite_install/</id>
+    <title>Python - 使用logging模块管理日志文件</title>
+    <link href="https://www.zywvvd.com/2020/04/11/python/logging/python-logging/"/>
+    <id>https://www.zywvvd.com/2020/04/11/python/logging/python-logging/</id>
     <published>2020-04-11T06:53:59.000Z</published>
-    <updated>2020-11-14T08:17:13.781Z</updated>
+    <updated>2020-11-14T08:17:13.782Z</updated>
     
     <summary type="html">
     
       &lt;blockquote&gt;
-&lt;p&gt;Kite是一款将AI机器学习应用到代码补全的工具，本文介绍其在Windows与Linux系统的安装方法。&lt;/p&gt;
+&lt;p&gt;logging是很友好的python日志管理包，轻便好用，本文介绍logging使用方法。&lt;/p&gt;
 &lt;/blockquote&gt;
     
     </summary>
@@ -2393,16 +2393,16 @@
   </entry>
   
   <entry>
-    <title>Python - 使用logging模块管理日志文件</title>
-    <link href="https://www.zywvvd.com/2020/04/11/python/logging/python-logging/"/>
-    <id>https://www.zywvvd.com/2020/04/11/python/logging/python-logging/</id>
+    <title>Kite Python代码补全工具安装</title>
+    <link href="https://www.zywvvd.com/2020/04/11/python/kite_install/kite_install/"/>
+    <id>https://www.zywvvd.com/2020/04/11/python/kite_install/kite_install/</id>
     <published>2020-04-11T06:53:59.000Z</published>
-    <updated>2020-11-14T08:17:13.782Z</updated>
+    <updated>2020-11-14T08:17:13.781Z</updated>
     
     <summary type="html">
     
       &lt;blockquote&gt;
-&lt;p&gt;logging是很友好的python日志管理包，轻便好用，本文介绍logging使用方法。&lt;/p&gt;
+&lt;p&gt;Kite是一款将AI机器学习应用到代码补全的工具，本文介绍其在Windows与Linux系统的安装方法。&lt;/p&gt;
 &lt;/blockquote&gt;
     
     </summary>
