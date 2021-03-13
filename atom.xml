@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.zywvvd.com/"/>
-  <updated>2021-02-28T13:58:47.548Z</updated>
+  <updated>2021-03-13T05:18:53.329Z</updated>
   <id>https://www.zywvvd.com/</id>
   
   <author>
@@ -17,11 +17,138 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>正交-不相关-独立</title>
+    <link href="https://www.zywvvd.com/2021/03/12/math/probability/orthogonal-independent-uncorrelation/orthogonal-independent-uncorrelation/"/>
+    <id>https://www.zywvvd.com/2021/03/12/math/probability/orthogonal-independent-uncorrelation/orthogonal-independent-uncorrelation/</id>
+    <published>2021-03-12T03:28:51.000Z</published>
+    <updated>2021-03-13T05:18:53.329Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;本文介绍随机变量中正交、不相关、独立的区别和联系。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="math" scheme="https://www.zywvvd.com/categories/math/"/>
+    
+      <category term="probability" scheme="https://www.zywvvd.com/categories/math/probability/"/>
+    
+    
+      <category term="math" scheme="https://www.zywvvd.com/tags/math/"/>
+    
+      <category term="probability" scheme="https://www.zywvvd.com/tags/probability/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python PCV 库的安装与使用</title>
+    <link href="https://www.zywvvd.com/2021/03/11/python/PCV-install-for-python/PCV-install-for-python/"/>
+    <id>https://www.zywvvd.com/2021/03/11/python/PCV-install-for-python/PCV-install-for-python/</id>
+    <published>2021-03-11T09:18:22.000Z</published>
+    <updated>2021-03-13T05:18:53.331Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;python图像处理中会调用一些开源库，PCV是其中之一，由于该库比较古老，本文记录安装使用方法。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="Python" scheme="https://www.zywvvd.com/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="https://www.zywvvd.com/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>马氏距离 (马哈拉诺比斯距离) (Mahalanobis distance)</title>
+    <link href="https://www.zywvvd.com/2021/03/02/math/distance/mahalanobis-distance/"/>
+    <id>https://www.zywvvd.com/2021/03/02/math/distance/mahalanobis-distance/</id>
+    <published>2021-03-02T03:59:46.000Z</published>
+    <updated>2021-03-13T05:18:53.325Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;马氏距离(Mahalanobis distance)是由印度统计学家马哈拉诺比斯(P. C. Mahalanobis)提出的，表示点与一个分布之间的距离。它是一种有效的计算两个未知样本集的相似度的方法。与&lt;a href=&quot;https://baike.baidu.com/item/%E6%AC%A7%E6%B0%8F%E8%B7%9D%E7%A6%BB/1798948&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;欧氏距离&lt;/a&gt;不同的是，它考虑到各种特性之间的联系，本文介绍马氏距离相关内容。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="math" scheme="https://www.zywvvd.com/categories/math/"/>
+    
+    
+      <category term="math" scheme="https://www.zywvvd.com/tags/math/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Pytorch can&#39;t optimize a non-leaf Tensor</title>
+    <link href="https://www.zywvvd.com/2021/03/02/deep_learning/pytorch/none-leaf_tensor/none-leaf_tensor/"/>
+    <id>https://www.zywvvd.com/2021/03/02/deep_learning/pytorch/none-leaf_tensor/none-leaf_tensor/</id>
+    <published>2021-03-02T03:02:31.000Z</published>
+    <updated>2021-03-13T05:18:53.323Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;本文记录 pytorch: can’t optimize a non-leaf Tensor 解决方案。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="Deep Learning" scheme="https://www.zywvvd.com/categories/Deep-Learning/"/>
+    
+      <category term="pytorch" scheme="https://www.zywvvd.com/categories/Deep-Learning/pytorch/"/>
+    
+    
+      <category term="pytorch" scheme="https://www.zywvvd.com/tags/pytorch/"/>
+    
+      <category term="Deep Learning" scheme="https://www.zywvvd.com/tags/Deep-Learning/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>概率论基础知识</title>
+    <link href="https://www.zywvvd.com/2021/03/01/math/probability/probability_basic_knowledge/"/>
+    <id>https://www.zywvvd.com/2021/03/01/math/probability/probability_basic_knowledge/</id>
+    <published>2021-03-01T15:47:41.000Z</published>
+    <updated>2021-03-13T05:18:53.330Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;本文记录概率论基础知识。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="math" scheme="https://www.zywvvd.com/categories/math/"/>
+    
+      <category term="probability" scheme="https://www.zywvvd.com/categories/math/probability/"/>
+    
+    
+      <category term="math" scheme="https://www.zywvvd.com/tags/math/"/>
+    
+      <category term="probability" scheme="https://www.zywvvd.com/tags/probability/"/>
+    
+  </entry>
+  
+  <entry>
     <title>线性代数 - 1 - 基础知识</title>
     <link href="https://www.zywvvd.com/2021/02/27/math/linear_algebra/basic_knowledge/"/>
     <id>https://www.zywvvd.com/2021/02/27/math/linear_algebra/basic_knowledge/</id>
     <published>2021-02-27T13:30:29.000Z</published>
-    <updated>2021-02-28T13:58:47.548Z</updated>
+    <updated>2021-03-13T05:18:53.327Z</updated>
     
     <summary type="html">
     
@@ -1149,11 +1276,11 @@
       <category term="故障排除" scheme="https://www.zywvvd.com/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/GPU/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/"/>
     
     
+      <category term="故障排除" scheme="https://www.zywvvd.com/tags/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/"/>
+    
       <category term="深度学习" scheme="https://www.zywvvd.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
       <category term="GPU" scheme="https://www.zywvvd.com/tags/GPU/"/>
-    
-      <category term="故障排除" scheme="https://www.zywvvd.com/tags/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/"/>
     
   </entry>
   
@@ -1205,9 +1332,9 @@
       <category term="VS code" scheme="https://www.zywvvd.com/categories/IDE/VS-code/"/>
     
     
-      <category term="IDE" scheme="https://www.zywvvd.com/tags/IDE/"/>
-    
       <category term="故障排除" scheme="https://www.zywvvd.com/tags/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/"/>
+    
+      <category term="IDE" scheme="https://www.zywvvd.com/tags/IDE/"/>
     
       <category term="VS code" scheme="https://www.zywvvd.com/tags/VS-code/"/>
     
@@ -1748,9 +1875,9 @@
       <category term="故障排除" scheme="https://www.zywvvd.com/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/Tensorflow/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/"/>
     
     
-      <category term="深度学习" scheme="https://www.zywvvd.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
-    
       <category term="故障排除" scheme="https://www.zywvvd.com/tags/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/"/>
+    
+      <category term="深度学习" scheme="https://www.zywvvd.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
       <category term="Tensorflow" scheme="https://www.zywvvd.com/tags/Tensorflow/"/>
     
@@ -2028,10 +2155,10 @@
   
   <entry>
     <title>算法学习笔记 —— 排序</title>
-    <link href="https://www.zywvvd.com/2020/05/21/algorithm/sort/about_sort/"/>
-    <id>https://www.zywvvd.com/2020/05/21/algorithm/sort/about_sort/</id>
+    <link href="https://www.zywvvd.com/2020/05/21/algorithm/tree/about_tree/"/>
+    <id>https://www.zywvvd.com/2020/05/21/algorithm/tree/about_tree/</id>
     <published>2020-05-21T05:15:39.000Z</published>
-    <updated>2020-11-14T08:17:13.509Z</updated>
+    <updated>2020-11-14T08:17:13.510Z</updated>
     
     <summary type="html">
     
@@ -2055,10 +2182,10 @@
   
   <entry>
     <title>算法学习笔记 —— 排序</title>
-    <link href="https://www.zywvvd.com/2020/05/21/algorithm/tree/about_tree/"/>
-    <id>https://www.zywvvd.com/2020/05/21/algorithm/tree/about_tree/</id>
+    <link href="https://www.zywvvd.com/2020/05/21/algorithm/sort/about_sort/"/>
+    <id>https://www.zywvvd.com/2020/05/21/algorithm/sort/about_sort/</id>
     <published>2020-05-21T05:15:39.000Z</published>
-    <updated>2020-11-14T08:17:13.510Z</updated>
+    <updated>2020-11-14T08:17:13.509Z</updated>
     
     <summary type="html">
     
@@ -2103,9 +2230,9 @@
       <category term="故障排除" scheme="https://www.zywvvd.com/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/Keras/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/"/>
     
     
-      <category term="深度学习" scheme="https://www.zywvvd.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
-    
       <category term="故障排除" scheme="https://www.zywvvd.com/tags/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/"/>
+    
+      <category term="深度学习" scheme="https://www.zywvvd.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
       <category term="Keras" scheme="https://www.zywvvd.com/tags/Keras/"/>
     
@@ -2246,9 +2373,9 @@
       <category term="故障排除" scheme="https://www.zywvvd.com/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/Keras/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/"/>
     
     
-      <category term="深度学习" scheme="https://www.zywvvd.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
-    
       <category term="故障排除" scheme="https://www.zywvvd.com/tags/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/"/>
+    
+      <category term="深度学习" scheme="https://www.zywvvd.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
       <category term="Keras" scheme="https://www.zywvvd.com/tags/Keras/"/>
     

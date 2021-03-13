@@ -1,6 +1,512 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>正交-不相关-独立</title>
+    <url>/2021/03/12/math/probability/orthogonal-independent-uncorrelation/orthogonal-independent-uncorrelation/</url>
+    <content><![CDATA[<blockquote>
+<p>本文介绍随机变量中正交、不相关、独立的区别和联系。</p>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><blockquote>
+<p>三者均是描述随机变量之间关系的概念，看似都可以表示两个随机变量的疏远关系，但定义和约束均有不同。</p>
+</blockquote>
+<ul>
+<li>考察$m$维随机变量$X,Y$之间的关系。</li>
+</ul>
+<h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><h4 id="正交"><a href="#正交" class="headerlink" title="正交"></a>正交</h4><blockquote>
+<p>定义$R(X, Y) = E[XY]$为相关函数：若$R(X, Y)=0$，称$X,Y$正交</p>
+</blockquote>
+<h4 id="不相关"><a href="#不相关" class="headerlink" title="不相关"></a>不相关</h4><blockquote>
+<p>定义 $E[XY] = E[X]E[Y]$，则$X,Y$不相关</p>
+</blockquote>
+<ul>
+<li>$X,Y$的协方差：</li>
+</ul>
+<p>$$<br>Cov(X,Y)=E[XY]- E[X]E[Y]<br>$$</p>
+<blockquote>
+<p> 不相关也可以用协方差为0表示</p>
+</blockquote>
+<ul>
+<li>$X,Y$的相关系数：</li>
+</ul>
+<p>$$<br>r(X, Y)=\frac{\operatorname{Cov}(X, Y)}{\sqrt{\operatorname{Var}[X] \operatorname{Var}[Y]}}<br>$$</p>
+<blockquote>
+<p>不相关也可以用相关系数为0表示</p>
+</blockquote>
+<h4 id="独立"><a href="#独立" class="headerlink" title="独立"></a>独立</h4><blockquote>
+<p>独立一般用他们的概率密度函数来表示。联合分布等于他们各自的独立边缘分布的乘积，则称为独立：</p>
+</blockquote>
+<p>$$<br>p(X,Y) = p(X)p(Y)<br>$$</p>
+<h3 id="关系"><a href="#关系" class="headerlink" title="关系"></a>关系</h3><h4 id="独立-gt-不相关"><a href="#独立-gt-不相关" class="headerlink" title="独立 -&gt; 不相关"></a>独立 -&gt; 不相关</h4><blockquote>
+<p>独立是对变量更严苛的要求，如果两个随机变量独立，则必定不相关，也就是说独立是不相关的充分不必要条件。</p>
+</blockquote>
+<ul>
+<li>若已知$X,Y$联合概率密度$f(x, y)$等于二者边缘密度函数$g(x), h(y)$的乘积，则有：</li>
+</ul>
+
+$$
+E (X,Y)=\iint x y f(x, y) d x d y=\iint x y g(x) h(y) d x d y=\int x g(x) d x \int y h(y) d y=E (X) E(Y)
+$$
+
+
+
+<ul>
+<li>因此独立变量不相关，而相反不相关无法直接推导出独立</li>
+</ul>
+<h4 id="不相关-–高斯分布–-gt-独立"><a href="#不相关-–高斯分布–-gt-独立" class="headerlink" title="不相关 –高斯分布–&gt; 独立"></a>不相关 –高斯分布–&gt; 独立</h4><blockquote>
+<p>在随机变量服从高斯分布时，不相关可以推导出独立：</p>
+</blockquote>
+<ul>
+<li>我们此时考虑稍复杂一些的情况，$X$为$n$维随机变量：</li>
+</ul>
+<p>$$<br>X^T=[x_1,x_2,…,x_n]<br>$$</p>
+<ul>
+<li>随机变量之间两两不相关，并且服从高斯分布：</li>
+</ul>
+
+$$
+Cov(x_i,x_j)=0,i \ne j
+$$
+
+$$
+x_i \sim N\left(\mu_i, \sigma_i^{2}\right)
+$$
+
+
+
+<ul>
+<li>那么此时$X$的联合概率密度函数为：</li>
+</ul>
+
+$$
+f\left( {{x_1},{x_x} \ldots ,{x_n}} \right) = \frac{1}{{\sqrt {{{\left( {2\pi } \right)}^n}} {{\left| {\bf{\Sigma }} \right|}^{\frac{1}{2}}}}}{e^{ - \frac{1}{2}{{({\bf{X}} - {\bf{\mu }})}^T}{{\bf{\Sigma }}^{ - 1}}({\bf{X}} - {\bf{\mu }})}}
+$$
+
+
+<ul>
+<li>其中${\bf{\Sigma } }$为协方差矩阵，因为随机变量之间两两不相关：</li>
+</ul>
+
+$$
+{\bf{\Sigma }} = \left( {\begin{array}{*{20}{c}}
+{\sigma _1^2}&{}&{}&{}\\
+{}&{\sigma _2^2}&{}&{}\\
+{}&{}& \ddots &{}\\
+{}&{}&{}&{\sigma _n^2}
+\end{array}} \right)
+$$
+
+
+<ul>
+<li>其中$\sigma_i $为$x_i$的标准差，那么联合概率密度函数可以写为：</li>
+</ul>
+
+$$
+\begin{aligned}
+f\left( {{x_1},{x_x} \ldots ,{x_n}} \right) &= \frac{1}{{\sqrt {{{\left( {2\pi } \right)}^n}} \prod\limits_{i = 1}^n {{\sigma _i}} }}{e^{ - \frac{1}{2}{{({\bf{X}} - {\bf{\mu }})}^T}\left( {\begin{array}{*{20}{c}}
+{\frac{1}{{\sigma _1^2}}}&{}&{}&{}\\
+{}&{\frac{1}{{\sigma _2^2}}}&{}&{}\\
+{}&{}& \ddots &{}\\
+{}&{}&{}&{\frac{1}{{\sigma _n^2}}}\\
+\end{array}} \right)({\bf{X}} - {\bf{\mu }})}}\\
+ &= \frac{1}{{\sqrt {{{\left( {2\pi } \right)}^n}} \prod\limits_{i = 1}^n {{\sigma _i}} }}{e^{ - \frac{1}{2}[\frac{{{x_1} - {\mu _1}}}{{\sigma _1^2}},\frac{{{x_2} - {\mu _2}}}{{\sigma _2^2}},...,\frac{{{x_n} - {\mu _n}}}{{\sigma _n^2}}]({\bf{X}} - {\bf{\mu }})}}\\
+ & = \frac{1}{{\sqrt {{{\left( {2\pi } \right)}^n}} \prod\limits_{i = 1}^n {{\sigma _i}} }}{e^{ - \frac{1}{2}\sum\limits_{i = 1}^n {\frac{{{{({x_n} - {\mu _n})}^2}}}{{\sigma _n^2}}} }}\\
+ & = \prod\limits_{i = 1}^n {\frac{1}{{\sqrt {2\pi } {\sigma _i}}}} {e^{ - \frac{1}{2}\frac{{{{({x_i} - {\mu _i})}^2}}}{{\sigma _i^2}}}}	\\
+ & = \prod\limits_{i = 1}^n {f({x_i})} 
+ \end{aligned}
+$$
+
+
+<ul>
+<li>因此在随机变量服从高斯分布时，不相关与独立等价，互为充要条件。</li>
+</ul>
+<h4 id="正交-–-不相关"><a href="#正交-–-不相关" class="headerlink" title="正交 – 不相关"></a>正交 – 不相关</h4><ul>
+<li>根据定义可以得知： 当$E[X]，E[Y]$至少有一个为0时正交等价于不相关。</li>
+</ul>
+<h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><ul>
+<li><a href="http://blog.sciencenet.cn/blog-812827-1096465.html" target="_blank" rel="noopener">http://blog.sciencenet.cn/blog-812827-1096465.html</a></li>
+<li><a href="https://blog.csdn.net/wjj5881005/article/details/53320403/" target="_blank" rel="noopener">https://blog.csdn.net/wjj5881005/article/details/53320403/</a></li>
+<li><a href="https://www.zhihu.com/question/26583332/answer/33327497" target="_blank" rel="noopener">https://www.zhihu.com/question/26583332/answer/33327497</a></li>
+<li><a href="https://baike.baidu.com/item/%E4%B8%8D%E7%9B%B8%E5%85%B3%E9%9A%8F%E6%9C%BA%E5%8F%98%E9%87%8F/19126995?fr=aladdin" target="_blank" rel="noopener">https://baike.baidu.com/item/%E4%B8%8D%E7%9B%B8%E5%85%B3%E9%9A%8F%E6%9C%BA%E5%8F%98%E9%87%8F/19126995?fr=aladdin</a></li>
+</ul>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <categories>
+        <category>math</category>
+        <category>probability</category>
+      </categories>
+      <tags>
+        <tag>math</tag>
+        <tag>probability</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>python PCV 库的安装与使用</title>
+    <url>/2021/03/11/python/PCV-install-for-python/PCV-install-for-python/</url>
+    <content><![CDATA[<blockquote>
+<p>python图像处理中会调用一些开源库，PCV是其中之一，由于该库比较古老，本文记录安装使用方法。</p>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><ul>
+<li><a href="https://github.com/jesolem/PCV" target="_blank" rel="noopener">https://github.com/jesolem/PCV</a></li>
+<li><a href="https://codechina.csdn.net/mirrors/jesolem/pcv?utm_source=csdn_github_accelerator" target="_blank" rel="noopener">https://codechina.csdn.net/mirrors/jesolem/pcv?utm_source=csdn_github_accelerator</a></li>
+</ul>
+<blockquote>
+<p>第二个是国内镜像，速度会快一些</p>
+</blockquote>
+<ul>
+<li>git clone到任意目录，或者直接下载zip文件.</li>
+</ul>
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><ul>
+<li>进入下载根目录运行命令：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">python setup.py install</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>如果你使用 python3 你就会发现很多 print 错误</li>
+<li>这是由于库过于古老，仍沿用了python2 的print语法</li>
+<li>需要逐个将print ‘hello’ 改为 print (‘hello’)</li>
+</ul>
+<h4 id="修改文件"><a href="#修改文件" class="headerlink" title="修改文件"></a>修改文件</h4><ul>
+<li>报错信息包含的文件都在PCV子文件夹中，具体需要修改的文件列表如下: </li>
+</ul>
+<blockquote>
+<p>在列表文件中搜索 print 并安装python3格式修改即可</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.&#x2F;PCV&#x2F;tools&#x2F;ncut.py</span><br><span class="line">.&#x2F;PCV&#x2F;tools&#x2F;imtools.py</span><br><span class="line">.&#x2F;PCV&#x2F;tools&#x2F;ransac.py</span><br><span class="line">.&#x2F;PCV&#x2F;imagesearch&#x2F;imagesearch.py</span><br><span class="line">.&#x2F;PCV&#x2F;classifiers&#x2F;bayes.py</span><br><span class="line">.&#x2F;PCV&#x2F;geometry&#x2F;warp.py</span><br><span class="line">.&#x2F;PCV&#x2F;localdescriptors&#x2F;dsift.py</span><br><span class="line">.&#x2F;PCV&#x2F;localdescriptors&#x2F;sift.py</span><br></pre></td></tr></table></figure>
+
+<h4 id="重新安装"><a href="#重新安装" class="headerlink" title="重新安装"></a>重新安装</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">python setup.py install</span><br></pre></td></tr></table></figure>
+
+<h3 id="验证"><a href="#验证" class="headerlink" title="验证"></a>验证</h3><ul>
+<li>执行</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">python</span><br><span class="line">import PCV</span><br><span class="line">from PCV.tools import imtools</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>没有报错既说明安装成功。</p>
+</blockquote>
+<h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><ul>
+<li><a href="https://www.it610.com/article/1296222817162960896.htm" target="_blank" rel="noopener">https://www.it610.com/article/1296222817162960896.htm</a></li>
+</ul>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>马氏距离 (马哈拉诺比斯距离) (Mahalanobis distance)</title>
+    <url>/2021/03/02/math/distance/mahalanobis-distance/</url>
+    <content><![CDATA[<blockquote>
+<p>马氏距离(Mahalanobis distance)是由印度统计学家马哈拉诺比斯(P. C. Mahalanobis)提出的，表示点与一个分布之间的距离。它是一种有效的计算两个未知样本集的相似度的方法。与<a href="https://baike.baidu.com/item/%E6%AC%A7%E6%B0%8F%E8%B7%9D%E7%A6%BB/1798948" target="_blank" rel="noopener">欧氏距离</a>不同的是，它考虑到各种特性之间的联系，本文介绍马氏距离相关内容。</p>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="欧氏距离的缺点"><a href="#欧氏距离的缺点" class="headerlink" title="欧氏距离的缺点"></a>欧氏距离的缺点</h3><blockquote>
+<p>距离度量在各个学科中有着广泛用途，当数据表示为向量$\overrightarrow{\mathbf{x} }=\left(x_{1}, x_{2}, \cdots, x_{n}\right)^{T}$和$\overrightarrow{\mathbf{y}}=\left(y_{1}, y_{2}, \cdots, y_{n}\right)^{T}$时，最直观的距离度量就是欧式距离了：</p>
+</blockquote>
+
+$$
+d(x, y):=\sqrt{\left(x_{1}-y_{1}\right)^{2}+\left(x_{2}-y_{2}\right)^{2}+\cdots+\left(x_{n}-y_{n}\right)^{2}}=\sqrt{\sum_{i=1}^{n}\left(x_{i}-y_{i}\right)^{2}}
+$$
+
+
+
+<blockquote>
+<p>但是这种度量方式没有考虑到各个维度之间的差异和相关等因素，不同的向量度量距离时权重都相同，这可能会对结果可信度产生干扰。</p>
+</blockquote>
+<h3 id="马氏距离"><a href="#马氏距离" class="headerlink" title="马氏距离"></a>马氏距离</h3><blockquote>
+<p>度量样本距离某个分布的距离，先将样本与分布标准化到多维标准正态分布后度量欧式距离</p>
+</blockquote>
+<h4 id="思想"><a href="#思想" class="headerlink" title="思想"></a>思想</h4><ul>
+<li>将变量按照主成分进行旋转，消除维度间的相关性</li>
+<li>对向量和分布进行标准化，让各个维度同为标准正态分布</li>
+</ul>
+<h4 id="推导"><a href="#推导" class="headerlink" title="推导"></a>推导</h4><ul>
+<li>分布由$n$个$m$维向量刻画，即共$n$条数据，每条数据由一个$m$维向量表示：</li>
+</ul>
+
+$$
+X = \left[ {\begin{array}{*{20}{c}}
+{{x_{11}}}&{{x_{12}}}& \cdots &{{x_{1n}}}\\
+{{x_{21}}}&{{x_{22}}}&{}&{{x_{2n}}}\\
+\vdots &{}& \ddots & \vdots \\
+{{x_{m1}}}&{{x_{m2}}}& \cdots &{{x_{mn}}}
+\end{array}} \right]
+$$
+
+
+<ul>
+<li>$X$的均值为${\mu _X}$</li>
+<li>$X$的协方差矩阵为:</li>
+</ul>
+<p>$$<br>\sum\nolimits_X  =  \frac{1}{n}(X - {\mu _X}){(X - {\mu _X})^T}<br>$$</p>
+<ul>
+<li>为消除维度间的相关性，通过一个$m \times m$的矩阵$Q^T$对$X$进行坐标表换，将数据映射到新的坐标系下，用$Y$表示：</li>
+</ul>
+<p>$$<br>Y=Q^TX<br>$$</p>
+<blockquote>
+<p>此时我们期望在$Q^T$的作用下，$Y$ 的向量表示中，不同维度之间是相互独立的，此时$Y$ 的协方差矩阵应该是一个对角矩阵（除对角线元素外，其余元素均为0）。</p>
+</blockquote>
+<ul>
+<li>Y 的均值：$u_{Y}=Q^{T} u_{X}$</li>
+<li>Y 的协方差矩阵：</li>
+</ul>
+
+$$
+\begin{aligned}
+\Sigma_{Y} &=\frac{1}{n}\left[Y-u_{Y}\right]\left[y-u_{Y}\right]^{T} \\
+&=\frac{1}{n}\left[Q^{T}\left(X-u_{x}\right)\right]\left[Q^{T}\left(X-u_{X}\right)\right]^{T} \\
+&=Q^{T} \frac{1}{n}\left(X-u_{X}\right)\left(X-u_{X}\right)^{T} Q \\
+&=Q^{T} \Sigma_{X} Q
+\end{aligned}
+$$
+
+
+
+<ul>
+<li><p>从这里可以发现，当 $Q $是$\Sigma_{X}$的特征向量组成的矩阵时，$\Sigma_{Y}$ 一定是对角矩阵，且值为每个特征向量对应的特征值。由于$\Sigma_{X}$是对称矩阵，因此肯定可以通过特征分解得到 $Q$ ，且 $Q$ 是正交矩阵。</p>
+</li>
+<li><p>$\Sigma_{Y}$的对角线元素含义为$Y$中每个向量的方差，因此均为非负值，从这个角度可以说明协方差矩阵的特征值为非负值。</p>
+</li>
+<li><p>协方差矩阵的特征值非负还有一种证明思路：</p>
+<p>协方差矩阵 $\Sigma_{X}$，对其进行SVD分解：<br>$$<br>{\Sigma_X} = U \Sigma {V ^ T }<br>$$<br>由于 $\Sigma_{X}$ 是对称矩阵，可以得到：<br>$$<br>U=V<br>$$</p>
+</li>
+</ul>
+<p>  而且$U$是正交矩阵，有：</p>
+  
+  $$
+  U^T{\Sigma _X}U = \Sigma
+  $$
+
+  $$
+  \Sigma  = {U^T}(X - {\mu _X}){(X - {\mu _X})^T}U
+  $$
+
+  $$
+  \Sigma  = ({U^T}X - {U^T}{\mu _X}){({U^T}X - {U^T}{\mu _X})^T}
+  $$
+
+  
+
+<p>  令$Y = {U^T}X - {U^T}{\mu _X}$：<br>  $$<br>  \Sigma  = Y{Y^T}<br>  $$<br>  由于$\Sigma$是特征值为对角线元素的对角阵，因此对角线外元素为0，表示$Y$中向量相互之间不相关。</p>
+<p>  对于任意一个$\Sigma$中的特征值$\lambda_i$，计算公式为：</p>
+<p>  $$<br>  {\lambda _ i } = { Y _ i } { Y _ i } ^ T = \sum \limits_ {j = 1} ^n { {Y_{ij} } ^ 2}  \ge 0<br>  $$<br>  因此协方差矩阵实时上是半正定矩阵。</p>
+<ul>
+<li>不相关与独立的问题：<ul>
+<li>此处我们说明了变换后的向量之间相关系数为0，也就是向量之间不相关</li>
+<li>而事实上独立是比不相关更强的约束，不相关往往不能推出独立</li>
+<li>但在<a href="https://www.zywvvd.com/2021/03/12/math/probability/orthogonal-independent-uncorrelation/orthogonal-independent-uncorrelation/">高斯分布下，不相关和独立是等价的</a></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>接下来我们对向量进行标准化</p>
+</blockquote>
+<ul>
+<li><p>当我们减去均值后，向量已经变成了0均值的向量，距离标准化仅差将方差变为1</p>
+</li>
+<li><p>在经历了$Y=Q^TX$变换后，$Y$的协方差矩阵已经成为了对角阵，对角线元素为$Y$中各个维度数据的方差，那么我们仅需让$Y$中各个维度数据除以该维度数据的标准差即可。</p>
+</li>
+<li><p>我们将去相关化、0均值化、标准化过后的数据记为$Z$：</p>
+
+  $$
+  \begin{aligned}
+  Z &= \left[ {\begin{array}{*{20}{c}}
+  {\frac{1}{{{\sigma _1}}}}&{}&{}&{}\\
+  {}&{\frac{1}{{{\sigma _2}}}}&{}&{}\\
+  {}&{}& \ddots &{}\\
+  {}&{}&{}&{\frac{1}{{{\sigma _n}}}}
+  \end{array}} \right](Y - {\mu _Y}) 
+  \\&= \Sigma _Y^{ - \frac{1}{2}}{Q^T}(X - {\mu _X}) \\
+  &= ({Q^T}{\Sigma _X}Q)_{}^{ - \frac{1}{2}}{Q^T}(X - {\mu _X})
+\end{aligned}
+  $$
+  
+</li>
+<li><p>而马氏距离就是度量纠正过后的向量$Z$到分布中心（原点）的欧式距离：</p>
+
+
+$$
+\begin{array}{l}
+{D_M}(X) & =
+\sqrt {{Z^T}Z}  \\&= \sqrt {{{\left( {X - {u_X}} \right)}^T}Q{{\left( {{Q^T}{\Sigma _X}Q} \right)}^{ - \frac{1}{2}}}{{\left( {{Q^T}{\Sigma _X}Q} \right)}^{ - \frac{1}{2}}}{Q^T}\left( {X - {u_X}} \right)} \\
+ &= \sqrt {{{\left( {X - {u_X}} \right)}^T}Q{{\left( {{Q^T}{\Sigma _X}Q} \right)}^{ - 1}}{Q^T}\left( {X - {u_X}} \right)} \\
+ &= \sqrt {{{\left( {X - {u_X}} \right)}^T}Q{Q^{ - 1}}\Sigma _X^{ - 1}Q{Q^T}\left( {X - {u_X}} \right)} \\
+ &= \sqrt {{{\left( {X - {u_X}} \right)}^T}\Sigma _X^{-1}\left( {X - {u_X}} \right)} \\
+
+\end{array}
+$$
+
+
+
+</li>
+</ul>
+<h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><ul>
+<li><a href="https://baike.baidu.com/item/%E9%A9%AC%E6%B0%8F%E8%B7%9D%E7%A6%BB/8927833?fr=aladdin" target="_blank" rel="noopener">https://baike.baidu.com/item/%E9%A9%AC%E6%B0%8F%E8%B7%9D%E7%A6%BB/8927833?fr=aladdin</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/109100222" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/109100222</a></li>
+</ul>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <categories>
+        <category>math</category>
+      </categories>
+      <tags>
+        <tag>math</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Pytorch can&#39;t optimize a non-leaf Tensor</title>
+    <url>/2021/03/02/deep_learning/pytorch/none-leaf_tensor/none-leaf_tensor/</url>
+    <content><![CDATA[<blockquote>
+<p>本文记录 pytorch: can’t optimize a non-leaf Tensor 解决方案。</p>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="错误"><a href="#错误" class="headerlink" title="错误"></a>错误</h3><blockquote>
+<p>运行优化时报错</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> torch <span class="keyword">import</span> optim</span><br><span class="line"> </span><br><span class="line">weights = torch.rand(<span class="number">2</span>,<span class="number">1</span>,<span class="number">128</span>,<span class="number">416</span>)</span><br><span class="line">weights.requires_grad = <span class="literal">True</span></span><br><span class="line">weights = weights.cuda()</span><br><span class="line">optimizer = optim.Adam([weights], lr=<span class="number">0.01</span>)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>报错： can’t optimize a non-leaf Tensor</li>
+</ul>
+<h3 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h3><blockquote>
+<p>需要先把Tensor放入到GPU中，然后再设置Tensor.requires_grad=True。</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> torch <span class="keyword">import</span> optim</span><br><span class="line"> </span><br><span class="line">weights = torch.rand(<span class="number">2</span>,<span class="number">1</span>,<span class="number">128</span>,<span class="number">416</span>)</span><br><span class="line">weights = weights.cuda()</span><br><span class="line">weights.requires_grad = <span class="literal">True</span></span><br><span class="line">optimizer = optim.Adam([weights], lr=<span class="number">0.01</span>)</span><br></pre></td></tr></table></figure>
+
+<h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><ul>
+<li><a href="https://blog.csdn.net/nkhgl/article/details/100047276" target="_blank" rel="noopener">https://blog.csdn.net/nkhgl/article/details/100047276</a></li>
+</ul>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <categories>
+        <category>Deep Learning</category>
+        <category>pytorch</category>
+      </categories>
+      <tags>
+        <tag>pytorch</tag>
+        <tag>Deep Learning</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>概率论基础知识</title>
+    <url>/2021/03/01/math/probability/probability_basic_knowledge/</url>
+    <content><![CDATA[<blockquote>
+<p>本文记录概率论基础知识。</p>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="概率与分布"><a href="#概率与分布" class="headerlink" title="概率与分布"></a>概率与分布</h3><h4 id="条件概率与独立事件"><a href="#条件概率与独立事件" class="headerlink" title="条件概率与独立事件"></a>条件概率与独立事件</h4><h5 id="条件概率"><a href="#条件概率" class="headerlink" title="条件概率"></a>条件概率</h5><ul>
+<li>已知$A$事件发生的条件下$B$发生的概率，记作$P(B \mid A)$ ，它等于事件$AB$的概率相对于事件$A$的概率，即：</li>
+</ul>
+<p>$$<br>P(B \mid A)=\frac{P(A B)}{P(A)}<br>$$</p>
+<ul>
+<li>其中 ${P(A)} &gt; 0$</li>
+</ul>
+<h5 id="条件概率分布的链式法则"><a href="#条件概率分布的链式法则" class="headerlink" title="条件概率分布的链式法则"></a>条件概率分布的链式法则</h5><ul>
+<li>对于$n$个随机变量${X_{1}, X_{2}, \cdots, X_{n}}$ ，有：</li>
+</ul>
+<p>$$<br>P\left(X_{1}, X_{2}, \cdots, X_{n}\right)=P\left(X_{1}\right) \prod_{i=2}^{n} P\left(X_{i} \mid X_{1}, \cdots, X_{i} 1\right)<br>$$</p>
+<h5 id="变量相互独立"><a href="#变量相互独立" class="headerlink" title="变量相互独立"></a>变量相互独立</h5><ul>
+<li>两个随机变量$X,Y$相互独立的数学描述：</li>
+</ul>
+<p>$$<br>P(X, Y)=P(X) P(Y)<br>$$</p>
+<h5 id="变量相对独立"><a href="#变量相对独立" class="headerlink" title="变量相对独立"></a>变量相对独立</h5><ul>
+<li>两个随机变量$X,Y$关于随机变量$Z$条件独立的数学描述：</li>
+</ul>
+<p>$$<br>P(X, Y \mid Z)=P(X \mid Z) P(Y \mid Z)<br>$$</p>
+<h4 id="联合概率分布"><a href="#联合概率分布" class="headerlink" title="联合概率分布"></a>联合概率分布</h4><h5 id="联合分布"><a href="#联合分布" class="headerlink" title="联合分布"></a>联合分布</h5><ul>
+<li>定义$X$和$Y$的联合分布为：</li>
+</ul>
+
+$$
+P(a, b)=P\{X \leq a, Y \leq b\}, \quad-\infty < a , b < + \infty
+$$
+
+
+
+<ul>
+<li>$X$的分布可以从联合分布中得到：</li>
+</ul>
+
+$$
+P_{X}(a)=P\{X \leq a\}=P\{X \leq a, Y \leq \infty\}=P(a, \infty), \quad-\infty < a < + \infty
+$$
+
+
+
+<ul>
+<li>$Y$的分布可以从联合分布中得到：</li>
+</ul>
+
+$$
+P_{Y}(b)=P\{Y \leq b\}=P\{X \leq \infty, Y \leq b\}=P(\infty, b), \quad-\infty < b < + \infty
+$$
+
+
+
+<h5 id="联合概率质量函数"><a href="#联合概率质量函数" class="headerlink" title="联合概率质量函数"></a>联合概率质量函数</h5><ul>
+<li>当$X$和$Y$都是离散随机变量时， 定义$X$和$Y$的联合概率质量函数为：</li>
+</ul>
+
+$$
+p(x, y)=P\{X=x, Y=y\}
+$$
+
+
+
+<ul>
+<li>$X$和$Y$的概率质量函数分布为：</li>
+</ul>
+<p>$$<br>p_{X}(x)=\sum_{y} p(x, y) \quad p_{Y}(y)=\sum_{x} p(x, y)<br>$$</p>
+<h5 id="概率密度函数"><a href="#概率密度函数" class="headerlink" title="概率密度函数"></a>概率密度函数</h5><ul>
+<li>当$X$和$Y$联合地连续时，即存在函数$p(x,y)$ ，使得对于所有的实数集合$\mathbb{A}$和$\mathbb{B}$满足：</li>
+</ul>
+
+$$
+P\{X \in \mathbb{A}, Y \in \mathbb{B}\}=\int_{\mathbb{B}} \int_{\mathbb{A}} p(x, y) d x d y
+$$
+
+
+
+<ul>
+<li>则函数$p(x,y)$称为$X$和$Y$的概率密度函数。</li>
+<li>$X$和$Y$的联合分布为：</li>
+</ul>
+
+$$
+P(a, b)=P\{X \leq a, Y \leq b\}=\int_{-\infty}^{a} \int_{-\infty}^{b} p(x, y) d x d y
+$$
+
+
+
+<ul>
+<li>$X$和$Y$的分布函数：</li>
+</ul>
+<p>$$<br>P_{X}(a)=\int_{-\infty}^{a} \int_{-\infty}^{\infty} p(x, y) d x d y=\int_{-\infty}^{a} p_{X}(x) d x<br>$$</p>
+<p>$$<br>P_{Y}(b)=\int_{\infty}^{\infty} \int_{\infty}^{b} p(x, y) d x d y=\int_{\infty}^{b} p_{Y}(y) d y<br>$$</p>
+<ul>
+<li>$X$和$Y$的概率密度函数：</li>
+</ul>
+<p>$$<br>p_{X}(x)=\int_{-\infty}^{\infty} p(x, y) d y<br>$$</p>
+<p>$$<br>p_{Y}(y)=\int_{-\infty}^{\infty} p(x, y) d x<br>$$</p>
+<h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><ul>
+<li><a href="http://www.huaxiaozhuan.com/%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/chapters/2_probability.html" target="_blank" rel="noopener">http://www.huaxiaozhuan.com/%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/chapters/2_probability.html</a></li>
+</ul>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <categories>
+        <category>math</category>
+        <category>probability</category>
+      </categories>
+      <tags>
+        <tag>math</tag>
+        <tag>probability</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>线性代数 - 1 - 基础知识</title>
     <url>/2021/02/27/math/linear_algebra/basic_knowledge/</url>
     <content><![CDATA[<blockquote>
@@ -125,6 +631,31 @@ $$
 
 
 
+<h3 id="行列式"><a href="#行列式" class="headerlink" title="行列式"></a>行列式</h3><ul>
+<li>方阵 $A$ 的行列式，记作 $det(A)$或$|A|$：</li>
+</ul>
+
+$$
+D=\left|\begin{array}{llll}
+a_{11} & a_{12} & \cdots & a_{1 n} \\
+a_{21} & a_{22} & \cdots & a_{2 n} \\
+\cdots & \cdots & \cdots & \cdots \\
+a_{n 1} & a_{n 2} & \cdots & a_{n n}
+\end{array}\right|
+$$
+
+
+<ul>
+<li>计算公式：</li>
+</ul>
+<p>$$<br>D=\sum (- 1) ^ {k } a_{1 k_{ 1} } a_{2 k_{2} } \cdots a_ { n k _ { n} }<br>$$</p>
+<ul>
+<li>表示的是$n$个$n$维向量构成的n维平行多面体的体积，该体积有正负，若存在线性相关的向量，行列式为0</li>
+<li>行列式$A$中某行(或列)用同一数$k$乘,其结果等于$kA$</li>
+<li>行列式$A$等于其转置行列式$A^T$($A^T$的第i行为$A$的第$i$列)</li>
+<li>行列式$A$中两行（或列）互换,其结果等于$-A$</li>
+<li>把行列式$A$的某行（或列）中各元同乘一数后加到另一行（或列）中各对应元上，结果仍然是$A$</li>
+</ul>
 <h3 id="方阵的迹"><a href="#方阵的迹" class="headerlink" title="方阵的迹"></a>方阵的迹</h3><ul>
 <li>方阵$\mathbf{A}=\left(a_{i, j}\right)_{n \times n}$的迹，记作$\operatorname{tr}(\mathbf{A})$，对角线元素之和，也等于特征值的和：</li>
 </ul>
@@ -1327,29 +1858,29 @@ $$
 <h4 id="传输文件"><a href="#传输文件" class="headerlink" title="传输文件"></a>传输文件</h4><h5 id="从服务器上下载文件"><a href="#从服务器上下载文件" class="headerlink" title="从服务器上下载文件"></a>从服务器上下载文件</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">scp username@servername:&#x2F;path&#x2F;filename &#x2F;var&#x2F;www&#x2F;local_dir（本地目录）</span><br></pre></td></tr></table></figure>
 
 <blockquote>
-<p>例如: scp <a href="mailto:&#114;&#x6f;&#111;&#x74;&#64;&#49;&#x39;&#x32;&#46;&#x31;&#x36;&#x38;&#46;&#x30;&#46;&#49;&#48;&#x31;">&#114;&#x6f;&#111;&#x74;&#64;&#49;&#x39;&#x32;&#46;&#x31;&#x36;&#x38;&#46;&#x30;&#46;&#49;&#48;&#x31;</a>:/var/www/test.txt 把192.168.0.101上的/var/www/test.txt 的文件下载到/var/www/local_dir（本地目录）</p>
+<p>例如: scp <a href="mailto:&#114;&#111;&#x6f;&#x74;&#x40;&#49;&#57;&#50;&#46;&#49;&#x36;&#x38;&#46;&#x30;&#46;&#x31;&#48;&#x31;">&#114;&#111;&#x6f;&#x74;&#x40;&#49;&#57;&#50;&#46;&#49;&#x36;&#x38;&#46;&#x30;&#46;&#x31;&#48;&#x31;</a>:/var/www/test.txt 把192.168.0.101上的/var/www/test.txt 的文件下载到/var/www/local_dir（本地目录）</p>
 </blockquote>
 <h5 id="上传本地文件到服务器"><a href="#上传本地文件到服务器" class="headerlink" title="上传本地文件到服务器"></a>上传本地文件到服务器</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">scp &#x2F;path&#x2F;filename username@servername:&#x2F;path</span><br></pre></td></tr></table></figure>
 
 <blockquote>
-<p>例如: scp /var/www/test.php <a href="mailto:&#114;&#x6f;&#x6f;&#116;&#x40;&#49;&#57;&#x32;&#x2e;&#49;&#54;&#x38;&#x2e;&#48;&#46;&#49;&#x30;&#x31;">&#114;&#x6f;&#x6f;&#116;&#x40;&#49;&#57;&#x32;&#x2e;&#49;&#54;&#x38;&#x2e;&#48;&#46;&#49;&#x30;&#x31;</a>:/var/www/ 把本机/var/www/目录下的test.php文件上传到192.168.0.101这台服务器上的/var/www/目录中</p>
+<p>例如: scp /var/www/test.php <a href="mailto:&#114;&#x6f;&#x6f;&#116;&#64;&#x31;&#x39;&#50;&#46;&#49;&#54;&#x38;&#x2e;&#x30;&#46;&#x31;&#48;&#49;">&#114;&#x6f;&#x6f;&#116;&#64;&#x31;&#x39;&#50;&#46;&#49;&#54;&#x38;&#x2e;&#x30;&#46;&#x31;&#48;&#49;</a>:/var/www/ 把本机/var/www/目录下的test.php文件上传到192.168.0.101这台服务器上的/var/www/目录中</p>
 </blockquote>
 <h5 id="从服务器下载整个目录"><a href="#从服务器下载整个目录" class="headerlink" title="从服务器下载整个目录"></a>从服务器下载整个目录</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">scp -r username@servername:&#x2F;var&#x2F;www&#x2F;remote_dir&#x2F;（远程目录） &#x2F;var&#x2F;www&#x2F;local_dir（本地目录）</span><br></pre></td></tr></table></figure>
 
 <blockquote>
-<p>例如: scp -r <a href="mailto:&#114;&#111;&#x6f;&#x74;&#x40;&#x31;&#57;&#50;&#46;&#49;&#x36;&#x38;&#x2e;&#48;&#x2e;&#x31;&#48;&#x31;">&#114;&#111;&#x6f;&#x74;&#x40;&#x31;&#57;&#50;&#46;&#49;&#x36;&#x38;&#x2e;&#48;&#x2e;&#x31;&#48;&#x31;</a>:/var/www/test /var/www/  </p>
+<p>例如: scp -r <a href="mailto:&#x72;&#x6f;&#111;&#x74;&#64;&#x31;&#x39;&#50;&#46;&#x31;&#54;&#x38;&#x2e;&#48;&#46;&#49;&#x30;&#x31;">&#x72;&#x6f;&#111;&#x74;&#64;&#x31;&#x39;&#50;&#46;&#x31;&#54;&#x38;&#x2e;&#48;&#46;&#49;&#x30;&#x31;</a>:/var/www/test /var/www/  </p>
 </blockquote>
 <h5 id="上传目录到服务器"><a href="#上传目录到服务器" class="headerlink" title="上传目录到服务器"></a>上传目录到服务器</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">scp -r local_dir username@servername:remote_dir</span><br></pre></td></tr></table></figure>
 
 <blockquote>
-<p>例如：scp -r test  <a href="mailto:&#x72;&#111;&#x6f;&#x74;&#64;&#49;&#x39;&#x32;&#46;&#49;&#54;&#x38;&#46;&#48;&#46;&#49;&#48;&#x31;">&#x72;&#111;&#x6f;&#x74;&#64;&#49;&#x39;&#x32;&#46;&#49;&#54;&#x38;&#46;&#48;&#46;&#49;&#48;&#x31;</a>:/var/www/  把当前目录下的test目录上传到服务器的/var/www/ 目录</p>
+<p>例如：scp -r test  <a href="mailto:&#114;&#111;&#111;&#116;&#64;&#49;&#x39;&#x32;&#46;&#49;&#x36;&#56;&#46;&#x30;&#46;&#x31;&#x30;&#x31;">&#114;&#111;&#111;&#116;&#64;&#49;&#x39;&#x32;&#46;&#49;&#x36;&#56;&#46;&#x30;&#46;&#x31;&#x30;&#x31;</a>:/var/www/  把当前目录下的test目录上传到服务器的/var/www/ 目录</p>
 </blockquote>
 <h4 id="ssh自带的sftp功能"><a href="#ssh自带的sftp功能" class="headerlink" title="ssh自带的sftp功能"></a>ssh自带的sftp功能</h4><h5 id="Window和Linux的传输工具"><a href="#Window和Linux的传输工具" class="headerlink" title="Window和Linux的传输工具"></a>Window和Linux的传输工具</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">wincp  filezip          </span><br><span class="line">sftp --&gt;基于 ssh 的安全加密传输</span><br></pre></td></tr></table></figure>
 
 <h5 id="sftp客户端连接"><a href="#sftp客户端连接" class="headerlink" title="sftp客户端连接"></a>sftp客户端连接</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sftp -oPort&#x3D;22 root@192.168.25.137                   </span><br><span class="line">put &#x2F;etc&#x2F;hosts &#x2F;tmp                   </span><br><span class="line">get &#x2F;etc&#x2F;hosts &#x2F;home&#x2F;omd</span><br></pre></td></tr></table></figure>
 
 <h5 id="sftp小结"><a href="#sftp小结" class="headerlink" title="sftp小结"></a>sftp小结</h5><ul>
-<li>linux下使用命令： sftp -oPort=22 <a href="mailto:&#x72;&#111;&#111;&#x74;&#x40;&#x78;&#46;&#120;&#46;&#x78;&#46;&#x78;">&#x72;&#111;&#111;&#x74;&#x40;&#x78;&#46;&#120;&#46;&#x78;&#46;&#x78;</a>                   </li>
+<li>linux下使用命令： sftp -oPort=22 <a href="mailto:&#114;&#x6f;&#111;&#116;&#x40;&#120;&#x2e;&#120;&#46;&#120;&#x2e;&#x78;">&#114;&#x6f;&#111;&#116;&#x40;&#120;&#x2e;&#120;&#46;&#120;&#x2e;&#x78;</a>                   </li>
 <li>put加客户端本地路径上传                  </li>
 <li>get下载服务器端内容到本地                   </li>
 <li>远程连接默认连接用户的家目录</li>
@@ -5059,9 +5590,9 @@ cond(no)->sub</textarea><textarea id="flowchart-0-options" style="display: none"
         <category>故障排除</category>
       </categories>
       <tags>
+        <tag>故障排除</tag>
         <tag>深度学习</tag>
         <tag>GPU</tag>
-        <tag>故障排除</tag>
       </tags>
   </entry>
   <entry>
@@ -5152,8 +5683,8 @@ cond(no)->sub</textarea><textarea id="flowchart-0-options" style="display: none"
         <category>VS code</category>
       </categories>
       <tags>
-        <tag>IDE</tag>
         <tag>故障排除</tag>
+        <tag>IDE</tag>
         <tag>VS code</tag>
       </tags>
   </entry>
@@ -6642,8 +7173,8 @@ cond(no)->sub</textarea><textarea id="flowchart-0-options" style="display: none"
         <category>故障排除</category>
       </categories>
       <tags>
-        <tag>深度学习</tag>
         <tag>故障排除</tag>
+        <tag>深度学习</tag>
         <tag>Tensorflow</tag>
       </tags>
   </entry>
@@ -7181,7 +7712,7 @@ cond(no)->sub</textarea><textarea id="flowchart-0-options" style="display: none"
   </entry>
   <entry>
     <title>算法学习笔记 —— 排序</title>
-    <url>/2020/05/21/algorithm/sort/about_sort/</url>
+    <url>/2020/05/21/algorithm/tree/about_tree/</url>
     <content><![CDATA[<blockquote>
 <p>学而时习，本文记录排序操作相关算法练习笔记。</p>
 </blockquote>
@@ -7215,7 +7746,7 @@ cond(no)->sub</textarea><textarea id="flowchart-0-options" style="display: none"
   </entry>
   <entry>
     <title>算法学习笔记 —— 排序</title>
-    <url>/2020/05/21/algorithm/tree/about_tree/</url>
+    <url>/2020/05/21/algorithm/sort/about_sort/</url>
     <content><![CDATA[<blockquote>
 <p>学而时习，本文记录排序操作相关算法练习笔记。</p>
 </blockquote>
@@ -7334,8 +7865,8 @@ cond(no)->sub</textarea><textarea id="flowchart-0-options" style="display: none"
         <category>故障排除</category>
       </categories>
       <tags>
-        <tag>深度学习</tag>
         <tag>故障排除</tag>
+        <tag>深度学习</tag>
         <tag>Keras</tag>
       </tags>
   </entry>
@@ -7809,8 +8340,8 @@ cond(no)->sub</textarea><textarea id="flowchart-0-options" style="display: none"
         <category>故障排除</category>
       </categories>
       <tags>
-        <tag>深度学习</tag>
         <tag>故障排除</tag>
+        <tag>深度学习</tag>
         <tag>Keras</tag>
       </tags>
   </entry>
