@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.zywvvd.com/"/>
-  <updated>2021-03-13T05:18:53.329Z</updated>
+  <updated>2021-03-13T06:30:53.829Z</updated>
   <id>https://www.zywvvd.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>正定，半正定矩阵</title>
+    <link href="https://www.zywvvd.com/2021/03/13/math/linear_algebra/cov-pos-sem/cov-pos-sem/"/>
+    <id>https://www.zywvvd.com/2021/03/13/math/linear_algebra/cov-pos-sem/cov-pos-sem/</id>
+    <published>2021-03-13T05:53:55.000Z</published>
+    <updated>2021-03-13T06:30:53.829Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;本文介绍正定矩阵和半正定矩阵。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="math" scheme="https://www.zywvvd.com/categories/math/"/>
+    
+      <category term="linear_algebra" scheme="https://www.zywvvd.com/categories/math/linear-algebra/"/>
+    
+    
+      <category term="math" scheme="https://www.zywvvd.com/tags/math/"/>
+    
+      <category term="linear_algebra" scheme="https://www.zywvvd.com/tags/linear-algebra/"/>
+    
+  </entry>
   
   <entry>
     <title>正交-不相关-独立</title>
@@ -71,7 +98,7 @@
     <link href="https://www.zywvvd.com/2021/03/02/math/distance/mahalanobis-distance/"/>
     <id>https://www.zywvvd.com/2021/03/02/math/distance/mahalanobis-distance/</id>
     <published>2021-03-02T03:59:46.000Z</published>
-    <updated>2021-03-13T05:18:53.325Z</updated>
+    <updated>2021-03-13T06:26:49.315Z</updated>
     
     <summary type="html">
     
@@ -110,9 +137,9 @@
       <category term="pytorch" scheme="https://www.zywvvd.com/categories/Deep-Learning/pytorch/"/>
     
     
-      <category term="pytorch" scheme="https://www.zywvvd.com/tags/pytorch/"/>
-    
       <category term="Deep Learning" scheme="https://www.zywvvd.com/tags/Deep-Learning/"/>
+    
+      <category term="pytorch" scheme="https://www.zywvvd.com/tags/pytorch/"/>
     
   </entry>
   
@@ -541,10 +568,10 @@
   
   <entry>
     <title>矩阵对变化的敏感程度评价指标 Condition Number</title>
-    <link href="https://www.zywvvd.com/2021/01/06/math/matrix/condition-num/condition-num/"/>
-    <id>https://www.zywvvd.com/2021/01/06/math/matrix/condition-num/condition-num/</id>
+    <link href="https://www.zywvvd.com/2021/01/06/math/linear_algebra/condition-num/condition-num/"/>
+    <id>https://www.zywvvd.com/2021/01/06/math/linear_algebra/condition-num/condition-num/</id>
     <published>2021-01-05T17:30:29.000Z</published>
-    <updated>2021-01-09T08:02:45.723Z</updated>
+    <updated>2021-03-13T06:31:48.320Z</updated>
     
     <summary type="html">
     
@@ -557,12 +584,12 @@
     
       <category term="math" scheme="https://www.zywvvd.com/categories/math/"/>
     
-      <category term="matrix" scheme="https://www.zywvvd.com/categories/math/matrix/"/>
+      <category term="linear_algebra" scheme="https://www.zywvvd.com/categories/math/linear-algebra/"/>
     
     
       <category term="math" scheme="https://www.zywvvd.com/tags/math/"/>
     
-      <category term="matrix" scheme="https://www.zywvvd.com/tags/matrix/"/>
+      <category term="linear_algebra" scheme="https://www.zywvvd.com/tags/linear-algebra/"/>
     
   </entry>
   
@@ -1207,7 +1234,7 @@
     <link href="https://www.zywvvd.com/2020/11/16/machine_learning/conjugate-gradient-algorithm/conjugate-gradient/conjugate-gradient/"/>
     <id>https://www.zywvvd.com/2020/11/16/machine_learning/conjugate-gradient-algorithm/conjugate-gradient/conjugate-gradient/</id>
     <published>2020-11-16T13:42:59.000Z</published>
-    <updated>2020-12-20T14:52:37.767Z</updated>
+    <updated>2021-03-13T06:23:28.367Z</updated>
     
     <summary type="html">
     
@@ -1332,9 +1359,9 @@
       <category term="VS code" scheme="https://www.zywvvd.com/categories/IDE/VS-code/"/>
     
     
-      <category term="故障排除" scheme="https://www.zywvvd.com/tags/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/"/>
-    
       <category term="IDE" scheme="https://www.zywvvd.com/tags/IDE/"/>
+    
+      <category term="故障排除" scheme="https://www.zywvvd.com/tags/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/"/>
     
       <category term="VS code" scheme="https://www.zywvvd.com/tags/VS-code/"/>
     
@@ -2155,10 +2182,10 @@
   
   <entry>
     <title>算法学习笔记 —— 排序</title>
-    <link href="https://www.zywvvd.com/2020/05/21/algorithm/tree/about_tree/"/>
-    <id>https://www.zywvvd.com/2020/05/21/algorithm/tree/about_tree/</id>
+    <link href="https://www.zywvvd.com/2020/05/21/algorithm/sort/about_sort/"/>
+    <id>https://www.zywvvd.com/2020/05/21/algorithm/sort/about_sort/</id>
     <published>2020-05-21T05:15:39.000Z</published>
-    <updated>2020-11-14T08:17:13.510Z</updated>
+    <updated>2020-11-14T08:17:13.509Z</updated>
     
     <summary type="html">
     
@@ -2182,10 +2209,10 @@
   
   <entry>
     <title>算法学习笔记 —— 排序</title>
-    <link href="https://www.zywvvd.com/2020/05/21/algorithm/sort/about_sort/"/>
-    <id>https://www.zywvvd.com/2020/05/21/algorithm/sort/about_sort/</id>
+    <link href="https://www.zywvvd.com/2020/05/21/algorithm/tree/about_tree/"/>
+    <id>https://www.zywvvd.com/2020/05/21/algorithm/tree/about_tree/</id>
     <published>2020-05-21T05:15:39.000Z</published>
-    <updated>2020-11-14T08:17:13.509Z</updated>
+    <updated>2020-11-14T08:17:13.510Z</updated>
     
     <summary type="html">
     

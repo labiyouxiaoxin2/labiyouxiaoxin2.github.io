@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://www.zywvvd.com/2021/01/06/math/linear_algebra/condition-num/condition-num/</loc>
+    <lastmod>2021-03-13</lastmod>
+  </url>  <url>
+    <loc>https://www.zywvvd.com/2021/03/13/math/linear_algebra/cov-pos-sem/cov-pos-sem/</loc>
+    <lastmod>2021-03-13</lastmod>
+  </url>  <url>
+    <loc>https://www.zywvvd.com/2021/03/02/math/distance/mahalanobis-distance/</loc>
+    <lastmod>2021-03-13</lastmod>
+  </url>  <url>
+    <loc>https://www.zywvvd.com/2020/11/16/machine_learning/conjugate-gradient-algorithm/conjugate-gradient/conjugate-gradient/</loc>
+    <lastmod>2021-03-13</lastmod>
+  </url>  <url>
     <loc>https://www.zywvvd.com/2021/03/11/python/PCV-install-for-python/PCV-install-for-python/</loc>
     <lastmod>2021-03-13</lastmod>
   </url>  <url>
@@ -11,9 +23,6 @@
     <lastmod>2021-03-13</lastmod>
   </url>  <url>
     <loc>https://www.zywvvd.com/2021/02/27/math/linear_algebra/basic_knowledge/</loc>
-    <lastmod>2021-03-13</lastmod>
-  </url>  <url>
-    <loc>https://www.zywvvd.com/2021/03/02/math/distance/mahalanobis-distance/</loc>
     <lastmod>2021-03-13</lastmod>
   </url>  <url>
     <loc>https://www.zywvvd.com/2021/03/02/deep_learning/pytorch/none-leaf_tensor/none-leaf_tensor/</loc>
@@ -73,9 +82,6 @@
     <loc>https://www.zywvvd.com/2021/01/09/python/tqdm/tqdm/</loc>
     <lastmod>2021-01-09</lastmod>
   </url>  <url>
-    <loc>https://www.zywvvd.com/2021/01/06/math/matrix/condition-num/condition-num/</loc>
-    <lastmod>2021-01-09</lastmod>
-  </url>  <url>
     <loc>https://www.zywvvd.com/2020/12/13/machine_learning/conjugate-gradient-algorithm/gradient-related/gradient-related/</loc>
     <lastmod>2021-01-09</lastmod>
   </url>  <url>
@@ -98,9 +104,6 @@
     <lastmod>2020-12-26</lastmod>
   </url>  <url>
     <loc>https://www.zywvvd.com/2020/12/12/machine_learning/conjugate-gradient-algorithm/quadratic_cofficient/quadratic_cofficient/</loc>
-    <lastmod>2020-12-20</lastmod>
-  </url>  <url>
-    <loc>https://www.zywvvd.com/2020/11/16/machine_learning/conjugate-gradient-algorithm/conjugate-gradient/conjugate-gradient/</loc>
     <lastmod>2020-12-20</lastmod>
   </url>  <url>
     <loc>https://www.zywvvd.com/2020/12/19/tools/geogebra/geogebra-html-embed/geogebra-html-embed/</loc>
@@ -190,10 +193,10 @@
     <loc>https://www.zywvvd.com/2020/11/02/software/ide/vs_code_remote_debugging/vs_code_remote_debugging/</loc>
     <lastmod>2020-11-14</lastmod>
   </url>  <url>
-    <loc>https://www.zywvvd.com/2020/11/02/software/ide/vs_code_no_print_content/vs_code_no_print_content/</loc>
+    <loc>https://www.zywvvd.com/2020/11/02/software/ide/vs_code_kite_install/kite_install/</loc>
     <lastmod>2020-11-14</lastmod>
   </url>  <url>
-    <loc>https://www.zywvvd.com/2020/11/02/software/ide/vs_code_kite_install/kite_install/</loc>
+    <loc>https://www.zywvvd.com/2020/11/02/software/ide/vs_code_no_print_content/vs_code_no_print_content/</loc>
     <lastmod>2020-11-14</lastmod>
   </url>  <url>
     <loc>https://www.zywvvd.com/2020/08/11/software/ide/flake8-max-size/flake8-max-size/</loc>
@@ -229,10 +232,10 @@
     <loc>https://www.zywvvd.com/2020/02/25/python/file_list/python-file-list/</loc>
     <lastmod>2020-11-14</lastmod>
   </url>  <url>
-    <loc>https://www.zywvvd.com/2020/06/20/python/conda-env-operation/conda-env-operation/</loc>
+    <loc>https://www.zywvvd.com/2020/11/06/python/convert_matplotlib_figure_to_array/convert_matplotlib_figure_to_array/</loc>
     <lastmod>2020-11-14</lastmod>
   </url>  <url>
-    <loc>https://www.zywvvd.com/2020/11/06/python/convert_matplotlib_figure_to_array/convert_matplotlib_figure_to_array/</loc>
+    <loc>https://www.zywvvd.com/2020/06/20/python/conda-env-operation/conda-env-operation/</loc>
     <lastmod>2020-11-14</lastmod>
   </url>  <url>
     <loc>https://www.zywvvd.com/2020/07/27/python/conda-activate-error/conda_activate_error/</loc>
@@ -271,10 +274,10 @@
     <loc>https://www.zywvvd.com/2020/03/31/next/22_qiniuyun_qshell/qiniuyun-qshell/</loc>
     <lastmod>2020-11-14</lastmod>
   </url>  <url>
-    <loc>https://www.zywvvd.com/2020/03/29/next/21_add_photos/add-photos/</loc>
+    <loc>https://www.zywvvd.com/2020/03/28/next/20_custom_style/custom-style/</loc>
     <lastmod>2020-11-14</lastmod>
   </url>  <url>
-    <loc>https://www.zywvvd.com/2020/03/28/next/20_custom_style/custom-style/</loc>
+    <loc>https://www.zywvvd.com/2020/03/29/next/21_add_photos/add-photos/</loc>
     <lastmod>2020-11-14</lastmod>
   </url>  <url>
     <loc>https://www.zywvvd.com/2020/03/28/next/19_next_fancybox/next-fancybox/</loc>

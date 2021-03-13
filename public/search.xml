@@ -1,6 +1,140 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>正定，半正定矩阵</title>
+    <url>/2021/03/13/math/linear_algebra/cov-pos-sem/cov-pos-sem/</url>
+    <content><![CDATA[<blockquote>
+<p>本文介绍正定矩阵和半正定矩阵。</p>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><blockquote>
+<p>正定和半正定这两个词的英文分别是positive definite和positive semi-definite，其中，definite是一个形容词，表示“明确的、确定的”等意思。</p>
+</blockquote>
+<h4 id="正定"><a href="#正定" class="headerlink" title="正定"></a>正定</h4><ul>
+<li>给定一个大小为$n \times n$ 的实方阵$A$ ，若对于任意长度为$n$的非零向量$x$ ，有$x^TAx&gt;0$ 恒成立，则矩阵$A$是一个正定矩阵。</li>
+<li>此时，若$A$为对称方阵，则称$A$为对称正定矩阵。</li>
+</ul>
+<h4 id="半正定"><a href="#半正定" class="headerlink" title="半正定"></a>半正定</h4><ul>
+<li>给定一个大小为$n \times n$ 的实方阵$A$ ，若对于任意长度为$n$的非零向量$x$ ，有$x^TAx  \ge  0$ 恒成立，则矩阵$A$是一个半正定矩阵。</li>
+<li>此时，若$A$为对称方阵，则称$A$为对称半正定矩阵。</li>
+</ul>
+<blockquote>
+<p>可以看到半正定矩阵包含了正定矩阵，仅多出了等于零的一种情况，类似于正数和非负数的关系。</p>
+</blockquote>
+<h3 id="性质"><a href="#性质" class="headerlink" title="性质"></a>性质</h3><blockquote>
+<p>以正定矩阵为例，半正定矩阵仅多了等于零的情况。</p>
+</blockquote>
+<ul>
+<li><p>正定矩阵的行列式恒为正；</p>
+</li>
+<li><p><a href="https://baike.baidu.com/item/%E5%AE%9E%E5%AF%B9%E7%A7%B0%E7%9F%A9%E9%98%B5/4773879" target="_blank" rel="noopener">实对称矩阵</a>A正定当且仅当A与单位矩阵合同；</p>
+</li>
+<li><p>若A是正定矩阵，则A的逆矩阵也是正定矩阵；</p>
+</li>
+<li><p>两个正定矩阵的和是正定矩阵；</p>
+</li>
+<li><p>正实数与正定矩阵的乘积是正定矩阵。</p>
+</li>
+</ul>
+<h3 id="等价命题"><a href="#等价命题" class="headerlink" title="等价命题"></a>等价命题</h3><blockquote>
+<p>对于n阶实对称矩阵A，下列条件是等价的（以正定矩阵为例）：</p>
+</blockquote>
+<ul>
+<li><p>A是正定矩阵；</p>
+</li>
+<li><p>A的一切<a href="https://baike.baidu.com/item/%E9%A1%BA%E5%BA%8F%E4%B8%BB%E5%AD%90%E5%BC%8F/3167642" target="_blank" rel="noopener">顺序主子式</a>均为正；</p>
+</li>
+<li><p>A的一切主子式均为正；</p>
+</li>
+<li><p>A的特征值均为正；</p>
+</li>
+<li><p>存在实可逆矩阵C，使A=C′C；</p>
+</li>
+<li><p>存在秩为n的m×n实矩阵B，使A=B′B；</p>
+</li>
+<li><p>存在主对角线元素全为正的实三角矩阵R，使A=R′R 。</p>
+</li>
+</ul>
+<h3 id="协方差矩阵半正定"><a href="#协方差矩阵半正定" class="headerlink" title="协方差矩阵半正定"></a>协方差矩阵半正定</h3><ul>
+<li>在概率统计中，多维变量的协方差矩阵是对称矩阵，事实上同时它也是半正定矩阵：</li>
+</ul>
+<h4 id="推导"><a href="#推导" class="headerlink" title="推导"></a>推导</h4><ul>
+<li>考虑一个由$n$个$m$维向量刻画的分布，即共$n$条数据，每条数据由一个$m$维向量表示：</li>
+</ul>
+
+$$
+X = \left[ {\begin{array}{*{20}{c}}
+{{x_{11}}}&{{x_{12}}}& \cdots &{{x_{1n}}}\\
+{{x_{21}}}&{{x_{22}}}&{}&{{x_{2n}}}\\
+\vdots &{}& \ddots & \vdots \\
+{{x_{m1}}}&{{x_{m2}}}& \cdots &{{x_{mn}}}
+\end{array}} \right]
+$$
+
+
+<ul>
+<li>$X$的均值为${\mu _X}$</li>
+<li>$X$的协方差矩阵为:</li>
+</ul>
+<p>$$<br>\sum\nolimits_X  =  \frac{1}{n}(X - {\mu _X}){(X - {\mu _X})^T}<br>$$</p>
+<ul>
+<li>协方差矩阵 $\Sigma_{X}$，对其进行SVD分解：</li>
+</ul>
+<p>$$<br>{\Sigma_X} = U \Sigma {V ^ T }<br>$$</p>
+<ul>
+<li>由于 $\Sigma_{X}$ 是对称矩阵，可以得到：</li>
+</ul>
+<p>$$<br>U=V<br>$$</p>
+<ul>
+<li>而且$U$是正交矩阵，有：</li>
+</ul>
+
+$$
+U^T{\Sigma _X}U = \Sigma
+$$
+
+$$
+\Sigma  = {U^T}(X - {\mu _X}){(X - {\mu _X})^T}U
+$$
+
+$$
+\Sigma  = ({U^T}X - {U^T}{\mu _X}){({U^T}X - {U^T}{\mu _X})^T}
+$$
+
+
+
+<ul>
+<li>令$Y = {U^T}X - {U^T}{\mu _X}$：</li>
+</ul>
+<p>$$<br>\Sigma  = Y{Y^T}<br>$$</p>
+<ul>
+<li><p>由于$\Sigma$是特征值为对角线元素的对角阵，因此对角线外元素为0，表示$Y$中向量相互之间不相关。</p>
+</li>
+<li><p>对于任意一个$\Sigma$中的特征值$\lambda_i$，计算公式为：</p>
+</li>
+</ul>
+<p>$$<br>{\lambda _ i } = { Y _ i } { Y _ i } ^ T = \sum \limits_ {j = 1} ^n { {Y_{ij} } ^ 2}  \ge 0<br>$$</p>
+<ul>
+<li>因此协方差矩阵的特征值非负，是半正定矩阵。</li>
+</ul>
+<h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><ul>
+<li><p><a href="https://zhuanlan.zhihu.com/p/44860862" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/44860862</a></p>
+</li>
+<li><p><a href="https://baike.baidu.com/item/%E6%AD%A3%E5%AE%9A%E7%9F%A9%E9%98%B5/11030459?fr=aladdin" target="_blank" rel="noopener">https://baike.baidu.com/item/%E6%AD%A3%E5%AE%9A%E7%9F%A9%E9%98%B5/11030459?fr=aladdin</a></p>
+</li>
+</ul>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <categories>
+        <category>math</category>
+        <category>linear_algebra</category>
+      </categories>
+      <tags>
+        <tag>math</tag>
+        <tag>linear_algebra</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>正交-不相关-独立</title>
     <url>/2021/03/12/math/probability/orthogonal-independent-uncorrelation/orthogonal-independent-uncorrelation/</url>
     <content><![CDATA[<blockquote>
@@ -273,28 +407,8 @@ $$
 <li><p>$\Sigma_{Y}$的对角线元素含义为$Y$中每个向量的方差，因此均为非负值，从这个角度可以说明协方差矩阵的特征值为非负值。</p>
 </li>
 <li><p>协方差矩阵的特征值非负还有一种证明思路：</p>
-<p>协方差矩阵 $\Sigma_{X}$，对其进行SVD分解：<br>$$<br>{\Sigma_X} = U \Sigma {V ^ T }<br>$$<br>由于 $\Sigma_{X}$ 是对称矩阵，可以得到：<br>$$<br>U=V<br>$$</p>
 </li>
 </ul>
-<p>  而且$U$是正交矩阵，有：</p>
-  
-  $$
-  U^T{\Sigma _X}U = \Sigma
-  $$
-
-  $$
-  \Sigma  = {U^T}(X - {\mu _X}){(X - {\mu _X})^T}U
-  $$
-
-  $$
-  \Sigma  = ({U^T}X - {U^T}{\mu _X}){({U^T}X - {U^T}{\mu _X})^T}
-  $$
-
-  
-
-<p>  令$Y = {U^T}X - {U^T}{\mu _X}$：<br>  $$<br>  \Sigma  = Y{Y^T}<br>  $$<br>  由于$\Sigma$是特征值为对角线元素的对角阵，因此对角线外元素为0，表示$Y$中向量相互之间不相关。</p>
-<p>  对于任意一个$\Sigma$中的特征值$\lambda_i$，计算公式为：</p>
-<p>  $$<br>  {\lambda _ i } = { Y _ i } { Y _ i } ^ T = \sum \limits_ {j = 1} ^n { {Y_{ij} } ^ 2}  \ge 0<br>  $$<br>  因此协方差矩阵实时上是半正定矩阵。</p>
 <ul>
 <li>不相关与独立的问题：<ul>
 <li>此处我们说明了变换后的向量之间相关系数为0，也就是向量之间不相关</li>
@@ -387,8 +501,8 @@ $$
         <category>pytorch</category>
       </categories>
       <tags>
-        <tag>pytorch</tag>
         <tag>Deep Learning</tag>
+        <tag>pytorch</tag>
       </tags>
   </entry>
   <entry>
@@ -1858,29 +1972,29 @@ $$
 <h4 id="传输文件"><a href="#传输文件" class="headerlink" title="传输文件"></a>传输文件</h4><h5 id="从服务器上下载文件"><a href="#从服务器上下载文件" class="headerlink" title="从服务器上下载文件"></a>从服务器上下载文件</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">scp username@servername:&#x2F;path&#x2F;filename &#x2F;var&#x2F;www&#x2F;local_dir（本地目录）</span><br></pre></td></tr></table></figure>
 
 <blockquote>
-<p>例如: scp <a href="mailto:&#114;&#111;&#x6f;&#x74;&#x40;&#49;&#57;&#50;&#46;&#49;&#x36;&#x38;&#46;&#x30;&#46;&#x31;&#48;&#x31;">&#114;&#111;&#x6f;&#x74;&#x40;&#49;&#57;&#50;&#46;&#49;&#x36;&#x38;&#46;&#x30;&#46;&#x31;&#48;&#x31;</a>:/var/www/test.txt 把192.168.0.101上的/var/www/test.txt 的文件下载到/var/www/local_dir（本地目录）</p>
+<p>例如: scp <a href="mailto:&#x72;&#111;&#111;&#x74;&#64;&#49;&#x39;&#x32;&#x2e;&#49;&#x36;&#x38;&#46;&#x30;&#x2e;&#49;&#x30;&#x31;">&#x72;&#111;&#111;&#x74;&#64;&#49;&#x39;&#x32;&#x2e;&#49;&#x36;&#x38;&#46;&#x30;&#x2e;&#49;&#x30;&#x31;</a>:/var/www/test.txt 把192.168.0.101上的/var/www/test.txt 的文件下载到/var/www/local_dir（本地目录）</p>
 </blockquote>
 <h5 id="上传本地文件到服务器"><a href="#上传本地文件到服务器" class="headerlink" title="上传本地文件到服务器"></a>上传本地文件到服务器</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">scp &#x2F;path&#x2F;filename username@servername:&#x2F;path</span><br></pre></td></tr></table></figure>
 
 <blockquote>
-<p>例如: scp /var/www/test.php <a href="mailto:&#114;&#x6f;&#x6f;&#116;&#64;&#x31;&#x39;&#50;&#46;&#49;&#54;&#x38;&#x2e;&#x30;&#46;&#x31;&#48;&#49;">&#114;&#x6f;&#x6f;&#116;&#64;&#x31;&#x39;&#50;&#46;&#49;&#54;&#x38;&#x2e;&#x30;&#46;&#x31;&#48;&#49;</a>:/var/www/ 把本机/var/www/目录下的test.php文件上传到192.168.0.101这台服务器上的/var/www/目录中</p>
+<p>例如: scp /var/www/test.php <a href="mailto:&#114;&#x6f;&#111;&#116;&#64;&#x31;&#x39;&#x32;&#x2e;&#x31;&#x36;&#56;&#46;&#x30;&#x2e;&#49;&#48;&#49;">&#114;&#x6f;&#111;&#116;&#64;&#x31;&#x39;&#x32;&#x2e;&#x31;&#x36;&#56;&#46;&#x30;&#x2e;&#49;&#48;&#49;</a>:/var/www/ 把本机/var/www/目录下的test.php文件上传到192.168.0.101这台服务器上的/var/www/目录中</p>
 </blockquote>
 <h5 id="从服务器下载整个目录"><a href="#从服务器下载整个目录" class="headerlink" title="从服务器下载整个目录"></a>从服务器下载整个目录</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">scp -r username@servername:&#x2F;var&#x2F;www&#x2F;remote_dir&#x2F;（远程目录） &#x2F;var&#x2F;www&#x2F;local_dir（本地目录）</span><br></pre></td></tr></table></figure>
 
 <blockquote>
-<p>例如: scp -r <a href="mailto:&#x72;&#x6f;&#111;&#x74;&#64;&#x31;&#x39;&#50;&#46;&#x31;&#54;&#x38;&#x2e;&#48;&#46;&#49;&#x30;&#x31;">&#x72;&#x6f;&#111;&#x74;&#64;&#x31;&#x39;&#50;&#46;&#x31;&#54;&#x38;&#x2e;&#48;&#46;&#49;&#x30;&#x31;</a>:/var/www/test /var/www/  </p>
+<p>例如: scp -r <a href="mailto:&#x72;&#x6f;&#111;&#x74;&#64;&#49;&#57;&#50;&#46;&#49;&#54;&#x38;&#x2e;&#x30;&#46;&#49;&#x30;&#x31;">&#x72;&#x6f;&#111;&#x74;&#64;&#49;&#57;&#50;&#46;&#49;&#54;&#x38;&#x2e;&#x30;&#46;&#49;&#x30;&#x31;</a>:/var/www/test /var/www/  </p>
 </blockquote>
 <h5 id="上传目录到服务器"><a href="#上传目录到服务器" class="headerlink" title="上传目录到服务器"></a>上传目录到服务器</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">scp -r local_dir username@servername:remote_dir</span><br></pre></td></tr></table></figure>
 
 <blockquote>
-<p>例如：scp -r test  <a href="mailto:&#114;&#111;&#111;&#116;&#64;&#49;&#x39;&#x32;&#46;&#49;&#x36;&#56;&#46;&#x30;&#46;&#x31;&#x30;&#x31;">&#114;&#111;&#111;&#116;&#64;&#49;&#x39;&#x32;&#46;&#49;&#x36;&#56;&#46;&#x30;&#46;&#x31;&#x30;&#x31;</a>:/var/www/  把当前目录下的test目录上传到服务器的/var/www/ 目录</p>
+<p>例如：scp -r test  <a href="mailto:&#114;&#x6f;&#x6f;&#x74;&#x40;&#x31;&#x39;&#50;&#46;&#x31;&#54;&#x38;&#46;&#x30;&#46;&#x31;&#x30;&#49;">&#114;&#x6f;&#x6f;&#x74;&#x40;&#x31;&#x39;&#50;&#46;&#x31;&#54;&#x38;&#46;&#x30;&#46;&#x31;&#x30;&#49;</a>:/var/www/  把当前目录下的test目录上传到服务器的/var/www/ 目录</p>
 </blockquote>
 <h4 id="ssh自带的sftp功能"><a href="#ssh自带的sftp功能" class="headerlink" title="ssh自带的sftp功能"></a>ssh自带的sftp功能</h4><h5 id="Window和Linux的传输工具"><a href="#Window和Linux的传输工具" class="headerlink" title="Window和Linux的传输工具"></a>Window和Linux的传输工具</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">wincp  filezip          </span><br><span class="line">sftp --&gt;基于 ssh 的安全加密传输</span><br></pre></td></tr></table></figure>
 
 <h5 id="sftp客户端连接"><a href="#sftp客户端连接" class="headerlink" title="sftp客户端连接"></a>sftp客户端连接</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sftp -oPort&#x3D;22 root@192.168.25.137                   </span><br><span class="line">put &#x2F;etc&#x2F;hosts &#x2F;tmp                   </span><br><span class="line">get &#x2F;etc&#x2F;hosts &#x2F;home&#x2F;omd</span><br></pre></td></tr></table></figure>
 
 <h5 id="sftp小结"><a href="#sftp小结" class="headerlink" title="sftp小结"></a>sftp小结</h5><ul>
-<li>linux下使用命令： sftp -oPort=22 <a href="mailto:&#114;&#x6f;&#111;&#116;&#x40;&#120;&#x2e;&#120;&#46;&#120;&#x2e;&#x78;">&#114;&#x6f;&#111;&#116;&#x40;&#120;&#x2e;&#120;&#46;&#120;&#x2e;&#x78;</a>                   </li>
+<li>linux下使用命令： sftp -oPort=22 <a href="mailto:&#x72;&#111;&#x6f;&#116;&#64;&#x78;&#46;&#x78;&#x2e;&#x78;&#x2e;&#120;">&#x72;&#111;&#x6f;&#116;&#64;&#x78;&#46;&#x78;&#x2e;&#x78;&#x2e;&#120;</a>                   </li>
 <li>put加客户端本地路径上传                  </li>
 <li>get下载服务器端内容到本地                   </li>
 <li>远程连接默认连接用户的家目录</li>
@@ -2146,7 +2260,7 @@ ssh omd@192.168.1.100 -t &quot;sh /home/omd/ftl.sh&quot;  # 当前服务器A远�
   </entry>
   <entry>
     <title>矩阵对变化的敏感程度评价指标 Condition Number</title>
-    <url>/2021/01/06/math/matrix/condition-num/condition-num/</url>
+    <url>/2021/01/06/math/linear_algebra/condition-num/condition-num/</url>
     <content><![CDATA[<blockquote>
 <p>矩阵对变化的敏感程度可以用Condition Number来评估，本文对其进行简略介绍。</p>
 </blockquote>
@@ -2281,11 +2395,11 @@ $$
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <categories>
         <category>math</category>
-        <category>matrix</category>
+        <category>linear_algebra</category>
       </categories>
       <tags>
         <tag>math</tag>
-        <tag>matrix</tag>
+        <tag>linear_algebra</tag>
       </tags>
   </entry>
   <entry>
@@ -5428,7 +5542,7 @@ cond(no)->sub</textarea><textarea id="flowchart-0-options" style="display: none"
 <p>$$<br>f({x_1},{x_2},{x_3},…,{ x_n}) = f({\bf{x}}) = {\bf{x^T} }\bf{A}{\bf{x} } + { {\bf{b} }^T}{\bf{x} } + c<br>$$</p>
 <blockquote>
 <p>转化过程中$\bf{A},\bf{b}$满足：</p>
-<p>${\bf{A} }$ 为$n$阶对称方阵，${ {\bf{A} }<em>{i,j} } = {a</em>{i,j} }$</p>
+<p>${\bf{A} }$ 为$n$阶对称方阵，${ { \bf { A } } _ { i , j } } = { a _ { i , j } }$</p>
 <p>因为$\exists a_{i,j} \ne 0$，$\bf{A}$不为零矩阵</p>
 <p>$\bf{b}_i=b_i$</p>
 </blockquote>
@@ -5683,8 +5797,8 @@ cond(no)->sub</textarea><textarea id="flowchart-0-options" style="display: none"
         <category>VS code</category>
       </categories>
       <tags>
-        <tag>故障排除</tag>
         <tag>IDE</tag>
+        <tag>故障排除</tag>
         <tag>VS code</tag>
       </tags>
   </entry>
@@ -7712,7 +7826,7 @@ cond(no)->sub</textarea><textarea id="flowchart-0-options" style="display: none"
   </entry>
   <entry>
     <title>算法学习笔记 —— 排序</title>
-    <url>/2020/05/21/algorithm/tree/about_tree/</url>
+    <url>/2020/05/21/algorithm/sort/about_sort/</url>
     <content><![CDATA[<blockquote>
 <p>学而时习，本文记录排序操作相关算法练习笔记。</p>
 </blockquote>
@@ -7746,7 +7860,7 @@ cond(no)->sub</textarea><textarea id="flowchart-0-options" style="display: none"
   </entry>
   <entry>
     <title>算法学习笔记 —— 排序</title>
-    <url>/2020/05/21/algorithm/sort/about_sort/</url>
+    <url>/2020/05/21/algorithm/tree/about_tree/</url>
     <content><![CDATA[<blockquote>
 <p>学而时习，本文记录排序操作相关算法练习笔记。</p>
 </blockquote>
