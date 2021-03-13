@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.zywvvd.com/"/>
-  <updated>2021-03-13T10:22:12.798Z</updated>
+  <updated>2021-03-13T10:24:42.345Z</updated>
   <id>https://www.zywvvd.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://www.zywvvd.com/2021/03/13/machine_learning/lagrange-multiplier/lagrange-multiplier/"/>
     <id>https://www.zywvvd.com/2021/03/13/machine_learning/lagrange-multiplier/lagrange-multiplier/</id>
     <published>2021-03-13T06:44:14.000Z</published>
-    <updated>2021-03-13T10:22:12.798Z</updated>
+    <updated>2021-03-13T10:24:42.345Z</updated>
     
     <summary type="html">
     
@@ -2209,10 +2209,10 @@
   
   <entry>
     <title>算法学习笔记 —— 排序</title>
-    <link href="https://www.zywvvd.com/2020/05/21/algorithm/tree/about_tree/"/>
-    <id>https://www.zywvvd.com/2020/05/21/algorithm/tree/about_tree/</id>
+    <link href="https://www.zywvvd.com/2020/05/21/algorithm/sort/about_sort/"/>
+    <id>https://www.zywvvd.com/2020/05/21/algorithm/sort/about_sort/</id>
     <published>2020-05-21T05:15:39.000Z</published>
-    <updated>2020-11-14T08:17:13.510Z</updated>
+    <updated>2020-11-14T08:17:13.509Z</updated>
     
     <summary type="html">
     
@@ -2236,10 +2236,10 @@
   
   <entry>
     <title>算法学习笔记 —— 排序</title>
-    <link href="https://www.zywvvd.com/2020/05/21/algorithm/sort/about_sort/"/>
-    <id>https://www.zywvvd.com/2020/05/21/algorithm/sort/about_sort/</id>
+    <link href="https://www.zywvvd.com/2020/05/21/algorithm/tree/about_tree/"/>
+    <id>https://www.zywvvd.com/2020/05/21/algorithm/tree/about_tree/</id>
     <published>2020-05-21T05:15:39.000Z</published>
-    <updated>2020-11-14T08:17:13.509Z</updated>
+    <updated>2020-11-14T08:17:13.510Z</updated>
     
     <summary type="html">
     
