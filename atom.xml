@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.zywvvd.com/"/>
-  <updated>2021-03-13T10:41:42.863Z</updated>
+  <updated>2021-03-25T13:15:36.166Z</updated>
   <id>https://www.zywvvd.com/</id>
   
   <author>
@@ -17,11 +17,185 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Windows 软件推荐 - 小黄条 全平台同步桌面便签</title>
+    <link href="https://www.zywvvd.com/2021/03/25/software/recommend/Windows/xiaohuangtiao-win-software/xiaohuangtiao-win-software/"/>
+    <id>https://www.zywvvd.com/2021/03/25/software/recommend/Windows/xiaohuangtiao-win-software/xiaohuangtiao-win-software/</id>
+    <published>2021-03-24T17:03:40.000Z</published>
+    <updated>2021-03-25T13:15:36.166Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;这是一款嵌入电脑桌面的Todolist工具，大小2.1M，也是免安装直接使用的，&lt;strong&gt;类似于电脑上的“便利贴”&lt;/strong&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="软件" scheme="https://www.zywvvd.com/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+      <category term="软件推荐" scheme="https://www.zywvvd.com/categories/%E8%BD%AF%E4%BB%B6/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/"/>
+    
+      <category term="Windows 软件推荐" scheme="https://www.zywvvd.com/categories/%E8%BD%AF%E4%BB%B6/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/Windows-%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/"/>
+    
+    
+      <category term="软件" scheme="https://www.zywvvd.com/tags/%E8%BD%AF%E4%BB%B6/"/>
+    
+      <category term="软件推荐" scheme="https://www.zywvvd.com/tags/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/"/>
+    
+      <category term="Windows 软件推荐" scheme="https://www.zywvvd.com/tags/Windows-%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Windows 软件推荐 - listary —— Windows 上的高效启动器</title>
+    <link href="https://www.zywvvd.com/2021/03/25/software/recommend/Windows/listary-win-software/listary-win-software/"/>
+    <id>https://www.zywvvd.com/2021/03/25/software/recommend/Windows/listary-win-software/listary-win-software/</id>
+    <published>2021-03-24T16:17:52.000Z</published>
+    <updated>2021-03-25T13:15:36.165Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;如果你的日常工作需要经常处理邮件，你一定会为保存附件时，从我的电脑到X盘再一级一级的目录打开，直到找到你所想要的目录。这种频繁的文件夹点击将会极大的制约你的效率。本文介绍Windows快速启动神器 listary 。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="软件" scheme="https://www.zywvvd.com/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+      <category term="软件推荐" scheme="https://www.zywvvd.com/categories/%E8%BD%AF%E4%BB%B6/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/"/>
+    
+      <category term="Windows 软件推荐" scheme="https://www.zywvvd.com/categories/%E8%BD%AF%E4%BB%B6/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/Windows-%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/"/>
+    
+    
+      <category term="软件" scheme="https://www.zywvvd.com/tags/%E8%BD%AF%E4%BB%B6/"/>
+    
+      <category term="软件推荐" scheme="https://www.zywvvd.com/tags/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/"/>
+    
+      <category term="Windows 软件推荐" scheme="https://www.zywvvd.com/tags/Windows-%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SVM 的推导</title>
+    <link href="https://www.zywvvd.com/2021/03/24/machine_learning/about-svm/about-svm/"/>
+    <id>https://www.zywvvd.com/2021/03/24/machine_learning/about-svm/about-svm/</id>
+    <published>2021-03-24T03:42:10.000Z</published>
+    <updated>2021-03-25T13:15:36.156Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;SVM（Support Vector Machine，支持向量机）是一个线性分类器，是最经典的分类算法，其核心目标就是找到最大间隔超平面。本文记录SVM的推导过程。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="机器学习" scheme="https://www.zywvvd.com/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="优化方法" scheme="https://www.zywvvd.com/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E4%BC%98%E5%8C%96%E6%96%B9%E6%B3%95/"/>
+    
+    
+      <category term="机器学习" scheme="https://www.zywvvd.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="优化方法" scheme="https://www.zywvvd.com/tags/%E4%BC%98%E5%8C%96%E6%96%B9%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>从服务器映射 jupyter 到本机应用</title>
+    <link href="https://www.zywvvd.com/2021/03/22/python/jupyter-map/jupyter-map/"/>
+    <id>https://www.zywvvd.com/2021/03/22/python/jupyter-map/jupyter-map/</id>
+    <published>2021-03-22T03:27:42.000Z</published>
+    <updated>2021-03-25T13:15:36.162Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;Jupyter Notebook是基于网页的用于交互计算的应用程序，方便易用，本文记录将远程jupyter环境映射到本机的方法。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="python" scheme="https://www.zywvvd.com/categories/python/"/>
+    
+      <category term="jupyter" scheme="https://www.zywvvd.com/categories/python/jupyter/"/>
+    
+    
+      <category term="python" scheme="https://www.zywvvd.com/tags/python/"/>
+    
+      <category term="jupyter" scheme="https://www.zywvvd.com/tags/jupyter/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>拉格朗日对偶问题</title>
+    <link href="https://www.zywvvd.com/2021/03/19/machine_learning/lagrangian-duality/lagrangian-duality/"/>
+    <id>https://www.zywvvd.com/2021/03/19/machine_learning/lagrangian-duality/lagrangian-duality/</id>
+    <published>2021-03-19T01:27:06.000Z</published>
+    <updated>2021-03-25T13:15:36.160Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;在前文了解过拉格朗日乘数法后，进一步介绍拉格朗日对偶。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="机器学习" scheme="https://www.zywvvd.com/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="优化方法" scheme="https://www.zywvvd.com/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E4%BC%98%E5%8C%96%E6%96%B9%E6%B3%95/"/>
+    
+    
+      <category term="机器学习" scheme="https://www.zywvvd.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="优化方法" scheme="https://www.zywvvd.com/tags/%E4%BC%98%E5%8C%96%E6%96%B9%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>将训练好的 mmdetection 模型转为 tensorrt 模型</title>
+    <link href="https://www.zywvvd.com/2021/03/17/deep_learning/tensorrt-model-gen-mmdection/tensorrt-model-gen/"/>
+    <id>https://www.zywvvd.com/2021/03/17/deep_learning/tensorrt-model-gen-mmdection/tensorrt-model-gen/</id>
+    <published>2021-03-17T06:28:48.000Z</published>
+    <updated>2021-03-25T13:15:36.152Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;mmdetection 是商汤科技（2018 COCO 目标检测挑战赛冠军）和香港中文大学开源的基于Pytorch实现的深度学习目标检测工具箱，性能强大，运算效率高，配置化编程，比较容易训练、测试。但pytorch模型不易于部署，运算速度还有进一步提升的空间，当前比较有效的方法是将模型转换为行为相同的tensorrt模型，本文记录转换流程。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="深度学习" scheme="https://www.zywvvd.com/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="pytorch" scheme="https://www.zywvvd.com/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/pytorch/"/>
+    
+      <category term="tensorrt" scheme="https://www.zywvvd.com/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/pytorch/tensorrt/"/>
+    
+    
+      <category term="深度学习" scheme="https://www.zywvvd.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="pytorch" scheme="https://www.zywvvd.com/tags/pytorch/"/>
+    
+      <category term="tensorrt" scheme="https://www.zywvvd.com/tags/tensorrt/"/>
+    
+  </entry>
+  
+  <entry>
     <title>拉格朗日乘数法</title>
     <link href="https://www.zywvvd.com/2021/03/13/machine_learning/lagrange-multiplier/lagrange-multiplier/"/>
     <id>https://www.zywvvd.com/2021/03/13/machine_learning/lagrange-multiplier/lagrange-multiplier/</id>
     <published>2021-03-13T06:44:14.000Z</published>
-    <updated>2021-03-13T10:41:42.863Z</updated>
+    <updated>2021-03-25T13:15:36.158Z</updated>
     
     <summary type="html">
     
@@ -164,9 +338,9 @@
       <category term="pytorch" scheme="https://www.zywvvd.com/categories/Deep-Learning/pytorch/"/>
     
     
-      <category term="Deep Learning" scheme="https://www.zywvvd.com/tags/Deep-Learning/"/>
-    
       <category term="pytorch" scheme="https://www.zywvvd.com/tags/pytorch/"/>
+    
+      <category term="Deep Learning" scheme="https://www.zywvvd.com/tags/Deep-Learning/"/>
     
   </entry>
   
@@ -1072,9 +1246,9 @@
     
       <category term="故障排除" scheme="https://www.zywvvd.com/tags/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/"/>
     
-      <category term="python" scheme="https://www.zywvvd.com/tags/python/"/>
-    
       <category term="pytorch" scheme="https://www.zywvvd.com/tags/pytorch/"/>
+    
+      <category term="python" scheme="https://www.zywvvd.com/tags/python/"/>
     
   </entry>
   
@@ -1788,7 +1962,7 @@
     <link href="https://www.zywvvd.com/2020/07/08/troubleshooting/github_cannot_log_in/github_cannot_log_in/"/>
     <id>https://www.zywvvd.com/2020/07/08/troubleshooting/github_cannot_log_in/github_cannot_log_in/</id>
     <published>2020-07-07T16:10:35.000Z</published>
-    <updated>2020-11-14T08:17:13.824Z</updated>
+    <updated>2021-03-25T13:15:36.168Z</updated>
     
     <summary type="html">
     
@@ -2209,10 +2383,10 @@
   
   <entry>
     <title>算法学习笔记 —— 排序</title>
-    <link href="https://www.zywvvd.com/2020/05/21/algorithm/sort/about_sort/"/>
-    <id>https://www.zywvvd.com/2020/05/21/algorithm/sort/about_sort/</id>
+    <link href="https://www.zywvvd.com/2020/05/21/algorithm/tree/about_tree/"/>
+    <id>https://www.zywvvd.com/2020/05/21/algorithm/tree/about_tree/</id>
     <published>2020-05-21T05:15:39.000Z</published>
-    <updated>2020-11-14T08:17:13.509Z</updated>
+    <updated>2020-11-14T08:17:13.510Z</updated>
     
     <summary type="html">
     
@@ -2236,10 +2410,10 @@
   
   <entry>
     <title>算法学习笔记 —— 排序</title>
-    <link href="https://www.zywvvd.com/2020/05/21/algorithm/tree/about_tree/"/>
-    <id>https://www.zywvvd.com/2020/05/21/algorithm/tree/about_tree/</id>
+    <link href="https://www.zywvvd.com/2020/05/21/algorithm/sort/about_sort/"/>
+    <id>https://www.zywvvd.com/2020/05/21/algorithm/sort/about_sort/</id>
     <published>2020-05-21T05:15:39.000Z</published>
-    <updated>2020-11-14T08:17:13.510Z</updated>
+    <updated>2020-11-14T08:17:13.509Z</updated>
     
     <summary type="html">
     
@@ -2440,7 +2614,7 @@
     <link href="https://www.zywvvd.com/2020/05/06/docker/docker_usage/"/>
     <id>https://www.zywvvd.com/2020/05/06/docker/docker_usage/</id>
     <published>2020-05-06T14:11:15.000Z</published>
-    <updated>2021-02-27T03:45:05.019Z</updated>
+    <updated>2021-03-25T13:15:36.154Z</updated>
     
     <summary type="html">
     
@@ -2551,16 +2725,16 @@
   </entry>
   
   <entry>
-    <title>Kite Python代码补全工具安装</title>
-    <link href="https://www.zywvvd.com/2020/04/11/python/kite_install/kite_install/"/>
-    <id>https://www.zywvvd.com/2020/04/11/python/kite_install/kite_install/</id>
+    <title>Python - 使用logging模块管理日志文件</title>
+    <link href="https://www.zywvvd.com/2020/04/11/python/logging/python-logging/"/>
+    <id>https://www.zywvvd.com/2020/04/11/python/logging/python-logging/</id>
     <published>2020-04-11T06:53:59.000Z</published>
-    <updated>2020-11-14T08:17:13.781Z</updated>
+    <updated>2020-11-14T08:17:13.782Z</updated>
     
     <summary type="html">
     
       &lt;blockquote&gt;
-&lt;p&gt;Kite是一款将AI机器学习应用到代码补全的工具，本文介绍其在Windows与Linux系统的安装方法。&lt;/p&gt;
+&lt;p&gt;logging是很友好的python日志管理包，轻便好用，本文介绍logging使用方法。&lt;/p&gt;
 &lt;/blockquote&gt;
     
     </summary>
@@ -2574,16 +2748,16 @@
   </entry>
   
   <entry>
-    <title>Python - 使用logging模块管理日志文件</title>
-    <link href="https://www.zywvvd.com/2020/04/11/python/logging/python-logging/"/>
-    <id>https://www.zywvvd.com/2020/04/11/python/logging/python-logging/</id>
+    <title>Kite Python代码补全工具安装</title>
+    <link href="https://www.zywvvd.com/2020/04/11/python/kite_install/kite_install/"/>
+    <id>https://www.zywvvd.com/2020/04/11/python/kite_install/kite_install/</id>
     <published>2020-04-11T06:53:59.000Z</published>
-    <updated>2020-11-14T08:17:13.782Z</updated>
+    <updated>2020-11-14T08:17:13.781Z</updated>
     
     <summary type="html">
     
       &lt;blockquote&gt;
-&lt;p&gt;logging是很友好的python日志管理包，轻便好用，本文介绍logging使用方法。&lt;/p&gt;
+&lt;p&gt;Kite是一款将AI机器学习应用到代码补全的工具，本文介绍其在Windows与Linux系统的安装方法。&lt;/p&gt;
 &lt;/blockquote&gt;
     
     </summary>
@@ -2874,7 +3048,7 @@
     <link href="https://www.zywvvd.com/2020/03/27/software/install/nvidia-install/nvidia-install/"/>
     <id>https://www.zywvvd.com/2020/03/27/software/install/nvidia-install/nvidia-install/</id>
     <published>2020-03-27T14:22:46.000Z</published>
-    <updated>2020-11-14T08:17:13.801Z</updated>
+    <updated>2021-03-25T13:15:36.163Z</updated>
     
     <summary type="html">
     
@@ -3653,9 +3827,9 @@
       <category term="文字编码" scheme="https://www.zywvvd.com/categories/%E6%96%87%E5%AD%97%E7%BC%96%E7%A0%81/"/>
     
     
-      <category term="XML" scheme="https://www.zywvvd.com/tags/XML/"/>
-    
       <category term="文字编码" scheme="https://www.zywvvd.com/tags/%E6%96%87%E5%AD%97%E7%BC%96%E7%A0%81/"/>
+    
+      <category term="XML" scheme="https://www.zywvvd.com/tags/XML/"/>
     
   </entry>
   
