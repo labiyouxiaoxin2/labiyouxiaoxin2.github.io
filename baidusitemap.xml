@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://www.zywvvd.com/2021/03/27/math/probability/expectation-and-variance/variance/</loc>
+    <lastmod>2021-03-27</lastmod>
+  </url>  <url>
+    <loc>https://www.zywvvd.com/2021/03/27/math/probability/expectation-and-variance/expectation/</loc>
+    <lastmod>2021-03-27</lastmod>
+  </url>  <url>
+    <loc>https://www.zywvvd.com/2021/03/01/math/probability/probability_basic_knowledge/</loc>
+    <lastmod>2021-03-27</lastmod>
+  </url>  <url>
     <loc>https://www.zywvvd.com/2021/03/19/machine_learning/lagrangian-duality/lagrangian-duality/</loc>
     <lastmod>2021-03-27</lastmod>
   </url>  <url>
@@ -44,9 +53,6 @@
     <lastmod>2021-03-13</lastmod>
   </url>  <url>
     <loc>https://www.zywvvd.com/2021/03/11/python/PCV-install-for-python/PCV-install-for-python/</loc>
-    <lastmod>2021-03-13</lastmod>
-  </url>  <url>
-    <loc>https://www.zywvvd.com/2021/03/01/math/probability/probability_basic_knowledge/</loc>
     <lastmod>2021-03-13</lastmod>
   </url>  <url>
     <loc>https://www.zywvvd.com/2021/03/12/math/probability/orthogonal-independent-uncorrelation/orthogonal-independent-uncorrelation/</loc>
@@ -214,10 +220,10 @@
     <loc>https://www.zywvvd.com/2020/11/02/software/ide/vs_code_remote_debugging/vs_code_remote_debugging/</loc>
     <lastmod>2020-11-14</lastmod>
   </url>  <url>
-    <loc>https://www.zywvvd.com/2020/11/02/software/ide/vs_code_no_print_content/vs_code_no_print_content/</loc>
+    <loc>https://www.zywvvd.com/2020/11/02/software/ide/vs_code_kite_install/kite_install/</loc>
     <lastmod>2020-11-14</lastmod>
   </url>  <url>
-    <loc>https://www.zywvvd.com/2020/11/02/software/ide/vs_code_kite_install/kite_install/</loc>
+    <loc>https://www.zywvvd.com/2020/11/02/software/ide/vs_code_no_print_content/vs_code_no_print_content/</loc>
     <lastmod>2020-11-14</lastmod>
   </url>  <url>
     <loc>https://www.zywvvd.com/2020/08/11/software/ide/flake8-max-size/flake8-max-size/</loc>
@@ -295,10 +301,10 @@
     <loc>https://www.zywvvd.com/2020/03/31/next/22_qiniuyun_qshell/qiniuyun-qshell/</loc>
     <lastmod>2020-11-14</lastmod>
   </url>  <url>
-    <loc>https://www.zywvvd.com/2020/03/29/next/21_add_photos/add-photos/</loc>
+    <loc>https://www.zywvvd.com/2020/03/28/next/20_custom_style/custom-style/</loc>
     <lastmod>2020-11-14</lastmod>
   </url>  <url>
-    <loc>https://www.zywvvd.com/2020/03/28/next/20_custom_style/custom-style/</loc>
+    <loc>https://www.zywvvd.com/2020/03/29/next/21_add_photos/add-photos/</loc>
     <lastmod>2020-11-14</lastmod>
   </url>  <url>
     <loc>https://www.zywvvd.com/2020/03/28/next/19_next_fancybox/next-fancybox/</loc>
