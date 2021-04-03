@@ -1,8 +1,344 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>概率论基础 - 5 - 大数定理</title>
-    <url>/2021/03/27/math/probability/law-of-large-numbers/law-of-large-numbers/</url>
+    <title>概率论基础 - 9 - 中心极限定理</title>
+    <url>/2021/04/03/math/probability/central-limit-theorem/central-limit-theorem/</url>
+    <content><![CDATA[<blockquote>
+<p>中心极限定理（<strong>Central Limit Theorem</strong>，CTL），是指概率论中讨论随机变量序列部分和分布渐近于正态分布的一类定理。。</p>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><blockquote>
+<p>定理是数理统计学和误差分析的理论基础，指出了大量随机变量近似服从正态分布的条件。它是概率论中最重要的一类定理，有广泛的实际应用背景。在自然界与生产中，一些现象受到许多相互独立的随机因素的影响，如果每个因素所产生的影响都很微小时，总的影响可以看作是服从正态分布的。中心极限定理就是从数学上证明了这一现象。    ——<a href="https://baike.baidu.com/item/%E4%B8%AD%E5%BF%83%E6%9E%81%E9%99%90%E5%AE%9A%E7%90%86/829451?fr=aladdin" target="_blank" rel="noopener">百度百科</a></p>
+</blockquote>
+<ul>
+<li>中心极限定理（CLT）指出，如果样本量足够大，则变量均值的采样分布将近似于正态分布，而与该变量在总体中的分布无关。</li>
+<li>中心极限定理根据变量属性不同可以分为不同的情况</li>
+</ul>
+<h3 id="独立同分布"><a href="#独立同分布" class="headerlink" title="独立同分布"></a>独立同分布</h3><ul>
+<li>设随机变量$X_1, X_2,\dots,X_n$独立同分布，且具有数学期望$\mu$和方差$\sigma^2$，前$n$个变量之和为$\overline S  = \sum\limits_{i = 1}^n  \$</li>
+<li>那么$\overline S_n$的期望和方差为$n\mu$和$n\sigma^2$，$\overline S_n$的标准化变量为：</li>
+</ul>
+<p>$$<br>Y_n=\frac{\overline S_n - n\mu}{\sqrt n\sigma}<br>$$</p>
+<h4 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h4><ul>
+<li>中心极限定理的内容为：$Y_n$的概率分布函数$F_n(x)$对于任意$x$满足：</li>
+</ul>
+
+$$
+\begin{array}{c}
+\lim _{n \rightarrow \infty} F_{n}(x)=\lim \limits_{n \rightarrow \infty} P\left\{Y_{n} \leq x\right\}=\lim \limits_{n \rightarrow \infty} P\left\{\frac{\sum_{k=1}^{n} X_{k}-n \mu}{\sqrt{n} \sigma} \leq x\right\} \\
+=\int_{-\infty}^{x} \frac{1}{\sqrt{2 \pi}} e^{-t^{2} / 2} d t=\Phi(x)
+\end{array}
+$$
+
+
+<h4 id="证明"><a href="#证明" class="headerlink" title="证明"></a>证明</h4><h4 id="应用思路"><a href="#应用思路" class="headerlink" title="应用思路"></a>应用思路</h4><ul>
+<li>均值方差为$\mu$和$\sigma^2$，的独立同分布的随机变量$X_i$前$n$项之和$\overline S_n$的标准变化量$Y_n$，当$n$充分大时，其分布近似于标准正态分布</li>
+<li>即在$n$充分大时，$\overline S_n$分布近似于$N(n\mu,n\sigma^2)$</li>
+<li>一般情况下，很难求出$n$个随机变量之和的分布函数。因此当$n$充分大时，可以通过正态分布来做理论上的分析或者计算</li>
+</ul>
+<h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><ul>
+<li><p><a href="https://baike.baidu.com/item/%E4%B8%AD%E5%BF%83%E6%9E%81%E9%99%90%E5%AE%9A%E7%90%86/829451?fr=aladdin" target="_blank" rel="noopener">https://baike.baidu.com/item/%E4%B8%AD%E5%BF%83%E6%9E%81%E9%99%90%E5%AE%9A%E7%90%86/829451?fr=aladdin</a></p>
+</li>
+<li><p><a href="https://baijiahao.baidu.com/s?id=1665261046335447411&amp;wfr=spider&amp;for=pc" target="_blank" rel="noopener">https://baijiahao.baidu.com/s?id=1665261046335447411&amp;wfr=spider&amp;for=pc</a></p>
+</li>
+<li><p><a href="http://www.huaxiaozhuan.com/%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/chapters/2_probability.html" target="_blank" rel="noopener">http://www.huaxiaozhuan.com/%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/chapters/2_probability.html</a></p>
+</li>
+</ul>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <categories>
+        <category>math</category>
+        <category>probability</category>
+      </categories>
+      <tags>
+        <tag>math</tag>
+        <tag>probability</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>VSCode 配置 C++ 运行环境</title>
+    <url>/2021/04/02/coding/environment/cpp-vscode/cpp-vscode/</url>
+    <content><![CDATA[<blockquote>
+<p>本文记录使用 vscode 配置c++编程环境的流程。</p>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h3><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>操作系统</td>
+<td>Windows 10</td>
+</tr>
+<tr>
+<td>软件安装</td>
+<td><a href="https://vscode.en.softonic.com/" target="_blank" rel="noopener">VS code</a></td>
+</tr>
+</tbody></table>
+<ul>
+<li>官网：<a href="https://code.visualstudio.com/" target="_blank" rel="noopener">https://code.visualstudio.com/</a></li>
+</ul>
+<h3 id="安装gcc编译器"><a href="#安装gcc编译器" class="headerlink" title="安装gcc编译器"></a>安装gcc编译器</h3><h4 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h4><ul>
+<li>链接：<a href="https://link.zhihu.com/?target=https://sourceforge.net/projects/mingw-w64/files/">MinGW-w64 - for 32 and 64 bit Windows</a> </li>
+</ul>
+<blockquote>
+<p>选最新版本中的<code>x86_64-posix-seh</code></p>
+</blockquote>
+<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><ul>
+<li>解压压缩包</li>
+<li>将目录中的<code>bin</code>添加到环境变量</li>
+</ul>
+<h4 id="验证"><a href="#验证" class="headerlink" title="验证"></a>验证</h4><ul>
+<li>在cmd中输入命令</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&gt; gcc -v</span><br><span class="line"></span><br><span class="line">Using built-in specs.</span><br><span class="line">COLLECT_GCC&#x3D;gcc</span><br><span class="line">COLLECT_LTO_WRAPPER&#x3D;E:&#x2F;Program\ Files&#x2F;mingw64&#x2F;bin&#x2F;..&#x2F;libexec&#x2F;gcc&#x2F;x86_64-w64-mingw32&#x2F;8.1.0&#x2F;lto-wrapper.exe</span><br><span class="line">Target: x86_64-w64-mingw32</span><br><span class="line">Configured with: ..&#x2F;..&#x2F;..&#x2F;src&#x2F;gcc-8.1.0&#x2F;configure --host&#x3D;x86_64-w64-mingw32 --build&#x3D;x86_64-w64-mingw32 --target&#x3D;x86_64-w64-mingw32 --prefix&#x3D;&#x2F;mingw64 --with-sysroot&#x3D;&#x2F;c&#x2F;mingw810&#x2F;x86_64-810-posix-seh-rt_v6-rev0&#x2F;mingw64 --enable-shared --enable-static --disable-multilib --enable-languages&#x3D;c,c++,fortran,lto --enable-libstdcxx-time&#x3D;yes --enable-threads&#x3D;posix --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking&#x3D;release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch&#x3D;nocona --with-tune&#x3D;core2 --with-libiconv --with-system-zlib --with-gmp&#x3D;&#x2F;c&#x2F;mingw810&#x2F;prerequisites&#x2F;x86_64-w64-mingw32-static --with-mpfr&#x3D;&#x2F;c&#x2F;mingw810&#x2F;prerequisites&#x2F;x86_64-w64-mingw32-static --with-mpc&#x3D;&#x2F;c&#x2F;mingw810&#x2F;prerequisites&#x2F;x86_64-w64-mingw32-static --with-isl&#x3D;&#x2F;c&#x2F;mingw810&#x2F;prerequisites&#x2F;x86_64-w64-mingw32-static --with-pkgversion&#x3D;&#39;x86_64-posix-seh-rev0, Built by MinGW-W64 project&#39; --with-bugurl&#x3D;https:&#x2F;&#x2F;sourceforge.net&#x2F;projects&#x2F;mingw-w64 CFLAGS&#x3D;&#39;-O2 -pipe -fno-ident -I&#x2F;c&#x2F;mingw810&#x2F;x86_64-810-posix-seh-rt_v6-rev0&#x2F;mingw64&#x2F;opt&#x2F;include -I&#x2F;c&#x2F;mingw810&#x2F;prerequisites&#x2F;x86_64-zlib-static&#x2F;include -I&#x2F;c&#x2F;mingw810&#x2F;prerequisites&#x2F;x86_64-w64-mingw32-static&#x2F;include&#39; CXXFLAGS&#x3D;&#39;-O2 -pipe -fno-ident -I&#x2F;c&#x2F;mingw810&#x2F;x86_64-810-posix-seh-rt_v6-rev0&#x2F;mingw64&#x2F;opt&#x2F;include -I&#x2F;c&#x2F;mingw810&#x2F;prerequisites&#x2F;x86_64-zlib-static&#x2F;include -I&#x2F;c&#x2F;mingw810&#x2F;prerequisites&#x2F;x86_64-w64-mingw32-static&#x2F;include&#39; CPPFLAGS&#x3D;&#39; -I&#x2F;c&#x2F;mingw810&#x2F;x86_64-810-posix-seh-rt_v6-rev0&#x2F;mingw64&#x2F;opt&#x2F;include -I&#x2F;c&#x2F;mingw810&#x2F;prerequisites&#x2F;x86_64-zlib-static&#x2F;include -I&#x2F;c&#x2F;mingw810&#x2F;prerequisites&#x2F;x86_64-w64-mingw32-static&#x2F;include&#39; LDFLAGS&#x3D;&#39;-pipe -fno-ident -L&#x2F;c&#x2F;mingw810&#x2F;x86_64-810-posix-seh-rt_v6-rev0&#x2F;mingw64&#x2F;opt&#x2F;lib -L&#x2F;c&#x2F;mingw810&#x2F;prerequisites&#x2F;x86_64-zlib-static&#x2F;lib -L&#x2F;c&#x2F;mingw810&#x2F;prerequisites&#x2F;x86_64-w64-mingw32-static&#x2F;lib &#39;</span><br><span class="line">Thread model: posix</span><br><span class="line">gcc version 8.1.0 (x86_64-posix-seh-rev0, Built by MinGW-W64 project)</span><br></pre></td></tr></table></figure>
+
+<h3 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h3><ul>
+<li>C/C++：又名 cpptools，提供Debug和Format功能</li>
+<li>Code Runner：右键即可编译运行单文件，很方便；但无法Debug</li>
+</ul>
+<blockquote>
+<p>Bracket Pair Colorizer 2：彩虹花括号</p>
+</blockquote>
+<h3 id="建立配置文件"><a href="#建立配置文件" class="headerlink" title="建立配置文件"></a>建立配置文件</h3><h4 id="tasks-json"><a href="#tasks-json" class="headerlink" title="tasks.json"></a>tasks.json</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F; https:&#x2F;&#x2F;code.visualstudio.com&#x2F;docs&#x2F;editor&#x2F;tasks</span><br><span class="line">&#123;</span><br><span class="line">    &quot;version&quot;: &quot;2.0.0&quot;,</span><br><span class="line">    &quot;tasks&quot;: [&#123;</span><br><span class="line">        &quot;label&quot;: &quot;Compile&quot;, &#x2F;&#x2F; 任务名称，与launch.json的preLaunchTask相对应</span><br><span class="line">        &quot;command&quot;: &quot;g++&quot;,   &#x2F;&#x2F; 要使用的编译器，C++用g++</span><br><span class="line">        &quot;args&quot;: [</span><br><span class="line">            &quot;$&#123;file&#125;&quot;,</span><br><span class="line">            &quot;-o&quot;,    &#x2F;&#x2F; 指定输出文件名，不加该参数则默认输出a.exe，Linux下默认a.out</span><br><span class="line">            &quot;$&#123;fileDirname&#125;&#x2F;$&#123;fileBasenameNoExtension&#125;.exe&quot;,</span><br><span class="line">            &quot;-g&quot;,    &#x2F;&#x2F; 生成和调试有关的信息</span><br><span class="line">            &quot;-m64&quot;,  &#x2F;&#x2F; 不知为何有时会生成16位程序而无法运行，此条可强制生成64位的</span><br><span class="line">            &quot;-Wall&quot;, &#x2F;&#x2F; 开启额外警告</span><br><span class="line">            &quot;-static-libgcc&quot;,     &#x2F;&#x2F; 静态链接libgcc，一般都会加上</span><br><span class="line">            &quot;-fexec-charset&#x3D;GBK&quot;, &#x2F;&#x2F; 生成的程序使用GBK编码，不加这条会导致Win下输出中文乱码；繁体系统改成BIG5</span><br><span class="line">            &quot;-D__USE_MINGW_ANSI_STDIO&quot;, &#x2F;&#x2F; 用MinGW写C时留着，否则不需要，用于支持printf的%zd和%Lf等</span><br><span class="line">        ], &#x2F;&#x2F; 编译的命令，其实相当于VSC帮你在终端中输了这些东西</span><br><span class="line">        &quot;type&quot;: &quot;process&quot;, &#x2F;&#x2F; process是把预定义变量和转义解析后直接全部传给command；shell相当于先打开shell再输入命令，所以args还会经过shell再解析一遍</span><br><span class="line">        &quot;group&quot;: &#123;</span><br><span class="line">            &quot;kind&quot;: &quot;build&quot;,</span><br><span class="line">            &quot;isDefault&quot;: true &#x2F;&#x2F; 不为true时ctrl shift B就要手动选择了</span><br><span class="line">        &#125;,</span><br><span class="line">        &quot;presentation&quot;: &#123;</span><br><span class="line">            &quot;echo&quot;: true,</span><br><span class="line">            &quot;reveal&quot;: &quot;always&quot;, &#x2F;&#x2F; 执行任务时是否跳转到终端面板，可以为always，silent，never。具体参见VSC的文档，即使设为never，手动点进去还是可以看到</span><br><span class="line">            &quot;focus&quot;: false,     &#x2F;&#x2F; 设为true后可以使执行task时焦点聚集在终端，但对编译C&#x2F;C++来说，设为true没有意义</span><br><span class="line">            &quot;panel&quot;: &quot;shared&quot;   &#x2F;&#x2F; 不同的文件的编译信息共享一个终端面板</span><br><span class="line">        &#125;,</span><br><span class="line">        &quot;problemMatcher&quot;:&quot;$gcc&quot; &#x2F;&#x2F; 捕捉编译时终端里的报错信息到问题面板中，修改代码后需要重新编译才会再次触发</span><br><span class="line">        &#x2F;&#x2F; 本来有Lint，再开problemMatcher就有双重报错，但MinGW的Lint效果实在太差了；用Clangd可以注释掉</span><br><span class="line">    &#125;]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="launch-json"><a href="#launch-json" class="headerlink" title="launch.json"></a>launch.json</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F; https:&#x2F;&#x2F;code.visualstudio.com&#x2F;docs&#x2F;cpp&#x2F;launch-json-reference</span><br><span class="line">&#123;</span><br><span class="line">    &quot;version&quot;: &quot;0.2.0&quot;,</span><br><span class="line">    &quot;configurations&quot;: [&#123;</span><br><span class="line">        &quot;name&quot;: &quot;(gdb) Launch&quot;, &#x2F;&#x2F; 配置名称，将会在启动配置的下拉菜单中显示</span><br><span class="line">        &quot;type&quot;: &quot;cppdbg&quot;, &#x2F;&#x2F; 配置类型，对于C&#x2F;C++可认为此处只能是cppdbg，由cpptools提供；不同编程语言不同</span><br><span class="line">        &quot;request&quot;: &quot;launch&quot;, &#x2F;&#x2F; 可以为launch（启动）或attach（附加）</span><br><span class="line">        &quot;program&quot;: &quot;$&#123;fileDirname&#125;&#x2F;$&#123;fileBasenameNoExtension&#125;.exe&quot;, &#x2F;&#x2F; 将要进行调试的程序的路径</span><br><span class="line">        &quot;args&quot;: [], &#x2F;&#x2F; 程序调试时传递给程序的命令行参数，一般设为空</span><br><span class="line">        &quot;stopAtEntry&quot;: false, &#x2F;&#x2F; 设为true时程序将暂停在程序入口处，相当于在main上打断点</span><br><span class="line">        &quot;cwd&quot;: &quot;$&#123;workspaceFolder&#125;&quot;, &#x2F;&#x2F; 调试程序时的工作目录，此为工作区文件夹；改成$&#123;fileDirname&#125;可变为文件所在目录</span><br><span class="line">        &quot;environment&quot;: [], &#x2F;&#x2F; 环境变量</span><br><span class="line">        &quot;externalConsole&quot;: true, &#x2F;&#x2F; 使用单独的cmd窗口，与其它IDE一致；为false时使用内置终端</span><br><span class="line">        &quot;internalConsoleOptions&quot;: &quot;neverOpen&quot;, &#x2F;&#x2F; 如果不设为neverOpen，调试时会跳到“调试控制台”选项卡，你应该不需要对gdb手动输命令吧？</span><br><span class="line">        &quot;MIMode&quot;: &quot;gdb&quot;, &#x2F;&#x2F; 指定连接的调试器，可以为gdb或lldb。但我没试过lldb</span><br><span class="line">        &quot;miDebuggerPath&quot;: &quot;gdb.exe&quot;, &#x2F;&#x2F; 调试器路径，Windows下后缀不能省略，Linux下则不要</span><br><span class="line">        &quot;setupCommands&quot;: [</span><br><span class="line">            &#123; &#x2F;&#x2F; 模板自带，好像可以更好地显示STL容器的内容，具体作用自行Google</span><br><span class="line">                &quot;description&quot;: &quot;Enable pretty-printing for gdb&quot;,</span><br><span class="line">                &quot;text&quot;: &quot;-enable-pretty-printing&quot;,</span><br><span class="line">                &quot;ignoreFailures&quot;: false</span><br><span class="line">            &#125;</span><br><span class="line">        ],</span><br><span class="line">        &quot;preLaunchTask&quot;: &quot;Compile&quot; &#x2F;&#x2F; 调试前执行的任务，一般为编译程序。与tasks.json的label相对应</span><br><span class="line">    &#125;]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="settings-json"><a href="#settings-json" class="headerlink" title="settings.json"></a>settings.json</h3><blockquote>
+<p>把这个文件里的东西放到“用户设置”里可以覆盖全局设置，否则只在当前工作区才有效。这两点各有自己的优势。</p>
+<p>Code Runner的命令行和某些选项可以根据自己的需要在此处修改，想自定义或者想知道是什么意思还是参见此扩展的文档和百度gcc使用教程。如果终端用的是cmd（<strong>Win7</strong>默认）需要改用注释掉的，或者把<code>terminal.integrated.shell.windows</code>改为PowerShell；Win10默认就是PS就不用改。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;files.defaultLanguage&quot;: &quot;c&quot;, &#x2F;&#x2F; ctrl+N新建文件后默认的语言</span><br><span class="line">    &quot;editor.formatOnType&quot;: true,  &#x2F;&#x2F; 输入分号(C&#x2F;C++的语句结束标识)后自动格式化当前这一行的代码</span><br><span class="line">    &quot;editor.suggest.snippetsPreventQuickSuggestions&quot;: false, &#x2F;&#x2F; clangd的snippets有很多的跳转点，不用这个就必须手动触发Intellisense了</span><br><span class="line">    &quot;editor.acceptSuggestionOnEnter&quot;: &quot;off&quot;, &#x2F;&#x2F; 我个人的习惯，按回车时一定是真正的换行，只有tab才会接受Intellisense</span><br><span class="line">    &#x2F;&#x2F; &quot;editor.snippetSuggestions&quot;: &quot;top&quot;, &#x2F;&#x2F; （可选）snippets显示在补全列表顶端，默认是inline</span><br><span class="line"></span><br><span class="line">    &quot;code-runner.runInTerminal&quot;: true, &#x2F;&#x2F; 设置成false会在“输出”中输出，无法输入</span><br><span class="line">    &quot;code-runner.executorMap&quot;: &#123;</span><br><span class="line">        &quot;c&quot;: &quot;gcc &#39;$fileName&#39; -o &#39;$fileNameWithoutExt.exe&#39; -Wall -O2 -m64 -lm -static-libgcc -fexec-charset&#x3D;GBK -D__USE_MINGW_ANSI_STDIO &amp;&amp; &amp;&#39;.&#x2F;$fileNameWithoutExt.exe&#39;&quot;,</span><br><span class="line">        &quot;cpp&quot;: &quot;g++ &#39;$fileName&#39; -o &#39;$fileNameWithoutExt.exe&#39; -Wall -O2 -m64 -static-libgcc -fexec-charset&#x3D;GBK &amp;&amp; &amp;&#39;.&#x2F;$fileNameWithoutExt.exe&#39;&quot;</span><br><span class="line">        &#x2F;&#x2F; &quot;c&quot;: &quot;gcc $fileName -o $fileNameWithoutExt.exe -Wall -O2 -m64 -lm -static-libgcc -fexec-charset&#x3D;GBK -D__USE_MINGW_ANSI_STDIO &amp;&amp; $dir$fileNameWithoutExt.exe&quot;,</span><br><span class="line">        &#x2F;&#x2F; &quot;cpp&quot;: &quot;g++ $fileName -o $fileNameWithoutExt.exe -Wall -O2 -m64 -static-libgcc -fexec-charset&#x3D;GBK &amp;&amp; $dir$fileNameWithoutExt.exe&quot;</span><br><span class="line">    &#125;, &#x2F;&#x2F; 右键run code时运行的命令；未注释的仅适用于PowerShell（Win10默认）和pwsh，文件名中有空格也可以编译运行；注释掉的适用于cmd（win7默认）、PS和bash，但文件名中有空格时无法运行</span><br><span class="line">    &quot;code-runner.saveFileBeforeRun&quot;: true, &#x2F;&#x2F; run code前保存</span><br><span class="line">    &quot;code-runner.preserveFocus&quot;: true,     &#x2F;&#x2F; 若为false，run code后光标会聚焦到终端上。如果需要频繁输入数据可设为false</span><br><span class="line">    &quot;code-runner.clearPreviousOutput&quot;: false, &#x2F;&#x2F; 每次run code前清空属于code runner的终端消息，默认false</span><br><span class="line">    &quot;code-runner.ignoreSelection&quot;: true,   &#x2F;&#x2F; 默认为false，效果是鼠标选中一块代码后可以单独执行，但C是编译型语言，不适合这样用</span><br><span class="line">    &quot;code-runner.fileDirectoryAsCwd&quot;: true, &#x2F;&#x2F; 将code runner终端的工作目录切换到文件目录再运行，对依赖cwd的程序产生影响；如果为false，executorMap要加cd $dir</span><br><span class="line"></span><br><span class="line">    &quot;C_Cpp.clang_format_sortIncludes&quot;: true, &#x2F;&#x2F; 格式化时调整include的顺序（按字母排序）</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><ul>
+<li><a href="https://www.zhihu.com/question/30315894" target="_blank" rel="noopener">https://www.zhihu.com/question/30315894</a></li>
+</ul>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <categories>
+        <category>c++</category>
+        <category>ide</category>
+      </categories>
+      <tags>
+        <tag>c++</tag>
+        <tag>ide</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>docker - Error Got permission denied &amp; response from daemon Unknown runtime specified nvidia 解决方案</title>
+    <url>/2021/03/30/docker/docker_error_fix/</url>
+    <content><![CDATA[<blockquote>
+<p>Docker 在使用过程中<code>docker: Error response from daemon: Unknown runtime specified nvidia.</code>问题的解决方案。</p>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="docker-Got-permission-denied-while-trying-to-connect-to-the-Docker-daemon-socket"><a href="#docker-Got-permission-denied-while-trying-to-connect-to-the-Docker-daemon-socket" class="headerlink" title="docker: Got permission denied while trying to connect to the Docker daemon socket"></a>docker: Got permission denied while trying to connect to the Docker daemon socket</h3><blockquote>
+<p>这是因为用户没有加入到docker组中，因此将自己的用户加入到docker的用户组</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo usermod -a -G docker $USER</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="docker-Error-response-from-daemon-Unknown-runtime-specified-nvidia"><a href="#docker-Error-response-from-daemon-Unknown-runtime-specified-nvidia" class="headerlink" title="docker: Error response from daemon: Unknown runtime specified nvidia."></a>docker: Error response from daemon: Unknown runtime specified nvidia.</h3><blockquote>
+<p>这个时候是我们需要安装nvidia-docker2</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo apt-get install -y nvidia-docker2</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>运行：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo docker run --runtime&#x3D;nvidia --rm nvidia&#x2F;cuda nvidia-smi</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>还是报错：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">docker: Error response from daemon: Unknown runtime specified nvidia.</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>而运行显示镜像的命令是正常的，说明nvidia-docker2是安装成功了的</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">nvidia-docker image ls</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>需要将docker重启</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo systemctl daemon-reload</span><br><span class="line">sudo systemctl restart docker</span><br></pre></td></tr></table></figure>
+
+
+
+
+<h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><ul>
+<li><p><a href="https://zhuanlan.zhihu.com/p/68044009" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/68044009</a></p>
+</li>
+<li><p><a href="https://github.com/NVIDIA/nvidia-docker/issues/838" target="_blank" rel="noopener">https://github.com/NVIDIA/nvidia-docker/issues/838</a></p>
+</li>
+</ul>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <categories>
+        <category>Docker</category>
+      </categories>
+      <tags>
+        <tag>Docker</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Nvidia 显卡 Failed to initialize NVML Driver/library version mismatch 错误解决方案</title>
+    <url>/2021/03/30/linux/driver/driver-library-version-mismatch/driver-library-version-mismatch/</url>
+    <content><![CDATA[<blockquote>
+<p>本文记录错误 <code>Failed to initialize NVML: Driver/library version mismatch</code> 错误解决方案。</p>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="问题复现"><a href="#问题复现" class="headerlink" title="问题复现"></a>问题复现</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> nvidia-smi </span></span><br><span class="line"></span><br><span class="line"><span class="meta">--&gt;</span></span><br><span class="line">Failed to initialize NVML: Driver/library version mismatch</span><br></pre></td></tr></table></figure>
+
+<h3 id="问题分析"><a href="#问题分析" class="headerlink" title="问题分析"></a>问题分析</h3><ul>
+<li>NVIDIA 内核驱动版本与系统驱动不一致</li>
+</ul>
+<h4 id="查看显卡驱动所使用的内核版本"><a href="#查看显卡驱动所使用的内核版本" class="headerlink" title="查看显卡驱动所使用的内核版本"></a>查看显卡驱动所使用的内核版本</h4><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cat /proc/driver/nvidia/version</span><br><span class="line"></span><br><span class="line"><span class="meta">--&gt;</span></span><br><span class="line">NVRM version: NVIDIA UNIX x86_64 Kernel Module  430.34  Wed Jun 26 12:19:48 CDT 2019</span><br><span class="line">GCC version:  gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.12)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>内核版本 Kernel Module 为 430.34， 系统内核 16.04.12</li>
+</ul>
+<h4 id="查看系统驱动日志"><a href="#查看系统驱动日志" class="headerlink" title="查看系统驱动日志"></a>查看系统驱动日志</h4><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cat /var/log/dpkg.log | grep nvidia</span><br><span class="line"></span><br><span class="line"><span class="meta">--&gt;</span></span><br><span class="line">2021-03-30 14:04:55 install libnvidia-compute-460-server:amd64 &lt;none&gt; 460.32.03-0ubuntu0.18.04.2</span><br><span class="line">2021-03-30 14:04:55 status half-installed libnvidia-compute-460-server:amd64 460.32.03-0ubuntu0.18.04.2</span><br><span class="line">2021-03-30 14:04:57 status unpacked libnvidia-compute-460-server:amd64 460.32.03-0ubuntu0.18.04.2</span><br><span class="line">2021-03-30 14:04:57 status unpacked libnvidia-compute-460-server:amd64 460.32.03-0ubuntu0.18.04.2</span><br><span class="line">2021-03-30 14:05:15 install nvidia-cuda-dev:amd64 &lt;none&gt; 9.1.85-3ubuntu1</span><br><span class="line">2021-03-30 14:05:15 status half-installed nvidia-cuda-dev:amd64 9.1.85-3ubuntu1</span><br><span class="line">2021-03-30 14:05:34 status unpacked nvidia-cuda-dev:amd64 9.1.85-3ubuntu1</span><br><span class="line">2021-03-30 14:05:34 status unpacked nvidia-cuda-dev:amd64 9.1.85-3ubuntu1</span><br><span class="line">2021-03-30 14:05:34 install nvidia-cuda-doc:all &lt;none&gt; 9.1.85-3ubuntu1</span><br><span class="line">2021-03-30 14:05:34 status half-installed nvidia-cuda-doc:all 9.1.85-3ubuntu1</span><br><span class="line">2021-03-30 14:05:38 status unpacked nvidia-cuda-doc:all 9.1.85-3ubuntu1</span><br><span class="line">2021-03-30 14:05:38 status unpacked nvidia-cuda-doc:all 9.1.85-3ubuntu1</span><br><span class="line">2021-03-30 14:05:38 install nvidia-cuda-gdb:amd64 &lt;none&gt; 9.1.85-3ubuntu1</span><br><span class="line">2021-03-30 14:05:38 status half-installed nvidia-cuda-gdb:amd64 9.1.85-3ubuntu1</span><br><span class="line">2021-03-30 14:05:39 status unpacked nvidia-cuda-gdb:amd64 9.1.85-3ubuntu1</span><br><span class="line">2021-03-30 14:05:39 status unpacked nvidia-cuda-gdb:amd64 9.1.85-3ubuntu1</span><br><span class="line">2021-03-30 14:05:39 install nvidia-profiler:amd64 &lt;none&gt; 9.1.85-3ubuntu1</span><br><span class="line">2021-03-30 14:05:39 status half-installed nvidia-profiler:amd64 9.1.85-3ubuntu1</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>可以看到曾经安装过系统内核 18.04 的 460.32 的驱动</li>
+</ul>
+<h4 id="查看驱动程序"><a href="#查看驱动程序" class="headerlink" title="查看驱动程序"></a>查看驱动程序</h4><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo dpkg --list | grep nvidia-*</span><br><span class="line"></span><br><span class="line"><span class="meta">--&gt;</span></span><br><span class="line">ii  libnvidia-compute-460-server:amd64   460.32.03-0ubuntu0.18.04.2                 amd64        NVIDIA libcompute package</span><br><span class="line">ii  libnvidia-container-tools            1.0.5-1                                    amd64        NVIDIA container runtime library (command-line tools)</span><br><span class="line">ii  libnvidia-container1:amd64           1.0.5-1                                    amd64        NVIDIA container runtime library</span><br><span class="line">ii  nvidia-container-runtime             3.1.4-1                                    amd64        NVIDIA container runtime</span><br><span class="line">ii  nvidia-container-toolkit             1.0.5-1                                    amd64        NVIDIA container runtime hook</span><br><span class="line">ii  nvidia-cuda-dev                      9.1.85-3ubuntu1                            amd64        NVIDIA CUDA development files</span><br><span class="line">ii  nvidia-cuda-doc                      9.1.85-3ubuntu1                            all          NVIDIA CUDA and OpenCL documentation</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>可以看到系统安装了ubuntu 内核18.04 下的 nvidia 460 驱动</li>
+<li>实际系统内核版本与驱动需求的版本不一致是问题产生的根源</li>
+</ul>
+<h3 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h3><ul>
+<li>卸载现有驱动，重新安装</li>
+</ul>
+<h4 id="卸载驱动"><a href="#卸载驱动" class="headerlink" title="卸载驱动"></a>卸载驱动</h4><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo /usr/bin/nvidia-uninstall</span><br><span class="line">sudo apt-get --purge remove nvidia-*</span><br><span class="line">sudo apt-get purge nvidia*</span><br><span class="line">sudo apt-get purge libnvidia*</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>直到命令不输出任何内容</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo dpkg --list | grep nvidia-*</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>重新安装</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo chmod a+x NVIDIA-Linux-x86_64-450.80.02.run</span><br><span class="line">sudo ./NVIDIA-Linux-x86_64-450.80.02.run -no-x-check -no-nouveau-check -no-opengl-files</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>–no-opengl-files 只安装驱动文件,不安装OpenGL文件</p>
+<p>–no-x-check 安装驱动时不检查X服务</p>
+<p>–no-nouveau-check 安装驱动时不检查nouveau</p>
+</blockquote>
+<h3 id="查看驱动更新结果"><a href="#查看驱动更新结果" class="headerlink" title="查看驱动更新结果"></a>查看驱动更新结果</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> nvidia-smi</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://photos.zywvvd.com/images_matrixtime/20201203202133.png"></p>
+<h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><ul>
+<li><p><a href="https://blog.csdn.net/qq_40200387/article/details/90341107" target="_blank" rel="noopener">https://blog.csdn.net/qq_40200387/article/details/90341107</a></p>
+</li>
+<li><p><a href="https://www.zywvvd.com/2020/12/03/linux/driver/nvidia-driver-install-linux/">https://www.zywvvd.com/2020/12/03/linux/driver/nvidia-driver-install-linux/</a></p>
+</li>
+</ul>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <categories>
+        <category>Linux</category>
+        <category>故障排除</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>故障排除</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>docker - 占满根目录空间的解决方案</title>
+    <url>/2021/03/30/docker/docker_no_space_left/</url>
+    <content><![CDATA[<blockquote>
+<p>Docker 默认会占用根目录的空间，时间久了就会吧根目录占满，本文记录解决方案。</p>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="问题复现"><a href="#问题复现" class="headerlink" title="问题复现"></a>问题复现</h3><blockquote>
+<p>不知不觉根目录已经没有空间，<code>ls</code> 的补全都会报错。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cannot create temp file for here-document: No space left on devic</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>可以看到 <code>/</code>已经没有空间了</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> df -h</span></span><br><span class="line">Filesystem                           Size  Used Avail Use% Mounted on</span><br><span class="line">udev                                  32G     0   32G   0% /dev</span><br><span class="line">tmpfs                                6.3G  138M  6.2G   3% /run</span><br><span class="line">/dev/mapper/MT3--vg-root             219G  208G     0 100% /</span><br><span class="line">tmpfs                                 32G   32K   32G   1% /dev/shm</span><br><span class="line">tmpfs                                5.0M     0  5.0M   0% /run/lock</span><br><span class="line">tmpfs                                 32G     0   32G   0% /sys/fs/cgroup</span><br><span class="line">/dev/sdb1                            3.6T  1.1T  2.4T  32% /gluster/data</span><br></pre></td></tr></table></figure>
+
+<h3 id="解决思路"><a href="#解决思路" class="headerlink" title="解决思路"></a>解决思路</h3><h4 id="方案1"><a href="#方案1" class="headerlink" title="方案1"></a>方案1</h4><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo　apt-get autoclean   # 删除你已经卸载掉的软件包的命令为 </span><br><span class="line"></span><br><span class="line">sudo apt-get clean       # 若你想清理出更多的空间，可以把电脑上存储的安装包全部卸载</span><br><span class="line"></span><br><span class="line">sudo apt-get autoremove  # 删除已经被卸载的软件所依赖的（其他软件不依赖的）孤立的软件包</span><br></pre></td></tr></table></figure>
+
+<h4 id="方案2"><a href="#方案2" class="headerlink" title="方案2"></a>方案2</h4><blockquote>
+<p>空间仍不足：通过建立软链接将/var目录下占用空间较大的目录移动到富足的空间区块（如/home）下，使得/var下不再占用空间。 （具体实现）</p>
+</blockquote>
+<ul>
+<li>查看文件夹下文件占用磁盘空间</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo du -ah -x --max-depth&#x3D;1</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>通过排查发现<code>/var/lib/docker</code>中文件巨大，将其移到其他磁盘中</li>
+<li>为了避免风险并提升速度（小文件很多），将其压缩到其他盘中再解压</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">tar -zcvf [压缩后的文件.tar.gz] var&#x2F;lib&#x2F;docker</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>解压：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">tar -zxvf [压缩后的文件.tar.gz]</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>将<code>/var/lib/docker</code>重命名为<code>/var/lib/docker-old</code></li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo mv /var/lib/docker /var/lib/docker-old</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>这时查看 <code>docker images</code> 是空的</p>
+</blockquote>
+<ul>
+<li>建立软连接重现<code>docker</code></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ln -s &#x2F;var&#x2F;lib&#x2F;docker [解压后的docker文件夹]</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>这时查看 <code>docker images</code> 一切正常的化已经可以看到之前的所有docker 数据了</li>
+</ul>
+<blockquote>
+<p>但是如果这时新建容器或启动容器会报错：</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">OCI runtime create failed: &#x2F;var&#x2F;lib&#x2F;docker&#x2F;overlay2&#x2F;c6eb60dada971e57fd5d125fb61d294870be347a2efb287862f8dfe52d99c57b&#x2F;merged is not an absolute path or is a symlink: unknown</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>需要重启 docker</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">service docker stop</span><br><span class="line">service docker start</span><br></pre></td></tr></table></figure>
+
+<p>或</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">service docker restart</span><br></pre></td></tr></table></figure>
+
+
+
+
+<h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><ul>
+<li><a href="https://blog.csdn.net/weixin_30710457/article/details/95471146" target="_blank" rel="noopener">https://blog.csdn.net/weixin_30710457/article/details/95471146</a></li>
+</ul>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <categories>
+        <category>Docker</category>
+      </categories>
+      <tags>
+        <tag>Docker</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>概率论基础 - 8 - 大数定理</title>
+    <url>/2021/03/30/math/probability/law-of-large-numbers/law-of-large-numbers/</url>
     <content><![CDATA[<blockquote>
 <p>概率论历史上第一个极限定理属于伯努利，后人称之为“大数定律”。概率论中讨论随机变量序列的算术平均值向随机变量各数学期望的算术平均值收敛的定律。</p>
 </blockquote>
@@ -27,12 +363,551 @@ $$
 <li>收敛：表明这是一个随机变量序列，而不是某个随机变量；且序列是无限长，而不是有限长。</li>
 <li>依概率：表明序列无穷远处的随机变量$Y_{\infty}$的分布规律为：绝大部分分布于点 $a$，极少数位于$a$  之外。且分布于$a$  之外的事件发生的概率之和为0。</li>
 </ul>
-<h3 id="大数定理一"><a href="#大数定理一" class="headerlink" title="大数定理一"></a>大数定理一</h3><ul>
+<h3 id="大数定理"><a href="#大数定理" class="headerlink" title="大数定理"></a>大数定理</h3><ul>
 <li>设随机变量$X_1,X_2, \dots ,X_n, \dots$ 相互独立，且具有相同的数学期望和方差：</li>
 </ul>
 <p>$$<br>\mathbb{E}\left[X_{k}\right]=\mu, \operatorname{Var}\left[X_{k}\right]=\sigma^{2}<br>$$</p>
+<ul>
+<li>则序列$X_i$依概率收敛于$\mu$：</li>
+</ul>
+
+$$
+\lim _{n \rightarrow \infty} P\left\{\left|\frac{1}{n} \sum_{i=1}^{n} X_{i}-E\left(X_{i}\right)\right|<\varepsilon\right\}=1
+$$
+
+
+<ul>
+<li>这里并没有要求随机变量$X_1,X_2, \dots ,X_n, \dots$ 同分布。</li>
+</ul>
+<blockquote>
+<p>证明见 <a href="https://www.zywvvd.com/2021/03/30/math/probability/chebyshev-inequality/chebyshev-inequality/">切比雪夫不等式</a></p>
+</blockquote>
+<h3 id="辛钦定理"><a href="#辛钦定理" class="headerlink" title="辛钦定理"></a>辛钦定理</h3><ul>
+<li>设随机变量$X_1,X_2, \dots ,X_n, \dots$ 相互独立，服从同一分布，且具有相同的数学期望$\mu$，则对于任意正数$\varepsilon$有：</li>
+</ul>
+
+$$
+\lim _{n \rightarrow \infty} P\left\{\left|\frac{1}{n} \sum_{k=1}^{n} X_{k}-\mu\right|<\varepsilon\right\}=1
+$$
+
+
+<ul>
+<li>注意：这里并没有要求随机变量$X_i$的方差存在</li>
+</ul>
+<h4 id="证明"><a href="#证明" class="headerlink" title="证明"></a>证明</h4><ul>
+<li>由于$X_i$同分布，他们有相同的分布，也就具有相同的<a href="https://www.zywvvd.com/2021/03/30/math/probability/Characteristic-Function/Characteristic-Function/">特征函数</a>：</li>
+</ul>
+<p>$$<br>\varphi_{X}(t)=E\left[e^{i t X}\right]<br>$$</p>
+<ul>
+<li>其中$e^{i t X}$为：</li>
+</ul>
+<p>$$<br>e^{i t X}=1+\frac{i t X}{1}-\frac{t^{2} X^{2}}{2 !}+\cdots+\frac{(i t)^{n} X^{n}}{n !}<br>$$</p>
+<ul>
+<li>因此$X$的期望$E(X)$可以用特征函数在$t=0$处的一阶导数表示：</li>
+</ul>
+
+$$
+\begin{array}{l}
+\varphi_{X}'(0)=iE(X)\\
+E(X)=\frac{\varphi_{X}'(0)}{i}
+\end{array}
+$$
+
+
+
+<ul>
+<li>将特征函数在$t=0$处泰勒展开，有：</li>
+</ul>
+<p>$$<br>\varphi_{X}(t)=\varphi_{X}(0)+\varphi_{X}’(0)t+o(t)=1+i\mu t+o(t)<br>$$</p>
+<ul>
+<li>其中$\mu$=$E(X)$</li>
+<li>由于$X_i$相互独立，变量$\frac{1}{n} \sum_{k=1}^{n} X_{k}$的特征函数为：</li>
+</ul>
+
+$$
+\begin{array}{l}
+
+{g_n}(t) &= E[{e^{it\frac{1}{n}\sum\limits_{k = 1}^n {{X_k}} }}]\\
+ &= E[{e^{i\frac{{\rm{t}}}{n}{X_1}}} \cdot {e^{i\frac{{\rm{t}}}{n}{X_2}}} \cdot  \cdots  \cdot {e^{i\frac{{\rm{t}}}{n}{X_n}}}]\\
+ &= {\{ E[{e^{i\frac{{\rm{t}}}{n}X}}]\} ^n}\\
+ &= {[{\varphi _X}(\frac{t}{n})]^n}\\
+ &= {[1 + i\mu \frac{t}{n} + o(t)]^n}
+\end{array}
+$$
+
+
+
+<ul>
+<li>根据（可由<a href="https://www.zywvvd.com/2021/03/30/math/LHolpitals-Rule/LHolpitals-Rule/">洛必达法则</a>推出）：</li>
+</ul>
+
+$$
+\mathop {\lim }\limits_{n \to \infty } {\rm{(1 + }}\frac{{\rm{a}}}{n}{)^n} = {e^a}
+$$
+
+
+
+<ul>
+<li>得：</li>
+</ul>
+<p>$$<br>{g_n}(t)=e^{i\mu t}=1+\frac{i t E(X)}{1}-\frac{t^{2} E(X^{2})}{2 !}+\cdots+\frac{(i t)^{n} E(X^{n})}{n !}<br>$$</p>
+<ul>
+<li>而$e^{i\mu t}$为：</li>
+</ul>
+<p>$$<br>e^{i\mu t}=1+\frac{i t \mu}{1}-\frac{t^{2} \mu^{2}}{2 !}+\cdots+\frac{(i t)^{n} \mu^{n}}{n !}<br>$$</p>
+<ul>
+<li>即$X$的$n$阶矩与期望的关系为：</li>
+</ul>
+<p>$$<br>E(X^n)=\mu^n<br>$$</p>
+<ul>
+<li>变量$\frac{1}{n} \sum_{k=1}^{n} X_{k}$与退化函数：</li>
+</ul>
+
+$$
+F(X) = \left\{ {\begin{array}{*{20}{c}}
+{\mu,X = a}\\
+{0,X \ne a}
+\end{array}} \right.
+$$
+
+
+
+<ul>
+<li>二者具有相同的特征函数，因此具有相同的分布，有：</li>
+</ul>
+
+$$
+\lim _{n \rightarrow \infty} P\left\{\left|\frac{1}{n} \sum_{k=1}^{n} X_{k}-\mu\right|<\varepsilon\right\}=1
+$$
+
+
+
+<h3 id="伯努利大数定理"><a href="#伯努利大数定理" class="headerlink" title="伯努利大数定理"></a>伯努利大数定理</h3><ul>
+<li>设$n_A$为$n$次独立重复实验中事件$A$发生的次数， $p$是事件$A$在每次试验中发生的概率。则对于任意正数$\varepsilon$有：</li>
+</ul>
+
+$$
+\begin{aligned}
+& \lim _{n \rightarrow \infty} P\left\{\left|\frac{n_{A}}{n}-p\right|<\varepsilon\right\}=1 \\
+\text { or : } & \lim _{n \rightarrow \infty} P\left\{\left|\frac{n_{A}}{n}-p\right| \geq \varepsilon\right\}=0
+\end{aligned}
+$$
+
+
+<ul>
+<li><p>当独立重复实验执行非常大的次数时，事件$A$发生的频率逼近于它的概率</p>
+</li>
+<li><p>伯努利大数定理是亲钦定理的特殊情况</p>
+</li>
+</ul>
 <h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><ul>
 <li><a href="http://www.huaxiaozhuan.com/%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/chapters/2_probability.html" target="_blank" rel="noopener">http://www.huaxiaozhuan.com/%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/chapters/2_probability.html</a></li>
+</ul>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <categories>
+        <category>math</category>
+        <category>probability</category>
+      </categories>
+      <tags>
+        <tag>math</tag>
+        <tag>probability</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>概率论基础 - 7 - 特征函数</title>
+    <url>/2021/03/30/math/probability/Characteristic-Function/Characteristic-Function/</url>
+    <content><![CDATA[<blockquote>
+<p>特征函数是随机变量的分布的不同表示形式。</p>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><blockquote>
+<p>一般而言，对于随机变量$X$的分布，大家习惯用概率密度函数来描述，虽然概率密度函数理解起来很直观，但是确实随机变量的分布还有另外的描述方式，比如特征函数。</p>
+</blockquote>
+<ul>
+<li><p>特征函数的本质是概率密度函数的泰勒展开</p>
+</li>
+<li><p>每一个级数表示原始概率密度函数的一个特征</p>
+</li>
+<li><p>如果两个分布的所有特征都相同，那我们就认为这是两个相同的分布</p>
+</li>
+<li><p><code>矩</code>是描述概率分布的重要特征，期望、方差等概念都是矩的特殊形态</p>
+</li>
+<li><p>直觉上可以简单理解为：</p>
+<ul>
+<li>各阶矩相等 → 各个特征相等 → 分布相同</li>
+</ul>
+</li>
+</ul>
+<h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><ul>
+<li>随机变量$X$ 的特征函数定义为：</li>
+</ul>
+<p>$$<br>\varphi_{X}(t)=E\left[e^{i t X}\right]<br>$$</p>
+<ul>
+<li>针对概率密度函数为$f(x)$的连续随机变量$x$，特征函数写作：</li>
+</ul>
+
+$$
+\varphi_x(t)=\int_{-\infty}^{\infty} e^{i t x} f(x) \cdot d x
+$$
+
+
+<ul>
+<li>为什么这么定义呢? 首先, $e^{i t X}$ 的泰勒级数为:</li>
+</ul>
+<p>$$<br>e^{i t X}=1+\frac{i t X}{1}-\frac{t^{2} X^{2}}{2 !}+\cdots+\frac{(i t)^{n} X^{n}}{n !}<br>$$</p>
+<ul>
+<li>代入可以推出：</li>
+</ul>
+
+$$
+\begin{aligned}
+\varphi_{X}(t) &=E\left[e^{i t X}\right] \\
+&=E\left(1+\frac{i t X}{1}-\frac{t^{2} X^{2}}{2 !}+\cdots+\frac{(i t)^{n} X^{n}}{n !}\right) \\
+&=E(1)+E\left(\frac{i t X}{1}\right)-E\left(\frac{t^{2} X^{2}}{2 !}\right)+\cdots+E\left(\frac{(i t)^{n} X^{n}}{n !}\right) \\
+&=1+\frac{i t \overbrace{E[X]}^{\text {一阶矩 }}}{1}-\frac{t^{2} \overbrace{E\left[X^{2}\right]}^{\text {二阶矩 }}}{2 !}+\cdots+\frac{(i t)^{n} \overbrace{E\left[X^{n}\right]}^{\text {n阶矩 }}}{n !}
+
+\end{aligned}
+$$
+
+
+
+<ul>
+<li>也就是说特征函数包含了分布函数的所有<code>矩</code>，可以理解为包含了分布的所有特征</li>
+<li>之前的结论可以进一步理解为：<ul>
+<li>$\varphi_{X}(t) $相等 → 各阶矩相等 → 各个特征相等 → 分布相同</li>
+</ul>
+</li>
+<li>所以，特征函数其实是随机变量$X$的分布的另外一种描述方式</li>
+</ul>
+<h3 id="一些推论"><a href="#一些推论" class="headerlink" title="一些推论"></a>一些推论</h3><ul>
+<li>设随机变量$X$的概率密度函数为$f(x)$ ，其特征函数为：</li>
+</ul>
+
+$$
+\varphi_x(t)=\int_{-\infty}^{\infty} e^{i t x} f(x) \cdot d x
+$$
+
+
+<h4 id="独立变量和的特征函数"><a href="#独立变量和的特征函数" class="headerlink" title="独立变量和的特征函数"></a>独立变量和的特征函数</h4><ul>
+<li>$Y=X_1+X_2 $，其中$X_1,X_2$相互独立，特征函数：</li>
+</ul>
+
+$$
+\begin{array}{l}
+\varphi_{y}(t)&=\varphi_{x_{1}+x_{2}}(t) \\
+&=\iint_{-\infty}^{\infty} e^{i t\left(x_{1}+x_{2}\right)} \cdot f\left(x_{1}\right) \cdot g\left(x_{2}\right) \cdot d x_{1} d x_{2} \\
+&=\int_{-\infty}^{\infty} e^{i t x_{1}} f\left(x_{1}\right) d x_{1} \cdot \int_{-\infty}^{\infty} e^{i t x_{2}} g\left(x_{2}\right) d x_{2} \\
+&=\varphi_{x_{1}}(t) \cdot \varphi_{x_{2}}(t)
+\end{array}
+$$
+
+
+<h4 id="常数线性变换的特征函数"><a href="#常数线性变换的特征函数" class="headerlink" title="常数线性变换的特征函数"></a>常数线性变换的特征函数</h4><ul>
+<li>$Y=aX+b$ 的特征函数：</li>
+</ul>
+
+$$
+\begin{array}{l}
+\varphi_{y}(t)&=\varphi_{a x+b}(t)=\int_{-\infty}^{\infty} e^{i t(a x+b)} f(x) d x \\
+&=e^{i t b} \int_{-\infty}^{\infty} e^{i(a t) x} f(x) d x \\
+&=e^{i t b} \cdot \varphi_{x}(a t)
+\end{array}
+$$
+
+
+<h4 id="标准正态分布的特征函数"><a href="#标准正态分布的特征函数" class="headerlink" title="标准正态分布的特征函数"></a>标准正态分布的特征函数</h4><ul>
+<li>设 $X \sim N(0,1)$则其概率密度函数为：</li>
+</ul>
+
+$$
+f(x)=\frac{1}{\sqrt{2 \pi}} e^{-\frac{x^{2}}{2}}
+$$
+
+
+<ul>
+<li>特征函数为：</li>
+</ul>
+
+$$
+\begin{array}{l}
+\varphi(t)&=\int_{-\infty}^{\infty} e^{i t x} \cdot \frac{1}{\sqrt{2 \pi}} e^{-\frac{x^{2}}{2}} \cdot d x \\
+&=e^{-\frac{t^{2}}{2}} \int_{-\infty}^{\infty} \frac{1}{\sqrt{2 \pi}} e^{-\frac{(x-i t)^{2}}{2}} d(x-i t) \\
+&=e^{-\frac{t^{2}}{2}}
+\end{array}
+$$
+
+
+<h3 id="特征函数是共轭傅立叶变换"><a href="#特征函数是共轭傅立叶变换" class="headerlink" title="特征函数是共轭傅立叶变换"></a>特征函数是共轭傅立叶变换</h3><ul>
+<li>假设某连续随机变量$X$的概率密度函数为$f(x)$，那么可知：</li>
+</ul>
+<p>$$<br>{\rm{E(X) = }}\int\limits_{ - \infty }^{ + \infty } {xf(x)dx}<br>$$</p>
+<ul>
+<li>特征函数为：</li>
+</ul>
+
+$$
+\begin{array}{l}
+{\varphi _X}(t) &= E[{e^{itX}}]\\
+ &= \int\limits_{ - \infty }^{ + \infty } {{e^{itX}}f(x)dx} 
+\end{array}
+$$
+
+
+
+<ul>
+<li>而$f(x)$的傅立叶变换为：</li>
+</ul>
+<p>$$<br>{\rm{F(X) = }}\int\limits_{ - \infty }^{ + \infty } {f(x)e^{-itx}dx}<br>$$</p>
+<ul>
+<li>二者是共轭关系：</li>
+</ul>
+<p>$$<br>{\varphi _X}(t) = \overline {F(t)}<br>$$</p>
+<h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><ul>
+<li><p><a href="https://www.zhihu.com/question/23686709/answer/376439033" target="_blank" rel="noopener">https://www.zhihu.com/question/23686709/answer/376439033</a></p>
+</li>
+<li><p><a href="https://www.zhihu.com/question/25956080/answer/1375064657" target="_blank" rel="noopener">https://www.zhihu.com/question/25956080/answer/1375064657</a></p>
+</li>
+</ul>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <categories>
+        <category>math</category>
+        <category>probability</category>
+      </categories>
+      <tags>
+        <tag>math</tag>
+        <tag>probability</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>洛必达法则</title>
+    <url>/2021/03/30/math/LHolpitals-Rule/LHolpitals-Rule/</url>
+    <content><![CDATA[<blockquote>
+<p>洛必达法则是在一定条件下通过分子分母分别求导再求极限来确定未定式值的方法。</p>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><blockquote>
+<p>众所周知，两个无穷小之比或两个无穷大之比的极限可能存在，也可能不存在。因此，求这类极限时往往需要适当的变形，转化成可利用极限运算法则或重要极限的形式进行计算。</p>
+</blockquote>
+<h3 id="类型"><a href="#类型" class="headerlink" title="类型"></a>类型</h3><h4 id="零比零型"><a href="#零比零型" class="headerlink" title="零比零型"></a>零比零型</h4><ul>
+<li>若函数$f(x)$和$g(x)$满足如下条件：</li>
+</ul>
+<ol>
+<li>在$a$点收敛于0</li>
+</ol>
+<p>$$<br>\lim _{x \rightarrow a} f(x)=0, \lim _{x \rightarrow a} g(x)=0<br>$$</p>
+<ol start="2">
+<li>在点 $a$ 的某去心邻域内两者都可导，且 $g^{\prime}(x) \neq 0$</li>
+<li>$\lim _{x \rightarrow a} \frac{f^{\prime}(x)}{g^{\prime}(x)}=A\left(A\right.$ 可为实数，也可为 $\left.\pm {\infty}\right),$ 则<br>$$<br>\lim _{x \rightarrow a} \frac{f(x)}{g(x)}=\lim _{x \rightarrow a} \frac{f^{\prime}(x)}{g^{\prime}(x)}=A<br>$$</li>
+</ol>
+<h4 id="无穷比无穷型"><a href="#无穷比无穷型" class="headerlink" title="无穷比无穷型"></a>无穷比无穷型</h4><ul>
+<li>若函数$f(x)$和$g(x)$满足如下条件：</li>
+</ul>
+<ol>
+<li>在$a$点收敛于无穷</li>
+</ol>
+<p>$$<br>\lim _{x \rightarrow a} f(x)=\infty , \lim _{x \rightarrow a} g(x)=\infty<br>$$</p>
+<ol start="2">
+<li>在点 $a$ 的某去心邻域内两者都可导，且 $g^{\prime}(x) \neq 0$</li>
+<li>$\lim _{x \rightarrow a} \frac{f^{\prime}(x)}{g^{\prime}(x)}=A\left(A\right.$ 可为实数，也可为$\left.\pm {\infty}\right),$ 则：</li>
+</ol>
+<p>$$<br>\lim _{x \rightarrow a} \frac{f(x)}{g(x)}=\lim _{x \rightarrow a} \frac{f^{\prime}(x)}{g^{\prime}(x)}=A<br>$$</p>
+<h3 id="其他不定式"><a href="#其他不定式" class="headerlink" title="其他不定式"></a>其他不定式</h3><ul>
+<li>不定式极限还包括<ul>
+<li>$0  \cdot \infty $</li>
+<li>$1^\infty$</li>
+<li>$0^0$</li>
+<li>$\infty^0$</li>
+<li>$\infty - \infty$</li>
+</ul>
+</li>
+<li>经过简单变化，一般可以转化为零比零和无穷比无穷型的极限</li>
+</ul>
+<h3 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h3><ul>
+<li>注意:不能在数列形式下直接用洛必达法则,因为对于离散变量$n∈N $是无法求导数的</li>
+<li>在运用洛必达法则之前，首先要完成两项任务：<ul>
+<li>一是分子分母的极限是否都等于零(或者无穷大)；</li>
+<li>二是分子分母在限定的区域内是否分别可导。</li>
+</ul>
+</li>
+<li>如果这两个条件都满足，接着求导并判断求导之后的极限是否存在：<ul>
+<li>如果存在，直接得到答案；</li>
+<li>如果不存在，则说明此种未定式不可用洛必达法则来解决；</li>
+<li>如果不确定，即结果仍然为未定式，再在验证的基础上继续使用洛必达法则。</li>
+</ul>
+</li>
+</ul>
+<h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><ul>
+<li><a href="http://www.gaosan.com/gaokao/317487.html" target="_blank" rel="noopener">http://www.gaosan.com/gaokao/317487.html</a></li>
+</ul>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <categories>
+        <category>math</category>
+      </categories>
+      <tags>
+        <tag>math</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>概率论基础 - 6 - 切比雪夫不等式</title>
+    <url>/2021/03/30/math/probability/chebyshev-inequality/chebyshev-inequality/</url>
+    <content><![CDATA[<blockquote>
+<p>切比雪夫不等式可以使人们在随机变量X的分布未知的情况下，对事件$|X-\mu|&lt;\varepsilon $ 概率作出估计。</p>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><ul>
+<li>假设随机变量$X$具有期望$E(X)=\mu$， 方差 $Var(X)=\sigma^2$，则对于任意正数$\varepsilon$ ，有不等式成立：</li>
+</ul>
+<p>$$<br>\mathbb P{|X-\mu| \geq \varepsilon} \leq \frac{\sigma^{2}}{\varepsilon^{2}}<br>$$</p>
+<h3 id="含义"><a href="#含义" class="headerlink" title="含义"></a>含义</h3><ul>
+<li><p>其意义是：对于距离$E(X)$足够远的地方（距离大于等于$\varepsilon$），事件出现的概率是小于等于$\frac{\sigma^{2}}{\varepsilon^{2}}$ 。即事件出现在区间$[\mu-\varepsilon, \mu+\varepsilon]$ 的概率大于$1-\frac{\sigma^2}{\varepsilon^2}$ </p>
+</li>
+<li><p>该不等式给出了随机变量$X$在分布未知的情况下， 事件$|X-\mu| \leq \varepsilon$ 的下限估计</p>
+<blockquote>
+<p>例如：</p>
+</blockquote>
+<p>$$<br>\mathbb P{|X-\mu|\ &lt; 3 \sigma } \ge 1-\frac{1}{9}=\frac{8}{9}<br>$$</p>
+</li>
+<li><p>切比雪夫不等式刻画了变量偏离均值的程度与发生概率大小之间的关系</p>
+</li>
+<li><p>在随机变量分布未知的情况下，我们只知道均值和方差，切比雪夫不等式给出了$X$落入以均值为中心的$ε$邻域概率的概率下界</p>
+</li>
+</ul>
+<h3 id="证明"><a href="#证明" class="headerlink" title="证明"></a>证明</h3><h4 id="思路1"><a href="#思路1" class="headerlink" title="思路1"></a>思路1</h4><blockquote>
+<p>利用取值范围建立不等式</p>
+</blockquote>
+
+$$
+\begin{aligned}
+\mathbb P\{|X-\mu| \geq \varepsilon\} &=\int_{|x-\mu| \geq \varepsilon} p(x) d x \\
+&\leq \int_{|x-\mu| \geq \varepsilon} \frac{|x-\mu|^{2}}{\varepsilon^{2}} p(x) d x \\
+& \leq \frac{1}{\varepsilon^{2}} \int_{-\infty}^{\infty}(x-\mu)^{2} p(x) d x\\
+&=\frac{\sigma^{2}}{\varepsilon^{2}}
+\end{aligned}
+$$
+
+
+
+<h4 id="思路2"><a href="#思路2" class="headerlink" title="思路2"></a>思路2</h4><blockquote>
+<p>利用<a href="https://www.zywvvd.com/2021/03/30/math/probability/markov-inequality/markov-inequality/">马尔可夫不等式</a></p>
+</blockquote>
+<p>$$<br>\mathbb{P}(X \geq a) \leq \frac{\mathbb{E}(X)}{a}<br>$$</p>
+<ul>
+<li>将$|X-\mu|$作为随机变量带入不等式，有：</li>
+</ul>
+<p>$$<br>\mathbb P(|X-\mu| \ge \varepsilon) \leq \frac{E(|X-\mu|)}{\varepsilon}<br>$$</p>
+<ul>
+<li>其中$\varepsilon &gt; 0$，而：</li>
+</ul>
+<p>$$<br>\mathbb P(|X-\mu| \ge \varepsilon) = \mathbb P(|X-\mu|^2 \ge \varepsilon^2)<br>$$</p>
+<ul>
+<li>再次套用马尔可夫不等式：</li>
+</ul>
+<p>$$<br>\mathbb P(|X-\mu| \ge \varepsilon) =\mathbb P(|X-\mu|^2 \ge \varepsilon^2) \le \frac{E(|X-\mu|^2)}{\varepsilon^2}=\frac{\sigma^2}{\varepsilon^2}<br>$$</p>
+<h3 id="推论——切比雪夫定理"><a href="#推论——切比雪夫定理" class="headerlink" title="推论——切比雪夫定理"></a>推论——切比雪夫定理</h3><ul>
+<li>对于相互独立具有相同期望和方差的随机变量$X_i$，$\frac{1}{n}\sum\limits_{i = 1}^n  $的方差为：</li>
+</ul>
+
+$$
+\frac{{Var(X)}}{n}=\frac{{{\sigma ^2}}}{n}
+$$
+
+
+
+<ul>
+<li>那么当 $n \to \infty $时，$\frac{1}{n}\sum\limits_{i = 1}^n  $的方差$\to 0 $，对于任意给定的$\varepsilon &gt; 0$，根据切比雪夫不等式有：</li>
+</ul>
+
+$$
+\lim _{n \rightarrow \infty} P\left\{\left|\frac{1}{n} \sum_{i=1}^{n} X_{i}-E\left(X_{i}\right)\right|<\varepsilon\right\}=1
+$$
+
+
+
+<ul>
+<li>即当样本个数趋于无穷时，样本的算数平均值会收敛于理论均值</li>
+</ul>
+<h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><ul>
+<li><a href="https://baike.baidu.com/item/%E5%88%87%E6%AF%94%E9%9B%AA%E5%A4%AB%E5%AE%9A%E7%90%86/3647561?fromtitle=%E5%88%87%E6%AF%94%E9%9B%AA%E5%A4%AB%E4%B8%8D%E7%AD%89%E5%BC%8F&amp;fromid=8709330&amp;fr=aladdin" target="_blank" rel="noopener">https://baike.baidu.com/item/%E5%88%87%E6%AF%94%E9%9B%AA%E5%A4%AB%E5%AE%9A%E7%90%86/3647561?fromtitle=%E5%88%87%E6%AF%94%E9%9B%AA%E5%A4%AB%E4%B8%8D%E7%AD%89%E5%BC%8F&amp;fromid=8709330&amp;fr=aladdin</a></li>
+<li><a href="http://www.huaxiaozhuan.com/%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/chapters/2_probability.html" target="_blank" rel="noopener">http://www.huaxiaozhuan.com/%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/chapters/2_probability.html</a></li>
+<li><a href="https://blog.csdn.net/ukakasu/article/details/82688413" target="_blank" rel="noopener">https://blog.csdn.net/ukakasu/article/details/82688413</a></li>
+</ul>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <categories>
+        <category>math</category>
+        <category>probability</category>
+      </categories>
+      <tags>
+        <tag>math</tag>
+        <tag>probability</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>概率论基础 - 5 - 马尔可夫不等式</title>
+    <url>/2021/03/30/math/probability/markov-inequality/markov-inequality/</url>
+    <content><![CDATA[<blockquote>
+<p>马尔可夫不等式把概率关联到数学期望，给出了随机变量的累积分布函数一个宽泛但仍有用的界。</p>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><blockquote>
+<p>马尔可夫不等式用于估计尾事件的概率上界。</p>
+</blockquote>
+<ul>
+<li>若随机变量$X$只取非负值，则$\forall a&gt;0$有：</li>
+</ul>
+<p>$$<br>\mathbb{P}(X \geq a) \leq \frac{\mathbb{E}(X)}{a}<br>$$</p>
+<h3 id="证明"><a href="#证明" class="headerlink" title="证明"></a>证明</h3><h4 id="思路1"><a href="#思路1" class="headerlink" title="思路1"></a>思路1</h4><blockquote>
+<p>放大概率，得到部分函数期望</p>
+<p>截断函数期望，二者相比较</p>
+</blockquote>
+<ul>
+<li>考虑 $X\ge a$的情况 → $\frac {X}{a} \ge 1$</li>
+<li>对于不等式左边有：</li>
+</ul>
+<p>$$<br>\mathbb P(X \geq a)=\int_{a}^{+\infty} f(x) d x \leq \int_{a}^{+\infty} \frac{X}{a} f(x) d x<br>$$</p>
+<ul>
+<li>对于不等式右边有：</li>
+</ul>
+<p>$$<br>E\left(\frac{X}{a}\right)=\int_{-\infty}^{a} \frac{X}{a} f(x) d x+\int_{a}^{+\infty} \frac{X}{a} f(x) d x<br>$$</p>
+<ul>
+<li>由于：</li>
+</ul>
+<p>$$<br>\int_{-\infty}^{a} \frac{X}{a} f(x) d x \geq 0<br>$$</p>
+<ul>
+<li>因此：</li>
+</ul>
+<p>$$<br>\mathbb P(X \geq a) \leq \int_{a}^{+\infty} \frac{X}{a} f(x) d x \leq E\left(\frac{X}{a}\right)<br>$$</p>
+<ul>
+<li>即：</li>
+</ul>
+<p>$$<br>\mathbb P(X \geq a) \leq E\left(\frac{X}{a}\right)=\frac{E(X)}{a}<br>$$</p>
+<h4 id="思路2"><a href="#思路2" class="headerlink" title="思路2"></a>思路2</h4><blockquote>
+<p>原始期望大于截断部分非负值的期望</p>
+<p>求取期望时缩小$X$得到$a$</p>
+</blockquote>
+<p>$$<br>\begin{aligned}<br>\mathbb{E}(X) &amp;=\int_{-\infty}^{\infty} x f(x) d x \<br>&amp; \geq \int_{a}^{\infty} x f(x) d x \quad(a \geq 0) \<br>&amp; \geq \int_{a}^{\infty} a f(x) d x \<br>&amp;=a \int_{a}^{\infty} f(x) d x \<br>&amp;=a \mathbb{P}(X \geq a)<br>\end{aligned}<br>$$</p>
+<h3 id="图示"><a href="#图示" class="headerlink" title="图示"></a>图示</h3><blockquote>
+<p>$a$越大于均值，$X&gt;a$的概率越小</p>
+</blockquote>
+<p><img src="https://photos.zywvvd.com/images_matrixtime/20210330100709.gif" alt="转自知乎-马同学"></p>
+<h3 id="用途"><a href="#用途" class="headerlink" title="用途"></a>用途</h3><ul>
+<li>将概率与期望联系起来建立了不等式关系</li>
+<li>约束较松，可以用来粗略估计尾部事件</li>
+</ul>
+<blockquote>
+<p>例如：</p>
+<p>如果$X$是工资，那么$E(X)$就是平均工资，假设$a=n  E(X)$，即平均工资的$n$倍。那么根据马尔可夫不等式，不超过$1/n$的人会有超过平均工资的$n$倍的工资。</p>
+</blockquote>
+<h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><ul>
+<li><p><a href="https://baike.baidu.com/item/%E9%A9%AC%E5%B0%94%E5%8F%AF%E5%A4%AB%E4%B8%8D%E7%AD%89%E5%BC%8F/7565874?fr=aladdin" target="_blank" rel="noopener">https://baike.baidu.com/item/%E9%A9%AC%E5%B0%94%E5%8F%AF%E5%A4%AB%E4%B8%8D%E7%AD%89%E5%BC%8F/7565874?fr=aladdin</a></p>
+</li>
+<li><p><a href="https://www.zhihu.com/question/27821324" target="_blank" rel="noopener">https://www.zhihu.com/question/27821324</a></p>
+</li>
+<li><p><a href="https://blog.csdn.net/ukakasu/article/details/82688413" target="_blank" rel="noopener">https://blog.csdn.net/ukakasu/article/details/82688413</a></p>
+</li>
 </ul>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <categories>
@@ -314,7 +1189,7 @@ $$
 
 $$
 \begin{array}{l}
-{\rm{D}}(\overline {\rm{X}} ) = E({\overline {\rm{X}} ^2}) - {E^2}(\overline {\rm{X}} ) = \frac{{{\sigma _2}}}{{\rm{n}}}\\
+{\rm{D}}(\overline {\rm{X}} ) = E({\overline {\rm{X}} ^2}) - {E^2}(\overline {\rm{X}} ) = \frac{{{\sigma ^2}}}{{\rm{n}}}\\
 E({\overline {\rm{X}} ^2}) = {E^2}(\overline {\rm{X}} ) + \frac{{{\sigma ^2}}}{{\rm{n}}}=\mu^2+\frac{{{\sigma^2}}}{{\rm{n}}}
 \end{array}
 $$
@@ -1015,8 +1890,8 @@ $$
 </blockquote>
 <h4 id="Convex-Slater"><a href="#Convex-Slater" class="headerlink" title="Convex + Slater"></a>Convex + Slater</h4><ul>
 <li>原问题是凸优化<ul>
-<li>$f(x)$和$g(x)$是凸函数</li>
-<li>$h(x)$是放射函数</li>
+<li>$f(x)$和$h(x)$是凸函数</li>
+<li>$g(x)$是放射函数</li>
 </ul>
 </li>
 <li>存在$x$使得不等式约束严格成立（严格成立不等号）</li>
@@ -3526,29 +4401,29 @@ $$
 <h4 id="传输文件"><a href="#传输文件" class="headerlink" title="传输文件"></a>传输文件</h4><h5 id="从服务器上下载文件"><a href="#从服务器上下载文件" class="headerlink" title="从服务器上下载文件"></a>从服务器上下载文件</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">scp username@servername:&#x2F;path&#x2F;filename &#x2F;var&#x2F;www&#x2F;local_dir（本地目录）</span><br></pre></td></tr></table></figure>
 
 <blockquote>
-<p>例如: scp <a href="mailto:&#114;&#111;&#111;&#x74;&#x40;&#x31;&#57;&#x32;&#46;&#x31;&#x36;&#x38;&#x2e;&#x30;&#x2e;&#x31;&#48;&#x31;">&#114;&#111;&#111;&#x74;&#x40;&#x31;&#57;&#x32;&#46;&#x31;&#x36;&#x38;&#x2e;&#x30;&#x2e;&#x31;&#48;&#x31;</a>:/var/www/test.txt 把192.168.0.101上的/var/www/test.txt 的文件下载到/var/www/local_dir（本地目录）</p>
+<p>例如: scp <a href="mailto:&#x72;&#111;&#111;&#116;&#x40;&#x31;&#57;&#x32;&#x2e;&#x31;&#54;&#x38;&#x2e;&#48;&#46;&#49;&#48;&#49;">&#x72;&#111;&#111;&#116;&#x40;&#x31;&#57;&#x32;&#x2e;&#x31;&#54;&#x38;&#x2e;&#48;&#46;&#49;&#48;&#49;</a>:/var/www/test.txt 把192.168.0.101上的/var/www/test.txt 的文件下载到/var/www/local_dir（本地目录）</p>
 </blockquote>
 <h5 id="上传本地文件到服务器"><a href="#上传本地文件到服务器" class="headerlink" title="上传本地文件到服务器"></a>上传本地文件到服务器</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">scp &#x2F;path&#x2F;filename username@servername:&#x2F;path</span><br></pre></td></tr></table></figure>
 
 <blockquote>
-<p>例如: scp /var/www/test.php <a href="mailto:&#x72;&#x6f;&#x6f;&#116;&#64;&#x31;&#x39;&#50;&#x2e;&#x31;&#x36;&#x38;&#x2e;&#48;&#x2e;&#x31;&#x30;&#49;">&#x72;&#x6f;&#x6f;&#116;&#64;&#x31;&#x39;&#50;&#x2e;&#x31;&#x36;&#x38;&#x2e;&#48;&#x2e;&#x31;&#x30;&#49;</a>:/var/www/ 把本机/var/www/目录下的test.php文件上传到192.168.0.101这台服务器上的/var/www/目录中</p>
+<p>例如: scp /var/www/test.php <a href="mailto:&#114;&#x6f;&#x6f;&#x74;&#64;&#x31;&#57;&#50;&#x2e;&#x31;&#54;&#56;&#x2e;&#x30;&#46;&#x31;&#x30;&#49;">&#114;&#x6f;&#x6f;&#x74;&#64;&#x31;&#57;&#50;&#x2e;&#x31;&#54;&#56;&#x2e;&#x30;&#46;&#x31;&#x30;&#49;</a>:/var/www/ 把本机/var/www/目录下的test.php文件上传到192.168.0.101这台服务器上的/var/www/目录中</p>
 </blockquote>
 <h5 id="从服务器下载整个目录"><a href="#从服务器下载整个目录" class="headerlink" title="从服务器下载整个目录"></a>从服务器下载整个目录</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">scp -r username@servername:&#x2F;var&#x2F;www&#x2F;remote_dir&#x2F;（远程目录） &#x2F;var&#x2F;www&#x2F;local_dir（本地目录）</span><br></pre></td></tr></table></figure>
 
 <blockquote>
-<p>例如: scp -r <a href="mailto:&#x72;&#111;&#111;&#116;&#64;&#x31;&#57;&#50;&#46;&#x31;&#54;&#x38;&#46;&#48;&#46;&#49;&#x30;&#49;">&#x72;&#111;&#111;&#116;&#64;&#x31;&#57;&#50;&#46;&#x31;&#54;&#x38;&#46;&#48;&#46;&#49;&#x30;&#49;</a>:/var/www/test /var/www/  </p>
+<p>例如: scp -r <a href="mailto:&#114;&#x6f;&#111;&#116;&#x40;&#x31;&#x39;&#x32;&#x2e;&#x31;&#x36;&#x38;&#x2e;&#48;&#46;&#x31;&#x30;&#x31;">&#114;&#x6f;&#111;&#116;&#x40;&#x31;&#x39;&#x32;&#x2e;&#x31;&#x36;&#x38;&#x2e;&#48;&#46;&#x31;&#x30;&#x31;</a>:/var/www/test /var/www/  </p>
 </blockquote>
 <h5 id="上传目录到服务器"><a href="#上传目录到服务器" class="headerlink" title="上传目录到服务器"></a>上传目录到服务器</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">scp -r local_dir username@servername:remote_dir</span><br></pre></td></tr></table></figure>
 
 <blockquote>
-<p>例如：scp -r test  <a href="mailto:&#x72;&#x6f;&#111;&#116;&#64;&#x31;&#57;&#50;&#46;&#x31;&#x36;&#x38;&#46;&#48;&#46;&#49;&#x30;&#x31;">&#x72;&#x6f;&#111;&#116;&#64;&#x31;&#57;&#50;&#46;&#x31;&#x36;&#x38;&#46;&#48;&#46;&#49;&#x30;&#x31;</a>:/var/www/  把当前目录下的test目录上传到服务器的/var/www/ 目录</p>
+<p>例如：scp -r test  <a href="mailto:&#x72;&#x6f;&#x6f;&#116;&#64;&#49;&#57;&#x32;&#46;&#x31;&#54;&#56;&#x2e;&#48;&#x2e;&#49;&#x30;&#49;">&#x72;&#x6f;&#x6f;&#116;&#64;&#49;&#57;&#x32;&#46;&#x31;&#54;&#56;&#x2e;&#48;&#x2e;&#49;&#x30;&#49;</a>:/var/www/  把当前目录下的test目录上传到服务器的/var/www/ 目录</p>
 </blockquote>
 <h4 id="ssh自带的sftp功能"><a href="#ssh自带的sftp功能" class="headerlink" title="ssh自带的sftp功能"></a>ssh自带的sftp功能</h4><h5 id="Window和Linux的传输工具"><a href="#Window和Linux的传输工具" class="headerlink" title="Window和Linux的传输工具"></a>Window和Linux的传输工具</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">wincp  filezip          </span><br><span class="line">sftp --&gt;基于 ssh 的安全加密传输</span><br></pre></td></tr></table></figure>
 
 <h5 id="sftp客户端连接"><a href="#sftp客户端连接" class="headerlink" title="sftp客户端连接"></a>sftp客户端连接</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sftp -oPort&#x3D;22 root@192.168.25.137                   </span><br><span class="line">put &#x2F;etc&#x2F;hosts &#x2F;tmp                   </span><br><span class="line">get &#x2F;etc&#x2F;hosts &#x2F;home&#x2F;omd</span><br></pre></td></tr></table></figure>
 
 <h5 id="sftp小结"><a href="#sftp小结" class="headerlink" title="sftp小结"></a>sftp小结</h5><ul>
-<li>linux下使用命令： sftp -oPort=22 <a href="mailto:&#114;&#x6f;&#111;&#x74;&#x40;&#x78;&#46;&#x78;&#x2e;&#120;&#x2e;&#x78;">&#114;&#x6f;&#111;&#x74;&#x40;&#x78;&#46;&#x78;&#x2e;&#120;&#x2e;&#x78;</a>                   </li>
+<li>linux下使用命令： sftp -oPort=22 <a href="mailto:&#x72;&#111;&#x6f;&#x74;&#64;&#x78;&#x2e;&#120;&#46;&#x78;&#46;&#x78;">&#x72;&#111;&#x6f;&#x74;&#64;&#x78;&#x2e;&#120;&#46;&#x78;&#46;&#x78;</a>                   </li>
 <li>put加客户端本地路径上传                  </li>
 <li>get下载服务器端内容到本地                   </li>
 <li>远程连接默认连接用户的家目录</li>
@@ -8868,6 +9743,8 @@ cond(no)->sub</textarea><textarea id="flowchart-0-options" style="display: none"
 <p>当前TensorFlow最高版本 2.2.+ ，需要CUDA 10.1，cudnn 7.6</p>
 <p>官网下载 ：<a href="https://developer.nvidia.com/" target="_blank" rel="noopener">https://developer.nvidia.com/</a></p>
 <p>显卡驱动需要满足CUDA版本要求</p>
+<p>CUDA与显卡驱动：<a href="https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html" target="_blank" rel="noopener">https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html</a></p>
+<p>TensorFlow-GPU与CUDA cudnn Python版本关系：<a href="https://tensorflow.google.cn/install/source_windows?hl=en#gpu" target="_blank" rel="noopener">https://tensorflow.google.cn/install/source_windows?hl=en#gpu</a></p>
 </blockquote>
 <h2 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h2><ul>
 <li>下载  cuda_10.1.243_418.87.00_linux.run 并安装（之前装过并运行过TensorFlow，相关库不过时的话可以不特意去装 cudnn）</li>
@@ -9355,40 +10232,6 @@ cond(no)->sub</textarea><textarea id="flowchart-0-options" style="display: none"
       </tags>
   </entry>
   <entry>
-    <title>算法学习笔记 —— XX</title>
-    <url>/2020/05/21/algorithm/example/about_exam/</url>
-    <content><![CDATA[<blockquote>
-<p>学而时习，本文记录XX操作相关算法练习笔记。</p>
-</blockquote>
-<a id="more"></a>
-
-<h3 id="XXXXX"><a href="#XXXXX" class="headerlink" title="XXXXX"></a>XXXXX</h3><h4 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h4><h4 id="测试样例"><a href="#测试样例" class="headerlink" title="测试样例"></a>测试样例</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h4 id="解题代码"><a href="#解题代码" class="headerlink" title="解题代码"></a>解题代码</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h4 id="复杂度"><a href="#复杂度" class="headerlink" title="复杂度"></a>复杂度</h4><table>
-<thead>
-<tr>
-<th>时间</th>
-<th>空间</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>O()</td>
-<td>O()</td>
-</tr>
-</tbody></table>
-<h4 id="解题备注"><a href="#解题备注" class="headerlink" title="解题备注"></a>解题备注</h4><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <categories>
-        <category>算法</category>
-        <category>XX</category>
-      </categories>
-      <tags>
-        <tag>算法</tag>
-        <tag>XX</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>算法学习笔记 —— 排序</title>
     <url>/2020/05/21/algorithm/sort/about_sort/</url>
     <content><![CDATA[<blockquote>
@@ -9420,6 +10263,40 @@ cond(no)->sub</textarea><textarea id="flowchart-0-options" style="display: none"
       <tags>
         <tag>算法</tag>
         <tag>排序</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>算法学习笔记 —— XX</title>
+    <url>/2020/05/21/algorithm/example/about_exam/</url>
+    <content><![CDATA[<blockquote>
+<p>学而时习，本文记录XX操作相关算法练习笔记。</p>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="XXXXX"><a href="#XXXXX" class="headerlink" title="XXXXX"></a>XXXXX</h3><h4 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h4><h4 id="测试样例"><a href="#测试样例" class="headerlink" title="测试样例"></a>测试样例</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h4 id="解题代码"><a href="#解题代码" class="headerlink" title="解题代码"></a>解题代码</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h4 id="复杂度"><a href="#复杂度" class="headerlink" title="复杂度"></a>复杂度</h4><table>
+<thead>
+<tr>
+<th>时间</th>
+<th>空间</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>O()</td>
+<td>O()</td>
+</tr>
+</tbody></table>
+<h4 id="解题备注"><a href="#解题备注" class="headerlink" title="解题备注"></a>解题备注</h4><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <categories>
+        <category>算法</category>
+        <category>XX</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>XX</tag>
       </tags>
   </entry>
   <entry>
