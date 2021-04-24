@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>Hexo -15- 折叠博客内容</title>
-    <url>/labiyouxiaoxin2.github.io/2020/12/26/hexo/16_fold-content/fold-content/</url>
+    <url>/2020/12/26/hexo/16_fold-content/fold-content/</url>
     <content><![CDATA[<blockquote>
 <p>在写博客时，可能会遇到需要读者选读的内容，此时出现了折叠博客内容的需求。本文介绍在Hexo中自定义折叠部分内容的方法。</p>
 </blockquote>
@@ -198,7 +198,7 @@
   </entry>
   <entry>
     <title>Hexo -15- 解决 Hexo Mathjax 无法显示多行公式的问题</title>
-    <url>/labiyouxiaoxin2.github.io/2020/12/22/hexo/15_formula/formula-error/</url>
+    <url>/2020/12/22/hexo/15_formula/formula-error/</url>
     <content><![CDATA[<blockquote>
 <p>Hexo比较好用的公式插件是Mathjax，但由于swig的文件解析机制，使得多行公式无法在Hexo中正常显示，本文介绍该问题的解决方法。</p>
 </blockquote>
@@ -271,7 +271,7 @@ $$
   </entry>
   <entry>
     <title>Hexo -14- 利用 Markdown 语法画 mermaid 流程图</title>
-    <url>/labiyouxiaoxin2.github.io/2020/11/24/hexo/14_mermaid/mermaid/</url>
+    <url>/2020/11/24/hexo/14_mermaid/mermaid/</url>
     <content><![CDATA[<blockquote>
 <p>hexo默认不支持流程图，<a href="https://www.zywvvd.com/2020/11/23/hexo/13_flowchart/flowchart/" target="_blank" rel="noopener">flowchart</a>是一种简便好用的解决方案，但由于其语法过于简单，导致其在应付稍复杂一些的流程图时捉襟见肘，本文记录在hexo中添加Mermaid流程图的方法。</p>
 </blockquote>
@@ -516,7 +516,7 @@ $$
   </entry>
   <entry>
     <title>Hexo -13- 利用 Markdown 语法画 flowchart 流程图</title>
-    <url>/labiyouxiaoxin2.github.io/2020/11/23/hexo/13_flowchart/flowchart/</url>
+    <url>/2020/11/23/hexo/13_flowchart/flowchart/</url>
     <content><![CDATA[<blockquote>
 <p>hexo默认不支持流程图，flowchart 简便易食，可以瞬间使 hexo 流程图无中生有。本文记录在hexo中添加Markdown flowchart流程图的方法。</p>
 </blockquote>
@@ -627,7 +627,7 @@ cond(no)->sub</textarea><textarea id="flowchart-0-options" style="display: none"
   </entry>
   <entry>
     <title>Hexo -12- 强制使用https协议</title>
-    <url>/labiyouxiaoxin2.github.io/2020/03/28/hexo/12_force_https/force-https/</url>
+    <url>/2020/03/28/hexo/12_force_https/force-https/</url>
     <content><![CDATA[<blockquote>
 <p>https 是一种通过计算机网络进行安全通信的传输协议，经由HTTP进行通信，利用SSL/TLS建立全信道，加密数据包，相比与http更加安全。本文介绍Hexo博客强制用户https协议访问的方法。</p>
 </blockquote>
@@ -667,7 +667,7 @@ cond(no)->sub</textarea><textarea id="flowchart-0-options" style="display: none"
   </entry>
   <entry>
     <title>Hexo -11- 修改网站Logo</title>
-    <url>/labiyouxiaoxin2.github.io/2020/03/28/hexo/11_change_logo/change-logo/</url>
+    <url>/2020/03/28/hexo/11_change_logo/change-logo/</url>
     <content><![CDATA[<blockquote>
 <p> Next 主题默认的网站logo是字母N，本文介绍如何更换成自己的logo。</p>
 </blockquote>
@@ -704,7 +704,7 @@ cond(no)->sub</textarea><textarea id="flowchart-0-options" style="display: none"
   </entry>
   <entry>
     <title>Hexo -10- 使用PicGo配合七牛云图床实现Markdown图像无痛管理</title>
-    <url>/labiyouxiaoxin2.github.io/2020/03/26/hexo/10_using_picgo/using-picgo/</url>
+    <url>/2020/03/26/hexo/10_using_picgo/using-picgo/</url>
     <content><![CDATA[<blockquote>
 <p> 在七牛云图床搭建好的情况下，我们可以有地方存放Markdown中的图像，而且速度很快，不占用Pages的空间，但是生成图像手动上传，名称管理实在是让人头疼。为了让图床管理不再反人类，PicGo应运而生，本文介绍PicGo结合七牛云管理Hexo图片的方法。</p>
 </blockquote>
@@ -836,7 +836,7 @@ cond(no)->sub</textarea><textarea id="flowchart-0-options" style="display: none"
   </entry>
   <entry>
     <title>Hexo -9- 添加七牛云图床</title>
-    <url>/labiyouxiaoxin2.github.io/2020/03/25/hexo/9_add_image_bed/add-image-bed/</url>
+    <url>/2020/03/25/hexo/9_add_image_bed/add-image-bed/</url>
     <content><![CDATA[<blockquote>
 <p>Hexo 博客挂载在网页服务器上会出现图像加载缓慢、存储空间有限的问题，在各大网络加速运营商提供的图床服务可以有效解决此类问题，由于七牛云服务器物美价廉，还有免费10g空间，本文介绍使用七牛云作为Hexo图床的方法。</p>
 </blockquote>
@@ -898,7 +898,7 @@ cond(no)->sub</textarea><textarea id="flowchart-0-options" style="display: none"
   </entry>
   <entry>
     <title>Hexo -8- 生成 sitemap 提交给Google、百度站长</title>
-    <url>/labiyouxiaoxin2.github.io/2020/03/21/hexo/8_hexo_generate_sitemap/generate-sitemap/</url>
+    <url>/2020/03/21/hexo/8_hexo_generate_sitemap/generate-sitemap/</url>
     <content><![CDATA[<blockquote>
 <p> 为了成功引起搜索引擎的注意，我们主动生成供其抓取的文件，本文介绍hexo博客创建sitemap的方法。</p>
 </blockquote>
@@ -1084,7 +1084,7 @@ cond(no)->sub</textarea><textarea id="flowchart-0-options" style="display: none"
   </entry>
   <entry>
     <title>Hexo -7- Github源七牛云CDN加速教程（详细）</title>
-    <url>/labiyouxiaoxin2.github.io/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/</url>
+    <url>/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/</url>
     <content><![CDATA[<blockquote>
 <p>Hexo使用Github Pages时存在加载缓慢的问题，国内很多CDN平台可以为网站提供加速服务，由于偶然的原因选择了<a href="https://portal.qiniu.com/" target="_blank" rel="noopener">七牛云</a>，可以免费生成SSL证书，http协议免费10g流量。但是网上相关教程并不友好，花了好多时间终于成功，在此将过程记录下来供后人参考。</p>
 </blockquote>
@@ -1269,7 +1269,7 @@ cond(no)->sub</textarea><textarea id="flowchart-0-options" style="display: none"
   </entry>
   <entry>
     <title>Hexo -6- FontAwesome 4.7.0 中完整的675个图标样式CSS参考</title>
-    <url>/labiyouxiaoxin2.github.io/2020/03/09/hexo/6_hexo_icons/hexo-icons/</url>
+    <url>/2020/03/09/hexo/6_hexo_icons/hexo-icons/</url>
     <content><![CDATA[<blockquote>
 <p>Hexo 支持FontAwesome图标，就是在代码中出现名字以<code>fa fa</code>开头的类名，本文介绍具具体图标来源和使用方法。</p>
 </blockquote>
@@ -1350,7 +1350,7 @@ cond(no)->sub</textarea><textarea id="flowchart-0-options" style="display: none"
   </entry>
   <entry>
     <title>Hexo -5- 添加 live2d 看板动画</title>
-    <url>/labiyouxiaoxin2.github.io/2020/03/09/hexo/5_hexo_add_live2d/add-live2d/</url>
+    <url>/2020/03/09/hexo/5_hexo_add_live2d/add-live2d/</url>
     <content><![CDATA[<blockquote>
 <p>live2d是一种应用于电子游戏的绘图渲染技术，技术由日本Cybernoids公司开发。通过一系列的连续图像和人物建模来生成一种类似三维模型的二维图像。 在Hexo中生成可以与用户互动的卡通人物，简直就是博客的灵魂所在。本文介绍live2d 看板动画添加方法。</p>
 </blockquote>
@@ -1470,7 +1470,7 @@ cond(no)->sub</textarea><textarea id="flowchart-0-options" style="display: none"
   </entry>
   <entry>
     <title>Hexo -4- 向文章添加图片的方法</title>
-    <url>/labiyouxiaoxin2.github.io/2020/02/27/hexo/4_hexo_add_image/hexo-add-image/</url>
+    <url>/2020/02/27/hexo/4_hexo_add_image/hexo-add-image/</url>
     <content><![CDATA[<blockquote>
 <p>本文介绍Hexo编辑文章时添加图像的各种方法。</p>
 </blockquote>
@@ -1520,7 +1520,7 @@ cond(no)->sub</textarea><textarea id="flowchart-0-options" style="display: none"
   </entry>
   <entry>
     <title>Hexo -3- 常用命令汇总</title>
-    <url>/labiyouxiaoxin2.github.io/2020/02/25/hexo/3_hexo_commands/hexo-commands/</url>
+    <url>/2020/02/25/hexo/3_hexo_commands/hexo-commands/</url>
     <content><![CDATA[<blockquote>
 <p>本文记录Hexo常用命令与相应说明，相关文档也可以参考<a href="https://hexo.io/zh-cn/docs/commands" target="_blank" rel="noopener">官方文档</a>。</p>
 </blockquote>
@@ -1718,7 +1718,7 @@ cond(no)->sub</textarea><textarea id="flowchart-0-options" style="display: none"
   </entry>
   <entry>
     <title>Hexo -2- 站点信息配置</title>
-    <url>/labiyouxiaoxin2.github.io/2020/02/24/hexo/2_hexo_config/Hexo_config/</url>
+    <url>/2020/02/24/hexo/2_hexo_config/Hexo_config/</url>
     <content><![CDATA[<blockquote>
 <p> Hexo框架中配置文件内容描述与示例。</p>
 </blockquote>
@@ -2175,7 +2175,7 @@ cond(no)->sub</textarea><textarea id="flowchart-0-options" style="display: none"
   </entry>
   <entry>
     <title>Hexo -1- 博客搭建基础教程</title>
-    <url>/labiyouxiaoxin2.github.io/2020/02/19/hexo/1_hexo_build/Hexo/</url>
+    <url>/2020/02/19/hexo/1_hexo_build/Hexo/</url>
     <content><![CDATA[<blockquote>
 <p>建立个人博客的需求由来已久，能拥有自己的技术博客是广大程序员的梦想。相比于早些时候的WordPress、织梦等框架，就个人站点来说，用Hexo搭建博客可以用“怎一个爽字了得”形容。Hexo基于Node.js开发，具有轻量、方便、易部署等特点，主题丰富简约，依赖github即可构建站点，近些年受到广泛关注。此篇文章旨在和与我一样的初学者分享经验，有疑问欢迎在评论区交流。</p>
 </blockquote>
