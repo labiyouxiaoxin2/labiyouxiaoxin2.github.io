@@ -27,32 +27,32 @@
 <meta property="og:url" content="https://github.com/labiyouxiaoxin2/labiyouxiaoxin2.github.io/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/index.html">
 <meta property="og:site_name" content="又见苍岚">
 <meta property="og:description" content="Hexo使用Github Pages时存在加载缓慢的问题，国内很多CDN平台可以为网站提供加速服务，由于偶然的原因选择了七牛云，可以免费生成SSL证书，http协议免费10g流量。但是网上相关教程并不友好，花了好多时间终于成功，在此将过程记录下来供后人参考。">
-<meta property="og:image" content="https://github.com/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/cname.png">
-<meta property="og:image" content="https://github.com/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/jiexi.png">
-<meta property="og:image" content="https://github.com/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/before.png">
-<meta property="og:image" content="https://github.com/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/ssl.png">
-<meta property="og:image" content="https://github.com/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/goumai.png">
-<meta property="og:image" content="https://github.com/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/hedui.png">
-<meta property="og:image" content="https://github.com/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/queren.png">
-<meta property="og:image" content="https://github.com/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/buquan.png">
-<meta property="og:image" content="https://github.com/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/dnsyz.png">
-<meta property="og:image" content="https://github.com/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/qianfa.png">
-<meta property="og:image" content="https://github.com/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/test.png">
-<meta property="og:image" content="https://github.com/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/fangwentest.png">
-<meta property="og:image" content="https://github.com/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/tianjia.png">
-<meta property="og:image" content="https://github.com/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/yumingshezhi.png">
-<meta property="og:image" content="https://github.com/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/yuanzhan.png">
-<meta property="og:image" content="https://github.com/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/tishi.png">
-<meta property="og:image" content="https://github.com/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/cn.png">
-<meta property="og:image" content="https://github.com/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/jie.png">
-<meta property="og:image" content="https://github.com/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/dig.png">
-<meta property="og:image" content="https://github.com/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/after.png">
+<meta property="og:image" content="https://github.com/labiyouxiaoxin2.github.io/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/cname.png">
+<meta property="og:image" content="https://github.com/labiyouxiaoxin2.github.io/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/jiexi.png">
+<meta property="og:image" content="https://github.com/labiyouxiaoxin2.github.io/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/before.png">
+<meta property="og:image" content="https://github.com/labiyouxiaoxin2.github.io/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/ssl.png">
+<meta property="og:image" content="https://github.com/labiyouxiaoxin2.github.io/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/goumai.png">
+<meta property="og:image" content="https://github.com/labiyouxiaoxin2.github.io/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/hedui.png">
+<meta property="og:image" content="https://github.com/labiyouxiaoxin2.github.io/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/queren.png">
+<meta property="og:image" content="https://github.com/labiyouxiaoxin2.github.io/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/buquan.png">
+<meta property="og:image" content="https://github.com/labiyouxiaoxin2.github.io/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/dnsyz.png">
+<meta property="og:image" content="https://github.com/labiyouxiaoxin2.github.io/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/qianfa.png">
+<meta property="og:image" content="https://github.com/labiyouxiaoxin2.github.io/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/test.png">
+<meta property="og:image" content="https://github.com/labiyouxiaoxin2.github.io/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/fangwentest.png">
+<meta property="og:image" content="https://github.com/labiyouxiaoxin2.github.io/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/tianjia.png">
+<meta property="og:image" content="https://github.com/labiyouxiaoxin2.github.io/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/yumingshezhi.png">
+<meta property="og:image" content="https://github.com/labiyouxiaoxin2.github.io/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/yuanzhan.png">
+<meta property="og:image" content="https://github.com/labiyouxiaoxin2.github.io/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/tishi.png">
+<meta property="og:image" content="https://github.com/labiyouxiaoxin2.github.io/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/cn.png">
+<meta property="og:image" content="https://github.com/labiyouxiaoxin2.github.io/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/jie.png">
+<meta property="og:image" content="https://github.com/labiyouxiaoxin2.github.io/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/dig.png">
+<meta property="og:image" content="https://github.com/labiyouxiaoxin2.github.io/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/after.png">
 <meta property="article:published_time" content="2020-03-19T13:46:02.000Z">
 <meta property="article:modified_time" content="2020-11-14T08:17:13.627Z">
 <meta property="article:author" content="Yiwei Zhang">
 <meta property="article:tag" content="Hexo">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://github.com/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/cname.png">
+<meta name="twitter:image" content="https://github.com/labiyouxiaoxin2.github.io/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/cname.png">
 
 <link rel="canonical" href="https://github.com/labiyouxiaoxin2/labiyouxiaoxin2.github.io/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/">
 
@@ -376,14 +376,14 @@
 <p>这里的其他是相对与前缀<code>www</code>来说的。</p>
 <p>是这样的，因为我想来访者通过域名 <a href="http://www.zywvvd.com/" target="_blank" rel="noopener">www.zywvvd.com</a> 访问我的站点，也就是说这是我需要加速的域名，不能再把这个域名直接解析到我们的Hexo站点了，但是还是需要有一个二级域名指向他，因此需要将Hexo站点绑定到其他二级域名，我用的是 <a href="https://zzz.zywvvd.com/" target="_blank" rel="noopener">https://zzz.zywvvd.com/</a></p>
 </blockquote>
-<img src="/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/cname.png" class="" title="源站CNAME设置">
+<img src="/labiyouxiaoxin2.github.io/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/cname.png" class="" title="源站CNAME设置">
 
-<img src="/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/jiexi.png" class="" title="添加新的二级域名解析">
+<img src="/labiyouxiaoxin2.github.io/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/jiexi.png" class="" title="添加新的二级域名解析">
 
 <blockquote>
 <p>此时可以通过 <a href="https://zzz.zywvvd.com/" target="_blank" rel="noopener">https://zzz.zywvvd.com/</a> 访问我的站点，但仍是原来的龟速</p>
 </blockquote>
-<img src="/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/before.png" class="" title="加速前">
+<img src="/labiyouxiaoxin2.github.io/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/before.png" class="" title="加速前">
 
 <h3 id="申请SSL免费证书（貌似可选）"><a href="#申请SSL免费证书（貌似可选）" class="headerlink" title="申请SSL免费证书（貌似可选）"></a>申请SSL免费证书（貌似可选）</h3><blockquote>
 <p>SSL证书用于域名支持https协议，七牛云在http协议下每月提供10g免费流量，但是我不开启https就无法访问站点，所以申请了证书，需要每月流量费用0.28元/GB，对我来说一个月几块钱足够了。</p>
@@ -392,57 +392,57 @@
 <ul>
 <li>进入七牛云控制台，选择SSL证书服务：</li>
 </ul>
-<img src="/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/ssl.png" class="" title="SSL证书服务">
+<img src="/labiyouxiaoxin2.github.io/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/ssl.png" class="" title="SSL证书服务">
 
 <ul>
 <li>购买证书（别慌，免费的）</li>
 </ul>
-<img src="/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/goumai.png" class="" title="购买证书">
+<img src="/labiyouxiaoxin2.github.io/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/goumai.png" class="" title="购买证书">
 
 <ul>
 <li>选择TrustAsia DV 域名型</li>
 </ul>
-<img src="/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/hedui.png" class="" title="选择域名类型">
+<img src="/labiyouxiaoxin2.github.io/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/hedui.png" class="" title="选择域名类型">
 
 <ul>
 <li>点击核对信息并支付，确认支付即可</li>
 </ul>
-<img src="/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/queren.png" class="" title="核对支付">
+<img src="/labiyouxiaoxin2.github.io/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/queren.png" class="" title="核对支付">
 
 <ul>
 <li>点击补全信息，填入站点域名、备注、企业和个人信息（信息仅用于此次注册）</li>
 </ul>
-<img src="/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/buquan.png" class="" title="补全信息">
+<img src="/labiyouxiaoxin2.github.io/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/buquan.png" class="" title="补全信息">
 
 <ul>
 <li>提交后需要DNS验证，在一级域名出建立指定的二级域名，记录类型设置为TXT，主机记录填入指定值，一会就会验证成功</li>
 </ul>
-<img src="/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/dnsyz.png" class="" title="DNS验证">
+<img src="/labiyouxiaoxin2.github.io/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/dnsyz.png" class="" title="DNS验证">
 
 <ul>
 <li>等待一会就签发成功啦</li>
 </ul>
-<img src="/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/qianfa.png" class="" title="签发SSL证书">
+<img src="/labiyouxiaoxin2.github.io/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/qianfa.png" class="" title="签发SSL证书">
 
 <h3 id="在Hexo添加测试文件"><a href="#在Hexo添加测试文件" class="headerlink" title="在Hexo添加测试文件"></a>在Hexo添加测试文件</h3><ul>
 <li>所谓的测试文件就是随便一个小文件，放在Hexo/source文件夹下</li>
 </ul>
-<img src="/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/test.png" class="" title="测试文件">
+<img src="/labiyouxiaoxin2.github.io/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/test.png" class="" title="测试文件">
 
 <ul>
 <li>hexo g ，hexo d 后可以访问 zywvvd.github.io/test.html 查看</li>
 </ul>
-<img src="/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/fangwentest.png" class="" title="访问测试文件">
+<img src="/labiyouxiaoxin2.github.io/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/fangwentest.png" class="" title="访问测试文件">
 
 <h3 id="添加CDN加速域名"><a href="#添加CDN加速域名" class="headerlink" title="添加CDN加速域名"></a>添加CDN加速域名</h3><ul>
 <li>七牛云控制台，CDN，选择域名管理，添加域名</li>
 </ul>
-<img src="/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/tianjia.png" class="" title="添加域名">
+<img src="/labiyouxiaoxin2.github.io/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/tianjia.png" class="" title="添加域名">
 
 <ul>
 <li>选择 普通域名 填写你要加速的域名（需要备案） 选择通信协议 https（我用http失败了）</li>
 </ul>
-<img src="/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/yumingshezhi.png" class="" title="填入信息">
+<img src="/labiyouxiaoxin2.github.io/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/yumingshezhi.png" class="" title="填入信息">
 
 <ul>
 <li><font color=red size=6 face='微软雅黑'>重点！！！</font></li>
@@ -454,7 +454,7 @@
 <p>回源Host：填之前我们移动的二级域名，比如我的是 zzz.zywvvd.com/ </p>
 <p>源站测试：填入刚刚的test.html，点击测试</p>
 </blockquote>
-<img src="/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/yuanzhan.png" class="" title="源站配置">
+<img src="/labiyouxiaoxin2.github.io/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/yuanzhan.png" class="" title="源站配置">
 
 <ul>
 <li>其他根据个人需求配置，没特殊要求默认即可，等待一会即提示成功建立加速域名</li>
@@ -462,17 +462,17 @@
 <h3 id="添加七牛云CNAME解析"><a href="#添加七牛云CNAME解析" class="headerlink" title="添加七牛云CNAME解析"></a>添加七牛云CNAME解析</h3><ul>
 <li>此时配置刚刚建立的域名，会提示你需要配置CNAME</li>
 </ul>
-<img src="/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/tishi.png" class="" title="提示">
+<img src="/labiyouxiaoxin2.github.io/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/tishi.png" class="" title="提示">
 
 <ul>
 <li>返回域名管理，复制CNAME</li>
 </ul>
-<img src="/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/cn.png" class="" title="复制CNAME">
+<img src="/labiyouxiaoxin2.github.io/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/cn.png" class="" title="复制CNAME">
 
 <ul>
 <li>在域名商处添加加速前缀的二级域名，解析到上述CNAME</li>
 </ul>
-<img src="/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/jie.png" class="" title="配置CNAME">
+<img src="/labiyouxiaoxin2.github.io/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/jie.png" class="" title="配置CNAME">
 
 <h3 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h3><blockquote>
 <p>此时我们已经完成了：</p>
@@ -485,17 +485,17 @@
 </blockquote>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dig www.zywvvd.com</span><br></pre></td></tr></table></figure>
 
-<img src="/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/dig.png" class="" title="dig测试">
+<img src="/labiyouxiaoxin2.github.io/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/dig.png" class="" title="dig测试">
 
 <blockquote>
 <p>最实在的当然还是测速了</p>
 </blockquote>
-<img src="/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/after.png" class="" title="网速测试">
+<img src="/labiyouxiaoxin2.github.io/2020/03/19/hexo/7_hexo_speed_up/hexo-speed-up/after.png" class="" title="网速测试">
 
 <blockquote>
 <p>舒服。。。</p>
 </blockquote>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+<link rel="stylesheet" href="/labiyouxiaoxin2.github.io/css/spoiler.css" type="text/css"><script src="/labiyouxiaoxin2.github.io/js/spoiler.js" type="text/javascript" async></script>
     </div>
 
     
