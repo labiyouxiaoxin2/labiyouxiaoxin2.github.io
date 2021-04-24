@@ -1,39 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>又见苍岚</title>
+  <title>小冰白天不困困</title>
   
-  <subtitle>www.zywvvd.com</subtitle>
+  <subtitle>小冰的个人博客</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://labiyouxiaoxin2.github.io/"/>
-  <updated>2020-11-14T08:17:13.566Z</updated>
+  <updated>2020-11-14T08:17:13.564Z</updated>
   <id>https://labiyouxiaoxin2.github.io/</id>
   
   <author>
-    <name>Yiwei Zhang</name>
+    <name>Xiaobing Feng</name>
     
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Hexo -5- 添加 live2d 看板动画</title>
-    <link href="https://labiyouxiaoxin2.github.io/2020/03/09/hexo/5_hexo_add_live2d/add-live2d/"/>
-    <id>https://labiyouxiaoxin2.github.io/2020/03/09/hexo/5_hexo_add_live2d/add-live2d/</id>
-    <published>2020-03-09T03:35:51.000Z</published>
-    <updated>2020-11-14T08:17:13.566Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;live2d是一种应用于电子游戏的绘图渲染技术，技术由日本Cybernoids公司开发。通过一系列的连续图像和人物建模来生成一种类似三维模型的二维图像。 在Hexo中生成可以与用户互动的卡通人物，简直就是博客的灵魂所在。本文介绍live2d 看板动画添加方法。&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-    
-    
-  </entry>
   
   <entry>
     <title>Hexo -4- 向文章添加图片的方法</title>
