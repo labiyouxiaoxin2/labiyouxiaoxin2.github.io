@@ -1,107 +1,174 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search> 
-  
-  
-    
-    <entry>
-      <title>Hexo -4- 向文章添加图片的方法</title>
-      <link href="/2020/02/27/hexo/4_hexo_add_image/hexo-add-image/"/>
-      <url>/2020/02/27/hexo/4_hexo_add_image/hexo-add-image/</url>
-      
-        <content type="html"><![CDATA[<blockquote><p>本文介绍Hexo编辑文章时添加图像的各种方法。</p></blockquote><a id="more"></a><h2 id="绝对路径本地引用"><a href="#绝对路径本地引用" class="headerlink" title="绝对路径本地引用"></a>绝对路径本地引用</h2><blockquote><p>当Hexo项目中只用到少量图片时，可以将图片统一放在source/images文件夹中，通过markdown语法访问它们。</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![](&#x2F;images&#x2F;image.jpg)</span><br></pre></td></tr></table></figure><blockquote><p>此方法加载的图片既可以在首页内容中访问到，也可以在文章正文中访问到。</p></blockquote><h2 id="相对路径本地引用"><a href="#相对路径本地引用" class="headerlink" title="相对路径本地引用"></a>相对路径本地引用</h2><blockquote><p>图片除了可以放在统一的images文件夹中，还可以放在文章自己的目录中。文章的目录可以通过设置<code>站点配置文件</code>的 <code>post_asset_folder: true</code>来自动生成。</p></blockquote><img src="/labiyouxiaoxin2.github.io/2020/02/27/hexo/4_hexo_add_image/hexo-add-image/config.png" class="" title="配置文件修改"><blockquote><p>将_config.yml文件中的配置项post_asset_folder设为true后，执行命令$ hexo new post_name，在source/_posts中会生成文章post_name.md和同名文件夹post_name。将图片资源放在post_name中，文章就可以使用相对路径引用图片资源了。</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![](image.jpg)</span><br></pre></td></tr></table></figure><h2 id="标签插件语法引用"><a href="#标签插件语法引用" class="headerlink" title="标签插件语法引用"></a>标签插件语法引用</h2><p>这种相对路径的图片显示方法在博文详情页面显示没有问题，但是在首页预览页面图片将显示不出来。如果希望<strong>图片在文章和首页中同时显示</strong>，可以使用标签插件语法。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 本地图片资源，不限制图片尺寸</span><br><span class="line">&#123;% asset_img image.jpg This is an image %&#125;</span><br><span class="line"># 网络图片资源，限制图片显示尺寸</span><br><span class="line">&#123;% img http:&#x2F;&#x2F;www.viemu.com&#x2F;vi-vim-cheat-sheet.gif 200 400 vi-vim-cheat-sheet %&#125;</span><br></pre></td></tr></table></figure><h2 id="HTML语法引用"><a href="#HTML语法引用" class="headerlink" title="HTML语法引用"></a>HTML语法引用</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;img src&#x3D;&quot;SpellCheck.png&quot; width&#x3D;&quot;50%&quot; height&#x3D;&quot;50%&quot; title&#x3D;&quot;拼写检查工具Grammarly.&quot; alt&#x3D;&quot;拼写检查工具Grammarly.&quot;&#x2F;&gt;</span><br></pre></td></tr></table></figure><p>直接将<code>![](image.jpg)</code>替换上面的语法即可。</p><h2 id="启用fancybox：点击查看图片大图"><a href="#启用fancybox：点击查看图片大图" class="headerlink" title="启用fancybox：点击查看图片大图"></a>启用fancybox：点击查看图片大图</h2><p>我这里使用的是Hexo的NexT主题，NexT主题中提供了fancybox的方便接口。</p><p>Usage：<a href="https://github.com/theme-next/theme-next-fancybox3">https://github.com/theme-next/theme-next-fancybox3</a><br>markdown用法：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% img http:&#x2F;&#x2F;www.viemu.com&#x2F;vi-vim-cheat-sheet.gif 600 600 &quot;点击查看大图:vi&#x2F;vim-cheat-sheet&quot; %&#125;</span><br></pre></td></tr></table></figure><link rel="stylesheet" href="/labiyouxiaoxin2.github.io/css/spoiler.css" type="text/css"><script src="/labiyouxiaoxin2.github.io/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      
-      
+<search>
+  <entry>
+    <title>小冰的 hexo hello world</title>
+    <url>/2021/04/24/icey-hello-world/icey-hello-world/</url>
+    <content><![CDATA[<blockquote>
+<p>本文是小冰第一篇博客 hello world。</p>
+</blockquote>
+<span id="more"></span>
+
+<h3 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h3><blockquote>
+<p>hello world</p>
+</blockquote>
+<h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><ul>
+<li>vvd</li>
+</ul>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <categories>
-          
-          <category> Hexo </category>
-          
+        <category>hello-world</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> Hexo </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hexo -3- 常用命令汇总</title>
-      <link href="/2020/02/25/hexo/3_hexo_commands/hexo-commands/"/>
-      <url>/2020/02/25/hexo/3_hexo_commands/hexo-commands/</url>
-      
-        <content type="html"><![CDATA[<blockquote><p>本文记录Hexo常用命令与相应说明，相关文档也可以参考<a href="https://hexo.io/zh-cn/docs/commands" target="_blank" rel="noopener">官方文档</a>。</p></blockquote><a id="more"></a><h2 id="init"><a href="#init" class="headerlink" title="init"></a>init</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init [folder]</span><br></pre></td></tr></table></figure><blockquote><p>新建网站。如果没有设置 <code>folder</code> ，Hexo 默认在目前的文件夹建立网站。</p></blockquote><h2 id="new"><a href="#new" class="headerlink" title="new"></a>new</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure><blockquote><p>新建文章。如果没有设置 <code>layout</code> 的话，默认使用 <a href="https://hexo.io/zh-cn/docs/configuration" target="_blank" rel="noopener">_config.yml</a> 中的 <code>default_layout</code> 参数代替。如果标题包含空格的话，请使用引号括起来。</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new &quot;post title with whitespace&quot;</span><br></pre></td></tr></table></figure><table><thead><tr><th align="left">参数</th><th align="left">描述</th></tr></thead><tbody><tr><td align="left"><code>-p</code>, <code>--path</code></td><td align="left">自定义新文章的路径</td></tr><tr><td align="left"><code>-r</code>, <code>--replace</code></td><td align="left">如果存在同名文章，将其替换</td></tr><tr><td align="left"><code>-s</code>, <code>--slug</code></td><td align="left">文章的 Slug，作为新文章的文件名和发布后的 URL</td></tr></tbody></table><p>默认情况下，Hexo 会使用文章的标题来决定文章文件的路径。对于独立页面来说，Hexo 会创建一个以标题为名字的目录，并在目录中放置一个 <code>index.md</code> 文件。你可以使用 <code>--path</code> 参数来覆盖上述行为、自行决定文件的目录：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page --path about&#x2F;me &quot;About me&quot;</span><br></pre></td></tr></table></figure><p>以上命令会创建一个 <code>source/about/me.md</code> 文件，同时 Front Matter 中的 title 为 <code>&quot;About me&quot;</code></p><p>注意！title 是必须指定的！如果你这么做并不能达到你的目的：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page --path about&#x2F;me</span><br></pre></td></tr></table></figure><p>此时 Hexo 会创建 <code>source/_posts/about/me.md</code>，同时 <code>me.md</code> 的 Front Matter 中的 title 为 <code>&quot;page&quot;</code>。这是因为在上述命令中，hexo-cli 将 <code>page</code> 视为指定文章的标题、并采用默认的 <code>layout</code>。</p><h2 id="generate"><a href="#generate" class="headerlink" title="generate"></a>generate</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>生成静态文件。</p><table><thead><tr><th align="left">选项</th><th align="left">描述</th></tr></thead><tbody><tr><td align="left"><code>-d</code>, <code>--deploy</code></td><td align="left">文件生成后立即部署网站</td></tr><tr><td align="left"><code>-w</code>, <code>--watch</code></td><td align="left">监视文件变动</td></tr><tr><td align="left"><code>-b</code>, <code>--bail</code></td><td align="left">生成过程中如果发生任何未处理的异常则抛出异常</td></tr><tr><td align="left"><code>-f</code>, <code>--force</code></td><td align="left">强制重新生成文件 Hexo 引入了差分机制，如果 <code>public</code> 目录存在，那么 <code>hexo g</code> 只会重新生成改动的文件。 使用该参数的效果接近 <code>hexo clean &amp;&amp; hexo generate</code></td></tr><tr><td align="left"><code>-c</code>, <code>--concurrency</code></td><td align="left">最大同时生成文件的数量，默认无限制</td></tr></tbody></table><p>该命令可以简写为</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g</span><br></pre></td></tr></table></figure><h2 id="publish"><a href="#publish" class="headerlink" title="publish"></a>publish</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo publish [layout] &lt;filename&gt;</span><br></pre></td></tr></table></figure><p>发表草稿。</p><h2 id="server"><a href="#server" class="headerlink" title="server"></a>server</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>启动服务器。默认情况下，访问网址为： <code>http://localhost:4000/</code>。</p><table><thead><tr><th align="left">选项</th><th align="left">描述</th></tr></thead><tbody><tr><td align="left"><code>-p</code>, <code>--port</code></td><td align="left">重设端口</td></tr><tr><td align="left"><code>-s</code>, <code>--static</code></td><td align="left">只使用静态文件</td></tr><tr><td align="left"><code>-l</code>, <code>--log</code></td><td align="left">启动日记记录，使用覆盖记录格式</td></tr></tbody></table><p>该命令可以简写为</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s</span><br></pre></td></tr></table></figure><h2 id="deploy"><a href="#deploy" class="headerlink" title="deploy"></a>deploy</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>部署网站。</p><table><thead><tr><th align="left">参数</th><th align="left">描述</th></tr></thead><tbody><tr><td align="left"><code>-g</code>, <code>--generate</code></td><td align="left">部署之前预先生成静态文件</td></tr></tbody></table><p>该命令可以简写为：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo d</span><br></pre></td></tr></table></figure><h2 id="render"><a href="#render" class="headerlink" title="render"></a>render</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo render &lt;file1&gt; [file2] ...</span><br></pre></td></tr></table></figure><p>渲染文件。</p><table><thead><tr><th align="left">参数</th><th align="left">描述</th></tr></thead><tbody><tr><td align="left"><code>-o</code>, <code>--output</code></td><td align="left">设置输出路径</td></tr></tbody></table><h2 id="migrate"><a href="#migrate" class="headerlink" title="migrate"></a>migrate</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo migrate &lt;type&gt;</span><br></pre></td></tr></table></figure><p>从其他博客系统 <a href="https://hexo.io/zh-cn/docs/migration" target="_blank" rel="noopener">迁移内容</a>。</p><h2 id="clean"><a href="#clean" class="headerlink" title="clean"></a>clean</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br></pre></td></tr></table></figure><p>清除缓存文件 (<code>db.json</code>) 和已生成的静态文件 (<code>public</code>)。</p><p>在某些情况（尤其是更换主题后），如果发现您对站点的更改无论如何也不生效，您可能需要运行该命令。</p><h2 id="list"><a href="#list" class="headerlink" title="list"></a>list</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo list &lt;type&gt;</span><br></pre></td></tr></table></figure><p>列出网站资料。</p><h2 id="version"><a href="#version" class="headerlink" title="version"></a>version</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo version</span><br></pre></td></tr></table></figure><p>显示 Hexo 版本。</p><h2 id="常用组合命令"><a href="#常用组合命令" class="headerlink" title="常用组合命令"></a>常用组合命令</h2><blockquote><p>清除缓存、重新生成静态文件</p></blockquote><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g</span><br></pre></td></tr></table></figure><blockquote><p>清除缓存、重新生成静态文件、同时部署</p></blockquote><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g -d</span><br></pre></td></tr></table></figure><h2 id="选项"><a href="#选项" class="headerlink" title="选项"></a>选项</h2><h3 id="安全模式"><a href="#安全模式" class="headerlink" title="安全模式"></a>安全模式</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo --safe</span><br></pre></td></tr></table></figure><p>在安全模式下，不会载入插件和脚本。当您在安装新插件遭遇问题时，可以尝试以安全模式重新执行。</p><h3 id="调试模式"><a href="#调试模式" class="headerlink" title="调试模式"></a>调试模式</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo --debug</span><br></pre></td></tr></table></figure><p>在终端中显示调试信息并记录到 <code>debug.log</code>。当您碰到问题时，可以尝试用调试模式重新执行一次，并 <a href="https://github.com/hexojs/hexo/issues/new">提交调试信息到 GitHub</a>。</p><h3 id="简洁模式"><a href="#简洁模式" class="headerlink" title="简洁模式"></a>简洁模式</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo --silent</span><br></pre></td></tr></table></figure><p>隐藏终端信息。</p><h3 id="自定义配置文件的路径"><a href="#自定义配置文件的路径" class="headerlink" title="自定义配置文件的路径"></a>自定义配置文件的路径</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 使用 custom.yml 代替默认的 _config.yml</span><br><span class="line">$ hexo server --config custom.yml</span><br><span class="line"></span><br><span class="line"># 使用 custom.yml 和 custom2.json，其中 custom2.json 优先级更高</span><br><span class="line">$ hexo generate --config custom.yml,custom2.json,custom3.yml</span><br></pre></td></tr></table></figure><p>自定义配置文件的路径，指定这个参数后将不再使用默认的 <code>_config.yml</code>。<br>你可以使用一个 YAML 或 JSON 文件的路径，也可以使用逗号分隔（无空格）的多个 YAML 或 JSON 文件的路径。例如：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 使用 custom.yml 代替默认的 _config.yml</span><br><span class="line">$ hexo server --config custom.yml</span><br><span class="line"></span><br><span class="line"># 使用 custom.yml, custom2.json 和 custom3.yml，其中 custom3.yml 优先级最高，其次是 custom2.json</span><br><span class="line">$ hexo generate --config custom.yml,custom2.json,custom3.yml</span><br></pre></td></tr></table></figure><p>当你指定了多个配置文件以后，Hexo 会按顺序将这部分配置文件合并成一个 <code>_multiconfig.yml</code>。如果遇到重复的配置，排在后面的文件的配置会覆盖排在前面的文件的配置。这个原则适用于任意数量、任意深度的 YAML 和 JSON 文件。</p><h3 id="显示草稿"><a href="#显示草稿" class="headerlink" title="显示草稿"></a>显示草稿</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo --draft</span><br></pre></td></tr></table></figure><p>显示 <code>source/_drafts</code> 文件夹中的草稿文章。</p><h3 id="自定义-CWD"><a href="#自定义-CWD" class="headerlink" title="自定义 CWD"></a>自定义 CWD</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo --cwd &#x2F;path&#x2F;to&#x2F;cwd</span><br></pre></td></tr></table></figure><p>自定义当前工作目录（Current working directory）的路径。</p><link rel="stylesheet" href="/labiyouxiaoxin2.github.io/css/spoiler.css" type="text/css"><script src="/labiyouxiaoxin2.github.io/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      
-      
-      <categories>
-          
-          <category> Hexo </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Hexo </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hexo -2- 站点信息配置</title>
-      <link href="/2020/02/24/hexo/2_hexo_config/Hexo_config/"/>
-      <url>/2020/02/24/hexo/2_hexo_config/Hexo_config/</url>
-      
-        <content type="html"><![CDATA[<blockquote><p> Hexo框架中配置文件内容描述与示例。</p></blockquote><a id="more"></a><h2 id="config-yml-站点配置文件"><a href="#config-yml-站点配置文件" class="headerlink" title="_config.yml - 站点配置文件"></a>_config.yml - 站点配置文件</h2><blockquote><p>在各种Hexo相关教程中频繁出现<code>站点配置文件</code>，指的是Hexo根目录中的文件<code>_config.yml</code>。</p></blockquote><img src="/labiyouxiaoxin2.github.io/2020/02/24/hexo/2_hexo_config/Hexo_config/zhandianpeizhiwenjian.png" class="" title="站点配置文件"><blockquote><p>具体内容也可以参考<a href="https://hexo.io/zh-cn/docs/configuration" target="_blank" rel="noopener">官方文档</a>。</p></blockquote><ul><li>注意：配置过程中每一项的<code>英文冒号</code>后需要一个<code>空格</code>。</li></ul><h2 id="Site-网站"><a href="#Site-网站" class="headerlink" title="Site - 网站"></a>Site - 网站</h2><table><thead><tr><th align="left">参数</th><th align="left">描述</th></tr></thead><tbody><tr><td align="left"><code>title</code></td><td align="left">网站标题</td></tr><tr><td align="left"><code>subtitle</code></td><td align="left">网站副标题</td></tr><tr><td align="left"><code>description</code></td><td align="left">网站描述</td></tr><tr><td align="left"><code>keywords</code></td><td align="left">网站的关键词。使用半角逗号 <code>,</code> 分隔多个关键词。</td></tr><tr><td align="left"><code>author</code></td><td align="left">您的名字</td></tr><tr><td align="left"><code>language</code></td><td align="left">网站使用的语言 (<code>初始建议此处设置为zh-Hans，便于后续稳定翻译</code>)</td></tr><tr><td align="left"><code>timezone</code></td><td align="left">网站时区。Hexo 默认使用您电脑的时区。请参考 <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones" target="_blank" rel="noopener">时区列表</a> 进行设置，如 <code>America/New_York</code>, <code>Japan</code>, 和 <code>UTC</code> 。一般的，对于中国大陆地区可以使用 <code>Asia/Shanghai</code>。</td></tr></tbody></table><p><font color='red' face='黑体' size=5><b>这部分是我们刚刚建站时需要设置的部分，建议修改。<br>以我的站点配置为例：</b></font></p><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Site</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">又见苍岚</span></span><br><span class="line"><span class="attr">subtitle:</span> <span class="string">'www.zywvvd.com'</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">'Stay hungury ! Stay foolish ！'</span></span><br><span class="line"><span class="attr">keywords:</span> <span class="string">'人工智能, 深度学习, 个人博客'</span></span><br><span class="line"><span class="attr">author:</span> <span class="string">Yiwei</span> <span class="string">Zhang</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-Hans</span></span><br><span class="line"><span class="attr">timezone:</span> <span class="string">Asia/Shanghai</span></span><br></pre></td></tr></table></figure><img src="/labiyouxiaoxin2.github.io/2020/02/24/hexo/2_hexo_config/Hexo_config/title.png" class="" title="示例效果"><h2 id="URL-网址"><a href="#URL-网址" class="headerlink" title="URL - 网址"></a>URL - 网址</h2><table><thead><tr><th align="left">参数</th><th align="left">描述</th><th align="left">默认值</th></tr></thead><tbody><tr><td align="left"><code>url</code></td><td align="left">网址</td><td align="left"></td></tr><tr><td align="left"><code>root</code></td><td align="left">网站根目录</td><td align="left"></td></tr><tr><td align="left"><code>permalink</code></td><td align="left">文章的 <a href="https://hexo.io/zh-cn/docs/permalinks" target="_blank" rel="noopener">永久链接</a> 格式</td><td align="left"><code>:year/:month/:day/:title/</code></td></tr><tr><td align="left"><code>permalink_defaults</code></td><td align="left">永久链接中各部分的默认值</td><td align="left"></td></tr><tr><td align="left"><code>pretty_urls</code></td><td align="left">改写 <a href="https://hexo.io/zh-cn/docs/variables" target="_blank" rel="noopener"><code>permalink</code></a> 的值来美化 URL</td><td align="left"></td></tr><tr><td align="left"><code>pretty_urls.trailing_index</code></td><td align="left">是否在永久链接中保留尾部的 <code>index.html</code>，设置为 <code>false</code> 时去除</td><td align="left"><code>true</code></td></tr><tr><td align="left"><code>pretty_urls.trailing_html</code></td><td align="left">是否在永久链接中保留尾部的 <code>.html</code>, 设置为 <code>false</code> 时去除 (<em>对尾部的 <code>index.html</code>无效</em>)</td><td align="left"></td></tr></tbody></table><p><font color='red' face='黑体' size=5><b>url 和 root 需要关联到挂载的服务器目录</b></font></p><blockquote><p>修改<code>站点配置文件</code>，填入网址设置：</p></blockquote><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># URL</span></span><br><span class="line"><span class="comment">## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'</span></span><br><span class="line"><span class="attr">url:</span> <span class="string">http://github.com/&lt;Github账号&gt;/&lt;Github账号&gt;.github.io</span></span><br><span class="line"><span class="attr">root:</span> <span class="string">/&lt;Github账号&gt;.github.io/</span></span><br></pre></td></tr></table></figure><p><font color='red' face='黑体' size=5><b>修改文章永久链接</b></font></p><blockquote><p>默认文章路径类似： <a href="https://www.zywvvd.com/2020/02/27/hexo/xxx" target="_blank" rel="noopener">https://www.zywvvd.com/2020/02/27/hexo/xxx</a></p><p>这是因为文章链接配置<code>permalink</code>值默认为<code>:year/:month/:day/:title/</code></p><p>不喜欢此种形式链接的同学可以自定义修改，例如：</p></blockquote><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">permalink:</span> <span class="string">:category/:title/</span></span><br></pre></td></tr></table></figure><blockquote><p>可以使用如下变量和 Front-matter 中的所有属性。</p></blockquote><table><thead><tr><th align="left">变量</th><th align="left">描述</th></tr></thead><tbody><tr><td align="left"><code>:year</code></td><td align="left">文章的发表年份（4 位数）</td></tr><tr><td align="left"><code>:month</code></td><td align="left">文章的发表月份（2 位数）</td></tr><tr><td align="left"><code>:i_month</code></td><td align="left">文章的发表月份（去掉开头的零）</td></tr><tr><td align="left"><code>:day</code></td><td align="left">文章的发表日期 (2 位数)</td></tr><tr><td align="left"><code>:i_day</code></td><td align="left">文章的发表日期（去掉开头的零）</td></tr><tr><td align="left"><code>:hour</code></td><td align="left">文章发表时的小时 (2 位数)</td></tr><tr><td align="left"><code>:minute</code></td><td align="left">文章发表时的分钟 (2 位数)</td></tr><tr><td align="left"><code>:title</code></td><td align="left">文件名称</td></tr><tr><td align="left"><code>:post_title</code></td><td align="left">文章标题</td></tr><tr><td align="left"><code>:id</code></td><td align="left">文章 ID (<em>not persistent across <a href="https://hexo.io/zh-cn/docs/commands#clean" target="_blank" rel="noopener">cache reset</a></em>)</td></tr><tr><td align="left"><code>:category</code></td><td align="left">分类。如果文章没有分类，则是 <code>default_category</code> 配置信息。</td></tr></tbody></table><h2 id="Directory-目录"><a href="#Directory-目录" class="headerlink" title="Directory - 目录"></a>Directory - 目录</h2><table><thead><tr><th align="left">参数</th><th align="left">描述</th><th align="left">默认值</th></tr></thead><tbody><tr><td align="left"><code>source_dir</code></td><td align="left">资源文件夹，这个文件夹用来存放内容。</td><td align="left"><code>source</code></td></tr><tr><td align="left"><code>public_dir</code></td><td align="left">公共文件夹，这个文件夹用于存放生成的站点文件。</td><td align="left"><code>public</code></td></tr><tr><td align="left"><code>tag_dir</code></td><td align="left">标签文件夹</td><td align="left"><code>tags</code></td></tr><tr><td align="left"><code>archive_dir</code></td><td align="left">归档文件夹</td><td align="left"><code>archives</code></td></tr><tr><td align="left"><code>category_dir</code></td><td align="left">分类文件夹</td><td align="left"><code>categories</code></td></tr><tr><td align="left"><code>code_dir</code></td><td align="left">Include code 文件夹，<code>source_dir</code> 下的子目录</td><td align="left"><code>downloads/code</code></td></tr><tr><td align="left"><code>i18n_dir</code></td><td align="left">国际化（i18n）文件夹</td><td align="left"><code>:lang</code></td></tr><tr><td align="left"><code>skip_render</code></td><td align="left">跳过指定文件的渲染。匹配到的文件将会被不做改动地复制到 <code>public</code> 目录中。您可使用 <a href="https://github.com/micromatch/micromatch#extended-globbing">glob 表达式</a>来匹配路径。</td><td align="left"></td></tr></tbody></table><h2 id="Writing-文章"><a href="#Writing-文章" class="headerlink" title="Writing - 文章"></a>Writing - 文章</h2><table><thead><tr><th align="left">参数</th><th align="left">描述</th><th align="left">默认值</th></tr></thead><tbody><tr><td align="left"><code>new_post_name</code></td><td align="left">新文章的文件名称</td><td align="left">:title.md</td></tr><tr><td align="left"><code>default_layout</code></td><td align="left">预设布局</td><td align="left">post</td></tr><tr><td align="left"><code>auto_spacing</code></td><td align="left">在中文和英文之间加入空格</td><td align="left">false</td></tr><tr><td align="left"><code>titlecase</code></td><td align="left">把标题转换为 title case</td><td align="left">false</td></tr><tr><td align="left"><code>external_link</code></td><td align="left">在新标签中打开链接</td><td align="left">true</td></tr><tr><td align="left"><code>external_link.enable</code></td><td align="left">在新标签中打开链接</td><td align="left"><code>true</code></td></tr><tr><td align="left"><code>external_link.field</code></td><td align="left">对整个网站（<code>site</code>）生效或仅对文章（<code>post</code>）生效</td><td align="left"><code>site</code></td></tr><tr><td align="left"><code>external_link.exclude</code></td><td align="left">需要排除的域名。主域名和子域名如 <code>www</code> 需分别配置</td><td align="left"><code>[]</code></td></tr><tr><td align="left"><code>filename_case</code></td><td align="left">把文件名称转换为 (1) 小写或 (2) 大写</td><td align="left">0</td></tr><tr><td align="left"><code>render_drafts</code></td><td align="left">显示草稿</td><td align="left">false</td></tr><tr><td align="left"><code>post_asset_folder</code></td><td align="left">启动 <a href="https://hexo.io/zh-cn/docs/asset-folders" target="_blank" rel="noopener">Asset 文件夹</a> (建议设置为 True )</td><td align="left">false</td></tr><tr><td align="left"><code>relative_link</code></td><td align="left">把链接改为与根目录的相对位址</td><td align="left">false</td></tr><tr><td align="left"><code>future</code></td><td align="left">显示未来的文章</td><td align="left">true</td></tr><tr><td align="left"><code>highlight</code></td><td align="left">代码块的设置</td><td align="left"></td></tr><tr><td align="left"><code>highlight.enable</code></td><td align="left">开启代码块高亮</td><td align="left"><code>true</code></td></tr><tr><td align="left"><code>highlight.auto_detect</code></td><td align="left">如果未指定语言，则启用自动检测</td><td align="left"><code>false</code></td></tr><tr><td align="left"><code>highlight.line_number</code></td><td align="left">显示行数 <em>Enabling this option will also enable <code>wrap</code> option</em></td><td align="left"><code>true</code></td></tr><tr><td align="left"><code>highlight.tab_replace</code></td><td align="left">用 n 个空格替换 tabs；如果值为空，则不会替换 tabs</td><td align="left"><code>&#39;&#39;</code></td></tr><tr><td align="left"><code>highlight.wrap</code></td><td align="left">Wrap the code block in <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table" target="_blank" rel="noopener">``</a></td><td align="left"><code>true</code></td></tr><tr><td align="left"><code>highlight.hljs</code></td><td align="left">Use the <code>hljs-*</code> prefix for CSS classes</td><td align="left"><code>false</code></td></tr></tbody></table><p><font color='red' face='黑体' size=5><b><code>post_asset_folder</code>修改为true，这样新建文章时会创建同名文件夹，便于后期博客图片等资源管理</b></font></p><h2 id="Category-amp-Tag-分类-amp-标签"><a href="#Category-amp-Tag-分类-amp-标签" class="headerlink" title="Category &amp; Tag - 分类 &amp; 标签"></a>Category &amp; Tag - 分类 &amp; 标签</h2><table><thead><tr><th align="left">参数</th><th align="left">描述</th><th align="left">默认值</th></tr></thead><tbody><tr><td align="left"><code>default_category</code></td><td align="left">默认分类</td><td align="left"><code>uncategorized</code></td></tr><tr><td align="left"><code>category_map</code></td><td align="left">分类别名</td><td align="left"></td></tr><tr><td align="left"><code>tag_map</code></td><td align="left">标签别名</td><td align="left"></td></tr></tbody></table><h2 id="Date-Time-format-日期-时间格式"><a href="#Date-Time-format-日期-时间格式" class="headerlink" title="Date / Time format - 日期 / 时间格式"></a>Date / Time format - 日期 / 时间格式</h2><p>Hexo 使用 <a href="http://momentjs.com/" target="_blank" rel="noopener">Moment.js</a> 来解析和显示时间。</p><table><thead><tr><th align="left">参数</th><th align="left">描述</th><th align="left">默认值</th></tr></thead><tbody><tr><td align="left"><code>date_format</code></td><td align="left">日期格式</td><td align="left"><code>YYYY-MM-DD</code></td></tr><tr><td align="left"><code>time_format</code></td><td align="left">时间格式</td><td align="left"><code>HH:mm:ss</code></td></tr><tr><td align="left"><code>use_date_for_updated</code></td><td align="left">启用以后，如果 Front Matter 中没有指定 <code>updated</code>， <a href="https://hexo.io/zh-cn/docs/variables#%E9%A1%B5%E9%9D%A2%E5%8F%98%E9%87%8F" target="_blank" rel="noopener"><code>post.updated</code></a> 将会使用 <code>date</code> 的值而不是文件的创建时间。在 Git 工作流中这个选项会很有用</td><td align="left"><code>true</code></td></tr></tbody></table><h2 id="Pagination-分页"><a href="#Pagination-分页" class="headerlink" title="Pagination - 分页"></a>Pagination - 分页</h2><table><thead><tr><th align="left">参数</th><th align="left">描述</th><th align="left">默认值</th></tr></thead><tbody><tr><td align="left"><code>per_page</code></td><td align="left">每页显示的文章量 (0 = 关闭分页功能)</td><td align="left"><code>10</code></td></tr><tr><td align="left"><code>pagination_dir</code></td><td align="left">分页目录</td><td align="left"><code>page</code></td></tr></tbody></table><h2 id="Extensions-扩展"><a href="#Extensions-扩展" class="headerlink" title="Extensions - 扩展"></a>Extensions - 扩展</h2><table><thead><tr><th align="left">参数</th><th align="left">描述</th></tr></thead><tbody><tr><td align="left"><code>theme</code></td><td align="left">当前主题名称。值为<code>false</code>时禁用主题</td></tr><tr><td align="left"><code>theme_config</code></td><td align="left">主题的配置文件。在这里放置的配置会覆盖主题目录下的 <code>_config.yml</code> 中的配置</td></tr><tr><td align="left"><code>deploy</code></td><td align="left">部署部分的设置</td></tr><tr><td align="left"><code>meta_generator</code></td><td align="left"><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/meta#%E5%B1%9E%E6%80%A7" target="_blank" rel="noopener">Meta generator</a> 标签。 值为 <code>false</code> 时 Hexo 不会在头部插入该标签</td></tr></tbody></table><p><font color='red' face='黑体' size=5><b>更换主题时改变theme的值为主题名称</b></font></p><h3 id="Include-Exclude-file-s-包括或不包括目录和文件"><a href="#Include-Exclude-file-s-包括或不包括目录和文件" class="headerlink" title="Include / Exclude file(s) - 包括或不包括目录和文件"></a>Include / Exclude file(s) - 包括或不包括目录和文件</h3><blockquote><p> 在 Hexo 配置文件中，通过设置 include/exclude 可以让 Hexo 进行处理或忽略某些目录和文件夹。你可以使用 <a href="https://github.com/isaacs/minimatch">glob 表达式</a> 对目录和文件进行匹配。</p></blockquote><p><code>include</code> and <code>exclude</code> options only apply to the <code>source/</code> folder, whereas <code>ignore</code> option applies to all folders.</p><table><thead><tr><th align="left">参数</th><th align="left">描述</th></tr></thead><tbody><tr><td align="left"><code>include</code></td><td align="left">Hexo 默认会忽略隐藏文件和文件夹（包括名称以下划线和 <code>.</code> 开头的文件和文件夹，Hexo 的 <code>_posts</code> 和 <code>_data</code> 等目录除外）。通过设置此字段将使 Hexo 处理他们并将它们复制到 <code>source</code> 目录下。</td></tr><tr><td align="left"><code>exclude</code></td><td align="left">Hexo 会忽略这些文件和目录</td></tr><tr><td align="left"><code>ignore</code></td><td align="left">Ignore files/folders</td></tr></tbody></table><link rel="stylesheet" href="/labiyouxiaoxin2.github.io/css/spoiler.css" type="text/css"><script src="/labiyouxiaoxin2.github.io/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      
-      
-      <categories>
-          
-          <category> Hexo </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Hexo </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hexo -1- 博客搭建基础教程</title>
-      <link href="/2020/02/19/hexo/1_hexo_build/Hexo/"/>
-      <url>/2020/02/19/hexo/1_hexo_build/Hexo/</url>
-      
-        <content type="html"><![CDATA[<blockquote><p>建立个人博客的需求由来已久，能拥有自己的技术博客是广大程序员的梦想。相比于早些时候的WordPress、织梦等框架，就个人站点来说，用Hexo搭建博客可以用“怎一个爽字了得”形容。Hexo基于Node.js开发，具有轻量、方便、易部署等特点，主题丰富简约，依赖github即可构建站点，近些年受到广泛关注。此篇文章旨在和与我一样的初学者分享经验，有疑问欢迎在评论区交流。</p></blockquote><a id="more"></a><h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ul><li><p><code>github账号</code>：需要申请一个属于你的github账号，可以在<a href="https://github.com/">这里申请</a>。</p></li><li><p><code>git bash</code>： 需要有git bash运行环境，相关安装和使用教程请<a href="%5Bhttps://www.baidu.com/s?wd=gitbash&rsv_spt=1&rsv_iqid=0xeaa75c680004abbf&issp=1&f=8&rsv_bp=1&rsv_idx=2&ie=utf-8&tn=baiduhome_pg&rsv_enter=1&rsv_dl=ib&rsv_sug3=8&rsv_sug1=7&rsv_sug7=101&rsv_sug2=0&inputT=2890&rsv_sug4=3589">询问度娘</a>。</p></li><li><p><code>Node.js</code>： 必须安装 Node.js 开发环境，建议参考<a href="https://www.simon96.online/2018/11/10/hexo-env/" target="_blank" rel="noopener">Hexo 环境搭建</a>。</p></li><li><p><code>个人域名</code>(可选)：申请自己的域名可以有自己专用的地址解析链接，我使用<a href="https://cloud.baidu.com/product/bcd/price.html" target="_blank" rel="noopener">百度智能云</a>申请的域名，用着还不错，也比较便宜。</p></li><li><p><code>markdown</code>：Hexo使用Markdown解析文章，不熟悉的同学可以移步<a href="https://www.zywvvd.com/2020/02/18/Markdown-%E7%AE%80%E6%98%8E%E6%95%99%E7%A8%8B/" target="_blank" rel="noopener">Markdown 简明教程</a>。</p></li><li><p><code>html\css\js基础</code>： 有最好，没有也没关系。</p></li></ul><h2 id="Hexo的安装、初始化、本地预览"><a href="#Hexo的安装、初始化、本地预览" class="headerlink" title="Hexo的安装、初始化、本地预览"></a>Hexo的安装、初始化、本地预览</h2><h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h3><blockquote><p>在git bash环境下输入命令：</p></blockquote><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure><h3 id="初始化Hexo"><a href="#初始化Hexo" class="headerlink" title="初始化Hexo"></a>初始化Hexo</h3><blockquote><p>在选好的文件夹下运行命令，我们以 TestHexo 为例设立我们的第一个Hexo 站点。</p></blockquote><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init TestHexo</span><br></pre></td></tr></table></figure><img src="/labiyouxiaoxin2.github.io/2020/02/19/hexo/1_hexo_build/Hexo/anzhuanghexo.png" class="" title="安装"><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd TestHexo</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure><blockquote><p>完成后在TestHexo 文件夹中会有如下内容：</p></blockquote><img src="/labiyouxiaoxin2.github.io/2020/02/19/hexo/1_hexo_build/Hexo/chushihuawenjianjia.png" class="" title="初始化Hexo文件"><p>如果你坚持到了这里，那么恭喜你：</p><p>此时本地的Hexo站点已经完成了（什么不是刚开始么？？ 是的已经结束了）。</p><h3 id="本地预览"><a href="#本地预览" class="headerlink" title="本地预览"></a>本地预览</h3><blockquote><p>为了查看本地站点实际效果，输入命令：</p></blockquote><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure><p>或</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure><blockquote><p>会在本地搭建服务器挂载生成的本地站点，通过访问 <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000</a> 浏览自己的网站。</p></blockquote><img src="/labiyouxiaoxin2.github.io/2020/02/19/hexo/1_hexo_build/Hexo/yulanyemian.png" class="" title="预览页面"><h2 id="Hexo-部署到Github"><a href="#Hexo-部署到Github" class="headerlink" title="Hexo 部署到Github"></a>Hexo 部署到Github</h2><h3 id="在Github端创建仓库"><a href="#在Github端创建仓库" class="headerlink" title="在Github端创建仓库"></a>在Github端创建仓库</h3><p> 仓库名：&lt;Github 账号&gt;.github.io</p><h3 id="安装Hexo-git-插件"><a href="#安装Hexo-git-插件" class="headerlink" title="安装Hexo-git 插件"></a>安装Hexo-git 插件</h3><p>执行命令：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure><h3 id="链接本地与远程仓库"><a href="#链接本地与远程仓库" class="headerlink" title="链接本地与远程仓库"></a>链接本地与远程仓库</h3><blockquote><p>需要在本地建立SSh key，并添加到远程的github配置中。可参考<a href="https://www.zywvvd.com/zywvvd.github.io/2020/02/23/Git-%E8%BF%9E%E6%8E%A5-Github-%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/" target="_blank" rel="noopener">Git 连接 Github 远程仓库</a></p></blockquote><h3 id="修改站点配置文件"><a href="#修改站点配置文件" class="headerlink" title="修改站点配置文件"></a>修改<code>站点配置文件</code></h3><blockquote><p><code>站点配置文件</code>为Hexo根目录下的 _config.yml文件，编辑该文件，找到相关部分并修改。</p></blockquote><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/deployment.html</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">git@github.com:&lt;Github账号&gt;/&lt;Github账号&gt;.github.io.git</span>  <span class="comment">#该地址写ssh地址，不写http地址。</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure><blockquote><p>修改<code>站点配置文件</code>，填入网址设置：</p></blockquote><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># URL</span></span><br><span class="line"><span class="comment">## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'</span></span><br><span class="line"><span class="attr">url:</span> <span class="string">http://github.com/&lt;Github账号&gt;/&lt;Github账号&gt;.github.io</span></span><br><span class="line"><span class="attr">root:</span> <span class="string">/&lt;Github账号&gt;.github.io/</span></span><br></pre></td></tr></table></figure><h3 id="推送到Github"><a href="#推送到Github" class="headerlink" title="推送到Github"></a>推送到Github</h3><blockquote><p>依次输入命令：</p></blockquote><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure><blockquote><p> 当见到返回：</p></blockquote><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">INFO  Deploy done: git</span><br></pre></td></tr></table></figure><blockquote><p> 即为推送成功。</p><p>至此，您的Hexo博客已经搭建在GithubPages, 域名为<code>https://&lt;Github账号&gt;.github.io</code>。</p></blockquote><h2 id="自定义域名"><a href="#自定义域名" class="headerlink" title="自定义域名"></a>自定义域名</h2><blockquote><p>在站点部署在Github基础上，您也可以将自己购买的域名解析到刚刚建立的地址。</p></blockquote><h3 id="域名解析"><a href="#域名解析" class="headerlink" title="域名解析"></a>域名解析</h3><blockquote><p>在域名设置界面:</p></blockquote><ul><li><p>类型选择为 CNAME；</p></li><li><p>主机记录即域名前缀，填写为www；</p></li><li><p>记录值填写为&lt;Github账号名称&gt;.github.io；</p></li><li><p>解析线路，TTL 默认即可。</p></li></ul><img src="/labiyouxiaoxin2.github.io/2020/02/19/hexo/1_hexo_build/Hexo/yumingshezhi.png" class="" title="域名配置"><blockquote><p>提示：域名需要按照国家要求备案</p></blockquote><img src="/labiyouxiaoxin2.github.io/2020/02/19/hexo/1_hexo_build/Hexo/beian.png" class="" title="域名备案"><h3 id="仓库设置"><a href="#仓库设置" class="headerlink" title="仓库设置"></a>仓库设置</h3><blockquote><p>进入github建立的hexo仓库，点击settings按钮设置仓库，在Custom domin中填入自己的域名，并Save：</p></blockquote><img src="/labiyouxiaoxin2.github.io/2020/02/19/hexo/1_hexo_build/Hexo/customdomin.png" class="" title="仓库设置"><h3 id="本地设置"><a href="#本地设置" class="headerlink" title="本地设置"></a>本地设置</h3><blockquote><p>在Hexo站点目录source文件夹中，创建名为<code>CNAME</code>的文件，并向其写入<code>自定义域名</code></p></blockquote><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo www.zywvvd.com &gt;&gt; CNAME    #域名部分请替换为你自己的</span><br></pre></td></tr></table></figure><img src="/labiyouxiaoxin2.github.io/2020/02/19/hexo/1_hexo_build/Hexo/cname.png" class="" title="CNAME文件"><blockquote><p>几分钟之后，即可通过该域名访问Hexo站点。     <a href="https://www.zywvvd.com/" target="_blank" rel="noopener">又见苍岚</a></p></blockquote><h2 id="更换主题"><a href="#更换主题" class="headerlink" title="更换主题"></a>更换主题</h2><blockquote><p> hexo主题有很多,默认主题为landscape。</p><p>更换主题需要下载主题包放在Hexo目录中themes文件夹内，如我下载了Next主题，文件夹如图所示。</p></blockquote><img src="/labiyouxiaoxin2.github.io/2020/02/19/hexo/1_hexo_build/Hexo/nextwenjianjia.png" class="" title="Themes文件夹"><blockquote><p>并将<code>站点配置文件</code>中主题换成相应的主题名：</p></blockquote><img src="/labiyouxiaoxin2.github.io/2020/02/19/hexo/1_hexo_build/Hexo/zhutipeizhi.png" class="" title="主题配置"><blockquote><p>主题可以在<a href="https://github.com/search?q=hexo-theme">github</a>现有的工作中挑选。</p></blockquote><h3 id="Next"><a href="#Next" class="headerlink" title="Next"></a>Next</h3><blockquote><p>个人使用的是Hexo人气最高的主题Next，当前版本 V 7.7.1，具有简介大方，原生自带大量实用工具，社区活跃等优点。</p><p>有喜欢类似风格的小伙伴可以到<a href="https://www.zywvvd.com/categories/Next/" target="_blank" rel="noopener">Next 系列教程</a>了解一下。</p></blockquote><link rel="stylesheet" href="/labiyouxiaoxin2.github.io/css/spoiler.css" type="text/css"><script src="/labiyouxiaoxin2.github.io/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      
-      
-      <categories>
-          
-          <category> Hexo </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Hexo </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-  
-  
+      <tags>
+        <tag>hello-world</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo -1- 博客搭建基础教程</title>
+    <url>/2020/02/19/hexo/1_hexo_build/Hexo/</url>
+    <content><![CDATA[<blockquote>
+<p>建立个人博客的需求由来已久，能拥有自己的技术博客是广大程序员的梦想。相比于早些时候的WordPress、织梦等框架，就个人站点来说，用Hexo搭建博客可以用“怎一个爽字了得”形容。Hexo基于Node.js开发，具有轻量、方便、易部署等特点，主题丰富简约，依赖github即可构建站点，近些年受到广泛关注。此篇文章旨在和与我一样的初学者分享经验，有疑问欢迎在评论区交流。</p>
+</blockquote>
+<a id="more"></a>
+
+
+
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ul>
+<li><p><code>github账号</code>：需要申请一个属于你的github账号，可以在<a href="https://github.com/">这里申请</a>。</p>
+</li>
+<li><p><code>git bash</code>： 需要有git bash运行环境，相关安装和使用教程请<a href="%5Bhttps://www.baidu.com/s?wd=gitbash&rsv_spt=1&rsv_iqid=0xeaa75c680004abbf&issp=1&f=8&rsv_bp=1&rsv_idx=2&ie=utf-8&tn=baiduhome_pg&rsv_enter=1&rsv_dl=ib&rsv_sug3=8&rsv_sug1=7&rsv_sug7=101&rsv_sug2=0&inputT=2890&rsv_sug4=3589">询问度娘</a>。</p>
+</li>
+<li><p><code>Node.js</code>： 必须安装 Node.js 开发环境，建议参考<a href="https://www.simon96.online/2018/11/10/hexo-env/" target="_blank" rel="noopener">Hexo 环境搭建</a>。</p>
+</li>
+<li><p><code>个人域名</code>(可选)：申请自己的域名可以有自己专用的地址解析链接，我使用<a href="https://cloud.baidu.com/product/bcd/price.html" target="_blank" rel="noopener">百度智能云</a>申请的域名，用着还不错，也比较便宜。</p>
+</li>
+<li><p><code>markdown</code>：Hexo使用Markdown解析文章，不熟悉的同学可以移步<a href="https://www.zywvvd.com/2020/02/18/Markdown-%E7%AE%80%E6%98%8E%E6%95%99%E7%A8%8B/" target="_blank" rel="noopener">Markdown 简明教程</a>。</p>
+</li>
+<li><p><code>html\css\js基础</code>： 有最好，没有也没关系。</p>
+</li>
+</ul>
+<h2 id="Hexo的安装、初始化、本地预览"><a href="#Hexo的安装、初始化、本地预览" class="headerlink" title="Hexo的安装、初始化、本地预览"></a>Hexo的安装、初始化、本地预览</h2><h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h3><blockquote>
+<p>在git bash环境下输入命令：</p>
+</blockquote>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+
+<h3 id="初始化Hexo"><a href="#初始化Hexo" class="headerlink" title="初始化Hexo"></a>初始化Hexo</h3><blockquote>
+<p>在选好的文件夹下运行命令，我们以 TestHexo 为例设立我们的第一个Hexo 站点。</p>
+</blockquote>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">hexo init TestHexo</span><br></pre></td></tr></table></figure>
+
+<img src="/labiyouxiaoxin2.github.io/2020/02/19/hexo/1_hexo_build/Hexo/anzhuanghexo.png" class="" title="安装">
+
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd TestHexo</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>完成后在TestHexo 文件夹中会有如下内容：</p>
+</blockquote>
+<img src="/labiyouxiaoxin2.github.io/2020/02/19/hexo/1_hexo_build/Hexo/chushihuawenjianjia.png" class="" title="初始化Hexo文件">
+
+<p>如果你坚持到了这里，那么恭喜你：</p>
+<p>此时本地的Hexo站点已经完成了（什么不是刚开始么？？ 是的已经结束了）。</p>
+<h3 id="本地预览"><a href="#本地预览" class="headerlink" title="本地预览"></a>本地预览</h3><blockquote>
+<p>为了查看本地站点实际效果，输入命令：</p>
+</blockquote>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+
+<p>或</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>会在本地搭建服务器挂载生成的本地站点，通过访问 <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000</a> 浏览自己的网站。</p>
+</blockquote>
+<img src="/labiyouxiaoxin2.github.io/2020/02/19/hexo/1_hexo_build/Hexo/yulanyemian.png" class="" title="预览页面">
+
+
+
+<h2 id="Hexo-部署到Github"><a href="#Hexo-部署到Github" class="headerlink" title="Hexo 部署到Github"></a>Hexo 部署到Github</h2><h3 id="在Github端创建仓库"><a href="#在Github端创建仓库" class="headerlink" title="在Github端创建仓库"></a>在Github端创建仓库</h3><p> 仓库名：&lt;Github 账号&gt;.github.io</p>
+<h3 id="安装Hexo-git-插件"><a href="#安装Hexo-git-插件" class="headerlink" title="安装Hexo-git 插件"></a>安装Hexo-git 插件</h3><p>执行命令：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+<h3 id="链接本地与远程仓库"><a href="#链接本地与远程仓库" class="headerlink" title="链接本地与远程仓库"></a>链接本地与远程仓库</h3><blockquote>
+<p>需要在本地建立SSh key，并添加到远程的github配置中。可参考<a href="https://www.zywvvd.com/zywvvd.github.io/2020/02/23/Git-%E8%BF%9E%E6%8E%A5-Github-%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/" target="_blank" rel="noopener">Git 连接 Github 远程仓库</a></p>
+</blockquote>
+<h3 id="修改站点配置文件"><a href="#修改站点配置文件" class="headerlink" title="修改站点配置文件"></a>修改<code>站点配置文件</code></h3><blockquote>
+<p><code>站点配置文件</code>为Hexo根目录下的 _config.yml文件，编辑该文件，找到相关部分并修改。</p>
+</blockquote>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/deployment.html</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">git@github.com:&lt;Github账号&gt;/&lt;Github账号&gt;.github.io.git</span>  <span class="comment">#该地址写ssh地址，不写http地址。</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>修改<code>站点配置文件</code>，填入网址设置：</p>
+</blockquote>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># URL</span></span><br><span class="line"><span class="comment">## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'</span></span><br><span class="line"><span class="attr">url:</span> <span class="string">http://github.com/&lt;Github账号&gt;/&lt;Github账号&gt;.github.io</span></span><br><span class="line"><span class="attr">root:</span> <span class="string">/&lt;Github账号&gt;.github.io/</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="推送到Github"><a href="#推送到Github" class="headerlink" title="推送到Github"></a>推送到Github</h3><blockquote>
+<p>依次输入命令：</p>
+</blockquote>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p> 当见到返回：</p>
+</blockquote>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">INFO  Deploy done: git</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p> 即为推送成功。</p>
+<p>至此，您的Hexo博客已经搭建在GithubPages, 域名为<code>https://&lt;Github账号&gt;.github.io</code>。</p>
+</blockquote>
+<h2 id="自定义域名"><a href="#自定义域名" class="headerlink" title="自定义域名"></a>自定义域名</h2><blockquote>
+<p>在站点部署在Github基础上，您也可以将自己购买的域名解析到刚刚建立的地址。</p>
+</blockquote>
+<h3 id="域名解析"><a href="#域名解析" class="headerlink" title="域名解析"></a>域名解析</h3><blockquote>
+<p>在域名设置界面:</p>
+</blockquote>
+<ul>
+<li><p>类型选择为 CNAME；</p>
+</li>
+<li><p>主机记录即域名前缀，填写为www；</p>
+</li>
+<li><p>记录值填写为&lt;Github账号名称&gt;.github.io；</p>
+</li>
+<li><p>解析线路，TTL 默认即可。</p>
+</li>
+</ul>
+<img src="/labiyouxiaoxin2.github.io/2020/02/19/hexo/1_hexo_build/Hexo/yumingshezhi.png" class="" title="域名配置">
+
+<blockquote>
+<p>提示：域名需要按照国家要求备案</p>
+</blockquote>
+<img src="/labiyouxiaoxin2.github.io/2020/02/19/hexo/1_hexo_build/Hexo/beian.png" class="" title="域名备案">
+
+<h3 id="仓库设置"><a href="#仓库设置" class="headerlink" title="仓库设置"></a>仓库设置</h3><blockquote>
+<p>进入github建立的hexo仓库，点击settings按钮设置仓库，在Custom domin中填入自己的域名，并Save：</p>
+</blockquote>
+<img src="/labiyouxiaoxin2.github.io/2020/02/19/hexo/1_hexo_build/Hexo/customdomin.png" class="" title="仓库设置">
+
+<h3 id="本地设置"><a href="#本地设置" class="headerlink" title="本地设置"></a>本地设置</h3><blockquote>
+<p>在Hexo站点目录source文件夹中，创建名为<code>CNAME</code>的文件，并向其写入<code>自定义域名</code></p>
+</blockquote>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">echo www.zywvvd.com &gt;&gt; CNAME    #域名部分请替换为你自己的</span><br></pre></td></tr></table></figure>
+
+<img src="/labiyouxiaoxin2.github.io/2020/02/19/hexo/1_hexo_build/Hexo/cname.png" class="" title="CNAME文件">
+
+<blockquote>
+<p>几分钟之后，即可通过该域名访问Hexo站点。     <a href="https://www.zywvvd.com/" target="_blank" rel="noopener">又见苍岚</a></p>
+</blockquote>
+<h2 id="更换主题"><a href="#更换主题" class="headerlink" title="更换主题"></a>更换主题</h2><blockquote>
+<p> hexo主题有很多,默认主题为landscape。</p>
+<p>更换主题需要下载主题包放在Hexo目录中themes文件夹内，如我下载了Next主题，文件夹如图所示。</p>
+</blockquote>
+<img src="/labiyouxiaoxin2.github.io/2020/02/19/hexo/1_hexo_build/Hexo/nextwenjianjia.png" class="" title="Themes文件夹">
+
+<blockquote>
+<p>并将<code>站点配置文件</code>中主题换成相应的主题名：</p>
+</blockquote>
+<img src="/labiyouxiaoxin2.github.io/2020/02/19/hexo/1_hexo_build/Hexo/zhutipeizhi.png" class="" title="主题配置">
+
+<blockquote>
+<p>主题可以在<a href="https://github.com/search?q=hexo-theme">github</a>现有的工作中挑选。</p>
+</blockquote>
+<h3 id="Next"><a href="#Next" class="headerlink" title="Next"></a>Next</h3><blockquote>
+<p>个人使用的是Hexo人气最高的主题Next，当前版本 V 7.7.1，具有简介大方，原生自带大量实用工具，社区活跃等优点。</p>
+<p>有喜欢类似风格的小伙伴可以到<a href="https://www.zywvvd.com/categories/Next/" target="_blank" rel="noopener">Next 系列教程</a>了解一下。</p>
+</blockquote>
+<link rel="stylesheet" href="/labiyouxiaoxin2.github.io/css/spoiler.css" type="text/css"><script src="/labiyouxiaoxin2.github.io/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
 </search>

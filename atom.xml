@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://labiyouxiaoxin2.github.io/"/>
-  <updated>2020-11-14T08:17:13.564Z</updated>
+  <updated>2021-04-24T15:49:30.427Z</updated>
   <id>https://labiyouxiaoxin2.github.io/</id>
   
   <author>
@@ -17,71 +17,25 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hexo -4- 向文章添加图片的方法</title>
-    <link href="https://labiyouxiaoxin2.github.io/2020/02/27/hexo/4_hexo_add_image/hexo-add-image/"/>
-    <id>https://labiyouxiaoxin2.github.io/2020/02/27/hexo/4_hexo_add_image/hexo-add-image/</id>
-    <published>2020-02-27T14:38:10.000Z</published>
-    <updated>2020-11-14T08:17:13.564Z</updated>
+    <title>小冰的 hexo hello world</title>
+    <link href="https://labiyouxiaoxin2.github.io/2021/04/24/icey-hello-world/icey-hello-world/"/>
+    <id>https://labiyouxiaoxin2.github.io/2021/04/24/icey-hello-world/icey-hello-world/</id>
+    <published>2021-04-24T15:47:48.000Z</published>
+    <updated>2021-04-24T15:49:30.427Z</updated>
     
     <summary type="html">
     
       &lt;blockquote&gt;
-&lt;p&gt;本文介绍Hexo编辑文章时添加图像的各种方法。&lt;/p&gt;
+&lt;p&gt;本文是小冰第一篇博客 hello world。&lt;/p&gt;
 &lt;/blockquote&gt;
     
     </summary>
     
     
-      <category term="Hexo" scheme="https://labiyouxiaoxin2.github.io/categories/Hexo/"/>
+      <category term="hello-world" scheme="https://labiyouxiaoxin2.github.io/categories/hello-world/"/>
     
     
-      <category term="Hexo" scheme="https://labiyouxiaoxin2.github.io/tags/Hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo -3- 常用命令汇总</title>
-    <link href="https://labiyouxiaoxin2.github.io/2020/02/25/hexo/3_hexo_commands/hexo-commands/"/>
-    <id>https://labiyouxiaoxin2.github.io/2020/02/25/hexo/3_hexo_commands/hexo-commands/</id>
-    <published>2020-02-25T15:15:43.000Z</published>
-    <updated>2020-11-14T08:17:13.563Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;本文记录Hexo常用命令与相应说明，相关文档也可以参考&lt;a href=&quot;https://hexo.io/zh-cn/docs/commands&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;官方文档&lt;/a&gt;。&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-    
-      <category term="Hexo" scheme="https://labiyouxiaoxin2.github.io/categories/Hexo/"/>
-    
-    
-      <category term="Hexo" scheme="https://labiyouxiaoxin2.github.io/tags/Hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo -2- 站点信息配置</title>
-    <link href="https://labiyouxiaoxin2.github.io/2020/02/24/hexo/2_hexo_config/Hexo_config/"/>
-    <id>https://labiyouxiaoxin2.github.io/2020/02/24/hexo/2_hexo_config/Hexo_config/</id>
-    <published>2020-02-24T05:36:35.000Z</published>
-    <updated>2020-11-14T08:17:13.560Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt; Hexo框架中配置文件内容描述与示例。&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-    
-      <category term="Hexo" scheme="https://labiyouxiaoxin2.github.io/categories/Hexo/"/>
-    
-    
-      <category term="Hexo" scheme="https://labiyouxiaoxin2.github.io/tags/Hexo/"/>
+      <category term="hello-world" scheme="https://labiyouxiaoxin2.github.io/tags/hello-world/"/>
     
   </entry>
   
@@ -101,10 +55,6 @@
     </summary>
     
     
-      <category term="Hexo" scheme="https://labiyouxiaoxin2.github.io/categories/Hexo/"/>
-    
-    
-      <category term="Hexo" scheme="https://labiyouxiaoxin2.github.io/tags/Hexo/"/>
     
   </entry>
   

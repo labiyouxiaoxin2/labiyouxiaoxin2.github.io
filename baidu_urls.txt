@@ -1,2 +1,2 @@
-https://labiyouxiaoxin2.github.io/2020/02/27/hexo/4_hexo_add_image/hexo-add-image/
-https://labiyouxiaoxin2.github.io/2020/02/25/hexo/3_hexo_commands/hexo-commands/
+https://labiyouxiaoxin2.github.io/2021/04/24/icey-hello-world/icey-hello-world/
+https://labiyouxiaoxin2.github.io/2020/02/19/hexo/1_hexo_build/Hexo/
